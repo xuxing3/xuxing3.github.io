@@ -1,0 +1,1 @@
+> [https://vuepress.mirror.docker-practice.com/introduction/why.html#%E4%B8%80%E8%87%B4%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83](https://vuepress.mirror.docker-practice.com/introduction/why.html#一致的运行环境)
