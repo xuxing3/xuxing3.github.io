@@ -2,26 +2,29 @@
 
 ##### DevNet
 
-[DevNet.md](DevNet.md) 
+[DevNet](DevNet.md)
 
 ##### Docker
 
-[Docker.md](Docker.md) 
+[Docker](Docker.md) 
 
-[Docker 从入门到实践.md](Docker 从入门到实践.md)  
+[Docker 从入门到实践](Docker 从入门到实践.md)  
 
-[screen.md](screen.md) 
+[Screen](screen.md) 
 
 ##### Linux
 
-[00_Sed.md](00_Sed.md) 
+[Sed](00_Sed.md) 
 
-[01_VIM.md](01_VIM.md)  
+[VIM](01_VIM.md)  
 
-[02_bash编程.md](02_bash编程.md) 
+[Bash编程](02_bash编程.md) 
 
-[03_Linux 终端.md](03_Linux 终端.md) 
+[Linux 终端](03_Linux 终端.md) 
+
+[磁盘管理](04_磁盘管理.md) 
 
 ##### Git
 
- [Git.md](Git.md) 
+[Git](Git.md) 
+

@@ -1,5 +1,6 @@
 [TOC]
 
+
 ##### 终端类型
 
 - Console: 控制台
@@ -116,22 +117,23 @@ mail命令安装：
 利用RANDOM生成10个随机数， 并找出其中的最大值和最小值
 
 ```bash
-[root@xuxing Linux]# cat 10.sh 
 #!/bin/bash
 
 declare -i MAX=0
-
+declare -i MIN=0
 for I in {1..10}; do 
         MYRAND=$RANDOM
+        [ $I -eq 1 ] && MIN=$MYRAND
         if [ $I -le 9 ]; then
                 echo -n "$MYRAND,"
         else
                 echo "$MYRAND"
         fi
         [ $MYRAND -gt $MAX ] && MAX=$MYRAND
+        [ $MYRAND -lt $MIN ] && MIN=$MYRAND
 done
 
-echo $MAX
+echo $MAX, $MIN
 ```
 
 

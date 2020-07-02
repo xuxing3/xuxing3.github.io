@@ -147,6 +147,107 @@ if [ $# -gt 1 -a $# -le 3 ]
 if [ $# -gt 1 ] && [ $# -le 3 ]
 ```
 
+面向过程
+
+​	控制结构
+
+​		顺序结构
+​		选择结构
+​		循环结构
+
+选择结构
+
+##### if：单分支，双分支，多分枝
+
+```bash
+if CONDITION; then
+	statement
+	...
+elif CONDITION; then
+	statement
+	....
+else
+	statement
+	...
+fi
+```
+
+##### case 语句：选择结构
+
+```bash
+case SWITCH in
+value1)
+	staement
+	...
+	;;
+value2)
+	statement
+	...
+	;;
+*)
+	statement
+	...
+	;;
+esac
+```
+
+##### case 示例1
+
+```bash
+[root@xuxing Linux]# cat 11.sh 
+#!/bin/bash
+
+case $1 in
+[0-9])
+        echo "A digit.";;
+[a-z])
+        echo "Lover";;
+[A-Z])
+        echo "Upper";;
+*)
+        echo "Special character";;
+esac
+```
+
+##### case 示例2
+
+```bash
+[root@xuxing Linux]# cat 12.sh 
+#!/bin/bash
+#
+
+case $1 in
+'start')
+        echo "start server ...";;
+'stop')
+        echo "stop server ...";;
+'restart')
+        echo "restart server ..";;
+'status')
+        echo "Runnig ...";;
+*)
+        echo "`basename $0` (start|stop|restart|status)";;
+esac
+```
+
+##### case 示例3
+
+```bash
+#!/bin/bash
+#
+DEBUG=0
+case $1 in
+-v|--verbose)
+  DEBUG=1;;
+*)
+  echo "Unknown options"
+  exit 7
+  ;;
+esac
+[ $DEBUG == 1 ] && echo "Hello"
+
+```
+
 
 
 ##### Other/位置变量/特殊变量
@@ -160,5 +261,24 @@ if [ $# -gt 1 ] && [ $# -le 3 ]
 		$#：参数的个数
 		$*: 参数列表
 		$@：参数列表
+```
+
+##### 脚本1
+
+```bash
+#!/bin/bash
+let I=1
+let M=4096
+for X in {200..231}; do
+        for Y in {0..255}; do
+                echo "ip dhcp pool statmac$I"
+                echo "hardware-address 98bc.5782.`printf %x $M`"
+                let M=M+1
+                let I=I+1
+                echo "host 10.52.$X.$Y 255.255.0.0"
+                echo "default-router 10.52.0.1"
+        done
+done
+
 ```
 
