@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NAT on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/nat/</link>
+    <description>Recent content in NAT on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Mon, 16 Oct 2023 04:25:12 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/nat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CONE NAT 和 Symmetric NAT</title>
+      <link>https://imxing.info/sdwan/nat/</link>
+      <pubDate>Mon, 16 Oct 2023 04:25:12 +0000</pubDate>
+      
+      <guid>https://imxing.info/sdwan/nat/</guid>
+      <description>NAT 的划分 # 以下是 RFC3489 的分类方式， 当然还有其他的分类标准，比如我们熟知的 PAT 就是另一种分类方式中的一种。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

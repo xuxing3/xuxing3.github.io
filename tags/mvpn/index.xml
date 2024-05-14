@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mvpn on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/mvpn/</link>
+    <description>Recent content in Mvpn on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/mvpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mVPN Profile 14 | NCS55xx</title>
+      <link>https://imxing.info/blog/mvpn-profile-14-ncs55xx/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/blog/mvpn-profile-14-ncs55xx/</guid>
+      <description>&lt;p&gt;最近测试了下 NCS55 上面的 MVPN，整理一下防止自己忘记了.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NCS55 在 MVPN profile 上的支持不如 ASR9K 的种类多，具体哪些 profile 支持需要参考下 NCS55 的配置文档&lt;/li&gt;
+&lt;li&gt;NCS55 由于芯片的特殊性，有些计数器并不是默认打开的，需要一些特殊的配置，如本文的组播流量的统计上。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Profile 14，据说是 NCS55 上最受欢迎的 profile；这里使用如下的拓扑进行测试。&lt;/p&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;拓扑 
+    &lt;div id=&#34;%E6%8B%93%E6%89%91&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%8B%93%E6%89%91&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+    
+  
+  
+    &lt;figure&gt;
+      
+      &lt;img
+        class=&#34;my-0 rounded-md&#34;
+        loading=&#34;lazy&#34;
+        src=&#34;https://imxing.info/blog/mvpn-profile-14-ncs55xx/images/image-2.png&#34;
+        alt=&#34;&#34;
+      /&gt;
+      
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

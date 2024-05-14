@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>License on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/license/</link>
+    <description>Recent content in License on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Wed, 23 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/license/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to add License at eXR platform</title>
+      <link>https://imxing.info/blog/how-to-add-license-at-exr-platform/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/blog/how-to-add-license-at-exr-platform/</guid>
+      <description>&lt;p&gt;Currently we have two ways to install the license.One is &amp;ldquo;Traditional Licensing&amp;rdquo; and the other is &amp;ldquo;Smart Software Licensing&amp;rdquo;.But at Cisco eXR platform(64-bit IOS XR), we can only use &amp;ldquo;Smart Software Licensing&amp;rdquo;.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

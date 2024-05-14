@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Rory&#39;s Blog</title>
+    <link>https://imxing.info/series/</link>
+    <description>Recent content in Series on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IOS-XR-Upgrade</title>
+      <link>https://imxing.info/series/ios-xr-upgrade/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/series/ios-xr-upgrade/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

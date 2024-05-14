@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TS on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/ts/</link>
+    <description>Recent content in TS on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Thu, 02 May 2024 12:22:37 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/ts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Simple EEM to Collect log Trigger by Syslog in IOX</title>
+      <link>https://imxing.info/blog/eem-to-collect-info/</link>
+      <pubDate>Thu, 02 May 2024 12:22:37 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/eem-to-collect-info/</guid>
+      <description>Background # In 64-bit XR system, we have a easy way to monitor syslog and trigger a collection action.</description>
+      
+    </item>
+    
+    <item>
+      <title>SDWAN环境下cEdge的抓包</title>
+      <link>https://imxing.info/sdwan/capture/</link>
+      <pubDate>Sat, 21 Oct 2023 04:25:12 +0000</pubDate>
+      
+      <guid>https://imxing.info/sdwan/capture/</guid>
+      <description>Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:</description>
+      
+    </item>
+    
+  </channel>
+</rss>

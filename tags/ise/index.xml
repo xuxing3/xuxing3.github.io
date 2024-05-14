@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ise on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/ise/</link>
+    <description>Recent content in Ise on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/ise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ISE Install and config example</title>
+      <link>https://imxing.info/blog/ise/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/blog/ise/</guid>
+      <description>&lt;p&gt;Reference:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cisco.com/c/en/us/td/docs/security/ise/2-6/install_guide/b_ise_InstallationGuide26/b_ise_InstallationGuide_26_chapter_010.html#installise&#34;   target=&#34;_blank&#34;&gt;
+    Install Cisco ISE Using CIMC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cisco.com/c/en/us/support/docs/security/identity-services-engine-software/215348-how-to-configure-repository-on-identity.html&#34;   target=&#34;_blank&#34;&gt;
+    Configure Repository on ISE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cisco.com/c/en/us/support/docs/security/identity-services-engine/215355-how-to-take-configuration-and-operation.html&#34;   target=&#34;_blank&#34;&gt;
+    How to Export Configuration and Operation Data Backup from ISE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/77121262&#34;   target=&#34;_blank&#34;&gt;
+    基于 ISE 对 Cisco 网络设备部署 AAA&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

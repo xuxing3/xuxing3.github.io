@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/mongodb/</link>
+    <description>Recent content in Mongodb on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Sat, 13 Jan 2024 11:40:49 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mongodb Query</title>
+      <link>https://imxing.info/blog/mongodb-query/</link>
+      <pubDate>Sat, 13 Jan 2024 11:40:49 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/mongodb-query/</guid>
+      <description>Record some Mongodb query example.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

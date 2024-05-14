@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IOSXR on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/iosxr/</link>
+    <description>Recent content in IOSXR on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Thu, 02 May 2024 12:22:37 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/iosxr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Simple EEM to Collect log Trigger by Syslog in IOX</title>
+      <link>https://imxing.info/blog/eem-to-collect-info/</link>
+      <pubDate>Thu, 02 May 2024 12:22:37 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/eem-to-collect-info/</guid>
+      <description>Background # In 64-bit XR system, we have a easy way to monitor syslog and trigger a collection action.</description>
+      
+    </item>
+    
+    <item>
+      <title>Introduce SBFD (IOSXR)</title>
+      <link>https://imxing.info/blog/sbfd/</link>
+      <pubDate>Sun, 07 Apr 2024 21:43:42 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/sbfd/</guid>
+      <description>SBFD (Seamless Bidirectional Forwarding Detection) 无缝双向转发检测。</description>
+      
+    </item>
+    
+    <item>
+      <title>Use Golden Image to upgrade your eXR router | NCS55/ASR9K</title>
+      <link>https://imxing.info/blog/giso/</link>
+      <pubDate>Thu, 21 Jul 2022 17:08:47 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/giso/</guid>
+      <description>最近尝试了下使用 Golden ISO 升级了下设备，发现其比使用官方提供的 mini 的 ISO 镜像更方便，时间更短，属实是太方便了。</description>
+      
+    </item>
+    
+    <item>
+      <title>Cisco cXR and eXR Software install guide</title>
+      <link>https://imxing.info/blog/cxr-exr-install-guide/</link>
+      <pubDate>Fri, 04 Oct 2019 13:03:41 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/cxr-exr-install-guide/</guid>
+      <description>ASR9000 Software install guide # cXR upgrade # Reload router then Ctrl+C enter into rommon, or modify resister:</description>
+      
+    </item>
+    
+  </channel>
+</rss>

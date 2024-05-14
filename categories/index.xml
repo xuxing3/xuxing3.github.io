@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Rory&#39;s Blog</title>
+    <link>https://imxing.info/categories/</link>
+    <description>Recent content in Categories on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tools</title>
+      <link>https://imxing.info/categories/tools/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/categories/tools/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://imxing.info/categories/linux/</link>
+      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/categories/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Rs</title>
+      <link>https://imxing.info/categories/rs/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/categories/rs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nso</title>
+      <link>https://imxing.info/categories/nso/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://imxing.info/categories/nso/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
