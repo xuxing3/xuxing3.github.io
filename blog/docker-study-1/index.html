@@ -76,47 +76,10 @@
     <meta property="article:modified_time" content="2020-07-25T00:00:00+00:00">
     <meta property="article:tag" content="Docker">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Docker study（1）- Initial install">
-<meta name="twitter:description" content="Reference:https://docs.docker.com/engine/install/centos/ https://docs.docker.com/config/daemon/systemd/#httphttps-proxy https://www.runoob.com/docker/docker-tutorial.html
-
-
-Centos Docker install 
-    
-    
-    
-        #
-            
-    
-
-[root@localhost ~]# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-[root@localhost ~]# sudo yum-config-manager --enable docker-ce-nightly
-[root@localhost ~]# sudo yum-config-manager --enable docker-ce-test
-[root@localhost ~]# yum install docker-ce docker-ce-cli containerd.io
-[root@localhost ~]# systemctl start docker
-[root@localhost ~]# systemctl status docker
-[root@localhost ~]# docker info
-[root@localhost ~]# docker run hello-world
-
-
-HTTP/HTTPS proxy 
-    
-    
-    
-        #
-            
-    
-
-[root@localhost ~]#sudo mkdir -p /etc/systemd/system/docker.service.d
-[root@localhost ~]#vi /etc/systemd/system/docker.service.d/http-proxy.conf
-[Service]
-Environment=&#34;HTTP_PROXY=http://xxx:80&#34;
-Environment=&#34;HTTPS_PROXY=http://xxx:80&#34;
-Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cisco.com&#34;
-[root@localhost ~]#sudo systemctl daemon-reload
-[root@localhost ~]#sudo systemctl restart docker
-[root@localhost ~]#sudo systemctl show --property=Environment docker
-[root@localhost ~]#docker run hello-world
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Docker study（1）- Initial install">
+  <meta name="twitter:description" content="Reference:https://docs.docker.com/engine/install/centos/ https://docs.docker.com/config/daemon/systemd/#httphttps-proxy https://www.runoob.com/docker/docker-tutorial.html Centos Docker install # [root@localhost ~]# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo [root@localhost ~]# sudo yum-config-manager --enable docker-ce-nightly [root@localhost ~]# sudo yum-config-manager --enable docker-ce-test [root@localhost ~]# yum install docker-ce docker-ce-cli containerd.io [root@localhost ~]# systemctl start docker [root@localhost ~]# systemctl status docker [root@localhost ~]# docker info [root@localhost ~]# docker run hello-world HTTP/HTTPS proxy # [root@localhost ~]#sudo mkdir -p /etc/systemd/system/docker.service.d [root@localhost ~]#vi /etc/systemd/system/docker.service.d/http-proxy.conf [Service] Environment=&#34;HTTP_PROXY=http://xxx:80&#34; Environment=&#34;HTTPS_PROXY=http://xxx:80&#34; Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cisco.com&#34; [root@localhost ~]#sudo systemctl daemon-reload [root@localhost ~]#sudo systemctl restart docker [root@localhost ~]#sudo systemctl show --property=Environment docker [root@localhost ~]#docker run hello-world ">
 
   
   <script type="application/ld+json">

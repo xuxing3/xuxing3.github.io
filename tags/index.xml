@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Rory</copyright>
-    <lastBuildDate>Thu, 02 May 2024 12:22:37 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 May 2024 18:26:53 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Telemetry</title>
+      <link>https://imxing.info/tags/telemetry/</link>
+      <pubDate>Thu, 16 May 2024 18:26:53 +0800</pubDate>
+      
+      <guid>https://imxing.info/tags/telemetry/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>IOSXR</title>
       <link>https://imxing.info/tags/iosxr/</link>
@@ -134,16 +144,6 @@
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/tags/docker/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Telemetry</title>
-      <link>https://imxing.info/tags/telemetry/</link>
-      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://imxing.info/tags/telemetry/</guid>
       <description></description>
       
     </item>

@@ -76,39 +76,11 @@
     <meta property="article:published_time" content="2021-12-23T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-12-23T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="How to upgrade Java Version on Centos">
-<meta name="twitter:description" content="背景: 
-    
-    
-    
-        #
-            
-    
-
-log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.2.17，可能会受到影响，需要我们自行处理下。所以想着升级下java的版本， remove掉之前的老版本1.8，在看一下后续还会不会被扫出来.
-[root@server2 ~]#  yum list installed | grep log4j
-Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast
-log4j.noarch                          1.2.17-16.el7_4                  @anaconda
-[root@server2 ~]# 
-
-
-Centos Java upgrade to 1.11 from 1.8 
-    
-    
-    
-        #
-            
-    
-
-
-检查下java的版本，使用的是openjdk版本是1.8；openjdk和Oracle的Java是有点区别的，
-    Oracle与OpenJDK之间的区别介绍了它们的区别，所以本文后续介绍的openjdk的升级。
-
-[root@server2 ~]# java -version
-openjdk version &#34;1.8.0_161&#34;
-OpenJDK Runtime Environment (build 1.8.0_161-b14)
-OpenJDK 64-Bit Server VM (build 25.161-b14, mixed mode)
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to upgrade Java Version on Centos">
+  <meta name="twitter:description" content="背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.2.17，可能会受到影响，需要我们自行处理下。所以想着升级下java的版本， remove掉之前的老版本1.8，在看一下后续还会不会被扫出来.
+[root@server2 ~]# yum list installed | grep log4j Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast log4j.noarch 1.2.17-16.el7_4 @anaconda [root@server2 ~]# Centos Java upgrade to 1.11 from 1.8 # 检查下java的版本，使用的是openjdk版本是1.8；openjdk和Oracle的Java是有点区别的， Oracle与OpenJDK之间的区别介绍了它们的区别，所以本文后续介绍的openjdk的升级。 [root@server2 ~]# java -version openjdk version &#34;1.8.0_161&#34; OpenJDK Runtime Environment (build 1.8.0_161-b14) OpenJDK 64-Bit Server VM (build 25.161-b14, mixed mode) ">
 
   
   <script type="application/ld+json">

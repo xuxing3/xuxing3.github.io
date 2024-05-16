@@ -77,25 +77,12 @@ RP/0/RP1/CPU0:CORE6-ASR9922-A#admin Sat May 16 17:23:01.985 UTC RP/0/RP1/CPU0:CO
     <meta property="article:published_time" content="2020-05-16T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-05-16T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="SSH 免密登陆CISCO IOX设备">
-<meta name="twitter:description" content="证所周知，如果你需要 ssh 免密登陆到 ssh server，只需要将 ssh client 端的公钥复制到 ssh server 即可；那么如果需要实现 SSH 免密登陆 CISCO IOX 设备，只需要将你 ssh client 端的公钥复制到 CICCO IOX 设备即可，以下是复制的过程。
-
-
-SSH Client 生成 1024 公钥 
-    
-    
-    
-        #
-            
-    
-
-虽然 CISCO IOX 官方文档说明支持 512-2024 长度的公钥，但是测试结果发现是导入 2024 长度的公钥是会报错的 ，所以这里我会选择使用 1024 长度的公钥。
-RP/0/RP1/CPU0:CORE6-ASR9922-A#admin
-Sat May 16 17:23:01.985 UTC
-RP/0/RP1/CPU0:CORE6-ASR9922-A(admin)#crypto key import authentication rsa username cisco harddisk:/myrouter_sshkey
-Sat May 16 17:23:05.548 UTC
-Cannot execute the command : Invalid argument   &lt;&lt;&lt;&lt; 报错
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SSH 免密登陆CISCO IOX设备">
+  <meta name="twitter:description" content="证所周知，如果你需要 ssh 免密登陆到 ssh server，只需要将 ssh client 端的公钥复制到 ssh server 即可；那么如果需要实现 SSH 免密登陆 CISCO IOX 设备，只需要将你 ssh client 端的公钥复制到 CICCO IOX 设备即可，以下是复制的过程。
+SSH Client 生成 1024 公钥 # 虽然 CISCO IOX 官方文档说明支持 512-2024 长度的公钥，但是测试结果发现是导入 2024 长度的公钥是会报错的 ，所以这里我会选择使用 1024 长度的公钥。
+RP/0/RP1/CPU0:CORE6-ASR9922-A#admin Sat May 16 17:23:01.985 UTC RP/0/RP1/CPU0:CORE6-ASR9922-A(admin)#crypto key import authentication rsa username cisco harddisk:/myrouter_sshkey Sat May 16 17:23:05.548 UTC Cannot execute the command : Invalid argument &lt;&lt;&lt;&lt; 报错 ">
 
   
   <script type="application/ld+json">

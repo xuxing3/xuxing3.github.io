@@ -80,52 +80,15 @@
     <meta property="article:published_time" content="2020-09-17T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-09-17T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="IPv6 over MPLS 6PE/6vPE">
-<meta name="twitter:description" content="6PE 
-    
-    
-    
-        #
-            
-    
-
-
-
-什么是 6PE 
-    
-    
-    
-        #
-            
-    
-
-摘录一段华为文档的解释：
-
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IPv6 over MPLS 6PE/6vPE">
+  <meta name="twitter:description" content="6PE # 什么是 6PE # 摘录一段华为文档的解释：
 6PE（IPv6 Provider Edge）是一种 IPv4 到 IPv6 过渡的技术。通过 6PE 技术，ISP 可以利用已有的 IPv4 骨干网为分散的 IPv6 网络提供接入能力，使得 IPv6 孤岛穿越 IPv4 骨干网进行通信。
 - 在基于 MPLS 的 6PE 网络中：6PE 和 CE 之间利用 IPv6 路由协议交换 IPv6 路由信息。
 - 6PE 之间利用 MP-BGP 交换 IPv6 路由信息，并为 IPv6 前缀分配 MPLS 标签。
 - IPv4 骨干网络中 6PE 和 P 之间利用 IPv4 路由协议交换路由信息，并利用 MPLS 在 6PE 间建立 LSP。
-
-6PE 不涉及 VPN 路由即 VRF，其目的就是为了让 IPv6 孤岛能通过 IPv4 骨干网传输。所以对于骨干网只需要在 PE 侧进行配置即可，如下拓扑，简单测试下 6PE：
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-">
+6PE 不涉及 VPN 路由即 VRF，其目的就是为了让 IPv6 孤岛能通过 IPv4 骨干网传输。所以对于骨干网只需要在 PE 侧进行配置即可，如下拓扑，简单测试下 6PE：">
 
   
   <script type="application/ld+json">

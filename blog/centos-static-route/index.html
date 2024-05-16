@@ -75,36 +75,10 @@
     <meta property="article:published_time" content="2020-05-11T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-05-11T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="CentOS配置静态路由">
-<meta name="twitter:description" content="查看路由表 
-    
-    
-    
-        #
-            
-    
-
-[root@xuxing ~]# ip route show
-default via 10.75.49.1 dev ens32 proto static metric 100
-10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100
-[root@xuxing ~]# ip route show | column -t   &lt;&lt;&lt; 格式化显示
-default        via  10.75.49.1  dev    ens32   proto  static  metric  100
-10.75.49.0/24  dev  ens32       proto  kernel  scope  link    src     10.75.49.238  metric  100
-[root@xuxing ~]#
-[root@xuxing ~]# ip a
-1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host
-       valid_lft forever preferred_lft forever
-2: ens32: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether 00:0c:29:10:f8:30 brd ff:ff:ff:ff:ff:ff
-    inet 10.75.49.238/24 brd 10.75.49.255 scope global ens32
-       valid_lft forever preferred_lft forever
-    inet6 fe80::b5ca:2b34:2fbe:4a03/64 scope link
-       valid_lft forever preferred_lft forever
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CentOS配置静态路由">
+  <meta name="twitter:description" content="查看路由表 # [root@xuxing ~]# ip route show default via 10.75.49.1 dev ens32 proto static metric 100 10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100 [root@xuxing ~]# ip route show | column -t &lt;&lt;&lt; 格式化显示 default via 10.75.49.1 dev ens32 proto static metric 100 10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100 [root@xuxing ~]# [root@xuxing ~]# ip a 1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1 link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet 127.0.0.1/8 scope host lo valid_lft forever preferred_lft forever inet6 ::1/128 scope host valid_lft forever preferred_lft forever 2: ens32: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000 link/ether 00:0c:29:10:f8:30 brd ff:ff:ff:ff:ff:ff inet 10.75.49.238/24 brd 10.75.49.255 scope global ens32 valid_lft forever preferred_lft forever inet6 fe80::b5ca:2b34:2fbe:4a03/64 scope link valid_lft forever preferred_lft forever ">
 
   
   <script type="application/ld+json">

@@ -83,88 +83,12 @@ RP/0/RP0/CPU0:ios#dir harddisk: Wed Jan 20 06:45:46.006 UTC Directory of harddis
       <meta property="og:see_also" content="https://imxing.info/blog/cxr-exr-install-guide/">
       <meta property="og:see_also" content="https://imxing.info/blog/turboboot-upgrade-asr9000/">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="CISCO 8000 Software Upgrade Method 1(install command)">
-<meta name="twitter:description" content="Upgrade Method 
-    
-    
-    
-        #
-            
-    
-
-Cisco 8000 升级方式和其他 XR 产品类似可大致分为三类：
-
-USB re-image
-PXE re-image
-Install command （本文 log 一下用 install command 升级的过程）
-
-
-
-准备工作 
-    
-    
-    
-        #
-            
-    
-
-下载安装包，以及 optional RPM 包。并 copy 到设备主引擎 harddisk: 中。
-
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-RP/0/RP0/CPU0:ios#dir harddisk:
-Wed Jan 20 06:45:46.006 UTC
-
-Directory of harddisk:
-     15 -rw-r--r--. 1    737280 Jan 20 06:44 8000-optional-rpms.7.0.14.tar     &lt;&lt;&lt;&lt;
- 524289 drwxrwxrwx. 2      4096 Jan 20 05:00 dumper
-     13 -rw-r--r--. 1 987228160 Jan 20 05:53 8000-x64-7.0.14.iso            &lt;&lt;&lt;
-     14 -rw-r--r--. 1   1003520 Jan 20 06:44 8000-k9sec-rpms.7.0.14.tar       &lt;&lt;&lt;&lt;
-3407873 drwxr-xr-x. 2      4096 Jan 20 05:00 showtech
-     11 drwx------. 2     16384 Jan 20 04:49 lost&#43;found
-1310721 drwx------. 3      4096 Jan 20 04:58 ima
-3670017 drwxrwxrwx. 5      4096 Jan 20 05:25 cisco_support
- 655361 drwxr-xr-x. 3      4096 Jan 20 05:00 pam
-2883585 drwxrwxrwx. 2      4096 Jan 20 04:54 shutdown
-     12 -rw-rw-rw-. 1        31 Jan 20 04:54 debug_shell_client.log
- 262145 drwxrwxrwx. 2      4096 Jan 20 04:55 .sppdc
-3932161 drwxrwxrwx. 2      4096 Jan 20 04:54 nvram
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-如上所示， ISO 包中已经包含了一些基础的功能包，如 BGP ISIS OSPF， 还有些存在于 optional 的 tar 包中。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CISCO 8000 Software Upgrade Method 1(install command)">
+  <meta name="twitter:description" content="Upgrade Method # Cisco 8000 升级方式和其他 XR 产品类似可大致分为三类：
+USB re-image PXE re-image Install command （本文 log 一下用 install command 升级的过程） 准备工作 # 下载安装包，以及 optional RPM 包。并 copy 到设备主引擎 harddisk: 中。
+RP/0/RP0/CPU0:ios#dir harddisk: Wed Jan 20 06:45:46.006 UTC Directory of harddisk: 15 -rw-r--r--. 1 737280 Jan 20 06:44 8000-optional-rpms.7.0.14.tar &lt;&lt;&lt;&lt; 524289 drwxrwxrwx. 2 4096 Jan 20 05:00 dumper 13 -rw-r--r--. 1 987228160 Jan 20 05:53 8000-x64-7.0.14.iso &lt;&lt;&lt; 14 -rw-r--r--. 1 1003520 Jan 20 06:44 8000-k9sec-rpms.7.0.14.tar &lt;&lt;&lt;&lt; 3407873 drwxr-xr-x. 2 4096 Jan 20 05:00 showtech 11 drwx------. 2 16384 Jan 20 04:49 lost&#43;found 1310721 drwx------. 3 4096 Jan 20 04:58 ima 3670017 drwxrwxrwx. 5 4096 Jan 20 05:25 cisco_support 655361 drwxr-xr-x. 3 4096 Jan 20 05:00 pam 2883585 drwxrwxrwx. 2 4096 Jan 20 04:54 shutdown 12 -rw-rw-rw-. 1 31 Jan 20 04:54 debug_shell_client.log 262145 drwxrwxrwx. 2 4096 Jan 20 04:55 .sppdc 3932161 drwxrwxrwx. 2 4096 Jan 20 04:54 nvram 如上所示， ISO 包中已经包含了一些基础的功能包，如 BGP ISIS OSPF， 还有些存在于 optional 的 tar 包中。">
 
   
   <script type="application/ld+json">

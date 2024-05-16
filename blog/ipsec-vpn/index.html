@@ -79,47 +79,14 @@ IKE 与 IPSec 的关系图">
     <meta property="article:published_time" content="2021-08-18T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-08-18T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="IPSEC VPN">
-<meta name="twitter:description" content="IKE（网络密钥交换协议） 
-    
-    
-    
-        #
-            
-    
-
-IKE 属于一种混合型协议，由 Internet 安全关联和密钥管理协议（ISAKMP）和两种密钥交换协议 OAKLEY 与 SKEME 组成。IKE 创建在由 ISAKMP 定义的框架上，沿用了 OAKLEY 的密钥交换模式以及 SKEME 的共享和密钥更新技术，还定义了它自己的两种密钥交换方式：主模式和野蛮模式。
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IPSEC VPN">
+  <meta name="twitter:description" content="IKE（网络密钥交换协议） # IKE 属于一种混合型协议，由 Internet 安全关联和密钥管理协议（ISAKMP）和两种密钥交换协议 OAKLEY 与 SKEME 组成。IKE 创建在由 ISAKMP 定义的框架上，沿用了 OAKLEY 的密钥交换模式以及 SKEME 的共享和密钥更新技术，还定义了它自己的两种密钥交换方式：主模式和野蛮模式。
 IKE 协商两种 SA：
-
-IKE(ISAKMP) SA (Phase 1）
-IPSEC SA（Phase 2）
-
-IKE 与 IPSec 的关系如下图所示，对等体之间建立一个 IKE SA 完成身份验证和密钥信息交换后，在 IKE SA 的保护下，根据配置的 AH/ESP 安全协议等参数协商出一对 IPSec SA。此后，对等体间的数据将在 IPSec 隧道中加密传输。
+IKE(ISAKMP) SA (Phase 1） IPSEC SA（Phase 2） IKE 与 IPSec 的关系如下图所示，对等体之间建立一个 IKE SA 完成身份验证和密钥信息交换后，在 IKE SA 的保护下，根据配置的 AH/ESP 安全协议等参数协商出一对 IPSec SA。此后，对等体间的数据将在 IPSec 隧道中加密传输。
 IKE SA 是一个双向的逻辑连接，两个对等体间只建立一个 IKE SA。
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-
-IKE 与 IPSec 的关系图
-
-">
+IKE 与 IPSec 的关系图">
 
   
   <script type="application/ld+json">

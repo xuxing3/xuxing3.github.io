@@ -76,36 +76,10 @@
     <meta property="article:modified_time" content="2019-10-10T00:00:00+00:00">
     <meta property="article:tag" content="Conf">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="IOX Neflow configuration example">
-<meta name="twitter:description" content="sampler-map 
-    
-    
-    
-        #
-            
-    
-
-sampler-map FNF_SAMPLER_MAP
- random 1 out-of 4999
-
-
-exporter-map 
-    
-    
-    
-        #
-            
-    
-
-flow exporter-map FNF_EXPORT_MAP
- version v9
-  options sampler-table timeout 60
-  template timeout 60
- !
- transport udp 20013
- source Loopback0
- destination 10.1.1.1
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IOX Neflow configuration example">
+  <meta name="twitter:description" content="sampler-map # sampler-map FNF_SAMPLER_MAP random 1 out-of 4999 exporter-map # flow exporter-map FNF_EXPORT_MAP version v9 options sampler-table timeout 60 template timeout 60 ! transport udp 20013 source Loopback0 destination 10.1.1.1 ">
 
   
   <script type="application/ld+json">

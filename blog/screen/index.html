@@ -78,46 +78,12 @@
     <meta property="article:modified_time" content="2020-07-25T00:00:00+00:00">
     <meta property="article:tag" content="Linux">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Linux Tips：use screen to manage your session">
-<meta name="twitter:description" content="How to install 
-    
-    
-    
-        #
-            
-    
-
-//Yum
-[root@nso ~]# yum -y install screen
-//rpm
-[root@nso ~]#wget http://mirror-hk.koddos.net/centos/7.8.2003/os/x86_64/
-Packages/screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
-[root@nso ~]#rpm -ivh  screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
-
-
-Some Tips 
-    
-    
-    
-        #
-            
-    
-
-Created a session, -S means special a name for that session.
-[root@xuxing ~]# screen
-[root@xuxing ~]# screen -S test
-Recover your session.
-[root@xuxing ~]# screen -ls
-There are screens on:
-	15741.test	(Detached)
-	5971.pts-2.xuxing	(Detached)
-	4485.pts-2.xuxing	(Detached)
-	4409.pts-0.xuxing	(Detached)
-	25997.9922a	(Detached)
-5 Sockets in /var/run/screen/S-root.
-[root@xuxing ~]# screen -r test    // recover test session
-[detached from 15741.test]
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linux Tips：use screen to manage your session">
+  <meta name="twitter:description" content="How to install # //Yum [root@nso ~]# yum -y install screen //rpm [root@nso ~]#wget http://mirror-hk.koddos.net/centos/7.8.2003/os/x86_64/ Packages/screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm [root@nso ~]#rpm -ivh screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm Some Tips # Created a session, -S means special a name for that session.
+[root@xuxing ~]# screen [root@xuxing ~]# screen -S test Recover your session.
+[root@xuxing ~]# screen -ls There are screens on: 15741.test	(Detached) 5971.pts-2.xuxing	(Detached) 4485.pts-2.xuxing	(Detached) 4409.pts-0.xuxing	(Detached) 25997.9922a	(Detached) 5 Sockets in /var/run/screen/S-root. [root@xuxing ~]# screen -r test // recover test session [detached from 15741.test] ">
 
   
   <script type="application/ld+json">

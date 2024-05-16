@@ -76,32 +76,11 @@ router isis 1 is-type level-2-only net 49.0000.0000.0001.00 distribute link-stat
     <meta property="article:published_time" content="2020-04-21T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-04-21T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="SR-Policy configuration example">
-<meta name="twitter:description" content="ISIS 配置 
-    
-    
-    
-        #
-            
-    
-
-distribute link-state，将 IGP 的数据库导入 SR-TE 的数据库中。
-router isis 1
- is-type level-2-only
- net 49.0000.0000.0001.00
- distribute link-state
- address-family ipv4 unicast
-  metric-style wide
-  mpls traffic-eng level-2-only
-  mpls traffic-eng router-id Loopback0
-  segment-routing mpls
- !
- interface Loopback0
-  address-family ipv4 unicast
-   prefix-sid index 1
-  !
- !
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SR-Policy configuration example">
+  <meta name="twitter:description" content="ISIS 配置 # distribute link-state，将 IGP 的数据库导入 SR-TE 的数据库中。
+router isis 1 is-type level-2-only net 49.0000.0000.0001.00 distribute link-state address-family ipv4 unicast metric-style wide mpls traffic-eng level-2-only mpls traffic-eng router-id Loopback0 segment-routing mpls ! interface Loopback0 address-family ipv4 unicast prefix-sid index 1 ! ! ">
 
   
   <script type="application/ld+json">

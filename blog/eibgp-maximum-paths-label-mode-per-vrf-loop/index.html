@@ -78,63 +78,13 @@ RP/0/0/CPU0:R2-AS56704#show route vrf 1 B 8.8.8.8/32 [20/0] via 10.1.3.3 (nextho
     <meta property="article:published_time" content="2023-11-06T00:00:00+00:00">
     <meta property="article:modified_time" content="2023-11-06T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="eibgp maximum-paths &#43; label mode per-vrf 环路">
-<meta name="twitter:description" content="
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-
-
-环境介绍 
-    
-    
-    
-        #
-            
-    
-
-一个简单的 CE 双上连的 VPN 环境，客户路由 8.8.8.8/32 将送到 r1。
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="eibgp maximum-paths &#43; label mode per-vrf 环路">
+  <meta name="twitter:description" content=" 环境介绍 # 一个简单的 CE 双上连的 VPN 环境，客户路由 8.8.8.8/32 将送到 r1。
 r1 配置 maximum-path，使去往 ce 的流量可以在 r2/r3 之间负载。
 r2/r3 我们都配置了 eibgp maximum-paths，那么 r2/r3 都会存在两条路由负载（一条是从 ibgp 学了 vpn 路由， 一条是从 vrf 下的 ebgp 学来的路由）。
-RP/0/0/CPU0:R2-AS56704#show route vrf 1
-
-B    8.8.8.8/32 [20/0] via 10.1.3.3 (nexthop in vrf default), 00:21:10
-                [20/0] via 10.1.24.4, 00:21:10
-">
+RP/0/0/CPU0:R2-AS56704#show route vrf 1 B 8.8.8.8/32 [20/0] via 10.1.3.3 (nexthop in vrf default), 00:21:10 [20/0] via 10.1.24.4, 00:21:10 ">
 
   
   <script type="application/ld+json">

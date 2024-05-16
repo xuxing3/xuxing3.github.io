@@ -81,59 +81,16 @@ eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统
     <meta property="article:published_time" content="2023-07-07T00:00:00+00:00">
     <meta property="article:modified_time" content="2023-07-07T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="eXR filesystem">
-<meta name="twitter:description" content="研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="eXR filesystem">
+  <meta name="twitter:description" content="研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。
 本文的演示事例使用的硬件 A9K-RSP5-SE 和 eXR 742 作为案例，使用的硬件不同，升级方式不同，磁盘的大小和分区是略微存在出入的。
 如果你需要一个干净的，完全纯净的分区请采用以下方式升级或安装系统:
-
-
 USB/PXE
-
-
 正常 install command 升级,升级完成后 re-image 所有的板卡 (re-image 的操作，类似于 PXE 安装)
-
-
-
-
-eXR 系统简介 
-    
-    
-    
-        #
-            
-    
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-
-如上图，eXR 是在硬件的基础上有一个 host 系统, host 系统里再 run 两个 vm （XR VM 和 sysadmin VM）。
-
-
-[host:~]$ virsh list --all
- Id    Name                           State
-----------------------------------------------------
- 2     sysadmin                       running
- 3     default-sdr--1                 running
-关于不同 VM 之间如何访问可以参考另一篇
-    文章。">
+eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统, host 系统里再 run 两个 vm （XR VM 和 sysadmin VM）。
+[host:~]$ virsh list --all Id Name State ---------------------------------------------------- 2 sysadmin running 3 default-sdr--1 running 关于不同 VM 之间如何访问可以参考另一篇 文章。">
 
   
   <script type="application/ld+json">

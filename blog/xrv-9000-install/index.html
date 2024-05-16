@@ -81,71 +81,16 @@
     <meta property="article:published_time" content="2020-10-16T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-10-16T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="ESXI上安装Cisco XRv 9000">
-<meta name="twitter:description" content="Cisco IOS XRv 9000路由器是一款虚拟路由器，部署在运行64位IOS XR软件的x86服务器硬件上的虚拟机（VM）实例上。Cisco IOS XRv 9000路由器以虚拟化的形式提供传统的提供商边缘（PE）服务以及虚拟路由反射器（vRR）功能 。
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ESXI上安装Cisco XRv 9000">
+  <meta name="twitter:description" content="Cisco IOS XRv 9000路由器是一款虚拟路由器，部署在运行64位IOS XR软件的x86服务器硬件上的虚拟机（VM）实例上。Cisco IOS XRv 9000路由器以虚拟化的形式提供传统的提供商边缘（PE）服务以及虚拟路由反射器（vRR）功能 。
 这里简单记录下在ESXI 上的安装过程。
 首先去官网下载安装包，四个安装包下载其一即可，分别为default or for vRR两类, 然后是否支持VGA接口。
 其中default是用于vPE路由器使用的，vRR是用于路由反射器。
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
 解压缩后有三个安装文件.iso .ova .qcow2. 如果要安装在ESXI上只能用.iso的或者.ova文件。
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
 我这里使用的是.iso， 上传iso到ESXI，创建虚机并配置如下设备：
-- Harddisk ， IDE 类型- CD drive 挂载XRv 9000的iso镜像文件- 添加至少4个网卡，类型为E1000， 第一个是XRv 9000的MGMT接口，第二个第三个暂时没有用到， 从第四个开始是业务口编号从Gi0/0/0/0 开始 - 添加3个串口，第一个为XR console口，第二个为AUX 口，第三个为sysadmin 口.  
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-">
+- Harddisk ， IDE 类型- CD drive 挂载XRv 9000的iso镜像文件- 添加至少4个网卡，类型为E1000， 第一个是XRv 9000的MGMT接口，第二个第三个暂时没有用到， 从第四个开始是业务口编号从Gi0/0/0/0 开始 - 添加3个串口，第一个为XR console口，第二个为AUX 口，第三个为sysadmin 口. ">
 
   
   <script type="application/ld+json">

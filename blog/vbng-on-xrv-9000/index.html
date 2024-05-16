@@ -76,66 +76,11 @@
     <meta property="article:published_time" content="2022-05-27T00:00:00+00:00">
     <meta property="article:modified_time" content="2022-05-27T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="vBNG on XRv 9000">
-<meta name="twitter:description" content="最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。
-
-
-实验准备 
-    
-    
-    
-        #
-            
-    
-
-
-XRv9K: xrv9k-fullk9-x-6.6.3
-
-vBNG 好像不支持在 xrv 的镜像上运行，不支持 RP base 的 session,所以这里用 XRv9K 这个镜像。
-
-
-CSR 1000v: csr1000vng-universalk9.17.03.02-serial
-
-CRS 1000v 用来当 DHCP server/DHCP Client/PPPoE Client, 版本没什么特殊的要求。
-
-
-Freeradius
-
-这里我桥接一个网卡到我的一个 linux 主机上，上面用 docker 起了一个 freeradius。有关 Freeradius 相关的配置过程可以参考我的另一篇文章，
-    Configure ASR9K AAA with Freeradius
-
-
-
-
-
-实验拓扑 
-    
-    
-    
-        #
-            
-    
-
-
-    
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      image-20220527223117714
-    
-  
-
-">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="vBNG on XRv 9000">
+  <meta name="twitter:description" content="最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。
+实验准备 # XRv9K: xrv9k-fullk9-x-6.6.3 vBNG 好像不支持在 xrv 的镜像上运行，不支持 RP base 的 session,所以这里用 XRv9K 这个镜像。 CSR 1000v: csr1000vng-universalk9.17.03.02-serial CRS 1000v 用来当 DHCP server/DHCP Client/PPPoE Client, 版本没什么特殊的要求。 Freeradius 这里我桥接一个网卡到我的一个 linux 主机上，上面用 docker 起了一个 freeradius。有关 Freeradius 相关的配置过程可以参考我的另一篇文章， Configure ASR9K AAA with Freeradius 实验拓扑 # image-20220527223117714 ">
 
   
   <script type="application/ld+json">

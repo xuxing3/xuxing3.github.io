@@ -79,34 +79,10 @@ interact：允许用户交互，如果没有该命令会直接终端 session，�
     <meta property="article:modified_time" content="2020-11-20T00:00:00+00:00">
     <meta property="article:tag" content="Linux">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Shell脚本实现ssh自动登录">
-<meta name="twitter:description" content="[root@xuxing ~]#yum -y install expect
-[root@xuxing ~]# cat 123
-#!/bin/expect
-spawn ssh root@10.124.45.123
-expect &#34;password:&#34;
-send &#34;cisco\r&#34;
-interact
-[root@xuxing ~]# chmod 777 123
-[root@xuxing ~]#
-[root@xuxing ~]#
-[root@xuxing ~]# ./123
-spawn ssh root@10.124.45.123
-root@10.124.45.123&#39;s password:
-Last login: Fri Nov 20 04:53:03 2020 from 10.140.0.42
-[root@nso ~]#
-[root@nso ~]#
-
-
-四个命令的解释 
-    
-    
-    
-        #
-            
-    
-
-send：用于向进程发送字符串
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shell脚本实现ssh自动登录">
+  <meta name="twitter:description" content="[root@xuxing ~]#yum -y install expect [root@xuxing ~]# cat 123 #!/bin/expect spawn ssh root@10.124.45.123 expect &#34;password:&#34; send &#34;cisco\r&#34; interact [root@xuxing ~]# chmod 777 123 [root@xuxing ~]# [root@xuxing ~]# [root@xuxing ~]# ./123 spawn ssh root@10.124.45.123 root@10.124.45.123&#39;s password: Last login: Fri Nov 20 04:53:03 2020 from 10.140.0.42 [root@nso ~]# [root@nso ~]# 四个命令的解释 # send：用于向进程发送字符串
 expect：从进程接收字符串
 spawn：启动新的进程
 interact：允许用户交互，如果没有该命令会直接终端 session，返回之前的终端">

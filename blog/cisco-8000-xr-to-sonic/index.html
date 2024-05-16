@@ -84,55 +84,13 @@ iPXE&gt; boot tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe t
       <meta property="og:see_also" content="https://imxing.info/blog/cxr-exr-install-guide/">
       <meta property="og:see_also" content="https://imxing.info/blog/turboboot-upgrade-asr9000/">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="CISCO 8000 XR to Sonic">
-<meta name="twitter:description" content="Step 1: Reload Cisco 8000 and Config PXE 
-    
-    
-    
-        #
-            
-    
-
-
-
-Reload chassis
-
-
-Enter ESC to BIOS， Select &ldquo;Boot Manager&rdquo; then IPXE
-
-
-iPXE initialising devices...ok
-
-
-
-iPXE 1.0.0&#43; (b965) -- Open Source Network Boot Firmware -- http://ipxe.org
-Features: DNS HTTP HTTPS TFTP EFI ISO9660_grub Menu
-iPXE&gt;
-iPXE&gt; ifopen net0
-iPXE&gt;
-iPXE&gt;
-iPXE&gt; ifstat
-net0: 08:4f:a9:5c:fb:c9 using i210 on PCI02:00.0 (open)
-  [Link:up, TX:0 TXE:0 RX:10 RXE:3]
-  [RXE: 1 x &#34;The socket is not connected (http://ipxe.org/380f6093)&#34;]
-  [RXE: 1 x &#34;Error 0x440e6083 (http://ipxe.org/440e6083)&#34;]
-  [RXE: 1 x &#34;Operation not supported (http://ipxe.org/3c086083)&#34;]
-net1: 00:a0:c9:00:00:00 using x557 on PCI04:00.0 (closed)
-  [Link:down, TX:0 TXE:0 RX:0 RXE:0]
-  [Link status: Down (http://ipxe.org/38086193)]
-net2: 08:4f:a9:5c:fb:ca using x557 on PCI04:00.1 (closed)
-  [Link:down, TX:0 TXE:0 RX:0 RXE:0]
-  [Link status: Down (http://ipxe.org/38086193)]
-iPXE&gt;
-iPXE&gt; set net0/ip 10.75.49.7
-iPXE&gt; set net0/netmask 255.255.255.0
-iPXE&gt; set net0/gateway 10.75.49.1
-iPXE&gt; ifopen net0
-3. BOOT the ONIE image.
-iPXE&gt; boot tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe
-tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe... 94%
-                                                                    ok
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CISCO 8000 XR to Sonic">
+  <meta name="twitter:description" content="Step 1: Reload Cisco 8000 and Config PXE # Reload chassis
+Enter ESC to BIOS， Select “Boot Manager” then IPXE
+iPXE initialising devices...ok iPXE 1.0.0&#43; (b965) -- Open Source Network Boot Firmware -- http://ipxe.org Features: DNS HTTP HTTPS TFTP EFI ISO9660_grub Menu iPXE&gt; iPXE&gt; ifopen net0 iPXE&gt; iPXE&gt; iPXE&gt; ifstat net0: 08:4f:a9:5c:fb:c9 using i210 on PCI02:00.0 (open) [Link:up, TX:0 TXE:0 RX:10 RXE:3] [RXE: 1 x &#34;The socket is not connected (http://ipxe.org/380f6093)&#34;] [RXE: 1 x &#34;Error 0x440e6083 (http://ipxe.org/440e6083)&#34;] [RXE: 1 x &#34;Operation not supported (http://ipxe.org/3c086083)&#34;] net1: 00:a0:c9:00:00:00 using x557 on PCI04:00.0 (closed) [Link:down, TX:0 TXE:0 RX:0 RXE:0] [Link status: Down (http://ipxe.org/38086193)] net2: 08:4f:a9:5c:fb:ca using x557 on PCI04:00.1 (closed) [Link:down, TX:0 TXE:0 RX:0 RXE:0] [Link status: Down (http://ipxe.org/38086193)] iPXE&gt; iPXE&gt; set net0/ip 10.75.49.7 iPXE&gt; set net0/netmask 255.255.255.0 iPXE&gt; set net0/gateway 10.75.49.1 iPXE&gt; ifopen net0 3. BOOT the ONIE image.
+iPXE&gt; boot tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe... 94% ok ">
 
   
   <script type="application/ld+json">

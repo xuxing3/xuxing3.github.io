@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://imxing.info/</loc>
-    <lastmod>2024-05-02T12:22:37+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://imxing.info/blog/eem-to-collect-info/</loc>
-    <lastmod>2024-05-02T12:22:37+08:00</lastmod>
+    <lastmod>2024-05-16T18:26:53+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://imxing.info/blog/</loc>
+    <lastmod>2024-05-16T18:26:53+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://imxing.info/blog/tig/</loc>
+    <lastmod>2024-05-16T18:26:53+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://imxing.info/blog/eem-to-collect-info/</loc>
     <lastmod>2024-05-02T12:22:37+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

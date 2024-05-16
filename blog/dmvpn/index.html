@@ -77,64 +77,12 @@ R2_spoke#show run int tunnel 0 Building configuration... Current configuration :
     <meta property="article:published_time" content="2021-08-03T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-08-03T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="DMVPN">
-<meta name="twitter:description" content="DMVPN Phase 1: 
-    
-    
-    
-        #
-            
-    
-
-
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-R1 配置:
-R1_HUB#show run int tunnel 0
-Building configuration...
-
-Current configuration : 219 bytes
-!
-interface Tunnel0
- ip address 172.168.123.1 255.255.255.0
- no ip redirects
- ip nhrp map multicast dynamic
- ip nhrp network-id 1
- tunnel source Ethernet0/0
- tunnel mode gre multipoint
-end
-R2 / R3 配置:
-R2_spoke#show run int tunnel 0
-Building configuration...
-
-Current configuration : 241 bytes
-!
-interface Tunnel0
- ip address 172.168.123.2 255.255.255.0
- ip nhrp map 172.168.123.1 10.1.14.1
- ip nhrp map multicast 10.1.14.1
- ip nhrp network-id 1
- ip nhrp nhs 172.168.123.1
- tunnel source Ethernet0/0
- tunnel destination 10.1.14.1
-end
-">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DMVPN">
+  <meta name="twitter:description" content="DMVPN Phase 1: # R1 配置:
+R1_HUB#show run int tunnel 0 Building configuration... Current configuration : 219 bytes ! interface Tunnel0 ip address 172.168.123.1 255.255.255.0 no ip redirects ip nhrp map multicast dynamic ip nhrp network-id 1 tunnel source Ethernet0/0 tunnel mode gre multipoint end R2 / R3 配置:
+R2_spoke#show run int tunnel 0 Building configuration... Current configuration : 241 bytes ! interface Tunnel0 ip address 172.168.123.2 255.255.255.0 ip nhrp map 172.168.123.1 10.1.14.1 ip nhrp map multicast 10.1.14.1 ip nhrp network-id 1 ip nhrp nhs 172.168.123.1 tunnel source Ethernet0/0 tunnel destination 10.1.14.1 end ">
 
   
   <script type="application/ld+json">

@@ -80,40 +80,15 @@ XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者�
     <meta property="article:published_time" content="2022-11-09T00:00:00+00:00">
     <meta property="article:modified_time" content="2022-11-09T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Simple ZTP Test on XR Router">
-<meta name="twitter:description" content="什么是 ZTP 
-    
-    
-    
-        #
-            
-    
-
-Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Simple ZTP Test on XR Router">
+  <meta name="twitter:description" content="什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。
 ZTP 存在两种不同的操作：
-
-下载应用配置到网络设备
-下载并执行一个 shell/python 脚本，shell/python 脚本中再包含配置的下载，软件版本检查，升级等操作。
-
-要拥有一个有效的 ZTP 环境，DHCP 和 Web 服务器是必须的。
+下载应用配置到网络设备 下载并执行一个 shell/python 脚本，shell/python 脚本中再包含配置的下载，软件版本检查，升级等操作。 要拥有一个有效的 ZTP 环境，DHCP 和 Web 服务器是必须的。
 在 ZTP 期间，DHCP 服务器提供引导文件名的路径。路由器下载此文件，如果下载的文件内容以 !! IOS XR ，它被认为是一个配置文件，ZTP 对配置文件执行“apply_config”操作。如果下载的文件内容以#! /bin/bash, #! /bin/sh 或 #!/usr/bin/python 它被视为脚本文件，ZTP 执行该脚本。
-
-
-ZTP Work Flow 
-    
-    
-    
-        #
-            
-    
-
-ZTP 工作流程如下:
-
-XR Router 初始化 ZTP,发送 DHCP 请求
-DHCP server 返回配置文件或者脚本文件
-路由器请求并下载脚本文件或者配置文件
-路由器根据脚本文件下载镜像或者 commit 下载的配置文件.
-">
+ZTP Work Flow # ZTP 工作流程如下:
+XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者脚本文件 路由器请求并下载脚本文件或者配置文件 路由器根据脚本文件下载镜像或者 commit 下载的配置文件. ">
 
   
   <script type="application/ld+json">

@@ -76,27 +76,10 @@
     <meta property="article:modified_time" content="2020-11-01T00:00:00+00:00">
     <meta property="article:tag" content="Mpls-Te">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Notes about reoptimize timer">
-<meta name="twitter:description" content="reoptimize timers delay cleanup 60
-reoptimize timers delay installation 60
-reoptimize timers delay path-protection 50 
-
-
-Install delay:
-How much time the head end waits before it &#34;activates&#34; the reoptimized LSP after receiving the RESV. This gives some time to mid/tail nodes to program their fowardng.
-
-Cleanup delay:
-How much time the &#34;old&#34; LSP is kept around after the new reoptimize LSP has been installed. This makes sure there&#39;s no longer and traffic flowing over the &#34;old&#34; LSP before tearing it down
-
-Path-protection 
-Delays the time between path protection switchover event and tunnel reoptimization. 
-
-//default values:
-
-cleanup delay: 20
-installation delay: 20
-path-protection: 180 
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Notes about reoptimize timer">
+  <meta name="twitter:description" content="reoptimize timers delay cleanup 60 reoptimize timers delay installation 60 reoptimize timers delay path-protection 50 Install delay: How much time the head end waits before it &#34;activates&#34; the reoptimized LSP after receiving the RESV. This gives some time to mid/tail nodes to program their fowardng. Cleanup delay: How much time the &#34;old&#34; LSP is kept around after the new reoptimize LSP has been installed. This makes sure there&#39;s no longer and traffic flowing over the &#34;old&#34; LSP before tearing it down Path-protection Delays the time between path protection switchover event and tunnel reoptimization. //default values: cleanup delay: 20 installation delay: 20 path-protection: 180 ">
 
   
   <script type="application/ld+json">

@@ -98,23 +98,33 @@ MIB Object NameMIB Object NameValues used in the exampleccCopyEntryRowStatus1.3.
     <meta property="article:published_time" content="2019-10-04T00:00:00+00:00">
     <meta property="article:modified_time" content="2019-10-04T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="CISCO XR copy configuration to or from TFTP by SNMP">
-<meta name="twitter:description" content="遇到一个这样的需求，想使用 SNMP 的方式去 copy 设备的配置到 TFTP server。查了点资料发现真存在这种方式，虽然感觉这种功能很鸡肋，但还是记录以下以备查询。
-
-
-Snmpwalk/snmpset 
-    
-    
-    
-        #
-            
-    
-
-Snmpwalk 是一个很好用的小工具，平常查 OID 值的时候经常会遇到，Centos 的话直接用 yum 进行安装就行了。
-yum -y install net-snmp net-snmp-utils
-snmpwalk -v 2c -c cisco 10.75.49.13 1.3.6.1.2.1.1.3.0
-SNMP copy 配置这个功能使用的是 CISCO-CONFIG-COPY-MIB，目前在大部分的 IOS / IOS XR 上看起来都是支持的，且需要 rw 权限。
-MIB Object NameMIB Object NameValues used in the exampleccCopyEntryRowStatus1.3.6.1.4.1.9.9.96.1.1.1.1.141:active2:notInService3:notReady4:createAndGo5:createAndWait6:destroyccCopyProtocol1.3.6.1.4.1.9.9.96.1.1.1.1.21:tftp2:ftp3:rcp4:scp5:sftpccCopySourceFileType1.3.6.1.4.1.9.9.96.1.1.1.1.31.networkFile2.iosFile3.startupConfig4.runningConfig5.terminalccCopyDestFileType1.3.6.1.4.1.9.9.96.1.1.1.1.41.networkFile2.iosFile3.startupConfig4.runningConfig5.terminalccCopyServerAddress1.3.6.1.4.1.9.9.96.1.1.1.1.5ccCopyFileName1.3.6.1.4.1.9.9.96.1.1.1.1.6ccCopyState1.3.6.1.4.1.9.9.96.1.1.1.1.101:waiting2:running3:successful4:failed">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CISCO XR copy configuration to or from TFTP by SNMP">
+  <meta name="twitter:description" content="遇到一个这样的需求，想使用 SNMP 的方式去 copy 设备的配置到 TFTP server。查了点资料发现真存在这种方式，虽然感觉这种功能很鸡肋，但还是记录以下以备查询。
+Snmpwalk/snmpset # Snmpwalk 是一个很好用的小工具，平常查 OID 值的时候经常会遇到，Centos 的话直接用 yum 进行安装就行了。
+yum -y install net-snmp net-snmp-utils snmpwalk -v 2c -c cisco 10.75.49.13 1.3.6.1.2.1.1.3.0 SNMP copy 配置这个功能使用的是 CISCO-CONFIG-COPY-MIB，目前在大部分的 IOS / IOS XR 上看起来都是支持的，且需要 rw 权限。
+MIB Object NameMIB Object NameValues used in the exampleccCopyEntryRowStatus1.3.6.1.4.1.9.9.96.1.1.1.1.141:active
+2:notInService
+3:notReady
+4:createAndGo
+5:createAndWait
+6:destroyccCopyProtocol1.3.6.1.4.1.9.9.96.1.1.1.1.21:tftp
+2:ftp
+3:rcp
+4:scp
+5:sftpccCopySourceFileType1.3.6.1.4.1.9.9.96.1.1.1.1.31.networkFile
+2.iosFile
+3.startupConfig
+4.runningConfig
+5.terminalccCopyDestFileType1.3.6.1.4.1.9.9.96.1.1.1.1.41.networkFile
+2.iosFile
+3.startupConfig
+4.runningConfig
+5.terminalccCopyServerAddress1.3.6.1.4.1.9.9.96.1.1.1.1.5ccCopyFileName1.3.6.1.4.1.9.9.96.1.1.1.1.6ccCopyState1.3.6.1.4.1.9.9.96.1.1.1.1.101:waiting
+2:running
+3:successful
+4:failed">
 
   
   <script type="application/ld+json">

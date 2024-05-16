@@ -85,63 +85,20 @@ FCS(CRC): 4 bytes">
     <meta property="article:published_time" content="2023-02-14T00:00:00+00:00">
     <meta property="article:modified_time" content="2023-02-14T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="关于iox上“show interface”和“show policy -map”计数的一些解释">
-<meta name="twitter:description" content="
-comments by &lsquo;zhihua&rsquo;
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="关于iox上“show interface”和“show policy -map”计数的一些解释">
+  <meta name="twitter:description" content=" comments by ‘zhihua’
 对于 ASR9000 来说 ：
-&ldquo;show interfaces&rdquo; and &ldquo;show policy-map interfaces&rdquo; show L2 frame size.
-&ldquo;show interfaces&rdquo; does not include FCS bytes, but &ldquo;show policy-map interfaces&rdquo; includes FCS bytes(SIP700 是个例外)
-
-
-
-L1 frame size 和 L2 frame size 
-    
-    
-    
-        #
-            
-    
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-如上图就是一个以太网帧的物理层具体所包含的内容。
-
-
+“show interfaces” and “show policy-map interfaces” show L2 frame size.
+“show interfaces” does not include FCS bytes, but “show policy-map interfaces” includes FCS bytes(SIP700 是个例外)
+L1 frame size 和 L2 frame size # 如上图就是一个以太网帧的物理层具体所包含的内容。
 Preamble: 前同步码 7 bytes
-
-
 SFD: start frame delimiter 1 byte 帧开始定界符
-
-
 Dst MAC: 6 bytes
-
-
 Src MAC: 6 bytes
-
-
 EtherType: 2 bytes
-
-
-FCS(CRC): 4 bytes
-
-">
+FCS(CRC): 4 bytes">
 
   
   <script type="application/ld+json">

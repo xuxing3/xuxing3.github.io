@@ -78,62 +78,18 @@ git clone https://github.com/xuxing3/bigmuddy-network-telemetry-pipeline.git
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2021-05-19T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-05-19T00:00:00+00:00">
+      <meta property="og:see_also" content="https://imxing.info/blog/tig/">
+      <meta property="og:see_also" content="https://imxing.info/blog/anx-a-tools-to-help-test-telemetry/">
+      <meta property="og:see_also" content="https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Telemetry Demo">
-<meta name="twitter:description" content="记录一下一个 Telemetry 的 demo，使用 pipeline&#43;influxDB&#43;Grafana，构建一个可视化监控。
-
-pipeline: 用于采集设备的 telemetry 信息。
-influxDB: 使用数据库的方式存储 telemetry 采集到的信息
-Grafana: 将数据库采集的信息图像化输出.
-
-
-
-安装与配置 
-    
-    
-    
-        #
-            
-    
-
-
-
-Pipeline: 
-    
-    
-    
-        #
-            
-    
-
-使用的是“bigmuddy-network-telemetry-pipeline”，bigmuddy-network-telemetry-pipeline 这个项目被存档了， 我 fork 了下， 所以可以使用以下的命令去 get 这个项目：
-git clone 
-    https://github.com/xuxing3/bigmuddy-network-telemetry-pipeline.git
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Telemetry Demo">
+  <meta name="twitter:description" content="记录一下一个 Telemetry 的 demo，使用 pipeline&#43;influxDB&#43;Grafana，构建一个可视化监控。
+pipeline: 用于采集设备的 telemetry 信息。 influxDB: 使用数据库的方式存储 telemetry 采集到的信息 Grafana: 将数据库采集的信息图像化输出. 安装与配置 # Pipeline: # 使用的是“bigmuddy-network-telemetry-pipeline”，bigmuddy-network-telemetry-pipeline 这个项目被存档了， 我 fork 了下， 所以可以使用以下的命令去 get 这个项目：
+git clone https://github.com/xuxing3/bigmuddy-network-telemetry-pipeline.git
 配置文件如下：
-[root@xuxing239 bigmuddy-network-telemetry-pipeline]# grep -v ^# pipeline-influxdb.conf  | grep -v ^$
-[default]
-id = pipeline
-metamonitoring_prometheus_resource = /metrics
-metamonitoring_prometheus_server = :8989
-[testbed]
-stage = xport_input
-type = tcp
-encap = st
-listen = :5432           &lt;&lt;&lt;&lt; 监听5432 端口， 可以更改
-[inspector]
-stage = xport_output
-type = tap
-file = /opt/dump-xuxing.txt    &lt;&lt;&lt;&lt;&lt;采集到的 telemetry的数据存储的位置
-datachanneldepth = 1000
-[metrics_influx]
-stage = xport_output
-type = metrics
-file = metrics-nms.json        &lt;&lt;&lt;&lt;&lt;&lt;  将采集到telemetry 的信息使用该文件定义的格式， 格式化输出到influxdb
-dump = metrics-dump-xuxing.txt    &lt;&lt;&lt;&lt; 格式化输出之前会dump一份数据存储在该文件中
-output = influx
-influx = http://10.70.80.197:8086       &lt;&lt;&lt;&lt;&lt;&lt;&lt;  influxdb, 默认端口为8086
-database = mdt_db                       &lt;&lt;&lt;&lt;&lt;&lt;&lt; 定义infludb 那个数据库用于存储telemetry信息
-">
+[root@xuxing239 bigmuddy-network-telemetry-pipeline]# grep -v ^# pipeline-influxdb.conf | grep -v ^$ [default] id = pipeline metamonitoring_prometheus_resource = /metrics metamonitoring_prometheus_server = :8989 [testbed] stage = xport_input type = tcp encap = st listen = :5432 &lt;&lt;&lt;&lt; 监听5432 端口， 可以更改 [inspector] stage = xport_output type = tap file = /opt/dump-xuxing.txt &lt;&lt;&lt;&lt;&lt;采集到的 telemetry的数据存储的位置 datachanneldepth = 1000 [metrics_influx] stage = xport_output type = metrics file = metrics-nms.json &lt;&lt;&lt;&lt;&lt;&lt; 将采集到telemetry 的信息使用该文件定义的格式， 格式化输出到influxdb dump = metrics-dump-xuxing.txt &lt;&lt;&lt;&lt; 格式化输出之前会dump一份数据存储在该文件中 output = influx influx = http://10.70.80.197:8086 &lt;&lt;&lt;&lt;&lt;&lt;&lt; influxdb, 默认端口为8086 database = mdt_db &lt;&lt;&lt;&lt;&lt;&lt;&lt; 定义infludb 那个数据库用于存储telemetry信息 ">
 
   
   <script type="application/ld+json">
@@ -830,6 +786,52 @@ database = mdt_db                       &lt;&lt;&lt;&lt;&lt;&lt;&lt; 定义influ
       <div class="min-w-0 min-h-0 max-w-fit">
         
         
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5"  open >
+    
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        telemetry - This article is part of a series.
+    </summary>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/">
+            Part 1: Telemetry simple configuration in Cisco XR devices
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://imxing.info/blog/anx-a-tools-to-help-test-telemetry/">
+            Part 2: ANX-a tool to test telemetry
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 3: This Article
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://imxing.info/blog/tig/">
+            Part 4: Telemetry-tig
+        </a>
+    </div>
+    
+    
+
+
+</details>
+
 
 
         <div class="article-content max-w-prose mb-20">
@@ -1128,6 +1130,52 @@ database = mdt_db                       &lt;&lt;&lt;&lt;&lt;&lt;&lt; 定义influ
         
 
         
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
+    
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        telemetry - This article is part of a series.
+    </summary>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/">
+            Part 1: Telemetry simple configuration in Cisco XR devices
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://imxing.info/blog/anx-a-tools-to-help-test-telemetry/">
+            Part 2: ANX-a tool to test telemetry
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 3: This Article
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://imxing.info/blog/tig/">
+            Part 4: Telemetry-tig
+        </a>
+    </div>
+    
+    
+
+
+</details>
+
         
   
   <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">

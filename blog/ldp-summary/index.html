@@ -82,42 +82,16 @@
     <meta property="article:published_time" content="2020-05-06T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-05-06T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="LDP 标签分配协议">
-<meta name="twitter:description" content="标签发布方式（Label Advertisement Mode） 
-    
-    
-    
-        #
-            
-    
-
-下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="LDP 标签分配协议">
+  <meta name="twitter:description" content="标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。
 下游按需方式 DoD（Downstream on Demand）：对于一个特定的 FEC，LSR 获得标签请求消息之后才进行标签分配与分发。
-
-
-标签分配控制方式（Label Distribution Control Mode） 
-    
-    
-    
-        #
-            
-    
-
-独立标签分配控制方式（Independent）：本地 LSR 可以自主地分配一个标签绑定到某个 FEC，并通告给上游 LSR，而无需等待下游的标
+标签分配控制方式（Label Distribution Control Mode） # 独立标签分配控制方式（Independent）：本地 LSR 可以自主地分配一个标签绑定到某个 FEC，并通告给上游 LSR，而无需等待下游的标
 签。
 有序标签分配控制方式（Ordered）：对于 LSR 上某个 FEC 的标签映射，只有当该 LSR 已经具有此 FEC 下一跳的标签映射消息、或者
 该 LSR 就是此 FEC 的出节点时，该 LSR 才可以向上游发送此 FEC 的标签映射。
-
-
-标签保持方式（Label Retention Mode） 
-    
-    
-    
-        #
-            
-    
-
-自由标签保持方式（Liberal）：对于从邻居 LSR 收到的标签映射，无论邻居 LSR 是不是自己的下一跳都保留。
+标签保持方式（Label Retention Mode） # 自由标签保持方式（Liberal）：对于从邻居 LSR 收到的标签映射，无论邻居 LSR 是不是自己的下一跳都保留。
 保守标签保持方式（Conservative）：对于从邻居 LSR 收到的标签映射，只有当邻居 LSR 是自己的下一跳时才保留。">
 
   

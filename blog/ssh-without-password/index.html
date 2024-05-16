@@ -76,48 +76,11 @@
     <meta property="article:published_time" content="2020-10-18T00:00:00+00:00">
     <meta property="article:modified_time" content="2020-10-18T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="SSH 免密登陆">
-<meta name="twitter:description" content="
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-免密登录设置：
-
-进入到我的 home 目录   cd ~/.ssh
-生成 ssh 免登陆秘钥 ssh-keygen -t rsa （四个回车）执行完这个命令后，会生成两个文件 id_rsa（私钥）、id_rsa.pub（公钥）
-将公钥拷贝到要免登陆的机器上
-将公钥添加到要免登陆机器的.ssh 文件夹下的 authorized_keys 中,确保该文件权限为 600. cat id_rsa.pub &raquo; authorized_keys
-
-//SSH client
-[root@localhost ~]# cd .ssh
-[root@localhost .ssh]# ls
-authorized_keys  known_hosts
-[root@localhost .ssh]# ssh-keygen -t rsa     &lt;&lt;&lt; 默认是2024 -d 可以修改 -C 加注释
-[root@localhost .ssh]# ls
-authorized_keys  id_rsa  id_rsa.pub  known_hosts
-[root@localhost .ssh]# scp id_rsa.pub root@10.124.45.85:/root
-root@10.124.45.85&#39;s password:
-id_rsa.pub                                                                                           100%  408   134.2KB/s   00:00
-
-//SSH server
-[root@localhost ~]# cat id_rsa.pub &gt;&gt; .ssh/authorized_keys
-[root@localhost ~]#
-">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SSH 免密登陆">
+  <meta name="twitter:description" content=" 免密登录设置：
+进入到我的 home 目录 cd ~/.ssh 生成 ssh 免登陆秘钥 ssh-keygen -t rsa （四个回车）执行完这个命令后，会生成两个文件 id_rsa（私钥）、id_rsa.pub（公钥） 将公钥拷贝到要免登陆的机器上 将公钥添加到要免登陆机器的.ssh 文件夹下的 authorized_keys 中,确保该文件权限为 600. cat id_rsa.pub » authorized_keys //SSH client [root@localhost ~]# cd .ssh [root@localhost .ssh]# ls authorized_keys known_hosts [root@localhost .ssh]# ssh-keygen -t rsa &lt;&lt;&lt; 默认是2024 -d 可以修改 -C 加注释 [root@localhost .ssh]# ls authorized_keys id_rsa id_rsa.pub known_hosts [root@localhost .ssh]# scp id_rsa.pub root@10.124.45.85:/root root@10.124.45.85&#39;s password: id_rsa.pub 100% 408 134.2KB/s 00:00 //SSH server [root@localhost ~]# cat id_rsa.pub &gt;&gt; .ssh/authorized_keys [root@localhost ~]# ">
 
   
   <script type="application/ld+json">

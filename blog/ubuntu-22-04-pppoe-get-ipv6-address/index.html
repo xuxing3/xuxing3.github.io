@@ -76,112 +76,11 @@ rory@rory-22-04:~$ reboot Setup PPP # Step 1: Open NM connection editor # rory@r
     <meta property="article:published_time" content="2022-08-30T00:00:00+00:00">
     <meta property="article:modified_time" content="2022-08-30T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Ubuntu 22.04 PPPOE GET IPv6 address">
-<meta name="twitter:description" content="Update/Upgrade Packet 
-    
-    
-    
-        #
-            
-    
-
-!!!! important , must be done.
-
-rory@rory-22-04:~$ sudo apt update
-rory@rory-22-04:~$ sudo apt upgrade
-
-
-Modify Config to enable ipv6 support 
-    
-    
-    
-        #
-            
-    
-
-
-
-/etc/ppp/options 
-    
-    
-    
-        #
-            
-    
-
-!!!! add below under config file
-rory@rory-22-04:~$ grep ipv6 /etc/ppp/options
-&#43;ipv6 ipv6cp-use-ipaddr
-
-
-/etc/sysctl.d/10-ipv6-privacy.conf 
-    
-    
-    
-        #
-            
-    
-
-!!!! Make sure below config exsit under file
-rory@rory-22-04:~$ grep ipv6 /etc/sysctl.d/10-ipv6-privacy.conf
-net.ipv6.conf.all.use_tempaddr = 2
-net.ipv6.conf.default.use_tempaddr = 2
-
-
-/etc/sysctl.conf 
-    
-    
-    
-        #
-            
-    
-
-rory@rory-22-04:~$ grep ipv6 /etc/sysctl.conf
-net.ipv6.conf.all.forwarding=1
-net.ipv6.conf.ppp0.accept_ra=2
-After take all above action, reboot your pc to make config take effect.
-rory@rory-22-04:~$ reboot
-
-
-Setup PPP 
-    
-    
-    
-        #
-            
-    
-
-
-
-Step 1: Open NM connection editor 
-    
-    
-    
-        #
-            
-    
-
-
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-rory@rory-vm:~$ sudo nm-connection-editor
-">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ubuntu 22.04 PPPOE GET IPv6 address">
+  <meta name="twitter:description" content="Update/Upgrade Packet # !!!! important , must be done. rory@rory-22-04:~$ sudo apt update rory@rory-22-04:~$ sudo apt upgrade Modify Config to enable ipv6 support # /etc/ppp/options # !!!! add below under config file rory@rory-22-04:~$ grep ipv6 /etc/ppp/options &#43;ipv6 ipv6cp-use-ipaddr /etc/sysctl.d/10-ipv6-privacy.conf # !!!! Make sure below config exsit under file rory@rory-22-04:~$ grep ipv6 /etc/sysctl.d/10-ipv6-privacy.conf net.ipv6.conf.all.use_tempaddr = 2 net.ipv6.conf.default.use_tempaddr = 2 /etc/sysctl.conf # rory@rory-22-04:~$ grep ipv6 /etc/sysctl.conf net.ipv6.conf.all.forwarding=1 net.ipv6.conf.ppp0.accept_ra=2 After take all above action, reboot your pc to make config take effect.
+rory@rory-22-04:~$ reboot Setup PPP # Step 1: Open NM connection editor # rory@rory-vm:~$ sudo nm-connection-editor ">
 
   
   <script type="application/ld+json">

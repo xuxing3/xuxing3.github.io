@@ -89,157 +89,24 @@ custom_feature_srv6_enable. &#34;3&#34; means base mode &#39;5&#39; means dual m
     <meta property="article:published_time" content="2021-04-21T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-04-21T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="SRv6 simple configuration example(uSID)">
-<meta name="twitter:description" content="最近测试了 SRv6,顺便记录下， SRv6 具体是什么？对比我们平常的 MPLS VPN 的网络，数据转发采用的 MPLS 标签， 那 MPLS 标签常见的可以是 LDP 或者 SR 分配的； SRv6 使用的 IPv6 的报头进行转发，在 IPv6 Header 中新增 SRH(Segment Routing Header)用来记录 128bit IPv6 地址格式的 SRv6 SID（segment ID）如下图所示：
-
-
-
-
-
   
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SRv6 simple configuration example(uSID)">
+  <meta name="twitter:description" content="最近测试了 SRv6,顺便记录下， SRv6 具体是什么？对比我们平常的 MPLS VPN 的网络，数据转发采用的 MPLS 标签， 那 MPLS 标签常见的可以是 LDP 或者 SR 分配的； SRv6 使用的 IPv6 的报头进行转发，在 IPv6 Header 中新增 SRH(Segment Routing Header)用来记录 128bit IPv6 地址格式的 SRv6 SID（segment ID）如下图所示：
 RFC2460
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
 上面所说的为 Base format 的 SRv6 报文， 还有一种 Micro-segment 格式的报文。两种封装的区别如下。
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
 Micro-segment 采用的是 32bit &#43; 16bit 的形式，所以它的 locator 是/48 位。
 Base- format 的 locator 是/64 位
-
-
-SRv6 Segment 
-    
-    
-    
-        #
-            
-    
-
-
-
-Locator 
-    
-    
-    
-        #
-            
-    
-
-128Bit 的 IPv6 SID 由两部分组成， 其中前 64bit/48bit 为 Locator。
+SRv6 Segment # Locator # 128Bit 的 IPv6 SID 由两部分组成， 其中前 64bit/48bit 为 Locator。
 Base- forma 的 tLocator 的前 40Bit 必须在 SRv6 domain 中一致；余下的 24bit 为 node-id， 用于表示 node，不能为 0 且 SRv6 域内 node-id 不能一致。
-
-
-
-
-
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-    
-  
-
-
-##### Base- format
-segment-routing
- srv6
-  locators
-   locator r7
-    prefix 2002:0:0:7::/64   &lt;&lt;&lt;&lt;&lt;
-
-##### uSID
-
-  locators
-   locator MAIN
-    micro-segment behavior unode psp-usd.     &lt;&lt;&lt;&lt;&lt;
-    prefix fcbb:bb00:1::/48
-在 NCS55 平台中有两种 profile， 用来切换这两种封装， 每次更换封装都需要重启板卡。
+##### Base- format segment-routing srv6 locators locator r7 prefix 2002:0:0:7::/64 &lt;&lt;&lt;&lt;&lt; ##### uSID locators locator MAIN micro-segment behavior unode psp-usd. &lt;&lt;&lt;&lt;&lt; prefix fcbb:bb00:1::/48 在 NCS55 平台中有两种 profile， 用来切换这两种封装， 每次更换封装都需要重启板卡。
 hw-module profile segment-routing srv6 mode base
 hw-module profile segment-routing srv6 mode micro-segment format f3216
 在 771 版本引入了双模式“hw-module profile segment-routing srv6 mode base-and-micro-segment-f3216 ”
 7.10.1 默认设备为双模式， 不需要添加配置。
 使用 diagshell 命令可以 get 到芯片目前设置的是什么模式，
-`show controllers fia diagshell 0 &ldquo;config show&rdquo; location 0/0/CPU0 | i srv6”`
- custom_feature_srv6_enable.   &#34;3&#34; means base mode
-                                                        &#39;5&#39; means dual mode
-ps:  usid忘记是什么了, 想起来再更改。
-ASR9K 只需要更改配置即可在这两个模式间切换， 不需要额外的 hw-module profile 命令">
+`show controllers fia diagshell 0 “config show” location 0/0/CPU0 | i srv6”`
+custom_feature_srv6_enable. &#34;3&#34; means base mode &#39;5&#39; means dual mode ps: usid忘记是什么了, 想起来再更改。 ASR9K 只需要更改配置即可在这两个模式间切换， 不需要额外的 hw-module profile 命令">
 
   
   <script type="application/ld+json">

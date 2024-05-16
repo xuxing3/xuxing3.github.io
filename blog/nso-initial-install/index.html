@@ -76,32 +76,11 @@ Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@lo
     <meta property="article:published_time" content="2019-10-31T00:00:00+00:00">
     <meta property="article:modified_time" content="2019-10-31T00:00:00+00:00">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="NSO-Initial Install">
-<meta name="twitter:description" content="
-Download NSO from 
-    Cisco Website
-Make sure java and python have been install in your server.
-
-Java -version should indicate a java version of “1.7” or higher.Python2 needs to be version 2.7.5 or higher. For Python3, the version needs to be 3.4 or higher.
-
-
-Install Java 
-    
-    
-    
-        #
-            
-    
-
-[root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz
-[root@localhost ~]#  mkdir /usr/java
-[root@localhost ~]# mv jdk1.8.0_202/ /usr/java
-[root@localhost ~]# vi /etc/profile
-
-export JAVA_HOME=/usr/java/jdk1.8.0_202
-export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-export PATH=$PATH:$JAVA_HOME/bin
-">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NSO-Initial Install">
+  <meta name="twitter:description" content=" Download NSO from Cisco Website Make sure java and python have been install in your server. Java -version should indicate a java version of “1.7” or higher.Python2 needs to be version 2.7.5 or higher. For Python3, the version needs to be 3.4 or higher.
+Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@localhost ~]# mkdir /usr/java [root@localhost ~]# mv jdk1.8.0_202/ /usr/java [root@localhost ~]# vi /etc/profile export JAVA_HOME=/usr/java/jdk1.8.0_202 export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export PATH=$PATH:$JAVA_HOME/bin ">
 
   
   <script type="application/ld+json">
