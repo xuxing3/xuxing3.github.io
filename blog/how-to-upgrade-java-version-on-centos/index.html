@@ -68,8 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/how-to-upgrade-java-version-on-centos/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="How to upgrade Java Version on Centos">
-  <meta property="og:description" content="背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.2.17，可能会受到影响，需要我们自行处理下。所以想着升级下java的版本， remove掉之前的老版本1.8，在看一下后续还会不会被扫出来.
-[root@server2 ~]# yum list installed | grep log4j Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast log4j.noarch 1.2.17-16.el7_4 @anaconda [root@server2 ~]# Centos Java upgrade to 1.11 from 1.8 # 检查下java的版本，使用的是openjdk版本是1.8；openjdk和Oracle的Java是有点区别的， Oracle与OpenJDK之间的区别介绍了它们的区别，所以本文后续介绍的openjdk的升级。 [root@server2 ~]# java -version openjdk version &#34;1.8.0_161&#34; OpenJDK Runtime Environment (build 1.8.0_161-b14) OpenJDK 64-Bit Server VM (build 25.161-b14, mixed mode) ">
+  <meta property="og:description" content="背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -79,8 +78,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How to upgrade Java Version on Centos">
-  <meta name="twitter:description" content="背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.2.17，可能会受到影响，需要我们自行处理下。所以想着升级下java的版本， remove掉之前的老版本1.8，在看一下后续还会不会被扫出来.
-[root@server2 ~]# yum list installed | grep log4j Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast log4j.noarch 1.2.17-16.el7_4 @anaconda [root@server2 ~]# Centos Java upgrade to 1.11 from 1.8 # 检查下java的版本，使用的是openjdk版本是1.8；openjdk和Oracle的Java是有点区别的， Oracle与OpenJDK之间的区别介绍了它们的区别，所以本文后续介绍的openjdk的升级。 [root@server2 ~]# java -version openjdk version &#34;1.8.0_161&#34; OpenJDK Runtime Environment (build 1.8.0_161-b14) OpenJDK 64-Bit Server VM (build 25.161-b14, mixed mode) ">
+  <meta name="twitter:description" content="背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.">
 
   
   <script type="application/ld+json">
@@ -91,7 +89,7 @@
     "name": "How to upgrade Java Version on Centos",
     "headline": "How to upgrade Java Version on Centos",
     
-    "abstract": "\u003ch4 class=\u0022relative group\u0022\u003e背景: \n    \u003cdiv id=\u0022%E8%83%8C%E6%99%AF\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E8%83%8C%E6%99%AF\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h4\u003e\n\u003cp\u003elog4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.2.17，可能会受到影响，需要我们自行处理下。所以想着升级下java的版本， remove掉之前的老版本1.8，在看一下后续还会不会被扫出来.\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e[root@server2 ~]#  yum list installed | grep log4j\nRepodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast\nlog4j.noarch                          1.2.17-16.el7_4                  @anaconda\n[root@server2 ~]# \n\u003c\/code\u003e\u003c\/pre\u003e\n\n\u003ch4 class=\u0022relative group\u0022\u003eCentos Java upgrade to 1.11 from 1.8 \n    \u003cdiv id=\u0022centos-java-upgrade-to-111-from-18\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#centos-java-upgrade-to-111-from-18\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h4\u003e\n\u003col\u003e\n\u003cli\u003e检查下java的版本，使用的是openjdk版本是1.8；openjdk和Oracle的Java是有点区别的，\u003ca href=\u0022https:\/\/juejin.cn\/post\/6844903811069247496\u0022   target=\u0022_blank\u0022\u003e\n    Oracle与OpenJDK之间的区别\u003c\/a\u003e介绍了它们的区别，所以本文后续介绍的openjdk的升级。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e[root@server2 ~]# java -version\nopenjdk version \u0026#34;1.8.0_161\u0026#34;\nOpenJDK Runtime Environment (build 1.8.0_161-b14)\nOpenJDK 64-Bit Server VM (build 25.161-b14, mixed mode)\n\u003c\/code\u003e\u003c\/pre\u003e",
+    "abstract": "背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/how-to-upgrade-java-version-on-centos\/",
     "author" : {
@@ -772,7 +770,9 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <h4 class="relative group">背景: 
+          
+
+<h4 class="relative group">背景: 
     <div id="%E8%83%8C%E6%99%AF" class="anchor"></div>
     
     <span

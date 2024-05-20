@@ -68,15 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/bgp-bmp/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="BGP 监控协议(BMP)">
-  <meta property="og:description" content="BGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。
-路由器只需要与 BMP server 建立一个 TCP 连接， 后续就可以发送 BMP 的数据包。
-BMP 的数据包包含以下 7 种类型：
-Initiation 消息：初始化消息，向监控服务器通告厂商信息、版本号等。
-PU（Peer Up Notification）消息：向监控服务器上报与对等体 BGP 连接的建立。
-RM（Route Monitoring）消息：路由监控消息，向监控服务器发送从对等体收到的所有路由，并随时向监控服务器上报路由的新增或撤销。
-PD（Peer Down Notification）消息：向监控服务器上报与对等体 BGP 连接的中断。
-SR（Stats Reports）消息：向监控服务器上报路由器运行状态的统计信息。
-Termination 消息：结束消息，向监控服务器通告关闭 BMP 会话的原因。">
+  <meta property="og:description" content="BGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -86,15 +78,7 @@ Termination 消息：结束消息，向监控服务器通告关闭 BMP 会话的
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="BGP 监控协议(BMP)">
-  <meta name="twitter:description" content="BGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。
-路由器只需要与 BMP server 建立一个 TCP 连接， 后续就可以发送 BMP 的数据包。
-BMP 的数据包包含以下 7 种类型：
-Initiation 消息：初始化消息，向监控服务器通告厂商信息、版本号等。
-PU（Peer Up Notification）消息：向监控服务器上报与对等体 BGP 连接的建立。
-RM（Route Monitoring）消息：路由监控消息，向监控服务器发送从对等体收到的所有路由，并随时向监控服务器上报路由的新增或撤销。
-PD（Peer Down Notification）消息：向监控服务器上报与对等体 BGP 连接的中断。
-SR（Stats Reports）消息：向监控服务器上报路由器运行状态的统计信息。
-Termination 消息：结束消息，向监控服务器通告关闭 BMP 会话的原因。">
+  <meta name="twitter:description" content="BGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。">
 
   
   <script type="application/ld+json">
@@ -105,7 +89,7 @@ Termination 消息：结束消息，向监控服务器通告关闭 BMP 会话的
     "name": "BGP 监控协议(BMP)",
     "headline": "BGP 监控协议(BMP)",
     
-    "abstract": "\u003cp\u003eBGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。\u003c\/p\u003e\n\u003cp\u003e路由器只需要与 BMP server 建立一个 TCP 连接， 后续就可以发送 BMP 的数据包。\u003c\/p\u003e\n\u003cp\u003eBMP 的数据包包含以下 7 种类型：\u003c\/p\u003e\n\u003cp\u003e\n\n\n\n\n  \n  \n    \n  \n  \n    \u003cfigure\u003e\n      \n      \u003cimg\n        class=\u0022my-0 rounded-md\u0022\n        loading=\u0022lazy\u0022\n        src=\u0022\/blog\/bgp-bmp\/images\/image-4-1024x531.png\u0022\n        alt=\u0022\u0022\n      \/\u003e\n      \n      \n    \u003c\/figure\u003e\n  \n\n\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eInitiation 消息：初始化消息，向监控服务器通告厂商信息、版本号等。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003ePU（Peer Up Notification）消息：向监控服务器上报与对等体 BGP 连接的建立。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eRM（Route Monitoring）消息：路由监控消息，向监控服务器发送从对等体收到的所有路由，并随时向监控服务器上报路由的新增或撤销。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003ePD（Peer Down Notification）消息：向监控服务器上报与对等体 BGP 连接的中断。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eSR（Stats Reports）消息：向监控服务器上报路由器运行状态的统计信息。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eTermination 消息：结束消息，向监控服务器通告关闭 BMP 会话的原因。\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e",
+    "abstract": "BGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/bgp-bmp\/",
     "author" : {
@@ -1089,6 +1073,7 @@ bmp server all
   
 
 </a></p>
+
         </div>
         
         

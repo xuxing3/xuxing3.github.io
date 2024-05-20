@@ -14,26 +14,7 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notes-about-reoptimize-timer/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reoptimize timers delay cleanup &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reoptimize timers delay installation &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reoptimize timers delay path-protection &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Install delay:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;How much &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; the head end waits before it &lt;span class=&#34;s2&#34;&gt;&amp;#34;activates&amp;#34;&lt;/span&gt; the reoptimized LSP after receiving the RESV. This gives some &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; to mid/tail nodes to program their fowardng.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cleanup delay:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;How much &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; the &lt;span class=&#34;s2&#34;&gt;&amp;#34;old&amp;#34;&lt;/span&gt; LSP is kept around after the new reoptimize LSP has been installed. This makes sure there&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;s no longer and traffic flowing over the &lt;span class=&#34;s2&#34;&gt;&amp;#34;old&amp;#34;&lt;/span&gt; LSP before tearing it down
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Path-protection 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Delays the &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; between path protection switchover event and tunnel reoptimization. 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//default values:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cleanup delay: &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;installation delay: &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;path-protection: &lt;span class=&#34;m&#34;&gt;180&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>reoptimize timers delay cleanup 60 reoptimize timers delay installation 60 reoptimize timers delay path-protection 50 Install delay: How much time the head end waits before it &amp;#34;activates&amp;#34; the reoptimized LSP after receiving the RESV.</description>
       
     </item>
     

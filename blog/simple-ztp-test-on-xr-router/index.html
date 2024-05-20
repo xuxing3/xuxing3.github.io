@@ -68,12 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/simple-ztp-test-on-xr-router/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="Simple ZTP Test on XR Router">
-  <meta property="og:description" content="什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。
-ZTP 存在两种不同的操作：
-下载应用配置到网络设备 下载并执行一个 shell/python 脚本，shell/python 脚本中再包含配置的下载，软件版本检查，升级等操作。 要拥有一个有效的 ZTP 环境，DHCP 和 Web 服务器是必须的。
-在 ZTP 期间，DHCP 服务器提供引导文件名的路径。路由器下载此文件，如果下载的文件内容以 !! IOS XR ，它被认为是一个配置文件，ZTP 对配置文件执行“apply_config”操作。如果下载的文件内容以#! /bin/bash, #! /bin/sh 或 #!/usr/bin/python 它被视为脚本文件，ZTP 执行该脚本。
-ZTP Work Flow # ZTP 工作流程如下:
-XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者脚本文件 路由器请求并下载脚本文件或者配置文件 路由器根据脚本文件下载镜像或者 commit 下载的配置文件. ">
+  <meta property="og:description" content="什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -83,12 +78,7 @@ XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者�
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Simple ZTP Test on XR Router">
-  <meta name="twitter:description" content="什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。
-ZTP 存在两种不同的操作：
-下载应用配置到网络设备 下载并执行一个 shell/python 脚本，shell/python 脚本中再包含配置的下载，软件版本检查，升级等操作。 要拥有一个有效的 ZTP 环境，DHCP 和 Web 服务器是必须的。
-在 ZTP 期间，DHCP 服务器提供引导文件名的路径。路由器下载此文件，如果下载的文件内容以 !! IOS XR ，它被认为是一个配置文件，ZTP 对配置文件执行“apply_config”操作。如果下载的文件内容以#! /bin/bash, #! /bin/sh 或 #!/usr/bin/python 它被视为脚本文件，ZTP 执行该脚本。
-ZTP Work Flow # ZTP 工作流程如下:
-XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者脚本文件 路由器请求并下载脚本文件或者配置文件 路由器根据脚本文件下载镜像或者 commit 下载的配置文件. ">
+  <meta name="twitter:description" content="什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。">
 
   
   <script type="application/ld+json">
@@ -99,7 +89,7 @@ XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者�
     "name": "Simple ZTP Test on XR Router",
     "headline": "Simple ZTP Test on XR Router",
     
-    "abstract": "\u003ch3 class=\u0022relative group\u0022\u003e什么是 ZTP \n    \u003cdiv id=\u0022%E4%BB%80%E4%B9%88%E6%98%AF-ztp\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E4%BB%80%E4%B9%88%E6%98%AF-ztp\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003eZero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。\u003cbr\u003e\nZTP 存在两种不同的操作：\u003c\/p\u003e\n\u003col\u003e\n\u003cli\u003e下载应用配置到网络设备\u003c\/li\u003e\n\u003cli\u003e下载并执行一个 shell\/python 脚本，shell\/python 脚本中再包含配置的下载，软件版本检查，升级等操作。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e要拥有一个有效的 ZTP 环境，DHCP 和 Web 服务器是必须的。\u003c\/p\u003e\n\u003cp\u003e在 ZTP 期间，DHCP 服务器提供引导文件名的路径。路由器下载此文件，如果下载的文件内容以 !! IOS XR ，它被认为是一个配置文件，ZTP 对配置文件执行“apply_config”操作。如果下载的文件内容以#! \/bin\/bash, #! \/bin\/sh 或 #!\/usr\/bin\/python 它被视为脚本文件，ZTP 执行该脚本。\u003c\/p\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eZTP Work Flow \n    \u003cdiv id=\u0022ztp-work-flow\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#ztp-work-flow\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003eZTP 工作流程如下:\u003c\/p\u003e\n\u003col\u003e\n\u003cli\u003eXR Router 初始化 ZTP,发送 DHCP 请求\u003c\/li\u003e\n\u003cli\u003eDHCP server 返回配置文件或者脚本文件\u003c\/li\u003e\n\u003cli\u003e路由器请求并下载脚本文件或者配置文件\u003c\/li\u003e\n\u003cli\u003e路由器根据脚本文件下载镜像或者 commit 下载的配置文件.\u003c\/li\u003e\n\u003c\/ol\u003e",
+    "abstract": "什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/simple-ztp-test-on-xr-router\/",
     "author" : {
@@ -788,7 +778,9 @@ XR Router 初始化 ZTP,发送 DHCP 请求 DHCP server 返回配置文件或者�
 
 
         <div class="article-content max-w-prose mb-20">
-          <h3 class="relative group">什么是 ZTP 
+          
+
+<h3 class="relative group">什么是 ZTP 
     <div id="%E4%BB%80%E4%B9%88%E6%98%AF-ztp" class="anchor"></div>
     
     <span

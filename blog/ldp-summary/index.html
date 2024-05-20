@@ -68,14 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/ldp-summary/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="LDP 标签分配协议">
-  <meta property="og:description" content="标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。
-下游按需方式 DoD（Downstream on Demand）：对于一个特定的 FEC，LSR 获得标签请求消息之后才进行标签分配与分发。
-标签分配控制方式（Label Distribution Control Mode） # 独立标签分配控制方式（Independent）：本地 LSR 可以自主地分配一个标签绑定到某个 FEC，并通告给上游 LSR，而无需等待下游的标
-签。
-有序标签分配控制方式（Ordered）：对于 LSR 上某个 FEC 的标签映射，只有当该 LSR 已经具有此 FEC 下一跳的标签映射消息、或者
-该 LSR 就是此 FEC 的出节点时，该 LSR 才可以向上游发送此 FEC 的标签映射。
-标签保持方式（Label Retention Mode） # 自由标签保持方式（Liberal）：对于从邻居 LSR 收到的标签映射，无论邻居 LSR 是不是自己的下一跳都保留。
-保守标签保持方式（Conservative）：对于从邻居 LSR 收到的标签映射，只有当邻居 LSR 是自己的下一跳时才保留。">
+  <meta property="og:description" content="标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -85,14 +78,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="LDP 标签分配协议">
-  <meta name="twitter:description" content="标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。
-下游按需方式 DoD（Downstream on Demand）：对于一个特定的 FEC，LSR 获得标签请求消息之后才进行标签分配与分发。
-标签分配控制方式（Label Distribution Control Mode） # 独立标签分配控制方式（Independent）：本地 LSR 可以自主地分配一个标签绑定到某个 FEC，并通告给上游 LSR，而无需等待下游的标
-签。
-有序标签分配控制方式（Ordered）：对于 LSR 上某个 FEC 的标签映射，只有当该 LSR 已经具有此 FEC 下一跳的标签映射消息、或者
-该 LSR 就是此 FEC 的出节点时，该 LSR 才可以向上游发送此 FEC 的标签映射。
-标签保持方式（Label Retention Mode） # 自由标签保持方式（Liberal）：对于从邻居 LSR 收到的标签映射，无论邻居 LSR 是不是自己的下一跳都保留。
-保守标签保持方式（Conservative）：对于从邻居 LSR 收到的标签映射，只有当邻居 LSR 是自己的下一跳时才保留。">
+  <meta name="twitter:description" content="标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。">
 
   
   <script type="application/ld+json">
@@ -103,7 +89,7 @@
     "name": "LDP 标签分配协议",
     "headline": "LDP 标签分配协议",
     
-    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003e标签发布方式（Label Advertisement Mode） \n    \u003cdiv id=\u0022%E6%A0%87%E7%AD%BE%E5%8F%91%E5%B8%83%E6%96%B9%E5%BC%8Flabel-advertisement-mode\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%A0%87%E7%AD%BE%E5%8F%91%E5%B8%83%E6%96%B9%E5%BC%8Flabel-advertisement-mode\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。\u003c\/p\u003e\n\u003cp\u003e下游按需方式 DoD（Downstream on Demand）：对于一个特定的 FEC，LSR 获得标签请求消息之后才进行标签分配与分发。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e\u003cstrong\u003e标签分配控制方式（Label Distribution Control Mode）\u003c\/strong\u003e \n    \u003cdiv id=\u0022%E6%A0%87%E7%AD%BE%E5%88%86%E9%85%8D%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8Flabel-distribution-control-mode\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%A0%87%E7%AD%BE%E5%88%86%E9%85%8D%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8Flabel-distribution-control-mode\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e独立标签分配控制方式（Independent）：本地 LSR 可以自主地分配一个标签绑定到某个 FEC，并通告给上游 LSR，而无需等待下游的标\u003cbr\u003e\n签。\u003c\/p\u003e\n\u003cp\u003e有序标签分配控制方式（Ordered）：对于 LSR 上某个 FEC 的标签映射，只有当该 LSR 已经具有此 FEC 下一跳的标签映射消息、或者\u003cbr\u003e\n该 LSR 就是此 FEC 的出节点时，该 LSR 才可以向上游发送此 FEC 的标签映射。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e\u003cstrong\u003e标签保持方式（Label Retention Mode）\u003c\/strong\u003e \n    \u003cdiv id=\u0022%E6%A0%87%E7%AD%BE%E4%BF%9D%E6%8C%81%E6%96%B9%E5%BC%8Flabel-retention-mode\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%A0%87%E7%AD%BE%E4%BF%9D%E6%8C%81%E6%96%B9%E5%BC%8Flabel-retention-mode\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cp\u003e自由标签保持方式（Liberal）：对于从邻居 LSR 收到的标签映射，无论邻居 LSR 是不是自己的下一跳都保留。\u003c\/p\u003e\n\u003cp\u003e保守标签保持方式（Conservative）：对于从邻居 LSR 收到的标签映射，只有当邻居 LSR 是自己的下一跳时才保留。\u003c\/p\u003e",
+    "abstract": "标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/ldp-summary\/",
     "author" : {
@@ -776,7 +762,9 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <h2 class="relative group">标签发布方式（Label Advertisement Mode） 
+          
+
+<h2 class="relative group">标签发布方式（Label Advertisement Mode） 
     <div id="%E6%A0%87%E7%AD%BE%E5%8F%91%E5%B8%83%E6%96%B9%E5%BC%8Flabel-advertisement-mode" class="anchor"></div>
     
     <span
@@ -818,6 +806,8 @@
 </h2>
 <p>自由标签保持方式（Liberal）：对于从邻居 LSR 收到的标签映射，无论邻居 LSR 是不是自己的下一跳都保留。</p>
 <p>保守标签保持方式（Conservative）：对于从邻居 LSR 收到的标签映射，只有当邻居 LSR 是自己的下一跳时才保留。</p>
+
+
 <h2 class="relative group">华为 
     <div id="%E5%8D%8E%E4%B8%BA" class="anchor"></div>
     

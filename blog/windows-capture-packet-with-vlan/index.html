@@ -89,7 +89,7 @@
     "name": "使用windows抓取带有VLAN标记的报文",
     "headline": "使用windows抓取带有VLAN标记的报文",
     
-    "abstract": "\u003cp\u003e最近遇到一个 case，需要使用 windows 抓交换机 span 过来的流量，但是无论交换机怎么配置，windows 上 wireshark 抓到的报文总是没有 VLAN tag，让我一度怀疑交换机的配置是否出了问题，查了一些资料，发现需要修改下注册表，才能改变网卡的模式，让其捕获报文后不主动去掉 VLAN tag。\u003c\/p\u003e",
+    "abstract": "最近遇到一个 case，需要使用 windows 抓交换机 span 过来的流量，但是无论交换机怎么配置，windows 上 wireshark 抓到的报文总是没有 VLAN tag，让我一度怀疑交换机的配置是否出了问题，查了一些资料，发现需要修改下注册表，才能改变网卡的模式，让其捕获报文后不主动去掉 VLAN tag。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/windows-capture-packet-with-vlan\/",
     "author" : {
@@ -777,6 +777,8 @@
 
         <div class="article-content max-w-prose mb-20">
           <p>最近遇到一个 case，需要使用 windows 抓交换机 span 过来的流量，但是无论交换机怎么配置，windows 上 wireshark 抓到的报文总是没有 VLAN tag，让我一度怀疑交换机的配置是否出了问题，查了一些资料，发现需要修改下注册表，才能改变网卡的模式，让其捕获报文后不主动去掉 VLAN tag。</p>
+
+
 <h3 class="relative group">TOPO 
     <div id="topo" class="anchor"></div>
     
@@ -978,6 +980,7 @@
   
 
 </p>
+
         </div>
         
         

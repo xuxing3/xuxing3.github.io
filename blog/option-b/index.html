@@ -68,7 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/option-b/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="跨域MPLS VPN Option B配置案例（IOS XR）">
-  <meta property="og:description" content=" 上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.但是这样的配置缺少扩展性，例如如果 PE 上的用户很多，存在多个 VRF 的情况，如果使用 Option A,那么我们就需要在 ASBR 之间增加链路，并配置属于不同的 VRF。工作量大，而且繁琐。下面介绍一种相对简单的方案 Option B.">
+  <meta property="og:description" content="上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -78,7 +78,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="跨域MPLS VPN Option B配置案例（IOS XR）">
-  <meta name="twitter:description" content=" 上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.但是这样的配置缺少扩展性，例如如果 PE 上的用户很多，存在多个 VRF 的情况，如果使用 Option A,那么我们就需要在 ASBR 之间增加链路，并配置属于不同的 VRF。工作量大，而且繁琐。下面介绍一种相对简单的方案 Option B.">
+  <meta name="twitter:description" content="上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.">
 
   
   <script type="application/ld+json">
@@ -89,7 +89,7 @@
     "name": "跨域MPLS VPN Option B配置案例（IOS XR）",
     "headline": "跨域MPLS VPN Option B配置案例（IOS XR）",
     
-    "abstract": "\u003cp\u003e\n\n\n\n\n  \n  \n    \n  \n  \n    \u003cfigure\u003e\n      \n      \u003cimg\n        class=\u0022my-0 rounded-md\u0022\n        loading=\u0022lazy\u0022\n        src=\u0022\/blog\/option-b\/image.png\u0022\n        alt=\u0022alt text\u0022\n      \/\u003e\n      \n      \n    \u003c\/figure\u003e\n  \n\n\u003c\/p\u003e\n\u003cp\u003e上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.但是这样的配置缺少扩展性，例如如果 PE 上的用户很多，存在多个 VRF 的情况，如果使用 Option A,那么我们就需要在 ASBR 之间增加链路，并配置属于不同的 VRF。工作量大，而且繁琐。下面介绍一种相对简单的方案 Option B.\u003c\/p\u003e",
+    "abstract": "上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/option-b\/",
     "author" : {
@@ -801,6 +801,8 @@
 
 </p>
 <p>上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.但是这样的配置缺少扩展性，例如如果 PE 上的用户很多，存在多个 VRF 的情况，如果使用 Option A,那么我们就需要在 ASBR 之间增加链路，并配置属于不同的 VRF。工作量大，而且繁琐。下面介绍一种相对简单的方案 Option B.</p>
+
+
 <h2 class="relative group">写在最前面 
     <div id="%E5%86%99%E5%9C%A8%E6%9C%80%E5%89%8D%E9%9D%A2" class="anchor"></div>
     
@@ -1038,6 +1040,7 @@ ASBR 之间的链路不需要加入 VRF 中，如下：</p>
 <p><a href="https://mega.nz/#F!8KhVxI7A!Js3SwYD0dhlmbskhx1R40w"   target="_blank">
     https://mega.nz/#F!8KhVxI7A!Js3SwYD0dhlmbskhx1R40w</a></p>
 </blockquote>
+
         </div>
         
         

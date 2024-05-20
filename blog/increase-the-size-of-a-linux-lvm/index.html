@@ -68,8 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/increase-the-size-of-a-linux-lvm/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="Increase the size of a Linux LVM">
-  <meta property="og:description" content="背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。
-[root@localhost repository]# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/centos-root 50G 41G 9.4G 82% / devtmpfs 32G 0 32G 0% /dev tmpfs 32G 0 32G 0% /dev/shm tmpfs 32G 637M 31G 2% /run tmpfs 32G 0 32G 0% /sys/fs/cgroup /dev/sda1 1014M 150M 865M 15% /boot /dev/mapper/centos-home 441G 15G 427G 4% /home overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/398d2eeb78bef327ecaca5cd7de0087ce59f76a938e5ef5dbce91c2895a4b1aa/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/0f05cdc7e42716c57997501e96310ca1769824b28ea91d2509502a35be589840/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/5c10dbf435357bf50eecc148cb9a90d211384abca9fd9a5314de5fc62910c6f5/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/a0fe47c9a9dca33b1fcfd35684aadc2037dc1398a23b2b09ebcad476636e0dab/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/2eb88ff71135e7b9be851a22905aeded34038a1bdf06cf5d9c963a8378ecc923/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/2013e4d4c128e0da65e969cfc432850615257874a81dd7bf73ade4bec75c4600/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/912b49fbc5ead76d17e25059db4301cbcd0230e6be9063c5e17c6c9a1279da01/merged tmpfs 6.3G 0 6.3G 0% /run/user/0 overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/11a70ceeddd9c3201fef095c4e65d61e24d1429a5c3e04b90310e1f3ebda6572/merged ">
+  <meta property="og:description" content="背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -80,8 +79,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Increase the size of a Linux LVM">
-  <meta name="twitter:description" content="背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。
-[root@localhost repository]# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/centos-root 50G 41G 9.4G 82% / devtmpfs 32G 0 32G 0% /dev tmpfs 32G 0 32G 0% /dev/shm tmpfs 32G 637M 31G 2% /run tmpfs 32G 0 32G 0% /sys/fs/cgroup /dev/sda1 1014M 150M 865M 15% /boot /dev/mapper/centos-home 441G 15G 427G 4% /home overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/398d2eeb78bef327ecaca5cd7de0087ce59f76a938e5ef5dbce91c2895a4b1aa/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/0f05cdc7e42716c57997501e96310ca1769824b28ea91d2509502a35be589840/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/5c10dbf435357bf50eecc148cb9a90d211384abca9fd9a5314de5fc62910c6f5/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/a0fe47c9a9dca33b1fcfd35684aadc2037dc1398a23b2b09ebcad476636e0dab/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/2eb88ff71135e7b9be851a22905aeded34038a1bdf06cf5d9c963a8378ecc923/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/2013e4d4c128e0da65e969cfc432850615257874a81dd7bf73ade4bec75c4600/merged overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/912b49fbc5ead76d17e25059db4301cbcd0230e6be9063c5e17c6c9a1279da01/merged tmpfs 6.3G 0 6.3G 0% /run/user/0 overlay 50G 41G 9.4G 82% /var/lib/docker/overlay2/11a70ceeddd9c3201fef095c4e65d61e24d1429a5c3e04b90310e1f3ebda6572/merged ">
+  <meta name="twitter:description" content="背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。">
 
   
   <script type="application/ld+json">
@@ -92,7 +90,7 @@
     "name": "Increase the size of a Linux LVM",
     "headline": "Increase the size of a Linux LVM",
     
-    "abstract": "\u003ch4 class=\u0022relative group\u0022\u003e背景 \n    \u003cdiv id=\u0022%E8%83%8C%E6%99%AF\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E8%83%8C%E6%99%AF\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h4\u003e\n\u003cp\u003e工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e[root@localhost repository]#      df -h\nFilesystem               Size  Used Avail Use% Mounted on\n\/dev\/mapper\/centos-root   50G   41G  9.4G  82% \/\ndevtmpfs                  32G     0   32G   0% \/dev\ntmpfs                     32G     0   32G   0% \/dev\/shm\ntmpfs                     32G  637M   31G   2% \/run\ntmpfs                     32G     0   32G   0% \/sys\/fs\/cgroup\n\/dev\/sda1               1014M  150M  865M  15% \/boot\n\/dev\/mapper\/centos-home  441G   15G  427G   4% \/home\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/398d2eeb78bef327ecaca5cd7de0087ce59f76a938e5ef5dbce91c2895a4b1aa\/merged\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/0f05cdc7e42716c57997501e96310ca1769824b28ea91d2509502a35be589840\/merged\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/5c10dbf435357bf50eecc148cb9a90d211384abca9fd9a5314de5fc62910c6f5\/merged\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/a0fe47c9a9dca33b1fcfd35684aadc2037dc1398a23b2b09ebcad476636e0dab\/merged\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/2eb88ff71135e7b9be851a22905aeded34038a1bdf06cf5d9c963a8378ecc923\/merged\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/2013e4d4c128e0da65e969cfc432850615257874a81dd7bf73ade4bec75c4600\/merged\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/912b49fbc5ead76d17e25059db4301cbcd0230e6be9063c5e17c6c9a1279da01\/merged\ntmpfs                    6.3G     0  6.3G   0% \/run\/user\/0\noverlay                   50G   41G  9.4G  82% \/var\/lib\/docker\/overlay2\/11a70ceeddd9c3201fef095c4e65d61e24d1429a5c3e04b90310e1f3ebda6572\/merged\n\u003c\/code\u003e\u003c\/pre\u003e",
+    "abstract": "背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/increase-the-size-of-a-linux-lvm\/",
     "author" : {
@@ -795,7 +793,9 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <h4 class="relative group">背景 
+          
+
+<h4 class="relative group">背景 
     <div id="%E8%83%8C%E6%99%AF" class="anchor"></div>
     
     <span
@@ -824,7 +824,9 @@ overlay                   50G   41G  9.4G  82% /var/lib/docker/overlay2/2013e4d4
 overlay                   50G   41G  9.4G  82% /var/lib/docker/overlay2/912b49fbc5ead76d17e25059db4301cbcd0230e6be9063c5e17c6c9a1279da01/merged
 tmpfs                    6.3G     0  6.3G   0% /run/user/0
 overlay                   50G   41G  9.4G  82% /var/lib/docker/overlay2/11a70ceeddd9c3201fef095c4e65d61e24d1429a5c3e04b90310e1f3ebda6572/merged
-</code></pre><h4 class="relative group">Step1: 添加新硬盘，格式化分区 
+</code></pre>
+
+<h4 class="relative group">Step1: 添加新硬盘，格式化分区 
     <div id="step1-%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A1%AC%E7%9B%98%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%88%86%E5%8C%BA" class="anchor"></div>
     
     <span

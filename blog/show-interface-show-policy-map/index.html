@@ -68,17 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/show-interface-show-policy-map/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="关于iox上“show interface”和“show policy -map”计数的一些解释">
-  <meta property="og:description" content=" comments by ‘zhihua’
-对于 ASR9000 来说 ：
-“show interfaces” and “show policy-map interfaces” show L2 frame size.
-“show interfaces” does not include FCS bytes, but “show policy-map interfaces” includes FCS bytes(SIP700 是个例外)
-L1 frame size 和 L2 frame size # 如上图就是一个以太网帧的物理层具体所包含的内容。
-Preamble: 前同步码 7 bytes
-SFD: start frame delimiter 1 byte 帧开始定界符
-Dst MAC: 6 bytes
-Src MAC: 6 bytes
-EtherType: 2 bytes
-FCS(CRC): 4 bytes">
+  <meta property="og:description" content="comments by ‘zhihua’">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -88,17 +78,7 @@ FCS(CRC): 4 bytes">
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="关于iox上“show interface”和“show policy -map”计数的一些解释">
-  <meta name="twitter:description" content=" comments by ‘zhihua’
-对于 ASR9000 来说 ：
-“show interfaces” and “show policy-map interfaces” show L2 frame size.
-“show interfaces” does not include FCS bytes, but “show policy-map interfaces” includes FCS bytes(SIP700 是个例外)
-L1 frame size 和 L2 frame size # 如上图就是一个以太网帧的物理层具体所包含的内容。
-Preamble: 前同步码 7 bytes
-SFD: start frame delimiter 1 byte 帧开始定界符
-Dst MAC: 6 bytes
-Src MAC: 6 bytes
-EtherType: 2 bytes
-FCS(CRC): 4 bytes">
+  <meta name="twitter:description" content="comments by ‘zhihua’">
 
   
   <script type="application/ld+json">
@@ -109,7 +89,7 @@ FCS(CRC): 4 bytes">
     "name": "关于iox上“show interface”和“show policy -map”计数的一些解释",
     "headline": "关于iox上“show interface”和“show policy -map”计数的一些解释",
     
-    "abstract": "\u003cblockquote\u003e\n\u003cp\u003ecomments by \u0026lsquo;zhihua\u0026rsquo;\u003c\/p\u003e\n\u003cp\u003e对于 ASR9000 来说 ：\u003cbr\u003e\n\u0026ldquo;show interfaces\u0026rdquo; and \u0026ldquo;show policy-map interfaces\u0026rdquo; show L2 frame size.\u003cbr\u003e\n\u0026ldquo;show interfaces\u0026rdquo; does not include FCS bytes, but \u0026ldquo;show policy-map interfaces\u0026rdquo; includes FCS bytes(SIP700 是个例外)\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eL1 frame size 和 L2 frame size \n    \u003cdiv id=\u0022l1-frame-size-%E5%92%8C-l2-frame-size\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#l1-frame-size-%E5%92%8C-l2-frame-size\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003e\n\n\n\n\n  \n  \n    \n  \n  \n    \u003cfigure\u003e\n      \n      \u003cimg\n        class=\u0022my-0 rounded-md\u0022\n        loading=\u0022lazy\u0022\n        src=\u0022\/blog\/show-interface-show-policy-map\/images\/image-2-1024x125.png\u0022\n        alt=\u0022\u0022\n      \/\u003e\n      \n      \n    \u003c\/figure\u003e\n  \n\n\u003c\/p\u003e\n\u003cp\u003e如上图就是一个以太网帧的物理层具体所包含的内容。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003ePreamble: 前同步码 7 bytes\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eSFD: start frame delimiter 1 byte 帧开始定界符\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eDst MAC: 6 bytes\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eSrc MAC: 6 bytes\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eEtherType: 2 bytes\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eFCS(CRC): 4 bytes\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e",
+    "abstract": "comments by \u0026lsquo;zhihua\u0026rsquo;",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/show-interface-show-policy-map\/",
     "author" : {
@@ -1163,6 +1143,7 @@ Policy Bag Stats time: 1705460386796  [Local Time: 01/17/24 02:59:46.796]
 <p><a href="https://en.wikipedia.org/wiki/Ethernet_frame#Interpacket_gap_%E2%80%93_physical_layer"   target="_blank">
     Ethernet frame(wiki)</a></p>
 </blockquote>
+
         </div>
         
         

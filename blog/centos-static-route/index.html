@@ -68,7 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/centos-static-route/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="CentOS配置静态路由">
-  <meta property="og:description" content="查看路由表 # [root@xuxing ~]# ip route show default via 10.75.49.1 dev ens32 proto static metric 100 10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100 [root@xuxing ~]# ip route show | column -t &lt;&lt;&lt; 格式化显示 default via 10.75.49.1 dev ens32 proto static metric 100 10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100 [root@xuxing ~]# [root@xuxing ~]# ip a 1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1 link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet 127.0.0.1/8 scope host lo valid_lft forever preferred_lft forever inet6 ::1/128 scope host valid_lft forever preferred_lft forever 2: ens32: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000 link/ether 00:0c:29:10:f8:30 brd ff:ff:ff:ff:ff:ff inet 10.75.49.238/24 brd 10.75.49.255 scope global ens32 valid_lft forever preferred_lft forever inet6 fe80::b5ca:2b34:2fbe:4a03/64 scope link valid_lft forever preferred_lft forever ">
+  <meta property="og:description" content="查看路由表 # [root@xuxing ~]# ip route show default via 10.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -78,7 +78,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="CentOS配置静态路由">
-  <meta name="twitter:description" content="查看路由表 # [root@xuxing ~]# ip route show default via 10.75.49.1 dev ens32 proto static metric 100 10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100 [root@xuxing ~]# ip route show | column -t &lt;&lt;&lt; 格式化显示 default via 10.75.49.1 dev ens32 proto static metric 100 10.75.49.0/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100 [root@xuxing ~]# [root@xuxing ~]# ip a 1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1 link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 inet 127.0.0.1/8 scope host lo valid_lft forever preferred_lft forever inet6 ::1/128 scope host valid_lft forever preferred_lft forever 2: ens32: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000 link/ether 00:0c:29:10:f8:30 brd ff:ff:ff:ff:ff:ff inet 10.75.49.238/24 brd 10.75.49.255 scope global ens32 valid_lft forever preferred_lft forever inet6 fe80::b5ca:2b34:2fbe:4a03/64 scope link valid_lft forever preferred_lft forever ">
+  <meta name="twitter:description" content="查看路由表 # [root@xuxing ~]# ip route show default via 10.">
 
   
   <script type="application/ld+json">
@@ -89,7 +89,7 @@
     "name": "CentOS配置静态路由",
     "headline": "CentOS配置静态路由",
     
-    "abstract": "\u003ch2 class=\u0022relative group\u0022\u003e查看路由表 \n    \u003cdiv id=\u0022%E6%9F%A5%E7%9C%8B%E8%B7%AF%E7%94%B1%E8%A1%A8\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%9F%A5%E7%9C%8B%E8%B7%AF%E7%94%B1%E8%A1%A8\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e[root@xuxing ~]# ip route show\ndefault via 10.75.49.1 dev ens32 proto static metric 100\n10.75.49.0\/24 dev ens32 proto kernel scope link src 10.75.49.238 metric 100\n[root@xuxing ~]# ip route show | column -t   \u0026lt;\u0026lt;\u0026lt; 格式化显示\ndefault        via  10.75.49.1  dev    ens32   proto  static  metric  100\n10.75.49.0\/24  dev  ens32       proto  kernel  scope  link    src     10.75.49.238  metric  100\n[root@xuxing ~]#\n[root@xuxing ~]# ip a\n1: lo: \u0026lt;LOOPBACK,UP,LOWER_UP\u0026gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1\n    link\/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1\/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1\/128 scope host\n       valid_lft forever preferred_lft forever\n2: ens32: \u0026lt;BROADCAST,MULTICAST,UP,LOWER_UP\u0026gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000\n    link\/ether 00:0c:29:10:f8:30 brd ff:ff:ff:ff:ff:ff\n    inet 10.75.49.238\/24 brd 10.75.49.255 scope global ens32\n       valid_lft forever preferred_lft forever\n    inet6 fe80::b5ca:2b34:2fbe:4a03\/64 scope link\n       valid_lft forever preferred_lft forever\n\u003c\/code\u003e\u003c\/pre\u003e",
+    "abstract": "查看路由表 # [root@xuxing ~]# ip route show default via 10.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/centos-static-route\/",
     "author" : {
@@ -756,7 +756,9 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <h2 class="relative group">查看路由表 
+          
+
+<h2 class="relative group">查看路由表 
     <div id="%E6%9F%A5%E7%9C%8B%E8%B7%AF%E7%94%B1%E8%A1%A8" class="anchor"></div>
     
     <span
@@ -786,7 +788,9 @@ default        via  10.75.49.1  dev    ens32   proto  static  metric  100
        valid_lft forever preferred_lft forever
     inet6 fe80::b5ca:2b34:2fbe:4a03/64 scope link
        valid_lft forever preferred_lft forever
-</code></pre><h2 class="relative group">添加路由条目 
+</code></pre>
+
+<h2 class="relative group">添加路由条目 
     <div id="%E6%B7%BB%E5%8A%A0%E8%B7%AF%E7%94%B1%E6%9D%A1%E7%9B%AE" class="anchor"></div>
     
     <span

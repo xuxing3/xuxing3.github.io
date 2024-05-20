@@ -68,8 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/configure-asr9k-tacacs-with-ise/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="Configure ASR9K TACACS with ISE">
-  <meta property="og:description" content="Reference # 基于 ISE 对 Cisco 网络设备部署 AAA Configure ASR9K TACACS with Cisco Identity Services Engine 2.4 Cisco IOS XR Task ID Reference Guide, Release 4.1 本文章是自己配置 ISE 过程的总结，主要参考的是上面文章， 其中最主要的是第一篇（知乎），我认为是最全的 ISE 配置介绍。
-ISE Setup（3.1） # ISE 启用设备管理 # Administration-&gt;System-&gt;Deployment">
+  <meta property="og:description" content="Reference # 基于 ISE 对 Cisco 网络设备部署 AAA Configure ASR9K TACACS with Cisco Identity Services Engine 2.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -79,8 +78,7 @@ ISE Setup（3.1） # ISE 启用设备管理 # Administration-&gt;System-&gt;Depl
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Configure ASR9K TACACS with ISE">
-  <meta name="twitter:description" content="Reference # 基于 ISE 对 Cisco 网络设备部署 AAA Configure ASR9K TACACS with Cisco Identity Services Engine 2.4 Cisco IOS XR Task ID Reference Guide, Release 4.1 本文章是自己配置 ISE 过程的总结，主要参考的是上面文章， 其中最主要的是第一篇（知乎），我认为是最全的 ISE 配置介绍。
-ISE Setup（3.1） # ISE 启用设备管理 # Administration-&gt;System-&gt;Deployment">
+  <meta name="twitter:description" content="Reference # 基于 ISE 对 Cisco 网络设备部署 AAA Configure ASR9K TACACS with Cisco Identity Services Engine 2.">
 
   
   <script type="application/ld+json">
@@ -91,7 +89,7 @@ ISE Setup（3.1） # ISE 启用设备管理 # Administration-&gt;System-&gt;Depl
     "name": "Configure ASR9K TACACS with ISE",
     "headline": "Configure ASR9K TACACS with ISE",
     
-    "abstract": "\u003ch3 class=\u0022relative group\u0022\u003eReference \n    \u003cdiv id=\u0022reference\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#reference\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/zhuanlan.zhihu.com\/p\/77121262\u0022   target=\u0022_blank\u0022\u003e\n    基于 ISE 对 Cisco 网络设备部署 AAA\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/www.cisco.com\/c\/en\/us\/support\/docs\/security\/identity-services-engine-24\/214018-configure-asr9k-tacacs-with-cisco-identi.html\u0022   target=\u0022_blank\u0022\u003e\n    Configure ASR9K TACACS with Cisco Identity Services Engine 2.4\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/www.cisco.com\/c\/en\/us\/td\/docs\/ios_xr_sw\/iosxr_r4-1\/task_ids\/reference\/guide\/task_id_41\/td41tid.html\u0022   target=\u0022_blank\u0022\u003e\n    Cisco IOS XR Task ID Reference Guide, Release 4.1\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e本文章是自己配置 ISE 过程的总结，主要参考的是上面文章， 其中最主要的是第一篇（知乎），我认为是最全的 ISE 配置介绍。\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003eISE Setup（3.1） \n    \u003cdiv id=\u0022ise-setup31\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#ise-setup31\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eISE 启用设备管理 \n    \u003cdiv id=\u0022ise-%E5%90%AF%E7%94%A8%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#ise-%E5%90%AF%E7%94%A8%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003eAdministration-\u0026gt;System-\u0026gt;Deployment\u003c\/p\u003e\n\u003cp\u003e\n\n\n\n\n  \n  \n    \n  \n  \n    \u003cfigure\u003e\n      \n      \u003cimg\n        class=\u0022my-0 rounded-md\u0022\n        loading=\u0022lazy\u0022\n        src=\u0022\/blog\/configure-asr9k-tacacs-with-ise\/images\/image-1024x528.png\u0022\n        alt=\u0022\u0022\n      \/\u003e\n      \n      \n    \u003c\/figure\u003e\n  \n\n\u003c\/p\u003e",
+    "abstract": "Reference # 基于 ISE 对 Cisco 网络设备部署 AAA Configure ASR9K TACACS with Cisco Identity Services Engine 2.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/configure-asr9k-tacacs-with-ise\/",
     "author" : {
@@ -806,7 +804,9 @@ ISE Setup（3.1） # ISE 启用设备管理 # Administration-&gt;System-&gt;Depl
 
 
         <div class="article-content max-w-prose mb-20">
-          <h3 class="relative group">Reference 
+          
+
+<h3 class="relative group">Reference 
     <div id="reference" class="anchor"></div>
     
     <span
@@ -874,6 +874,8 @@ ISE Setup（3.1） # ISE 启用设备管理 # Administration-&gt;System-&gt;Depl
   
 
 </p>
+
+
 <h3 class="relative group">关闭系统密码策略 
     <div id="%E5%85%B3%E9%97%AD%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81%E7%AD%96%E7%95%A5" class="anchor"></div>
     

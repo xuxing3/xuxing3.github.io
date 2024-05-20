@@ -68,12 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/docker-portainer/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="Docker图形化管理工具Portainer">
-  <meta property="og:description" content=" 安装参考
-https://github.com/portainer/portainer
-https://documentation.portainer.io/quickstart/
-https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/
-Linux 主机安装示例如下:
-[root@localhost ~]# docker volume create portainer_data portainer_data [root@localhost ~]# [root@localhost ~]# [root@localhost ~]# docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce Unable to find image &#39;portainer/portainer-ce:latest&#39; locally latest: Pulling from portainer/portainer-ce 94cfa856b2b1: Pull complete 49d59ee0881a: Pull complete 3fc1bc38fb56: Pull complete Digest: sha256:f133bfdd9646f48a8ddb54b9555070f628caa530924045eeff8144a32de2dcc7 Status: Downloaded newer image for portainer/portainer-ce:latest f4bf3f5fe82d1e15aff223752b10b987f298ebdea5a987c6303d38dc6c4079d3 安装完成后， 访问 9000 端口， 第一次登录会让你配置用户名/密码， 之后选择 Docker–&gt; Local.">
+  <meta property="og:description" content="安装参考">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -84,12 +79,7 @@ Linux 主机安装示例如下:
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Docker图形化管理工具Portainer">
-  <meta name="twitter:description" content=" 安装参考
-https://github.com/portainer/portainer
-https://documentation.portainer.io/quickstart/
-https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/
-Linux 主机安装示例如下:
-[root@localhost ~]# docker volume create portainer_data portainer_data [root@localhost ~]# [root@localhost ~]# [root@localhost ~]# docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce Unable to find image &#39;portainer/portainer-ce:latest&#39; locally latest: Pulling from portainer/portainer-ce 94cfa856b2b1: Pull complete 49d59ee0881a: Pull complete 3fc1bc38fb56: Pull complete Digest: sha256:f133bfdd9646f48a8ddb54b9555070f628caa530924045eeff8144a32de2dcc7 Status: Downloaded newer image for portainer/portainer-ce:latest f4bf3f5fe82d1e15aff223752b10b987f298ebdea5a987c6303d38dc6c4079d3 安装完成后， 访问 9000 端口， 第一次登录会让你配置用户名/密码， 之后选择 Docker–&gt; Local.">
+  <meta name="twitter:description" content="安装参考">
 
   
   <script type="application/ld+json">
@@ -100,7 +90,7 @@ Linux 主机安装示例如下:
     "name": "Docker图形化管理工具Portainer",
     "headline": "Docker图形化管理工具Portainer",
     
-    "abstract": "\u003cblockquote\u003e\n\u003cp\u003e安装参考\u003c\/p\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/github.com\/portainer\/portainer\u0022   target=\u0022_blank\u0022\u003e\n    https:\/\/github.com\/portainer\/portainer\u003c\/a\u003e\u003cbr\u003e\n\u003ca href=\u0022https:\/\/documentation.portainer.io\/quickstart\/\u0022   target=\u0022_blank\u0022\u003e\n    https:\/\/documentation.portainer.io\/quickstart\/\u003c\/a\u003e\u003cbr\u003e\n\u003ca href=\u0022https:\/\/documentation.portainer.io\/v2.0\/deploy\/ceinstalldocker\/\u0022   target=\u0022_blank\u0022\u003e\n    https:\/\/documentation.portainer.io\/v2.0\/deploy\/ceinstalldocker\/\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cp\u003eLinux 主机安装示例如下:\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 class=\u0022chroma\u0022\u003e\u003ccode class=\u0022language-bash\u0022 data-lang=\u0022bash\u0022\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e# docker volume create portainer_data\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003eportainer_data\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e#\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e#\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e# docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v \/var\/run\/docker.sock:\/var\/run\/docker.sock -v portainer_data:\/data portainer\/portainer-ce\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003eUnable to find image \u003cspan class=\u0022s1\u0022\u003e\u0026#39;portainer\/portainer-ce:latest\u0026#39;\u003c\/span\u003e locally\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003elatest: Pulling from portainer\/portainer-ce\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e94cfa856b2b1: Pull \u003cspan class=\u0022nb\u0022\u003ecomplete\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e49d59ee0881a: Pull \u003cspan class=\u0022nb\u0022\u003ecomplete\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e3fc1bc38fb56: Pull \u003cspan class=\u0022nb\u0022\u003ecomplete\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003eDigest: sha256:f133bfdd9646f48a8ddb54b9555070f628caa530924045eeff8144a32de2dcc7\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003eStatus: Downloaded newer image \u003cspan class=\u0022k\u0022\u003efor\u003c\/span\u003e portainer\/portainer-ce:latest\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003ef4bf3f5fe82d1e15aff223752b10b987f298ebdea5a987c6303d38dc6c4079d3\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e安装完成后， 访问 9000 端口， 第一次登录会让你配置用户名\/密码， 之后选择 Docker\u0026ndash;\u0026gt; Local.\u003c\/p\u003e",
+    "abstract": "安装参考",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/docker-portainer\/",
     "author" : {
@@ -834,6 +824,7 @@ Linux 主机安装示例如下:
   
 
 </p>
+
         </div>
         
         

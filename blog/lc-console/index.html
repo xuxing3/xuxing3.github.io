@@ -68,9 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/lc-console/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="如何使用业务板卡console排查板卡启动问题">
-  <meta property="og:description" content="思科 SP 系列高端路由器都是由引擎 RP/线卡（业务卡/LC）/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:
-CRS # CRS 使用的 32bit 的系统，我们也称之为 cXR，而且有且只有 32bit 版本的系统，并且最有一个软件版本为 6.7.4，后续不会再有软件更新。一般来说 CRS 的硬件故障很容易从 log 中识别出来原因，所以下面跳转到板卡 console 的方式并不常用，了解即可，退出符为CTRL&#43;/
-RP/0/RP0/CPU0:CRS-D# run console_tunneling 0/0/cpu0 Thu Jun 23 15:46:27.360 EDT Trying to connect to node 0/0/CPU0... Connected to node 0/0/CPU0. Escape character is &#39;^_&#39;. Connection to node 0/0/CPU0 closed. ">
+  <meta property="og:description" content="思科 SP 系列高端路由器都是由引擎 RP/线卡（业务卡/LC）/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -80,9 +78,7 @@ RP/0/RP0/CPU0:CRS-D# run console_tunneling 0/0/cpu0 Thu Jun 23 15:46:27.360 EDT 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="如何使用业务板卡console排查板卡启动问题">
-  <meta name="twitter:description" content="思科 SP 系列高端路由器都是由引擎 RP/线卡（业务卡/LC）/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:
-CRS # CRS 使用的 32bit 的系统，我们也称之为 cXR，而且有且只有 32bit 版本的系统，并且最有一个软件版本为 6.7.4，后续不会再有软件更新。一般来说 CRS 的硬件故障很容易从 log 中识别出来原因，所以下面跳转到板卡 console 的方式并不常用，了解即可，退出符为CTRL&#43;/
-RP/0/RP0/CPU0:CRS-D# run console_tunneling 0/0/cpu0 Thu Jun 23 15:46:27.360 EDT Trying to connect to node 0/0/CPU0... Connected to node 0/0/CPU0. Escape character is &#39;^_&#39;. Connection to node 0/0/CPU0 closed. ">
+  <meta name="twitter:description" content="思科 SP 系列高端路由器都是由引擎 RP/线卡（业务卡/LC）/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:">
 
   
   <script type="application/ld+json">
@@ -93,7 +89,7 @@ RP/0/RP0/CPU0:CRS-D# run console_tunneling 0/0/cpu0 Thu Jun 23 15:46:27.360 EDT 
     "name": "如何使用业务板卡console排查板卡启动问题",
     "headline": "如何使用业务板卡console排查板卡启动问题",
     
-    "abstract": "\u003cp\u003e思科 SP 系列高端路由器都是由引擎 RP\/线卡（业务卡\/LC）\/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:\u003c\/p\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eCRS \n    \u003cdiv id=\u0022crs\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#crs\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003eCRS 使用的 32bit 的系统，我们也称之为 cXR，而且有且只有 32bit 版本的系统，并且最有一个软件版本为 6.7.4，后续不会再有软件更新。一般来说 CRS 的硬件故障很容易从 log 中识别出来原因，所以下面跳转到板卡 console 的方式并不常用，了解即可，退出符为\u003ccode\u003eCTRL\u002b\/\u003c\/code\u003e\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003eRP\/0\/RP0\/CPU0:CRS-D# run console_tunneling 0\/0\/cpu0\nThu Jun 23 15:46:27.360 EDT\nTrying to connect to node 0\/0\/CPU0...\nConnected to node 0\/0\/CPU0.\nEscape character is \u0026#39;^_\u0026#39;.\n\n\nConnection to node 0\/0\/CPU0 closed.\n\u003c\/code\u003e\u003c\/pre\u003e",
+    "abstract": "思科 SP 系列高端路由器都是由引擎 RP\/线卡（业务卡\/LC）\/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/lc-console\/",
     "author" : {
@@ -806,7 +802,9 @@ Escape character is &#39;^_&#39;.
 
 
 Connection to node 0/0/CPU0 closed.
-</code></pre><h3 class="relative group">ASR9000 
+</code></pre>
+
+<h3 class="relative group">ASR9000 
     <div id="asr9000" class="anchor"></div>
     
     <span

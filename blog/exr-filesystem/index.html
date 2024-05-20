@@ -68,13 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/exr-filesystem/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="eXR filesystem">
-  <meta property="og:description" content="研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。
-本文的演示事例使用的硬件 A9K-RSP5-SE 和 eXR 742 作为案例，使用的硬件不同，升级方式不同，磁盘的大小和分区是略微存在出入的。
-如果你需要一个干净的，完全纯净的分区请采用以下方式升级或安装系统:
-USB/PXE
-正常 install command 升级,升级完成后 re-image 所有的板卡 (re-image 的操作，类似于 PXE 安装)
-eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统, host 系统里再 run 两个 vm （XR VM 和 sysadmin VM）。
-[host:~]$ virsh list --all Id Name State ---------------------------------------------------- 2 sysadmin running 3 default-sdr--1 running 关于不同 VM 之间如何访问可以参考另一篇 文章。">
+  <meta property="og:description" content="研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -84,13 +78,7 @@ eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="eXR filesystem">
-  <meta name="twitter:description" content="研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。
-本文的演示事例使用的硬件 A9K-RSP5-SE 和 eXR 742 作为案例，使用的硬件不同，升级方式不同，磁盘的大小和分区是略微存在出入的。
-如果你需要一个干净的，完全纯净的分区请采用以下方式升级或安装系统:
-USB/PXE
-正常 install command 升级,升级完成后 re-image 所有的板卡 (re-image 的操作，类似于 PXE 安装)
-eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统, host 系统里再 run 两个 vm （XR VM 和 sysadmin VM）。
-[host:~]$ virsh list --all Id Name State ---------------------------------------------------- 2 sysadmin running 3 default-sdr--1 running 关于不同 VM 之间如何访问可以参考另一篇 文章。">
+  <meta name="twitter:description" content="研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。">
 
   
   <script type="application/ld+json">
@@ -101,7 +89,7 @@ eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统
     "name": "eXR filesystem",
     "headline": "eXR filesystem",
     
-    "abstract": "\u003cp\u003e研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。\u003c\/p\u003e\n\u003cp\u003e本文的演示事例使用的硬件 A9K-RSP5-SE 和 eXR 742 作为案例，使用的硬件不同，升级方式不同，磁盘的大小和分区是略微存在出入的。\u003c\/p\u003e\n\u003cp\u003e如果你需要一个干净的，完全纯净的分区请采用以下方式升级或安装系统:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eUSB\/PXE\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003e正常 install command 升级,升级完成后 re-image 所有的板卡 (re-image 的操作，类似于 PXE 安装)\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003eeXR 系统简介 \n    \u003cdiv id=\u0022exr-%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#exr-%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cfigure\u003e\n\u003cp\u003e\n\n\n\n\n  \n  \n    \n  \n  \n    \u003cfigure\u003e\n      \n      \u003cimg\n        class=\u0022my-0 rounded-md\u0022\n        loading=\u0022lazy\u0022\n        src=\u0022\/blog\/exr-filesystem\/images\/image.png\u0022\n        alt=\u0022\u0022\n      \/\u003e\n      \n      \n    \u003c\/figure\u003e\n  \n\n\u003c\/p\u003e\n\u003cfigcaption\u003e\n\u003cp\u003e如上图，eXR 是在硬件的基础上有一个 host 系统, host 系统里再 run 两个 vm （XR VM 和 sysadmin VM）。\u003c\/p\u003e\n\u003c\/figcaption\u003e\n\u003c\/figure\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003e[host:~]$ virsh list --all\n Id    Name                           State\n----------------------------------------------------\n 2     sysadmin                       running\n 3     default-sdr--1                 running\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003e关于不同 VM 之间如何访问可以参考另一篇\u003ca href=\u0022https:\/\/imxing.info\/exr-architecture\u0022   target=\u0022_blank\u0022\u003e\n    文章\u003c\/a\u003e。\u003c\/p\u003e",
+    "abstract": "研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/exr-filesystem\/",
     "author" : {
@@ -841,6 +829,8 @@ eXR 系统简介 # 如上图，eXR 是在硬件的基础上有一个 host 系统
  3     default-sdr--1                 running
 </code></pre><p>关于不同 VM 之间如何访问可以参考另一篇<a href="https://imxing.info/exr-architecture"   target="_blank">
     文章</a>。</p>
+
+
 <h3 class="relative group">Host VM 的文件系统 
     <div id="host-vm-%E7%9A%84%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F" class="anchor"></div>
     
@@ -1250,6 +1240,7 @@ sda                                        8:0    0 29.8G  0 disk
     Linux 中查看硬盘信息</a></p>
 </li>
 </ul>
+
         </div>
         
         

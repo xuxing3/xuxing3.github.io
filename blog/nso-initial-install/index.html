@@ -68,8 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/nso-initial-install/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="NSO-Initial Install">
-  <meta property="og:description" content=" Download NSO from Cisco Website Make sure java and python have been install in your server. Java -version should indicate a java version of “1.7” or higher.Python2 needs to be version 2.7.5 or higher. For Python3, the version needs to be 3.4 or higher.
-Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@localhost ~]# mkdir /usr/java [root@localhost ~]# mv jdk1.8.0_202/ /usr/java [root@localhost ~]# vi /etc/profile export JAVA_HOME=/usr/java/jdk1.8.0_202 export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export PATH=$PATH:$JAVA_HOME/bin ">
+  <meta property="og:description" content="Download NSO from Cisco Website Make sure java and python have been install in your server.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -79,8 +78,7 @@ Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@lo
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="NSO-Initial Install">
-  <meta name="twitter:description" content=" Download NSO from Cisco Website Make sure java and python have been install in your server. Java -version should indicate a java version of “1.7” or higher.Python2 needs to be version 2.7.5 or higher. For Python3, the version needs to be 3.4 or higher.
-Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@localhost ~]# mkdir /usr/java [root@localhost ~]# mv jdk1.8.0_202/ /usr/java [root@localhost ~]# vi /etc/profile export JAVA_HOME=/usr/java/jdk1.8.0_202 export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export PATH=$PATH:$JAVA_HOME/bin ">
+  <meta name="twitter:description" content="Download NSO from Cisco Website Make sure java and python have been install in your server.">
 
   
   <script type="application/ld+json">
@@ -91,7 +89,7 @@ Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@lo
     "name": "NSO-Initial Install",
     "headline": "NSO-Initial Install",
     
-    "abstract": "\u003cul\u003e\n\u003cli\u003eDownload NSO from \u003ca href=\u0022https:\/\/software.cisco.com\/download\/home\/286323467\/type\/286283941\/release\/5.2.1?i=!pp\u0022   target=\u0022_blank\u0022\u003e\n    Cisco Website\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003eMake sure java and python have been install in your server.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eJava -version should indicate a java version of “1.7” or higher.Python2 needs to be version 2.7.5 or higher. For Python3, the version needs to be 3.4 or higher.\u003c\/p\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e\u003cstrong\u003eInstall Java\u003c\/strong\u003e \n    \u003cdiv id=\u0022install-java\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#install-java\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 class=\u0022chroma\u0022\u003e\u003ccode class=\u0022language-bash\u0022 data-lang=\u0022bash\u0022\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e# tar -zxvf jdk-8u202-linux-x64.tar.gz\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e#  mkdir \/usr\/java\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e# mv jdk1.8.0_202\/ \/usr\/java\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e[\u003c\/span\u003eroot@localhost ~\u003cspan class=\u0022o\u0022\u003e]\u003c\/span\u003e\u003cspan class=\u0022c1\u0022\u003e# vi \/etc\/profile\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003eJAVA_HOME\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e\/usr\/java\/jdk1.8.0_202\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003eCLASSPATH\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e.:\u003cspan class=\u0022nv\u0022\u003e$JAVA_HOME\u003c\/span\u003e\/jre\/lib\/rt.jar:\u003cspan class=\u0022nv\u0022\u003e$JAVA_HOME\u003c\/span\u003e\/lib\/dt.jar:\u003cspan class=\u0022nv\u0022\u003e$JAVA_HOME\u003c\/span\u003e\/lib\/tools.jar\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022nb\u0022\u003eexport\u003c\/span\u003e \u003cspan class=\u0022nv\u0022\u003ePATH\u003c\/span\u003e\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003e\u003cspan class=\u0022nv\u0022\u003e$PATH\u003c\/span\u003e:\u003cspan class=\u0022nv\u0022\u003e$JAVA_HOME\u003c\/span\u003e\/bin\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e",
+    "abstract": "Download NSO from Cisco Website Make sure java and python have been install in your server.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/nso-initial-install\/",
     "author" : {
@@ -800,7 +798,9 @@ Install Java # [root@localhost ~]# tar -zxvf jdk-8u202-linux-x64.tar.gz [root@lo
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/java/jdk1.8.0_202
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CLASSPATH</span><span class="o">=</span>.:<span class="nv">$JAVA_HOME</span>/jre/lib/rt.jar:<span class="nv">$JAVA_HOME</span>/lib/dt.jar:<span class="nv">$JAVA_HOME</span>/lib/tools.jar
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$JAVA_HOME</span>/bin
-</span></span></code></pre></div><h2 class="relative group"><strong>Install NSO</strong>(local-install) 
+</span></span></code></pre></div>
+
+<h2 class="relative group"><strong>Install NSO</strong>(local-install) 
     <div id="install-nsolocal-install" class="anchor"></div>
     
     <span

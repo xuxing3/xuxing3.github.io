@@ -34,56 +34,7 @@
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-xr-to-sonic/</guid>
-      <description>&lt;h4 class=&#34;relative group&#34;&gt;Step 1: Reload Cisco 8000 and Config PXE 
-    &lt;div id=&#34;step-1-reload-cisco-8000-and-config-pxe&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#step-1-reload-cisco-8000-and-config-pxe&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Reload chassis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Enter ESC to BIOS， Select &amp;ldquo;Boot Manager&amp;rdquo; then IPXE&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iPXE initialising devices...ok
-
-
-
-iPXE 1.0.0+ (b965) -- Open Source Network Boot Firmware -- http://ipxe.org
-Features: DNS HTTP HTTPS TFTP EFI ISO9660_grub Menu
-iPXE&amp;gt;
-iPXE&amp;gt; ifopen net0
-iPXE&amp;gt;
-iPXE&amp;gt;
-iPXE&amp;gt; ifstat
-net0: 08:4f:a9:5c:fb:c9 using i210 on PCI02:00.0 (open)
-  [Link:up, TX:0 TXE:0 RX:10 RXE:3]
-  [RXE: 1 x &amp;#34;The socket is not connected (http://ipxe.org/380f6093)&amp;#34;]
-  [RXE: 1 x &amp;#34;Error 0x440e6083 (http://ipxe.org/440e6083)&amp;#34;]
-  [RXE: 1 x &amp;#34;Operation not supported (http://ipxe.org/3c086083)&amp;#34;]
-net1: 00:a0:c9:00:00:00 using x557 on PCI04:00.0 (closed)
-  [Link:down, TX:0 TXE:0 RX:0 RXE:0]
-  [Link status: Down (http://ipxe.org/38086193)]
-net2: 08:4f:a9:5c:fb:ca using x557 on PCI04:00.1 (closed)
-  [Link:down, TX:0 TXE:0 RX:0 RXE:0]
-  [Link status: Down (http://ipxe.org/38086193)]
-iPXE&amp;gt;
-iPXE&amp;gt; set net0/ip 10.75.49.7
-iPXE&amp;gt; set net0/netmask 255.255.255.0
-iPXE&amp;gt; set net0/gateway 10.75.49.1
-iPXE&amp;gt; ifopen net0
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3. BOOT the ONIE image.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iPXE&amp;gt; boot tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe
-tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe... 94%
-                                                                    ok
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>Step 1: Reload Cisco 8000 and Config PXE # Reload chassis</description>
       
     </item>
     
@@ -93,35 +44,7 @@ tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe... 94%
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-software-upgrade-pxe/</guid>
-      <description>&lt;p&gt;在之前的文章里， 介绍 install command 升级 Cisco 8000 的方法， 这篇文章记录下使用 PXE bring up 一台新的 Cisco 8000 的过程&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Reload chassis&lt;/li&gt;
-&lt;li&gt;按 ESC 进入 BIOS， 选择 Boot Manager &amp;mdash;&amp;ndash; PXE&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/cisco-8000-software-upgrade-pxe/images/image.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;</description>
+      <description>在之前的文章里， 介绍 install command 升级 Cisco 8000 的方法， 这篇文章记录下使用 PXE bring up 一台新的 Cisco 8000 的过程</description>
       
     </item>
     
@@ -131,101 +54,7 @@ tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe... 94%
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-software-upgrade-install-command/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;Upgrade Method 
-    &lt;div id=&#34;upgrade-method&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#upgrade-method&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;Cisco 8000 升级方式和其他 XR 产品类似可大致分为三类：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;USB re-image&lt;/li&gt;
-&lt;li&gt;PXE re-image&lt;/li&gt;
-&lt;li&gt;Install command （本文 log 一下用 install command 升级的过程）&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;准备工作 
-    &lt;div id=&#34;%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;下载安装包，以及 optional RPM 包。并 copy 到设备主引擎 harddisk: 中。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/cisco-8000-software-upgrade-install-command/images/image.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/RP0/CPU0:ios#dir harddisk:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Wed Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 06:45:46.006 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Directory of harddisk:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; -rw-r--r--. &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;    &lt;span class=&#34;m&#34;&gt;737280&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 06:44 8000-optional-rpms.7.0.14.tar     &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&amp;lt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;m&#34;&gt;524289&lt;/span&gt; drwxrwxrwx. &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 05:00 dumper
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;m&#34;&gt;13&lt;/span&gt; -rw-r--r--. &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;987228160&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 05:53 8000-x64-7.0.14.iso            &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;m&#34;&gt;14&lt;/span&gt; -rw-r--r--. &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;   &lt;span class=&#34;m&#34;&gt;1003520&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 06:44 8000-k9sec-rpms.7.0.14.tar       &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&amp;lt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3407873&lt;/span&gt; drwxr-xr-x. &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 05:00 showtech
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;m&#34;&gt;11&lt;/span&gt; drwx------. &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;     &lt;span class=&#34;m&#34;&gt;16384&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 04:49 lost+found
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;1310721&lt;/span&gt; drwx------. &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 04:58 ima
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3670017&lt;/span&gt; drwxrwxrwx. &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 05:25 cisco_support
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;m&#34;&gt;655361&lt;/span&gt; drwxr-xr-x. &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 05:00 pam
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;2883585&lt;/span&gt; drwxrwxrwx. &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 04:54 shutdown
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;m&#34;&gt;12&lt;/span&gt; -rw-rw-rw-. &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;m&#34;&gt;31&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 04:54 debug_shell_client.log
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;m&#34;&gt;262145&lt;/span&gt; drwxrwxrwx. &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 04:55 .sppdc
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3932161&lt;/span&gt; drwxrwxrwx. &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; Jan &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; 04:54 nvram
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/cisco-8000-software-upgrade-install-command/images/image-1-1024x713.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;如上所示， ISO 包中已经包含了一些基础的功能包，如 BGP ISIS OSPF， 还有些存在于 optional 的 tar 包中。&lt;/p&gt;</description>
+      <description>Upgrade Method # Cisco 8000 升级方式和其他 XR 产品类似可大致分为三类：</description>
       
     </item>
     
@@ -245,21 +74,7 @@ tftp://10.76.76.160/onie-recovery-x86_64-cisco_8000-r0.efi64.pxe... 94%
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/turboboot-upgrade-asr9000/</guid>
-      <description>&lt;p&gt;详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;安装前的准备 
-    &lt;div id=&#34;%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;- 格式为 FAT32 的 U 盘一个&lt;/p&gt;
-&lt;p&gt;- cisco 官网下载有 turboboot 字样的安装文件&lt;/p&gt;</description>
+      <description>详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.</description>
       
     </item>
     

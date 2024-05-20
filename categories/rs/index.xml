@@ -14,53 +14,7 @@
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ipsec-vpn/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;IKE（网络密钥交换协议） 
-    &lt;div id=&#34;ike%E7%BD%91%E7%BB%9C%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%8D%8F%E8%AE%AE&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#ike%E7%BD%91%E7%BB%9C%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%8D%8F%E8%AE%AE&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;IKE 属于一种混合型协议，由 Internet 安全关联和密钥管理协议（ISAKMP）和两种密钥交换协议 OAKLEY 与 SKEME 组成。IKE 创建在由 ISAKMP 定义的框架上，沿用了 OAKLEY 的密钥交换模式以及 SKEME 的共享和密钥更新技术，还定义了它自己的两种密钥交换方式：主模式和野蛮模式。&lt;/p&gt;
-&lt;p&gt;IKE 协商两种 SA：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IKE(ISAKMP) SA (Phase 1）&lt;/li&gt;
-&lt;li&gt;IPSEC SA（Phase 2）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;IKE 与 IPSec 的关系如下图所示，对等体之间建立一个 IKE SA 完成身份验证和密钥信息交换后，在 IKE SA 的保护下，根据配置的 AH/ESP 安全协议等参数协商出一对 IPSec SA。此后，对等体间的数据将在 IPSec 隧道中加密传输。&lt;/p&gt;
-&lt;p&gt;IKE SA 是一个双向的逻辑连接，两个对等体间只建立一个 IKE SA。&lt;/p&gt;
-&lt;figure&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/ipsec-vpn/images/image-5.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;figcaption&gt;
-&lt;p&gt;IKE 与 IPSec 的关系图&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+      <description>IKE（网络密钥交换协议） # IKE 属于一种混合型协议，由 Internet 安全关联和密钥管理协议（ISAKMP）和两种密钥交换协议 OAKLEY 与 SKEME 组成。IKE 创建在由 ISAKMP 定义的框架上，沿用了 OAKLEY 的密钥交换模式以及 SKEME 的共享和密钥更新技术，还定义了它自己的两种密钥交换方式：主模式和野蛮模式。</description>
       
     </item>
     
@@ -70,17 +24,7 @@
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/gre/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;GRE 简介 
-    &lt;div id=&#34;gre-%E7%AE%80%E4%BB%8B&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#gre-%E7%AE%80%E4%BB%8B&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;通用路由封装协议 GRE（Generic Routing Encapsulation）可以对某些网络层协议（如 IPX、ATM、IPv6、AppleTalk 等）的数据报文进行封装（区别于 IPsec， IPsec 只能封装 IP 数据包），使这些被封装的数据报文能够在另一个网络层协议（如 IPv4）中传输。&lt;/p&gt;</description>
+      <description>GRE 简介 # 通用路由封装协议 GRE（Generic Routing Encapsulation）可以对某些网络层协议（如 IPX、ATM、IPv6、AppleTalk 等）的数据报文进行封装（区别于 IPsec， IPsec 只能封装 IP 数据包），使这些被封装的数据报文能够在另一个网络层协议（如 IPv4）中传输。</description>
       
     </item>
     
@@ -90,70 +34,7 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/dmvpn/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;DMVPN Phase 1: 
-    &lt;div id=&#34;dmvpn-phase-1&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#dmvpn-phase-1&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/dmvpn/images/image-13.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;R1 配置:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;R1_HUB#show run int tunnel 0
-Building configuration...
-
-Current configuration : 219 bytes
-!
-interface Tunnel0
- ip address 172.168.123.1 255.255.255.0
- no ip redirects
- ip nhrp map multicast dynamic
- ip nhrp network-id 1
- tunnel source Ethernet0/0
- tunnel mode gre multipoint
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;R2 / R3 配置:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;R2_spoke#show run int tunnel 0
-Building configuration...
-
-Current configuration : 241 bytes
-!
-interface Tunnel0
- ip address 172.168.123.2 255.255.255.0
- ip nhrp map 172.168.123.1 10.1.14.1
- ip nhrp map multicast 10.1.14.1
- ip nhrp network-id 1
- ip nhrp nhs 172.168.123.1
- tunnel source Ethernet0/0
- tunnel destination 10.1.14.1
-end
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>DMVPN Phase 1: # R1 配置:</description>
       
     </item>
     
@@ -163,44 +44,7 @@ end
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xr-leaking-the-routes-between-vrf-and-global-rib/</guid>
-      <description>&lt;p&gt;一个简单的从 global rib 往 vrf 内 leak 路由的配置案例.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#show run vrf A
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sun Mar &lt;span class=&#34;m&#34;&gt;28&lt;/span&gt; 16:35:18.881 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vrf A
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; address-family ipv4 unicast
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  import from default-vrf route-policy &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; advertise-as-vpn   &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&amp;lt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  import route-target
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   1:1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  !
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; route-target
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   1:1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  !
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; !
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#show run route-policy &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sun Mar &lt;span class=&#34;m&#34;&gt;28&lt;/span&gt; 16:35:28.070 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;route-policy &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; destination in &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    pass
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    drop
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  endif
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end-policy
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#show run prefix-set &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sun Mar &lt;span class=&#34;m&#34;&gt;28&lt;/span&gt; 16:35:34.210 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;prefix-set &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  11.11.11.11/32
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end-set
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/0/CPU0:PE4#
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>一个简单的从 global rib 往 vrf 内 leak 路由的配置案例.</description>
       
     </item>
     
@@ -210,26 +54,7 @@ end
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notes-about-reoptimize-timer/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reoptimize timers delay cleanup &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reoptimize timers delay installation &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reoptimize timers delay path-protection &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Install delay:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;How much &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; the head end waits before it &lt;span class=&#34;s2&#34;&gt;&amp;#34;activates&amp;#34;&lt;/span&gt; the reoptimized LSP after receiving the RESV. This gives some &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; to mid/tail nodes to program their fowardng.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cleanup delay:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;How much &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; the &lt;span class=&#34;s2&#34;&gt;&amp;#34;old&amp;#34;&lt;/span&gt; LSP is kept around after the new reoptimize LSP has been installed. This makes sure there&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;s no longer and traffic flowing over the &lt;span class=&#34;s2&#34;&gt;&amp;#34;old&amp;#34;&lt;/span&gt; LSP before tearing it down
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Path-protection 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Delays the &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; between path protection switchover event and tunnel reoptimization. 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//default values:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cleanup delay: &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;installation delay: &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;path-protection: &lt;span class=&#34;m&#34;&gt;180&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>reoptimize timers delay cleanup 60 reoptimize timers delay installation 60 reoptimize timers delay path-protection 50 Install delay: How much time the head end waits before it &amp;#34;activates&amp;#34; the reoptimized LSP after receiving the RESV.</description>
       
     </item>
     
@@ -239,85 +64,7 @@ end
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/xrv-9000-install/</guid>
-      <description>&lt;p&gt;Cisco IOS XRv 9000路由器是一款虚拟路由器，部署在运行64位IOS XR软件的x86服务器硬件上的虚拟机（VM）实例上。Cisco IOS XRv 9000路由器以虚拟化的形式提供传统的提供商边缘（PE）服务以及虚拟路由反射器（vRR）功能 。&lt;/p&gt;
-&lt;p&gt;这里简单记录下在ESXI 上的安装过程。&lt;/p&gt;
-&lt;p&gt;首先去官网下载安装包，四个安装包下载其一即可，分别为default or for vRR两类, 然后是否支持VGA接口。&lt;br&gt;
-其中default是用于vPE路由器使用的，vRR是用于路由反射器。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/xrv-9000-install/images/image.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;解压缩后有三个安装文件.iso .ova .qcow2. 如果要安装在ESXI上只能用.iso的或者.ova文件。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/xrv-9000-install/images/image-1.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;我这里使用的是.iso， 上传iso到ESXI，创建虚机并配置如下设备：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- Harddisk ， IDE 类型- CD drive 挂载XRv 9000的iso镜像文件- 添加至少4个网卡，类型为E1000， 第一个是XRv 9000的MGMT接口，第二个第三个暂时没有用到， 从第四个开始是业务口编号从Gi0/0/0/0 开始 - 添加3个串口，第一个为XR console口，第二个为AUX 口，第三个为sysadmin 口.  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/xrv-9000-install/images/image-2.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;</description>
+      <description>Cisco IOS XRv 9000路由器是一款虚拟路由器，部署在运行64位IOS XR软件的x86服务器硬件上的虚拟机（VM）实例上。Cisco IOS XRv 9000路由器以虚拟化的形式提供传统的提供商边缘（PE）服务以及虚拟路由反射器（vRR）功能 。</description>
       
     </item>
     
@@ -327,56 +74,7 @@ end
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-linecard-type/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;Trident - 1st Generation 
-    &lt;div id=&#34;trident---1st-generation&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#trident---1st-generation&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;A9K-4T-L&lt;br&gt;
-A9K-4T-B&lt;br&gt;
-A9K-4T-E&lt;br&gt;
-A9K-8T/4-L&lt;br&gt;
-A9K-8T/4-B&lt;br&gt;
-A9K-8T/4-E&lt;br&gt;
-A9K-8T-L&lt;br&gt;
-A9K-8T-B&lt;br&gt;
-A9K-8T-E&lt;br&gt;
-A9K-16/8T-B&lt;br&gt;
-A9K-40GE-L&lt;br&gt;
-A9K-40GE-B&lt;br&gt;
-A9K-40GE-E&lt;br&gt;
-A9K-2T20GE-L&lt;br&gt;
-A9K-2T20GE-B&lt;br&gt;
-A9K-2T20GE-E&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/asr9000-linecard-type/images/image-2.png&#34;
-        alt=&#34;&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;</description>
+      <description>Trident - 1st Generation # A9K-4T-L</description>
       
     </item>
     
@@ -386,46 +84,7 @@ A9K-2T20GE-E&lt;/p&gt;
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/</guid>
-      <description>&lt;p&gt;Telemetry 是一种类似 SNMP 技术的 feature，用于远程采集网络设备上相关信息。与 SNMP 不同的是，SNMP 是 Pull Mode，需要 server 端主动的要求 Get 某些信息，而 Telemetry 则是一种 Push Mode，可以周期性、主动的 push 相关信息到 server 上。SNMP 是秒级的数据采集， 而 Telemetry 可以实现毫秒级的数据采集.&lt;/p&gt;
-
-
-&lt;h4 class=&#34;relative group&#34;&gt;如何获得相应的 sensor-path 
-    &lt;div id=&#34;%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E7%9B%B8%E5%BA%94%E7%9A%84-sensor-path&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E7%9B%B8%E5%BA%94%E7%9A%84-sensor-path&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h4&gt;
-&lt;p&gt;与 SNMP 的 OID 类似，sensor-path 代表着你想要的获得哪些信息，在 XR 设备上我们可以使用如下命令去判断我们需要获得的信息是哪一类，即获得关键字；然后到 yang 文件夹过滤相关关键字:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/RSP1/CPU0:9910-B#schema-describe show segment-routing traffic-eng forwarding policy name test-policy detail
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Fri Dec &lt;span class=&#34;m&#34;&gt;27&lt;/span&gt; 01:57:38.336 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Action: get
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Path:   RootOper.XTC.PolicyForwarding   &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; XTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/RSP1/CPU0:9910-B#run
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Fri Dec &lt;span class=&#34;m&#34;&gt;27&lt;/span&gt; 01:57:42.449 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;xr-vm_node0_RSP1_CPU0:~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cd&lt;/span&gt; /pkg/yang/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;xr-vm_node0_RSP1_CPU0:/pkg/yang&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$ls&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep xtc      &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;cfg代表配置相关，oper与show command相关
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-agent-cfg.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-agent-oper-sub1.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-agent-oper-sub2.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-agent-oper.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-cfg.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-oper-sub1.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cisco-IOS-XR-infra-xtc-oper.yang
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//有用的文件：
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RP/0/RP0/CPU0:XTC#run
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Tue Jan &lt;span class=&#34;m&#34;&gt;22&lt;/span&gt; 06:58:56.512 UTC
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;xr-vm_node0_RP0_CPU0:~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cd&lt;/span&gt; /pkg/telemetry/mdt/protogen
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;xr-vm_node0_RP0_CPU0:/pkg/telemetry/mdt/protogen&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$ls&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yang_to_schema.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接下来就需要自己去 yang 文件中找一些关键词，自己把 sensor path 组合起来.&lt;/p&gt;
-&lt;p&gt;当然有更好的方法，可以参考我另一篇文章 &lt;a href=&#34;https://imxing.info/anx-a-tools-to-help-test-telemetry/&#34;   target=&#34;_blank&#34;&gt;
-    ANX&lt;/a&gt;&lt;/p&gt;</description>
+      <description>Telemetry 是一种类似 SNMP 技术的 feature，用于远程采集网络设备上相关信息。与 SNMP 不同的是，SNMP 是 Pull Mode，需要 server 端主动的要求 Get 某些信息，而 Telemetry 则是一种 Push Mode，可以周期性、主动的 push 相关信息到 server 上。SNMP 是秒级的数据采集， 而 Telemetry 可以实现毫秒级的数据采集.</description>
       
     </item>
     
@@ -435,9 +94,7 @@ A9K-2T20GE-E&lt;/p&gt;
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-nv-satellitedual-home/</guid>
-      <description>&lt;p&gt;ASR9K 有两种虚拟化的技术，一种为 nV edge，也叫 nV cluster，属于将两个 ASR9K 的机箱虚拟化成一个路由器，使用统一的控制层面，类似于 CRS 中的多机(5.3.4 以后开始就不再支持该 feature,&lt;a href=&#34;https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r6-0/nV/configuration/guide/b_nv_cg60xasr9k/b_nv_cg60xasr9k_chapter_01.html&#34;   target=&#34;_blank&#34;&gt;
-    link&lt;/a&gt;)；另一种为 nV satellite，这种技术是为了扩展 9K 上 GigabitEthernet 接口，通过 ASR9K 外接一个&lt;a href=&#34;https://www.cisco.com/c/en/us/products/collateral/routers/asr-9000-series-aggregation-services-routers/data_sheet_c78-673744.html&#34;   target=&#34;_blank&#34;&gt;
-    ASR 9000v&lt;/a&gt;来实现（或者 901，903），其中一个 9000v 上包含 40+ Gi 的下行接口，4 个 TenG 的上行接口。&lt;/p&gt;</description>
+      <description>ASR9K 有两种虚拟化的技术，一种为 nV edge，也叫 nV cluster，属于将两个 ASR9K 的机箱虚拟化成一个路由器，使用统一的控制层面，类似于 CRS 中的多机(5.</description>
       
     </item>
     
@@ -447,40 +104,7 @@ A9K-2T20GE-E&lt;/p&gt;
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/monitor-session/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;CRS-ACL-Based Traffic Mirroring 
-    &lt;div id=&#34;crs-acl-based-traffic-mirroring&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#crs-acl-based-traffic-mirroring&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/monitor-session/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;</description>
+      <description>CRS-ACL-Based Traffic Mirroring # RP/0/RSP0/CPU0:CRS #show access-lists span Thu Oct 11 09:08:44.</description>
       
     </item>
     
@@ -490,28 +114,7 @@ A9K-2T20GE-E&lt;/p&gt;
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-config-example/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;&lt;strong&gt;&lt;em&gt;SR ISIS&lt;/em&gt;&lt;/strong&gt; 
-    &lt;div id=&#34;_sr-isis_&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#_sr-isis_&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;router isis &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; is-type level-2-only
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; net 49.0000.0000.0001.00
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; address-family ipv4 unicast
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  metric-style wide
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  segment-routing mpls
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; !
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; interface Loopback0
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  address-family ipv4 unicast
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   prefix-sid index &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  !
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>SR ISIS # router isis 1 is-type level-2-only net 49.</description>
       
     </item>
     
@@ -521,8 +124,7 @@ A9K-2T20GE-E&lt;/p&gt;
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-l3vpn/</guid>
-      <description>&lt;p&gt;EVPN means next-generation &lt;strong&gt;all-in-one&lt;/strong&gt; VPN technology that provides a wide of range of services such as E-LAN, E-Line, E-TREE, L3VPN, DCI, DC-Overlay, IRB, …  The following is the mapping between EVPN and traditional VPN technologies.&lt;/p&gt;
-&lt;p&gt;This topic will introduce EVPN L3VPN.&lt;/p&gt;</description>
+      <description>EVPN means next-generation all-in-one VPN technology that provides a wide of range of services such as E-LAN, E-Line, E-TREE, L3VPN, DCI, DC-Overlay, IRB, … The following is the mapping between EVPN and traditional VPN technologies.</description>
       
     </item>
     
@@ -532,9 +134,7 @@ A9K-2T20GE-E&lt;/p&gt;
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-pbb-evpn/</guid>
-      <description>&lt;p&gt;There are two types of traditional l2vpn, one is point-to-point (VPWS) and the other is point-to-multipoint(VPLS).&lt;br&gt;
-For VPLS, EVPN has a corresponding technology PBB-EVPN.&lt;br&gt;
-This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</description>
+      <description>There are two types of traditional l2vpn, one is point-to-point (VPWS) and the other is point-to-multipoint(VPLS).</description>
       
     </item>
     
@@ -544,7 +144,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/how-to-add-license-at-exr-platform/</guid>
-      <description>&lt;p&gt;Currently we have two ways to install the license.One is &amp;ldquo;Traditional Licensing&amp;rdquo; and the other is &amp;ldquo;Smart Software Licensing&amp;rdquo;.But at Cisco eXR platform(64-bit IOS XR), we can only use &amp;ldquo;Smart Software Licensing&amp;rdquo;.&lt;/p&gt;</description>
+      <description>Currently we have two ways to install the license.</description>
       
     </item>
     
@@ -554,17 +154,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/routing-protocol-pri/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;Cisco router routing protocol priority 
-    &lt;div id=&#34;cisco-router-routing-protocol-priority&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#cisco-router-routing-protocol-priority&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;table class=&#34;wp-block-table has-subtle-pale-blue-background-color has-fixed-layout has-background is-style-regular&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Routing Protocol&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Priority&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DIRECT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;STATIC&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EIGRP Summary&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EBGP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;内部EIGRP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IGRP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OSPF&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;110&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IS-IS&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;115&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RIP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EGP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;140&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;外部EIGRP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;170&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IBGP&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;未知&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;255&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</description>
+      <description> Cisco router routing protocol priority # Routing ProtocolPriorityDIRECT0STATIC1EIGRP Summary5EBGP20内部EIGRP90IGRP100OSPF110IS-IS115RIP120EGP140外部EIGRP170IBGP200未知255 Huawei router routing priority # Routing ProtocolPriorityDIRECT0OSPF10STATIC60IGRP80RIP110OSPFASE150BGP170 </description>
       
     </item>
     
@@ -574,39 +164,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/iox-neflow-configuration-example/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;sampler-map 
-    &lt;div id=&#34;sampler-map&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#sampler-map&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sampler-map FNF_SAMPLER_MAP
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; random &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; out-of &lt;span class=&#34;m&#34;&gt;4999&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 class=&#34;relative group&#34;&gt;exporter-map 
-    &lt;div id=&#34;exporter-map&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#exporter-map&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;flow exporter-map FNF_EXPORT_MAP
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; version v9
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  options sampler-table timeout &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  template timeout &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; !
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; transport udp &lt;span class=&#34;m&#34;&gt;20013&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; Loopback0
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; destination 10.1.1.1
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>sampler-map # sampler-map FNF_SAMPLER_MAP random 1 out-of 4999 exporter-map # flow exporter-map FNF_EXPORT_MAP version v9 options sampler-table timeout 60 template timeout 60 !</description>
       
     </item>
     
@@ -616,8 +174,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ciscobgp-13/</guid>
-      <description>&lt;p&gt;本文介绍一下思科 BGP 的 13 条选路原则。&lt;br&gt;
-&lt;em&gt;XR:show bgp ipv4 unicast x.x.x.x/x bestpath-compare&lt;/em&gt;&lt;/p&gt;</description>
+      <description>本文介绍一下思科 BGP 的 13 条选路原则。</description>
       
     </item>
     
@@ -627,7 +184,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/huaweibgp-13/</guid>
-      <description>&lt;p&gt;本文介绍一下华为 BGP 的 13 条选路原则，附上示例。&lt;/p&gt;</description>
+      <description>本文介绍一下华为 BGP 的 13 条选路原则，附上示例。</description>
       
     </item>
     
@@ -637,22 +194,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/implement-sham-link-under-the-xr-platform/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;image.png&#34; alt=&#34;alt text&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;这篇文章介绍一下 sham-link，并提供一个 sham-link 在 XR 平台下的配置案例（ASR9000）&lt;/p&gt;</description>
+      <description>这篇文章介绍一下 sham-link，并提供一个 sham-link 在 XR 平台下的配置案例（ASR9000）</description>
       
     </item>
     
@@ -662,31 +204,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-a/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/option-a/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;跨域 VPN 的解决方案主要是为了解决客户不同 AS 之间的站点的互通问题，即客户的 VPN 路由可以在两个 AS 之间进行传递。RFC4364 介绍了三种解决方案，我会在接下来的文章中一一介绍。本文先说第一种解决方案：Option A,这种解决方案需要在两个 AS 之间的 ASBR 上使用专门的接口去传递路由信息，所以我们也称这种为 VRF-to-VRF。&lt;/p&gt;</description>
+      <description>跨域 VPN 的解决方案主要是为了解决客户不同 AS 之间的站点的互通问题，即客户的 VPN 路由可以在两个 AS 之间进行传递。RFC4364 介绍了三种解决方案，我会在接下来的文章中一一介绍。本文先说第一种解决方案：Option A,这种解决方案需要在两个 AS 之间的 ASBR 上使用专门的接口去传递路由信息，所以我们也称这种为 VRF-to-VRF。</description>
       
     </item>
     
@@ -696,31 +214,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-b/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/option-b/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.但是这样的配置缺少扩展性，例如如果 PE 上的用户很多，存在多个 VRF 的情况，如果使用 Option A,那么我们就需要在 ASBR 之间增加链路，并配置属于不同的 VRF。工作量大，而且繁琐。下面介绍一种相对简单的方案 Option B.&lt;/p&gt;</description>
+      <description>上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.</description>
       
     </item>
     
@@ -730,31 +224,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-c/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/option-c/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;这篇文章介绍一下跨域 VPN Option C 在 IOX 设备上的配置案例&lt;/p&gt;</description>
+      <description>这篇文章介绍一下跨域 VPN Option C 在 IOX 设备上的配置案例</description>
       
     </item>
     
@@ -764,32 +234,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-bng-simple-configuration/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/asr9000-bng-simple-configuration/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;BNG Broadband Network Gateway 意思为用户的接入点，通过它们连接到宽带网络，“它们”指的是网络设备，例如思科的 ASR9K 。&lt;/p&gt;
-&lt;p&gt;本文主要是为了记录下两种最简单的在 ASR 9000 上部署 BNG 的配置，IPOE 和 PPPoE.&lt;/p&gt;</description>
+      <description>BNG Broadband Network Gateway 意思为用户的接入点，通过它们连接到宽带网络，“它们”指的是网络设备，例如思科的 ASR9K 。</description>
       
     </item>
     
@@ -799,31 +244,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/use-aux-ts/</guid>
-      <description>&lt;p&gt;可能在平常登陆 asr9000 的时候遇到这样的问题，telnet/ssh 等都无法登陆到设备，或者说主引擎的 console 没任何输出，无法查看设备的信息，这个时候除了重启引擎外，还有一个方法就是通过 AUX 接口登陆到设备，然后收集信息，本问介绍一下有哪些常见的 aux 模式下的命令。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/use-aux-ts/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;</description>
+      <description>可能在平常登陆 asr9000 的时候遇到这样的问题，telnet/ssh 等都无法登陆到设备，或者说主引擎的 console 没任何输出，无法查看设备的信息，这个时候除了重启引擎外，还有一个方法就是通过 AUX 接口登陆到设备，然后收集信息，本问介绍一下有哪些常见的 aux 模式下的命令。</description>
       
     </item>
     
@@ -833,24 +254,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-cfg-through-snmp/</guid>
-      <description>&lt;p&gt;遇到一个这样的需求，想使用 SNMP 的方式去 copy 设备的配置到 TFTP server。查了点资料发现真存在这种方式，虽然感觉这种功能很鸡肋，但还是记录以下以备查询。&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;Snmpwalk/snmpset 
-    &lt;div id=&#34;snmpwalksnmpset&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#snmpwalksnmpset&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;Snmpwalk 是一个很好用的小工具，平常查 OID 值的时候经常会遇到，Centos 的话直接用 yum 进行安装就行了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yum -y install net-snmp net-snmp-utils
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;snmpwalk -v 2c -c cisco 10.75.49.13 1.3.6.1.2.1.1.3.0
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;SNMP copy 配置这个功能使用的是 CISCO-CONFIG-COPY-MIB，目前在大部分的 IOS / IOS XR 上看起来都是支持的，且需要 rw 权限。&lt;/p&gt;
-&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;MIB Object Name&lt;/td&gt;&lt;td&gt;MIB Object Name&lt;/td&gt;&lt;td&gt;Values used in the example&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopyEntryRowStatus&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.14&lt;/td&gt;&lt;td&gt;1:active&lt;br&gt;2:notInService&lt;br&gt;3:notReady&lt;br&gt;4:createAndGo&lt;br&gt;5:createAndWait&lt;br&gt;6:destroy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopyProtocol&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.2&lt;/td&gt;&lt;td&gt;1:tftp&lt;br&gt;2:ftp&lt;br&gt;3:rcp&lt;br&gt;4:scp&lt;br&gt;5:sftp&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopySourceFileType&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.3&lt;/td&gt;&lt;td&gt;1.networkFile&lt;br&gt;2.iosFile&lt;br&gt;3.startupConfig&lt;br&gt;4.runningConfig&lt;br&gt;5.terminal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopyDestFileType&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.4&lt;/td&gt;&lt;td&gt;1.networkFile&lt;br&gt;2.iosFile&lt;br&gt;3.startupConfig&lt;br&gt;4.runningConfig&lt;br&gt;5.terminal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopyServerAddress&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.5&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopyFileName&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.6&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ccCopyState&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.9.9.96.1.1.1.1.10&lt;/td&gt;&lt;td&gt;1:waiting&lt;br&gt;2:running&lt;br&gt;3:successful&lt;br&gt;4:failed&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</description>
+      <description>遇到一个这样的需求，想使用 SNMP 的方式去 copy 设备的配置到 TFTP server。查了点资料发现真存在这种方式，虽然感觉这种功能很鸡肋，但还是记录以下以备查询。</description>
       
     </item>
     
@@ -870,31 +274,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-file-between-host-xr/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-  
-  
-    
-  
-  
-    &lt;figure&gt;
-      
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;https://imxing.info/blog/copy-file-between-host-xr/image.png&#34;
-        alt=&#34;alt text&#34;
-      /&gt;
-      
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;This article will introduction how to copy file beteew sysadmin-vm/xr-vm/host at IOS XR 64bit system.&lt;/p&gt;</description>
+      <description>This article will introduction how to copy file beteew sysadmin-vm/xr-vm/host at IOS XR 64bit system.</description>
       
     </item>
     
@@ -904,7 +284,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xe-software-upgrade/</guid>
-      <description>&lt;p&gt;思科的 IOS XE 系统搞的比较少，就遇到两次升级的案例，做个小抄记录下升级步骤。&lt;/p&gt;</description>
+      <description>思科的 IOS XE 系统搞的比较少，就遇到两次升级的案例，做个小抄记录下升级步骤。</description>
       
     </item>
     
@@ -914,7 +294,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/some-commonly-used-oids/</guid>
-      <description>&lt;p&gt;This artical will recording some commonly used OIDs, like &lt;strong&gt;memory usege&lt;/strong&gt;,&lt;strong&gt;interface counters.&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>This artical will recording some commonly used OIDs, like memory usege,interface counters.</description>
       
     </item>
     
@@ -924,14 +304,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-te-example/</guid>
-      <description>&lt;p&gt;最近接触了一个案例，其中包含很多的 SR 方面的知识，所以想趁着熟悉记录下来。具体包括了以下的内容：Policy SR-TE、Interface SR-TE、BGP EPE、TE BSID 等。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SR&lt;/li&gt;
-&lt;li&gt;Interface SR TE&lt;/li&gt;
-&lt;li&gt;TE BSID&lt;/li&gt;
-&lt;li&gt;BGP EPE&lt;/li&gt;
-&lt;li&gt;Policy SR TE&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>最近接触了一个案例，其中包含很多的 SR 方面的知识，所以想趁着熟悉记录下来。具体包括了以下的内容：Policy SR-TE、Interface SR-TE、BGP EPE、TE BSID 等。</description>
       
     </item>
     
@@ -941,21 +314,7 @@ This topic, will intruduction a simple PBB-EVPN configuration.&lt;/p&gt;</descri
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/turboboot-upgrade-asr9000/</guid>
-      <description>&lt;p&gt;详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;安装前的准备 
-    &lt;div id=&#34;%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;- 格式为 FAT32 的 U 盘一个&lt;/p&gt;
-&lt;p&gt;- cisco 官网下载有 turboboot 字样的安装文件&lt;/p&gt;</description>
+      <description>详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.</description>
       
     </item>
     

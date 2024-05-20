@@ -68,10 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/tacacs-aaa-configuration-in-cisco-ios-xr/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="TACACS (AAA) Configuration in Cisco IOS XR">
-  <meta property="og:description" content="Notes. # aaa authorization exec console local aaa authentication login console local aaa authorization commands console none line console authorization commands console login authentication console authorization exec console 在变更AAA配置之前一定要确保将console 配置为本地认证授权， 防止错误的配置导致无法修改配置.
-或者在变更AAA配置时不使用commit，使用”commit confirmed minutes x“.
-这条命令的意思是如果不进行第二次”commit“ 操作，配置将在x分钟后进行配置回滚
-RP/0/RSP0/CPU0:ios(config)#commit confirmed minutes 5 测试AAA， 测试无误后再进行commit RP/0/RSP0/CPU0:ios(config)#commit default VRF # tacacs source-interface Loopback0 vrf default tacacs-server host 10.70.79.177 port 49 key 7 110A1016141D ! aaa accounting commands default start-stop group tacacs&#43; aaa authorization exec console local aaa authorization exec default group tacacs&#43; local aaa authorization commands console none aaa authorization commands default group tacacs&#43; none aaa authentication login console local aaa authentication login default group tacacs&#43; local non-default VRF # tacacs source-interface MgmtEth0/RSP0/CPU0/0 vrf MGMT tacacs-server host 10.70.79.177 port 49 key 7 110A1016141D ! aaa accounting commands default start-stop group XU aaa group server tacacs&#43; XU server 10.70.79.177 vrf MGMT ! aaa authorization exec console local aaa authorization exec default group XU local aaa authorization commands console none aaa authorization commands default group XU none aaa authentication login console local aaa authentication login default group XU local ">
+  <meta property="og:description" content="Notes.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -81,10 +78,7 @@ RP/0/RSP0/CPU0:ios(config)#commit confirmed minutes 5 测试AAA， 测试无误�
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="TACACS (AAA) Configuration in Cisco IOS XR">
-  <meta name="twitter:description" content="Notes. # aaa authorization exec console local aaa authentication login console local aaa authorization commands console none line console authorization commands console login authentication console authorization exec console 在变更AAA配置之前一定要确保将console 配置为本地认证授权， 防止错误的配置导致无法修改配置.
-或者在变更AAA配置时不使用commit，使用”commit confirmed minutes x“.
-这条命令的意思是如果不进行第二次”commit“ 操作，配置将在x分钟后进行配置回滚
-RP/0/RSP0/CPU0:ios(config)#commit confirmed minutes 5 测试AAA， 测试无误后再进行commit RP/0/RSP0/CPU0:ios(config)#commit default VRF # tacacs source-interface Loopback0 vrf default tacacs-server host 10.70.79.177 port 49 key 7 110A1016141D ! aaa accounting commands default start-stop group tacacs&#43; aaa authorization exec console local aaa authorization exec default group tacacs&#43; local aaa authorization commands console none aaa authorization commands default group tacacs&#43; none aaa authentication login console local aaa authentication login default group tacacs&#43; local non-default VRF # tacacs source-interface MgmtEth0/RSP0/CPU0/0 vrf MGMT tacacs-server host 10.70.79.177 port 49 key 7 110A1016141D ! aaa accounting commands default start-stop group XU aaa group server tacacs&#43; XU server 10.70.79.177 vrf MGMT ! aaa authorization exec console local aaa authorization exec default group XU local aaa authorization commands console none aaa authorization commands default group XU none aaa authentication login console local aaa authentication login default group XU local ">
+  <meta name="twitter:description" content="Notes.">
 
   
   <script type="application/ld+json">
@@ -95,7 +89,7 @@ RP/0/RSP0/CPU0:ios(config)#commit confirmed minutes 5 测试AAA， 测试无误�
     "name": "TACACS (AAA) Configuration in Cisco IOS XR",
     "headline": "TACACS (AAA) Configuration in Cisco IOS XR",
     
-    "abstract": "\u003ch4 class=\u0022relative group\u0022\u003eNotes. \n    \u003cdiv id=\u0022notes\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#notes\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h4\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003eaaa authorization exec console local\naaa authentication login console local\naaa authorization commands console none\n\nline console\n authorization commands console\n login authentication console\n authorization exec console\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003e在变更AAA配置之前一定要确保将console 配置为本地认证授权， 防止错误的配置导致无法修改配置.\u003c\/p\u003e\n\u003cp\u003e或者在变更AAA配置时不使用commit，使用”commit confirmed minutes x“.\u003c\/p\u003e\n\u003cp\u003e这条命令的意思是如果不进行第二次”commit“ 操作，配置将在x分钟后进行配置回滚\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003eRP\/0\/RSP0\/CPU0:ios(config)#commit confirmed minutes 5\n测试AAA， 测试无误后再进行commit\nRP\/0\/RSP0\/CPU0:ios(config)#commit\n\u003c\/code\u003e\u003c\/pre\u003e\n\n\u003ch4 class=\u0022relative group\u0022\u003edefault VRF \n    \u003cdiv id=\u0022defaultvrf\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#defaultvrf\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h4\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003etacacs source-interface Loopback0 vrf default\ntacacs-server host 10.70.79.177 port 49\n key 7 110A1016141D\n!\naaa accounting commands default start-stop group tacacs\u002b\naaa authorization exec console local\naaa authorization exec default group tacacs\u002b local\naaa authorization commands console none\naaa authorization commands default group tacacs\u002b none\naaa authentication login console local\naaa authentication login default group tacacs\u002b local\n\u003c\/code\u003e\u003c\/pre\u003e\n\n\u003ch4 class=\u0022relative group\u0022\u003enon-default VRF \n    \u003cdiv id=\u0022non-default-vrf\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#non-default-vrf\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h4\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003etacacs source-interface MgmtEth0\/RSP0\/CPU0\/0 vrf MGMT\ntacacs-server host 10.70.79.177 port 49\n key 7 110A1016141D\n!\naaa accounting commands default start-stop group XU\naaa group server tacacs\u002b XU\n server 10.70.79.177\n vrf MGMT\n!\naaa authorization exec console local\naaa authorization exec default group XU local\naaa authorization commands console none\naaa authorization commands default group XU none\naaa authentication login console local\naaa authentication login default group XU local\n\u003c\/code\u003e\u003c\/pre\u003e",
+    "abstract": "Notes.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/tacacs-aaa-configuration-in-cisco-ios-xr\/",
     "author" : {
@@ -784,7 +778,9 @@ RP/0/RSP0/CPU0:ios(config)#commit confirmed minutes 5 测试AAA， 测试无误�
 
 
         <div class="article-content max-w-prose mb-20">
-          <h4 class="relative group">Notes. 
+          
+
+<h4 class="relative group">Notes. 
     <div id="notes" class="anchor"></div>
     
     <span
@@ -858,7 +854,9 @@ aaa authorization commands console none
 aaa authorization commands default group XU none
 aaa authentication login console local
 aaa authentication login default group XU local
-</code></pre><h4 class="relative group">User-Defined User Groups/Task Groups example 
+</code></pre>
+
+<h4 class="relative group">User-Defined User Groups/Task Groups example 
     <div id="user-defined-user-groupstask-groups-example" class="anchor"></div>
     
     <span
@@ -1027,6 +1025,7 @@ aaa authentication login SSH group tacacs+ local
 <li><a href="https://freenetworktutorials.com/tacacs-aaa-configuration-in-juniper-and-cisco-ios-xr-ios-xe-ios-nx-os/"   target="_blank">
     TACACS (AAA) Configuration in Cisco (IOS-XR, IOS-XE, IOS, NX-OS)</a></li>
 </ul>
+
         </div>
         
         

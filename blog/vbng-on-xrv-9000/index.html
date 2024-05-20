@@ -68,8 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/vbng-on-xrv-9000/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="vBNG on XRv 9000">
-  <meta property="og:description" content="最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。
-实验准备 # XRv9K: xrv9k-fullk9-x-6.6.3 vBNG 好像不支持在 xrv 的镜像上运行，不支持 RP base 的 session,所以这里用 XRv9K 这个镜像。 CSR 1000v: csr1000vng-universalk9.17.03.02-serial CRS 1000v 用来当 DHCP server/DHCP Client/PPPoE Client, 版本没什么特殊的要求。 Freeradius 这里我桥接一个网卡到我的一个 linux 主机上，上面用 docker 起了一个 freeradius。有关 Freeradius 相关的配置过程可以参考我的另一篇文章， Configure ASR9K AAA with Freeradius 实验拓扑 # image-20220527223117714 ">
+  <meta property="og:description" content="最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -79,8 +78,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="vBNG on XRv 9000">
-  <meta name="twitter:description" content="最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。
-实验准备 # XRv9K: xrv9k-fullk9-x-6.6.3 vBNG 好像不支持在 xrv 的镜像上运行，不支持 RP base 的 session,所以这里用 XRv9K 这个镜像。 CSR 1000v: csr1000vng-universalk9.17.03.02-serial CRS 1000v 用来当 DHCP server/DHCP Client/PPPoE Client, 版本没什么特殊的要求。 Freeradius 这里我桥接一个网卡到我的一个 linux 主机上，上面用 docker 起了一个 freeradius。有关 Freeradius 相关的配置过程可以参考我的另一篇文章， Configure ASR9K AAA with Freeradius 实验拓扑 # image-20220527223117714 ">
+  <meta name="twitter:description" content="最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。">
 
   
   <script type="application/ld+json">
@@ -91,7 +89,7 @@
     "name": "vBNG on XRv 9000",
     "headline": "vBNG on XRv 9000",
     
-    "abstract": "\u003cp\u003e最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。\u003c\/p\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003e实验准备 \n    \u003cdiv id=\u0022%E5%AE%9E%E9%AA%8C%E5%87%86%E5%A4%87\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%AE%9E%E9%AA%8C%E5%87%86%E5%A4%87\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003eXRv9K: xrv9k-fullk9-x-6.6.3\n\u003cul\u003e\n\u003cli\u003evBNG 好像不支持在 xrv 的镜像上运行，不支持 RP base 的 session,所以这里用 XRv9K 这个镜像。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003eCSR 1000v: csr1000vng-universalk9.17.03.02-serial\n\u003cul\u003e\n\u003cli\u003eCRS 1000v 用来当 DHCP server\/DHCP Client\/PPPoE Client, 版本没什么特殊的要求。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003eFreeradius\n\u003cul\u003e\n\u003cli\u003e这里我桥接一个网卡到我的一个 linux 主机上，上面用 docker 起了一个 freeradius。有关 Freeradius 相关的配置过程可以参考我的另一篇文章，\u003ca href=\u0022https:\/\/imxing.info\/configure-asr9k-aaa-with-freeradius\u0022   target=\u0022_blank\u0022\u003e\n    Configure ASR9K AAA with Freeradius\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\n\n\u003ch3 class=\u0022relative group\u0022\u003e实验拓扑 \n    \u003cdiv id=\u0022%E5%AE%9E%E9%AA%8C%E6%8B%93%E6%89%91\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E5%AE%9E%E9%AA%8C%E6%8B%93%E6%89%91\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h3\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/rory-1251435693.cos.ap-beijing.myqcloud.com\/img\/image-20220527223117714.png\u0022   target=\u0022_blank\u0022\u003e\n    \n\n\n\n\n  \n  \n    \n  \n  \n    \u003cfigure\u003e\n      \n      \u003cimg\n        class=\u0022my-0 rounded-md\u0022\n        loading=\u0022lazy\u0022\n        src=\u0022\/blog\/vbng-on-xrv-9000\/images\/image-20220527223117714.png\u0022\n        alt=\u0022https:\/\/rory-1251435693.cos.ap-beijing.myqcloud.com\/img\/image-20220527223117714.png\u0022\n      \/\u003e\n      \n      \u003cfigcaption\u003eimage-20220527223117714\u003c\/figcaption\u003e\n    \u003c\/figure\u003e\n  \n\n\u003c\/a\u003e\u003c\/p\u003e",
+    "abstract": "最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/vbng-on-xrv-9000\/",
     "author" : {
@@ -876,6 +874,8 @@
   
 
 </a></p>
+
+
 <h3 class="relative group">Radius Server 相关配置 
     <div id="radius-server-%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE" class="anchor"></div>
     
