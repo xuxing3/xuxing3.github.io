@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qos on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/qos/</link>
+    <description>Recent content in Qos on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Rory</copyright>
+    <lastBuildDate>Mon, 20 May 2024 17:29:06 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/qos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NCS55 - Qos Rate Profiles</title>
+      <link>https://imxing.info/blog/qos-rate-profiles/</link>
+      <pubDate>Mon, 20 May 2024 17:29:06 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/qos-rate-profiles/</guid>
+      <description>Background # 在配置 NCS55 Egress Qos 的时候出现如下的报错:</description>
+      
+    </item>
+    
+  </channel>
+</rss>
