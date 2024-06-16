@@ -274,7 +274,7 @@
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/hdmi/</guid>
-      <description>image-20220602024556354 image-20220602024457745 参考 HDMI 的 wiki 百科</description>
+      <description>image-20220602024556354 image-20220602024457745 参考HDMI 的 wiki 百科</description>
       
     </item>
     
@@ -304,7 +304,7 @@
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-ios-xr-snmp-ping/</guid>
-      <description>使用的MIB 库为 CISCO-PING-MIB, 具体步骤如下:</description>
+      <description>使用的MIB 库为CISCO-PING-MIB, 具体步骤如下:</description>
       
     </item>
     
@@ -404,7 +404,7 @@
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/securecrt-import-session/</guid>
-      <description>Step 1： 准备工作 # VB 脚本及 Py 脚本 下载连接, 建议直接使用 VB 脚本，不用配置 Python 环境.</description>
+      <description>Step 1： 准备工作 # VB 脚本及 Py 脚本下载连接, 建议直接使用 VB 脚本，不用配置 Python 环境.</description>
       
     </item>
     
@@ -964,7 +964,7 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ansible-module-iosxr_config/</guid>
-      <description>学习的时候搜到管理CISCO IOX 设备的ansible模块，“ iosxr_config – Manage Cisco IOS XR configuration sections“，记录下有空玩玩。</description>
+      <description>学习的时候搜到管理CISCO IOX 设备的ansible模块，“iosxr_config – Manage Cisco IOS XR configuration sections“，记录下有空玩玩。</description>
       
     </item>
     

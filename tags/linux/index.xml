@@ -64,7 +64,7 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ansible-module-iosxr_config/</guid>
-      <description>学习的时候搜到管理CISCO IOX 设备的ansible模块，“ iosxr_config – Manage Cisco IOS XR configuration sections“，记录下有空玩玩。</description>
+      <description>学习的时候搜到管理CISCO IOX 设备的ansible模块，“iosxr_config – Manage Cisco IOS XR configuration sections“，记录下有空玩玩。</description>
       
     </item>
     

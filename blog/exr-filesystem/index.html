@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fa214b5215790ceb34569b0274da70c93b84cd1d04f2156dd26797b64e9d50f88154751d8117500dd96efb6987fa72dafb56a1091364c4333c07b05a242e1893.css"
-    integrity="sha512-&#43;iFLUhV5DOs0VpsCdNpwyTuEzR0E8hVt0meXtk6dUPiBVHUdgRdQDdlu&#43;2mH&#43;nLa&#43;1ahCRNkxDM8B7BaJC4Ykw==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7b689e617eac42ac091f29d2dda55ec92438b35c5c5944b4157d4567bafc1186efd6dd937623f2ee59ee1823220b746a61ef3e75f1dbd0b7bea88adfa3aa5b7d.css"
+    integrity="sha512-e2ieYX6sQqwJHynS3aVeySQ4s1xcWUS0FX1FZ7r8EYbv1t2TdiPy7lnuGCMiC3RqYe8&#43;dfHb0Le&#43;qIrfo6pbfQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -105,7 +105,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1115"
+    "wordCount": "1112"
   }]
   </script>
 
@@ -194,6 +194,7 @@
 </a>
 
 
+
             
             
   <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -202,6 +203,7 @@
         SDWAN
     </p>
 </a>
+
 
 
             
@@ -214,6 +216,7 @@
 </a>
 
 
+
             
             
   <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -222,6 +225,7 @@
         About
     </p>
 </a>
+
 
 
             
@@ -234,6 +238,7 @@
 </a>
 
 
+
             
             
   <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -242,6 +247,7 @@
         
     </p>
 </a>
+
 
 
             
@@ -390,6 +396,7 @@
 
 
 
+
                     
 
                     
@@ -401,6 +408,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -418,6 +426,7 @@
 
 
 
+
                     
 
                     
@@ -429,6 +438,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -446,6 +456,7 @@
 
 
 
+
                     
 
                     
@@ -457,6 +468,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -542,7 +554,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-07-07 00:00:00 &#43;0000 UTC">7 July 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1115 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
+  <time datetime="2023-07-07 00:00:00 &#43;0000 UTC">7 July 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1112 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
   
 
   
@@ -756,17 +768,7 @@
 </h3>
 <figure>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -774,10 +776,7 @@
         alt=""
       />
       
-      
     </figure>
-  
-
 </p>
 <figcaption>
 <p>如上图，eXR 是在硬件的基础上有一个 host 系统, host 系统里再 run 两个 vm （XR VM 和 sysadmin VM）。</p>
@@ -788,8 +787,7 @@
 ----------------------------------------------------
  2     sysadmin                       running
  3     default-sdr--1                 running
-</code></pre><p>关于不同 VM 之间如何访问可以参考另一篇<a href="https://imxing.info/exr-architecture"   target="_blank">
-    文章</a>。</p>
+</code></pre><p>关于不同 VM 之间如何访问可以参考另一篇<a href="https://imxing.info/exr-architecture" target="_blank">文章</a>。</p>
 
 
 <h3 class="relative group">Host VM 的文件系统 
@@ -847,17 +845,7 @@ sdc                                        8:32   0   7.5G  0 disk
 </code></pre><p>那接下来使用 df -h + lsblk 来对照看下 host vm 是如何挂载和使用这些逻辑卷的:</p>
 <figure>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -865,14 +853,10 @@ sdc                                        8:32   0   7.5G  0 disk
         alt=""
       />
       
-      
     </figure>
-  
-
 </p>
 <figcaption>
-<p>除此之外还有一些 size 为 20G 的硬盘，查了下资料， 这些属于 linux 中一种虚拟内存文件系统；指的是由内核产生但是不存在硬盘上， 存在于内存中的文件系统。 （<a href="https://www.cnblogs.com/chenny7/p/3541822.html"   target="_blank">
-    tmpfs</a>）</p>
+<p>除此之外还有一些 size 为 20G 的硬盘，查了下资料， 这些属于 linux 中一种虚拟内存文件系统；指的是由内核产生但是不存在硬盘上， 存在于内存中的文件系统。 （<a href="https://www.cnblogs.com/chenny7/p/3541822.html" target="_blank">tmpfs</a>）</p>
 <p>其大小一般是内存的一半，RSP5-SE 内存大小是 40G，所以这个地方挂载的大小为 20G。</p>
 </figcaption>
 </figure>
@@ -891,17 +875,7 @@ sdc                                        8:32   0   7.5G  0 disk
 <p>sysadmin/xr vm 是通过 kvm 虚拟 run 在 host 主机中的虚拟机。</p>
 <p>如果需要查看这两个虚拟机的配置信息，可以使用 ps -aux ｜ grep qemu 查看（比如 host 主机为每个 vm 分配了多少内存）。</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -909,10 +883,7 @@ sdc                                        8:32   0   7.5G  0 disk
         alt=""
       />
       
-      
     </figure>
-  
-
 </p>
 <p>或者使用标准的 virsh 命令 dump 所有的配置，这里我做了过滤，只展示了一些磁盘的映射</p>
 <pre tabindex="0"><code>[host:~]$ virsh list --all
@@ -943,17 +914,7 @@ sdc                                        8:32   0   7.5G  0 disk
       &lt;source mode=&#39;bind&#39; host=&#39;127.0.0.1&#39; service=&#39;49998&#39;/&gt;
       &lt;target type=&#39;serial&#39; port=&#39;0&#39;/&gt;
 </code></pre><p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -961,15 +922,11 @@ sdc                                        8:32   0   7.5G  0 disk
         alt=""
       />
       
-      
     </figure>
-  
-
 </p>
 <p>于是，我们就得到了这样的一个表格:</p>
 <table><tbody><tr><td>vda</td><td>/dev/panini_vol_grp/calvados_lv0</td><td>2.5G</td></tr><tr><td>vdb</td><td>/dev/sda2</td><td>14.9G</td></tr><tr><td>vdc</td><td>/dev/panini_vol_grp/calvados_data_lv0</td><td>6.9G</td></tr><tr><td>vdd</td><td>/dev/pci_disk1/ssd_disk1_calvados_1</td><td>31.3G</td></tr><tr><td>vde</td><td>/dev/sdc2</td><td>747.8M</td></tr><tr><td>vdf</td><td>/dev/sdc3</td><td>2.9G</td></tr></tbody></table>
-<p>然后让我们回到 sysadmin vm, sysadmin vm 使用这 6 块存储空间，在此基础上又进行了分区；每一块都有不同的用途，关于每个分区的用途可以参考之前的<a href="https://imxing.info/exr-architecture"   target="_blank">
-    文章</a></p>
+<p>然后让我们回到 sysadmin vm, sysadmin vm 使用这 6 块存储空间，在此基础上又进行了分区；每一块都有不同的用途，关于每个分区的用途可以参考之前的<a href="https://imxing.info/exr-architecture" target="_blank">文章</a></p>
 <pre tabindex="0"><code>[sysadmin-vm:0_RSP1:~]$lsblk
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 vda    252:0    0   2.5G  0 disk
@@ -1062,17 +1019,7 @@ a9ksys:  = ASR9K system storage (read-only)
       &lt;source&gt;
       &lt;/source&gt;
 </code></pre><p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1080,10 +1027,7 @@ a9ksys:  = ASR9K system storage (read-only)
         alt=""
       />
       
-      
     </figure>
-  
-
 </p>
 <p>这里不确定为什么 xr vm 内部的磁盘名会与 host 主机中的配置文件没一一对应，但是根据 size，我们可以大致的推断出如下的表格:</p>
 <table><tbody><tr><td>vda</td><td>/dev/panini_vol_grp/xr_lv0</td><td>3.9G</td></tr><tr><td>vdb</td><td>/dev/pci_disk1/xr_data_lv0</td><td>6.9G</td></tr><tr><td>vdc</td><td>/dev/pci_disk1/ssd_disk1_xr_1</td><td>22.5G</td></tr><tr><td>vdd</td><td>/dev/sdc1</td><td>3.7G</td></tr><tr><td>vde</td><td>/dev/pci_disk1/app_lv0</td><td>19.5G</td></tr></tbody></table>
@@ -1128,17 +1072,7 @@ apphost:                              20G     539M       3%      18G
 <p>如果我们使用 install 命令进行软件升级，系统的分区会是怎么样呢？</p>
 <p>这里用板卡的作为事例，如下板卡显示的 boot 的分区为 xr_lv298.</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1146,10 +1080,7 @@ apphost:                              20G     539M       3%      18G
         alt=""
       />
       
-      
     </figure>
-  
-
 </p>
 <p>我们去板卡的 host vm 下看下分区情况:</p>
 <pre tabindex="0"><code>[host:~]$ lsblk
@@ -1193,12 +1124,10 @@ sda                                        8:0    0 29.8G  0 disk
 </h3>
 <ul>
 <li>
-<p><a href="https://www.cnblogs.com/lijiaman/p/12885649.html"   target="_blank">
-    Linux 物理卷(PV)、逻辑卷(LV)、卷组(VG)管理</a></p>
+<p><a href="https://www.cnblogs.com/lijiaman/p/12885649.html" target="_blank">Linux 物理卷(PV)、逻辑卷(LV)、卷组(VG)管理</a></p>
 </li>
 <li>
-<p><a href="https://daemon369.github.io/linux/2018/01/06/01-get-disks-info-in-linux"   target="_blank">
-    Linux 中查看硬盘信息</a></p>
+<p><a href="https://daemon369.github.io/linux/2018/01/06/01-get-disks-info-in-linux" target="_blank">Linux 中查看硬盘信息</a></p>
 </li>
 </ul>
 
@@ -1503,7 +1432,8 @@ sda                                        8:0    0 29.8G  0 disk
   <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
-</footer><div
+</footer>
+<div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
   data-url="https://imxing.info/"

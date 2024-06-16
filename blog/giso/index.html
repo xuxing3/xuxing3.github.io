@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fa214b5215790ceb34569b0274da70c93b84cd1d04f2156dd26797b64e9d50f88154751d8117500dd96efb6987fa72dafb56a1091364c4333c07b05a242e1893.css"
-    integrity="sha512-&#43;iFLUhV5DOs0VpsCdNpwyTuEzR0E8hVt0meXtk6dUPiBVHUdgRdQDdlu&#43;2mH&#43;nLa&#43;1ahCRNkxDM8B7BaJC4Ykw==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7b689e617eac42ac091f29d2dda55ec92438b35c5c5944b4157d4567bafc1186efd6dd937623f2ee59ee1823220b746a61ef3e75f1dbd0b7bea88adfa3aa5b7d.css"
+    integrity="sha512-e2ieYX6sQqwJHynS3aVeySQ4s1xcWUS0FX1FZ7r8EYbv1t2TdiPy7lnuGCMiC3RqYe8&#43;dfHb0Le&#43;qIrfo6pbfQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -112,7 +112,7 @@
     "keywords": ["IOSXR"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "7902"
+    "wordCount": "7901"
   }]
   </script>
 
@@ -201,6 +201,7 @@
 </a>
 
 
+
             
             
   <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -209,6 +210,7 @@
         SDWAN
     </p>
 </a>
+
 
 
             
@@ -221,6 +223,7 @@
 </a>
 
 
+
             
             
   <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -229,6 +232,7 @@
         About
     </p>
 </a>
+
 
 
             
@@ -241,6 +245,7 @@
 </a>
 
 
+
             
             
   <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -249,6 +254,7 @@
         
     </p>
 </a>
+
 
 
             
@@ -397,6 +403,7 @@
 
 
 
+
                     
 
                     
@@ -408,6 +415,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -425,6 +433,7 @@
 
 
 
+
                     
 
                     
@@ -436,6 +445,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -453,6 +463,7 @@
 
 
 
+
                     
 
                     
@@ -464,6 +475,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -549,7 +561,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-07-21 17:08:47 &#43;0800 &#43;0800">21 July 2022</time><span class="px-2 text-primary-500">&middot;</span><span>7902 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">38 mins</span>
+  <time datetime="2022-07-21 17:08:47 &#43;0800 &#43;0800">21 July 2022</time><span class="px-2 text-primary-500">&middot;</span><span>7901 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">38 mins</span>
   
 
   
@@ -904,8 +916,7 @@
     
 </h3>
 <p>Python 脚本需要解决依赖关系的问题，目前 Docker Hub 上传了已经解决依赖关系的镜像，我们可以直接 pull 下来使用。</p>
-<p><a href="https://hub.docker.com/r/ciscogisobuild/cisco-xr-gisobuild/tags"   target="_blank">
-    ciscogisobuild/cisco-xr-gisobuild</a></p>
+<p><a href="https://hub.docker.com/r/ciscogisobuild/cisco-xr-gisobuild/tags" target="_blank">ciscogisobuild/cisco-xr-gisobuild</a></p>
 <p>截至到目前已经发布的版本是 2.2.0，所以这里 pull 一个最新的版本:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server1 ~<span class="o">]</span><span class="c1"># docker pull ciscogisobuild/cisco-xr-gisobuild:2.2.0</span>
 </span></span></code></pre></div>
@@ -1166,10 +1177,8 @@ drwxr-xr-x. 7 root root         94 Jul 20 02:43 src
     
 </h2>
 <p>按上面所说对于 Non-optimised GISO 或者说是自己通过 python 脚本创建的 GISO 无法通过 BIOS PXE 启动(BIOS 限制），除了 PXE 启动，我们可以选择在已经创建好的 GISO 上创建 USB 启动文件，使用 USB 启动设备。USB 启动可以加载 option 的 RPM 和 config file.</p>
-<p>具体的步骤参考<a href="https://community.cisco.com/t5/service-providers-knowledge-base/ncs5500-giso-boot-via-usb/ta-p/3838152#toc-hId-784172587"   target="_blank">
-    文章</a>， 使用的是下面的脚本.</p>
-<p><a href="https://github.com/venkateswarannagarajan/usbboot"   target="_blank">
-    USB BOOT</a></p>
+<p>具体的步骤参考<a href="https://community.cisco.com/t5/service-providers-knowledge-base/ncs5500-giso-boot-via-usb/ta-p/3838152#toc-hId-784172587" target="_blank">文章</a>， 使用的是下面的脚本.</p>
+<p><a href="https://github.com/venkateswarannagarajan/usbboot" target="_blank">USB BOOT</a></p>
 <p>步骤如下:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@server1 <span class="o">]</span><span class="c1"># git clone https://github.com/venkateswarannagarajan/usbboot</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span>root@server1 usbboot<span class="o">]</span><span class="c1"># ls -al</span>
@@ -2826,7 +2835,8 @@ drwxr-xr-x. 7 root root         94 Jul 20 02:43 src
   <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
-</footer><div
+</footer>
+<div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
   data-url="https://imxing.info/"

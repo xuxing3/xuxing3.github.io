@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fa214b5215790ceb34569b0274da70c93b84cd1d04f2156dd26797b64e9d50f88154751d8117500dd96efb6987fa72dafb56a1091364c4333c07b05a242e1893.css"
-    integrity="sha512-&#43;iFLUhV5DOs0VpsCdNpwyTuEzR0E8hVt0meXtk6dUPiBVHUdgRdQDdlu&#43;2mH&#43;nLa&#43;1ahCRNkxDM8B7BaJC4Ykw==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7b689e617eac42ac091f29d2dda55ec92438b35c5c5944b4157d4567bafc1186efd6dd937623f2ee59ee1823220b746a61ef3e75f1dbd0b7bea88adfa3aa5b7d.css"
+    integrity="sha512-e2ieYX6sQqwJHynS3aVeySQ4s1xcWUS0FX1FZ7r8EYbv1t2TdiPy7lnuGCMiC3RqYe8&#43;dfHb0Le&#43;qIrfo6pbfQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -194,6 +194,7 @@
 </a>
 
 
+
             
             
   <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -202,6 +203,7 @@
         SDWAN
     </p>
 </a>
+
 
 
             
@@ -214,6 +216,7 @@
 </a>
 
 
+
             
             
   <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -222,6 +225,7 @@
         About
     </p>
 </a>
+
 
 
             
@@ -234,6 +238,7 @@
 </a>
 
 
+
             
             
   <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -242,6 +247,7 @@
         
     </p>
 </a>
+
 
 
             
@@ -390,6 +396,7 @@
 
 
 
+
                     
 
                     
@@ -401,6 +408,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -418,6 +426,7 @@
 
 
 
+
                     
 
                     
@@ -429,6 +438,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -446,6 +456,7 @@
 
 
 
+
                     
 
                     
@@ -457,6 +468,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -762,17 +774,7 @@
 </h2>
 <p>首选值，数值越大越优先，本地有效。</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -780,10 +782,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -799,17 +798,7 @@
 </h2>
 <p>本地优先级，数值越大越优先，可传递给 IBGP 邻居，如果没有配置默认为 100</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -817,10 +806,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -836,17 +822,7 @@
 </h2>
 <p>本地生成路由优先，aggregate 手工生成聚合路由&gt;summary automatic 自动聚合路由&gt;network 命令宣告路由&gt;import-route 引入的路由。</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -854,10 +830,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>如上图，如果 R1，R2 都将 10.1.12.0/24 宣告进 BGP 的话，R2 能收到 R1 发过来的 10.1.12.0 的路由，prefer-value 和 local-preference 都一样，但是本地发起的优先，所以 bgp 表中自己宣告的路由为最优路径。</p>
 
@@ -874,17 +847,7 @@
 </h2>
 <p>As-path 最短的路由（单个 AS 计数为 1）。AS_CONFED_SEQUENCE 和 AS_CONFED_SET（联盟内部 AS 号）不计入 as-path 长度。AS_SET 长度计为 1。（此条选路法则可以用命令忽略: bestroute as-path-ignore）</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -892,10 +855,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>上图左侧路径路由传递过来 as-path 为 200, 100 长度为 2，右侧传递过来 as-path 为 400, 长度为 1。优选右侧传递过来的路由为最优路径。</p>
 
@@ -925,17 +885,7 @@
 </h2>
 <p>数值越小越优先，默认为 0。(bestroute med-none-as-maximum 可以将 med 默认值改到最大 4294967295）默认只比较 as-path 中最近一个 as 号相同的路由，否则忽略此条。</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -943,10 +893,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>compare-different-as-med 命令后，强制比较不同 as 的路由 med。</p>
 <p>bestroute med-confederation，只比较 as-path 只包含联盟内部 as 且最近一个联盟内部 as 号相同的路由的 med。</p>
@@ -969,17 +916,7 @@
 </h2>
 <p>ebgp&gt;ibgp&gt;localcross 路由&gt;remotecross 路由</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -987,10 +924,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -1006,17 +940,7 @@
 </h2>
 <p>下一跳 igp 的 metric 最小的路由</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1024,10 +948,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -1056,17 +977,7 @@
 </h2>
 <p>每一个 cluster-id 计数为 1，长度最小的优先。</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1074,10 +985,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -1092,17 +1000,7 @@
     
 </h2>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1110,10 +1008,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>as 外部路由，originator-id 就是边界路由器 5 和 6，这里虽然邻居 R3 路由器 ID 小，但是由于 originator-id 是 4 那边小，所以选择右侧过来的路由为最优。</p>
 
@@ -1129,17 +1024,7 @@
     
 </h2>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1147,10 +1032,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -1165,17 +1047,7 @@
     
 </h2>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -1183,10 +1055,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>如图，下方路由器与上面路由器的 2 个地址 10.1.12.2 和 10.1.22.2 分别建立 2 个邻居，2 个链路 igp 开销也相同，由于这 2 个邻居其实是同一个路由器，所以路由器 id 一样，至此前面所有的法则都无法打破僵局，最终只能根据建邻居地址越低越优先，选择了 10.1.12.2 的邻居关系发来的 BGP 路由。</p>
 
@@ -1491,7 +1360,8 @@
   <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
-</footer><div
+</footer>
+<div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
   data-url="https://imxing.info/"

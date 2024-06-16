@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fa214b5215790ceb34569b0274da70c93b84cd1d04f2156dd26797b64e9d50f88154751d8117500dd96efb6987fa72dafb56a1091364c4333c07b05a242e1893.css"
-    integrity="sha512-&#43;iFLUhV5DOs0VpsCdNpwyTuEzR0E8hVt0meXtk6dUPiBVHUdgRdQDdlu&#43;2mH&#43;nLa&#43;1ahCRNkxDM8B7BaJC4Ykw==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7b689e617eac42ac091f29d2dda55ec92438b35c5c5944b4157d4567bafc1186efd6dd937623f2ee59ee1823220b746a61ef3e75f1dbd0b7bea88adfa3aa5b7d.css"
+    integrity="sha512-e2ieYX6sQqwJHynS3aVeySQ4s1xcWUS0FX1FZ7r8EYbv1t2TdiPy7lnuGCMiC3RqYe8&#43;dfHb0Le&#43;qIrfo6pbfQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -194,6 +194,7 @@
 </a>
 
 
+
             
             
   <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -202,6 +203,7 @@
         SDWAN
     </p>
 </a>
+
 
 
             
@@ -214,6 +216,7 @@
 </a>
 
 
+
             
             
   <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -222,6 +225,7 @@
         About
     </p>
 </a>
+
 
 
             
@@ -234,6 +238,7 @@
 </a>
 
 
+
             
             
   <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -242,6 +247,7 @@
         
     </p>
 </a>
+
 
 
             
@@ -390,6 +396,7 @@
 
 
 
+
                     
 
                     
@@ -401,6 +408,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -418,6 +426,7 @@
 
 
 
+
                     
 
                     
@@ -429,6 +438,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -446,6 +456,7 @@
 
 
 
+
                     
 
                     
@@ -457,6 +468,7 @@
         </p>
     </a>
 </li>
+
 
 
 
@@ -781,17 +793,7 @@
 </h3>
 <p>找到需要 capture 数据包的网卡，例如我需要抓以太网的网卡上的流量，我的网卡是 Intel（R） 1219-LM</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -799,23 +801,10 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -823,24 +812,11 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>打开注册表</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -848,25 +824,12 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>找到以下的路径，由于该路径下有很多文件夹，每个文件夹对应 PC 上的各个网卡，所以我们需要一个一个打开找到 DriverDesc 描述的是我们需要的网卡，例如我这边对应 0006 这个文件夹。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">HKEY_LOCAL_MACHINE<span class="se">\S</span>YSTEM<span class="se">\C</span>ontrolSet001<span class="se">\C</span>ontrol<span class="se">\C</span>lass<span class="se">\{</span>4d36e972-e325-11ce-bfc1-08002be10318<span class="o">}</span><span class="se">\
 </span></span></span></code></pre></div><p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -874,24 +837,11 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 <p>新建两个 DWORD 项，name 和 date 如下图所示：</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -899,10 +849,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
 
@@ -918,17 +865,7 @@
 </h3>
 <p>重启电脑后再进行抓包，就会发现 VLAN tag 不会被网卡移除了.</p>
 <p>
-
-
-
-
-  
-  
-    
-  
-  
     <figure>
-      
       <img
         class="my-0 rounded-md"
         loading="lazy"
@@ -936,10 +873,7 @@
         alt="alt text"
       />
       
-      
     </figure>
-  
-
 </p>
 
         </div>
@@ -1243,7 +1177,8 @@
   <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
-</footer><div
+</footer>
+<div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
   data-url="https://imxing.info/"
