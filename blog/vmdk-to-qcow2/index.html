@@ -533,8 +533,6 @@
 
 
 
-  
-
 
 
   
@@ -554,7 +552,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2021-04-13 00:00:00 &#43;0000 UTC">13 April 2021</time><span class="px-2 text-primary-500">&middot;</span><span>18 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2021-04-13 00:00:00 &#43;0000 UTC">13 April 2021</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -961,7 +959,6 @@
   "
 ></div>
 <br />
-
 <div
   id="cusdis_thread"
   data-host="https://cusdis.com"
@@ -970,19 +967,34 @@
   data-page-url="/blog/vmdk-to-qcow2/"
   data-page-title="VMDK格式的镜像转成qcow2"
 ></div><script type="text/javascript">
-  {
-    {
-      $js.Content | safeJS;
-    }
-  }
-</script><script type="text/javascript">
-  {
-    {
-      $js.Content | safeJS;
-    }
-  }
-</script>
+  (()=>{var e={powered_by:"Comments powered by Cusdis",post_comment:"Comment",loading:"Loading",email:"Email (optional)",nickname:"Nickname",reply_placeholder:"Reply...",reply_btn:"Reply",sending:"sending...",mod_badge:"MOD",content_is_required:"Content is required",nickname_is_required:"Nickname is required",comment_has_been_sent:"Your comment has been sent. Please wait for approval."};})();
 
+</script><script type="text/javascript">
+  (()=>{window.CUSDIS={};var n;function h(e){return n||(n=document.createElement("iframe"),function(t,d){let i=window.matchMedia("(prefers-color-scheme: dark)"),u=o=>{try{let s=JSON.parse(o.data);if(s.from==="cusdis")switch(s.event){case"onload":d.dataset.theme==="auto"&&c("setTheme",i.matches?"dark":"light");break;case"resize":t.style.height=s.data+"px"}}catch{}};function l(o){let s=o.matches;d.dataset.theme==="auto"&&c("setTheme",s?"dark":"light")}window.addEventListener("message",u),i.addEventListener("change",l)}(n,e)),n.srcdoc=(t=>{let d=t.dataset.host||"https://cusdis.com",i=t.dataset.iframe||`${d}/js/iframe.umd.js`;return`<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="${d}/js/style.css">
+    <base target="_parent" />
+    <link>
+    <script>
+      window.CUSDIS_LOCALE = ${JSON.stringify(window.CUSDIS_LOCALE)}
+      window.__DATA__ = ${JSON.stringify(t.dataset)}
+    <\/script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="${i}" type="module">
+      
+    <\/script>
+  </body>
+</html>`})(e),n.style.width="100%",n.style.border="0",n}function c(e,t){n&&n.contentWindow.postMessage(JSON.stringify({from:"cusdis",event:e,data:t}))}function r(e){if(e){e.innerHTML="";let t=h(e);e.appendChild(t)}}function a(){let e;window.cusdisElementId?e=document.querySelector(`#${window.cusdisElementId}`):document.querySelector("#cusdis_thread")?e=document.querySelector("#cusdis_thread"):document.querySelector("#cusdis")&&(console.warn("id `cusdis` is deprecated. Please use `cusdis_thread` instead"),e=document.querySelector("#cusdis")),window.CUSDIS_PREVENT_INITIAL_RENDER===!0||e&&r(e)}window.renderCusdis=r,window.CUSDIS.renderTo=r,window.CUSDIS.setTheme=function(e){c("setTheme",e)},window.CUSDIS.initial=a,a();})();
+
+</script>
 
 
       </div>
@@ -999,30 +1011,33 @@
     &uarr;
   </a>
 </div>
-    </main><footer class="py-10 print:hidden">
-     
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
   <div class="flex items-center justify-between">
-     
-    <p class="text-sm text-neutral-500 dark:text-neutral-400"> &copy; 2024
-      <a href="/"> Rory </a>
-    </p>
-      
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
-        Powered by <a
-        class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Hugo</a
-      > &amp; <a
-        class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://blowfish.page/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Blowfish</a
-      >
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      Rory
     </p>
     
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
   </div>
   <script>
     
@@ -1033,13 +1048,11 @@
     })
     
   </script>
-   
-  <script
-    type="text/javascript"
-    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
-    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="
-  ></script>
-   
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
 </footer>
 <div
   id="search-wrapper"
