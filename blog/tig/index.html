@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Telemetry-tig &middot; Rory&#39;s Blog</title>
-  <meta name="title" content="Telemetry-tig &middot; Rory&#39;s Blog" />
+  <title>Telemetry-tig &middot; Rory</title>
+  <meta name="title" content="Telemetry-tig &middot; Rory" />
   
   
   <meta name="keywords" content="telemetry, " />
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7b689e617eac42ac091f29d2dda55ec92438b35c5c5944b4157d4567bafc1186efd6dd937623f2ee59ee1823220b746a61ef3e75f1dbd0b7bea88adfa3aa5b7d.css"
-    integrity="sha512-e2ieYX6sQqwJHynS3aVeySQ4s1xcWUS0FX1FZ7r8EYbv1t2TdiPy7lnuGCMiC3RqYe8&#43;dfHb0Le&#43;qIrfo6pbfQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2de14bea6e27d0a2451855840162d6b36f25197cf15c9e6a7676ad636f7e99e78a5990bca66beefe2225e79b2bcab0b449224a4a68f520380da923be340faeeb.css"
+    integrity="sha512-LeFL6m4n0KJFGFWEAWLWs28lGXzxXJ5qdnatY29&#43;meeKWZC8pmvu/iIl55sryrC0SSJKSmj1IDgNqSO&#43;NA&#43;u6w==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -66,7 +66,7 @@
   
   
   <meta property="og:url" content="https://imxing.info/blog/tig/">
-  <meta property="og:site_name" content="Rory&#39;s Blog">
+  <meta property="og:site_name" content="Rory">
   <meta property="og:title" content="Telemetry-tig">
   <meta property="og:description" content="TIG # xuxing3/tig Python 0 0 This project is based on the following version.">
   <meta property="og:locale" content="en">
@@ -162,7 +162,7 @@
   
 </head>
 <body
-  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
       href="#main-content"><span
@@ -181,7 +181,7 @@
         <nav class="flex space-x-3">
 
             
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Rory&rsquo;s Blog</a>
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Rory</a>
             
 
         </nav>
@@ -699,13 +699,14 @@
       class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
       <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
-         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
     class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
     Table of Contents
   </summary>
   <div
-    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#tig">TIG</a></li>
@@ -736,7 +737,34 @@
   </div>
 </details>
 
+<script>
 
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
    </div>
       </div>
       
