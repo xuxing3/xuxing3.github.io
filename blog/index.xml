@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Rory</copyright>
-    <lastBuildDate>Mon, 20 May 2024 17:29:06 +0800</lastBuildDate><atom:link href="https://imxing.info/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jun 2024 12:32:34 +0800</lastBuildDate><atom:link href="https://imxing.info/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Provision New Branch - VMware SDWAN</title>
+      <link>https://imxing.info/blog/ztp-provision-new-branch/</link>
+      <pubDate>Mon, 24 Jun 2024 12:32:34 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/ztp-provision-new-branch/</guid>
+      <description>Provision a new branch with VMware SD-WAN Orchestrator.</description>
+      
+    </item>
+    
     <item>
       <title>NCS55 - Qos Rate Profiles</title>
       <link>https://imxing.info/blog/qos-rate-profiles/</link>
