@@ -105,7 +105,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "457"
+    "wordCount": "576"
   }]
   </script>
 
@@ -862,8 +862,8 @@
 </span></span><span class="line"><span class="cl"><span class="o">[</span>sysadmin-vm:0_RSP0:~<span class="o">]</span><span class="nv">$chvrf</span> <span class="m">0</span> ssh my_host
 </span></span><span class="line"><span class="cl"><span class="o">[</span>host:~<span class="o">]</span>$
 </span></span><span class="line"><span class="cl"><span class="o">[</span>host:~<span class="o">]</span>$
-</span></span></code></pre></div><p>Special for NCS55 (fretta), use below method to login host VM:</p>
-<pre tabindex="0"><code>[sysadmin-vm:0_RP0:~]$
+</span></span></code></pre></div><p>Special for NCS55 (fretta)/NCS6K, use below method to login host VM:</p>
+<pre tabindex="0"><code>[sysadmin-vm:0_RP0:~]$chvrf 0 bash
 [sysadmin-vm:0_RP0:~]$ssh 10.0.2.16
 [host:0_RP0:~]$
 [host:0_RP0:~]$
@@ -878,6 +878,24 @@ Warning: Permanently added &#39;192.0.8.1&#39; (ECDSA) to the list of known host
 [sysadmin-vm:0_1:~]$ ssh 10.0.2.16
 [host:0_LC1:~]$
 [host:0_LC1:~]$
+</code></pre><p>Some router it may not be <code>10.0.2.16</code>, you can check the arp cache to confirm what Host IP should be used.</p>
+<p>For example:</p>
+<pre tabindex="0"><code>[sysadmin-vm:0_RP0:~]$chvrf 0 bash
+[sysadmin-vm:0_RP0:~]$
+[sysadmin-vm:0_RP0:~]$arp -a
+? (192.0.72.1) at ac:f2:c5:f5:66:1b [ether] on eth-vf1.3073
+? (10.0.2.2) at 2e:b2:be:b1:e2:b9 [ether] on eth0             &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+? (192.0.64.1) at e4:c7:22:84:ef:a8 [ether] on eth-vf1.3073
+? (192.0.92.1) at 80:e0:1d:af:b9:bd [ether] on eth-vf1.3073
+? (192.0.4.1) at 64:f6:9d:b8:46:69 [ether] on eth-vf1.3073
+? (192.0.72.3) at ac:f2:c5:f5:66:1d [ether] on eth-vf1.3073
+? (192.0.64.3) at e4:c7:22:84:ef:aa [ether] on eth-vf1.3073
+? (10.0.2.16) at &lt;incomplete&gt; on eth0
+? (192.0.0.4) at 64:f6:9d:b8:72:5b [ether] on eth-vf1.3073
+? (192.0.4.4) at 64:f6:9d:b8:46:6c [ether] on eth-vf1.3073
+? (192.0.92.3) at 80:e0:1d:af:b9:bf [ether] on eth-vf1.3073
+[sysadmin-vm:0_RP0:~]$ssh 10.0.2.2
+Last login: Wed Jun 12 06:10:13 2024 from 10.0.2.15
 </code></pre>
 
 <h3 class="relative group">Copy file from sysadmin or host to xr-vm 
