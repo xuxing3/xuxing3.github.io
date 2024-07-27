@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x) &middot; Rory&#39;s Blog</title>
-  <meta name="title" content="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x) &middot; Rory&#39;s Blog" />
+  <title>Onboarding C8000v &middot; Rory&#39;s Blog</title>
+  <meta name="title" content="Onboarding C8000v &middot; Rory&#39;s Blog" />
   
   
-  <meta name="keywords" content="SDWAN, " />
+  <meta name="keywords" content="SDWAN, 8000v, " />
   
   
-  <link rel="canonical" href="https://imxing.info/sdwan/migrate-multitenant/" />
+  <link rel="canonical" href="https://imxing.info/sdwan/onboarding-c8000v/" />
   
   
   
@@ -65,21 +65,22 @@
   
   
   
-  <meta property="og:url" content="https://imxing.info/sdwan/migrate-multitenant/">
+  <meta property="og:url" content="https://imxing.info/sdwan/onboarding-c8000v/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
-  <meta property="og:title" content="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)">
-  <meta property="og:description" content="Background # 在 20.">
+  <meta property="og:title" content="Onboarding C8000v">
+  <meta property="og:description" content="C8000v 初始虚机创建 # 本文章基于 vManage-20.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="sdwan">
-    <meta property="article:published_time" content="2024-01-16T14:42:00+08:00">
-    <meta property="article:modified_time" content="2024-01-16T14:42:00+08:00">
+    <meta property="article:published_time" content="2024-07-28T01:11:58+08:00">
+    <meta property="article:modified_time" content="2024-07-28T01:11:58+08:00">
     <meta property="article:tag" content="SDWAN">
+    <meta property="article:tag" content="8000v">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)">
-  <meta name="twitter:description" content="Background # 在 20.">
+  <meta name="twitter:title" content="Onboarding C8000v">
+  <meta name="twitter:description" content="C8000v 初始虚机创建 # 本文章基于 vManage-20.">
 
   
   <script type="application/ld+json">
@@ -87,26 +88,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "SDWAN",
-    "name": "Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)",
-    "headline": "Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)",
+    "name": "Onboarding C8000v",
+    "headline": "Onboarding C8000v",
     
-    "abstract": "Background # 在 20.",
+    "abstract": "C8000v 初始虚机创建 # 本文章基于 vManage-20.",
     "inLanguage": "en",
-    "url" : "https:\/\/imxing.info\/sdwan\/migrate-multitenant\/",
+    "url" : "https:\/\/imxing.info\/sdwan\/onboarding-c8000v\/",
     "author" : {
       "@type": "Person",
       "name": "Rory Xing"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-01-16T14:42:00\u002b08:00",
-    "datePublished": "2024-01-16T14:42:00\u002b08:00",
+    "dateCreated": "2024-07-28T01:11:58\u002b08:00",
+    "datePublished": "2024-07-28T01:11:58\u002b08:00",
     
-    "dateModified": "2024-01-16T14:42:00\u002b08:00",
+    "dateModified": "2024-07-28T01:11:58\u002b08:00",
     
-    "keywords": ["SDWAN"],
+    "keywords": ["SDWAN","8000v"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "199"
+    "wordCount": "1030"
   }]
   </script>
 
@@ -480,11 +481,50 @@
 
 <article>
   
+  
+  
+  
+  
+  
+ 
+  
+   
+  
+ 
+
+
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/background.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
 
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)
+      Onboarding C8000v
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -527,7 +567,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 14:42:00 &#43;0800 &#43;0800">16 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2024-07-28 01:11:58 &#43;0800 &#43;0800">28 July 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -555,6 +595,14 @@
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     SDWAN
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/8000v/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    8000v
   </span>
 </span>
   </span>
@@ -678,18 +726,10 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#upgrade-steps">Upgrade Steps</a>
-      <ul>
-        <li><a href="#vmanage-upgrade-to-206x">vManage upgrade to 20.6.x</a></li>
-        <li><a href="#vbond-upgrade-to-206x">vBond upgrade to 20.6.x</a></li>
-        <li><a href="#add-new-two-206x-vsmart">Add New two 20.6.x vSmart</a></li>
-        <li><a href="#enable-maintenance-window-on-vmanage">Enable maintenance window on vManage</a></li>
-        <li><a href="#use-api-to-migrate">Use API to Migrate</a></li>
-        <li><a href="#check-task-from-vmanage-gui">Check Task from vManage GUI</a></li>
-      </ul>
-    </li>
-    <li><a href="#reference">Reference</a></li>
+    <li><a href="#c8000v-初始虚机创建">C8000v 初始虚机创建</a></li>
+    <li><a href="#准备-bootstrap-文件">准备 bootstrap 文件</a></li>
+    <li><a href="#上传文件并重新加载设备">上传文件并重新加载设备</a></li>
+    <li><a href="#上线-c8000v">上线 C8000v</a></li>
   </ul>
 </nav>
   </div>
@@ -703,18 +743,10 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#upgrade-steps">Upgrade Steps</a>
-      <ul>
-        <li><a href="#vmanage-upgrade-to-206x">vManage upgrade to 20.6.x</a></li>
-        <li><a href="#vbond-upgrade-to-206x">vBond upgrade to 20.6.x</a></li>
-        <li><a href="#add-new-two-206x-vsmart">Add New two 20.6.x vSmart</a></li>
-        <li><a href="#enable-maintenance-window-on-vmanage">Enable maintenance window on vManage</a></li>
-        <li><a href="#use-api-to-migrate">Use API to Migrate</a></li>
-        <li><a href="#check-task-from-vmanage-gui">Check Task from vManage GUI</a></li>
-      </ul>
-    </li>
-    <li><a href="#reference">Reference</a></li>
+    <li><a href="#c8000v-初始虚机创建">C8000v 初始虚机创建</a></li>
+    <li><a href="#准备-bootstrap-文件">准备 bootstrap 文件</a></li>
+    <li><a href="#上传文件并重新加载设备">上传文件并重新加载设备</a></li>
+    <li><a href="#上线-c8000v">上线 C8000v</a></li>
   </ul>
 </nav>
   </div>
@@ -760,266 +792,261 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h2 class="relative group">Background 
-    <div id="background" class="anchor"></div>
+<h2 class="relative group">C8000v 初始虚机创建 
+    <div id="c8000v-%E5%88%9D%E5%A7%8B%E8%99%9A%E6%9C%BA%E5%88%9B%E5%BB%BA" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#c8000v-%E5%88%9D%E5%A7%8B%E8%99%9A%E6%9C%BA%E5%88%9B%E5%BB%BA" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>在 20.4.x 之前的多租户的架构如下,每个租户拥有独立的 vSmart，所以在 20.4.x 之前 vSmart 只在各个租户的 GUI 界面上去显示</p>
+<p>本文章基于 vManage-20.9.3, C8000v 选择 ISO 文件进行部署在本地私有云上(<code>c8000v-universalk9.17.09.03a.iso</code>)。</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/migrate-multitenant/mt-arc-before-20_4.png"
-        alt="Architecture of Multi-Tenancy pre 20.3.X versions"
+        src="/sdwan/onboarding-c8000v/image.png"
+        alt="alt text"
       />
       
     </figure>
 </p>
-<p>在 20.4.x 之后，架构发生了变化，vSmart 变成在多个租户之间共享的存在。</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/migrate-multitenant/mt-arc-after-20_4.png"
-        alt="Architecture of Mult-Tenancy 20.4/17.4 version and later"
-      />
-      
-    </figure>
-</p>
-<p>由于架构发生了变化，MT 环境从 20.4.x 之前往高版本去升级的时候步骤会有略微的变化。</p>
+<p>由于是用来作为测试使用， 资源并没有选择太多， 在创建的时候注意至少创建 3 个 Network, 设置完成后打开 VM 可以看到如下提示，我们选择 no，设置 enable 密码后进入系统。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">% Please answer <span class="s1">&#39;yes&#39;</span> or <span class="s1">&#39;no&#39;</span>.
+</span></span><span class="line"><span class="cl">Would you like to enter the initial configuration dialog? <span class="o">[</span>yes/no<span class="o">]</span>: no
+</span></span><span class="line"><span class="cl">  The <span class="nb">enable</span> secret is a password used to protect
+</span></span><span class="line"><span class="cl">  access to privileged EXEC and configuration modes.
+</span></span><span class="line"><span class="cl">  This password, after entered, becomes encrypted in
+</span></span><span class="line"><span class="cl">  the configuration.
+</span></span><span class="line"><span class="cl">  -------------------------------------------------
+</span></span><span class="line"><span class="cl">  secret should be of minimum <span class="m">10</span> characters and maximum <span class="m">32</span> characters with
+</span></span><span class="line"><span class="cl">  at least <span class="m">1</span> upper <span class="k">case</span>, <span class="m">1</span> lower <span class="k">case</span>, <span class="m">1</span> digit and
+</span></span><span class="line"><span class="cl">  should not contain <span class="o">[</span>cisco<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  -------------------------------------------------
+</span></span><span class="line"><span class="cl">  Enter <span class="nb">enable</span> secret: ************
+</span></span><span class="line"><span class="cl">  Confirm <span class="nb">enable</span> secret: ************
+</span></span><span class="line"><span class="cl">The following configuration <span class="nb">command</span> script was created:
+</span></span><span class="line"><span class="cl"><span class="nb">enable</span> secret <span class="m">9</span>
+</span></span><span class="line"><span class="cl">!
+</span></span><span class="line"><span class="cl">end
+</span></span><span class="line"><span class="cl"><span class="o">[</span>0<span class="o">]</span> Go to the IOS <span class="nb">command</span> prompt without saving this config.
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span> Return back to the setup without saving this config.
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span> Save this configuration to nvram and exit.
+</span></span><span class="line"><span class="cl">Enter your selection <span class="o">[</span>1<span class="o">]</span>: <span class="m">1</span>
+</span></span></code></pre></div><p>修改模式为控制器模式，此时设备会进行重启。</p>
+<pre tabindex="0"><code>Router# controller-mode enable
+Enabling controller mode will erase the nvram filesystem, remove all configuration files, and reload the box!
+Ensure the BOOT variable points to a valid image
+Continue? [confirm]
+% Warning: Bootstrap config file needed for Day-0 boot is missing
+Do you want to abort? (yes/[no]): no
+ Mode change success
+</code></pre><p>设备起来后为端口配置 IP-address,并开启 SSH 功能:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Router#show run <span class="p">|</span> se line vty
+</span></span><span class="line"><span class="cl">line vty <span class="m">0</span> <span class="m">4</span>
+</span></span><span class="line"><span class="cl"> transport input ssh
+</span></span><span class="line"><span class="cl">Router#show run int gigabitEthernet <span class="m">1</span>
+</span></span><span class="line"><span class="cl">interface GigabitEthernet1
+</span></span><span class="line"><span class="cl"> ip address dhcp
+</span></span><span class="line"><span class="cl"> negotiation auto
+</span></span><span class="line"><span class="cl"> no mop enabled
+</span></span><span class="line"><span class="cl"> no mop sysid
+</span></span><span class="line"><span class="cl">end
+</span></span></code></pre></div>
 
-
-<h2 class="relative group">Upgrade Steps 
-    <div id="upgrade-steps" class="anchor"></div>
+<h2 class="relative group">准备 bootstrap 文件 
+    <div id="%E5%87%86%E5%A4%87-bootstrap-%E6%96%87%E4%BB%B6" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#upgrade-steps" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E5%87%86%E5%A4%87-bootstrap-%E6%96%87%E4%BB%B6" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>我的测试环境为 Single vManage + vBond + 2 Tenancy（every Tenancy has 1 vSmart）20.3.7.1</p>
-<p>由于是 Single vMange 所以升级会略微简单。</p>
-
-
-<h3 class="relative group">vManage upgrade to 20.6.x 
-    <div id="vmanage-upgrade-to-206x" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vmanage-upgrade-to-206x" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>先进行 vManage 的升级，参考以下文章；</p>
-<ul>
-<li>上传升级 Image</li>
-<li>Upgrade/Install，进行一个 pre-insall</li>
-<li>Activate New Version，激活新版本，此时 vMange 会重启</li>
-<li>Set Default Version</li>
-</ul>
-<blockquote>
-<p><a href="https://www.cisco.com/c/zh_cn/support/docs/wan/dpt/220424-upgrade-sd-wan-controllers-with-the-use.html#toc-hId--1724275443" target="_blank">vManage Upgrade</a></p>
-</blockquote>
-
-
-<h3 class="relative group">vBond upgrade to 20.6.x 
-    <div id="vbond-upgrade-to-206x" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#vbond-upgrade-to-206x" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>vbond 升级和 vMange 升级类似。</p>
-
-
-<h3 class="relative group">Add New two 20.6.x vSmart 
-    <div id="add-new-two-206x-vsmart" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#add-new-two-206x-vsmart" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>添加 2 个 20.6.x 的 vSmart，如果 Tenancy 比较多，那按照 Tenancy 的数量去选择在这一步添加多少个 vSmart。</p>
-<p>添加至 vManage 后进行证书的安装， 并下发 vSmart 模版.</p>
-
-  
-
-
-
-<div
-  
-    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
-  >
-
-  <span
-    
-      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
-    >
-
-    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
-
-  </span>
-
-
-  </span>
-
-  <span
-    
-      class="dark:text-neutral-300"
-    >注意这个地方一定需要下发 vSmart 模版，无论是 CLI 模版 or 标准的模版，否则你将会在下一步 API 操作中遇到报错<code>Found 0 vSmarts in vManage node, Need atleast 2 vSmarts in vManaged mode and In Sync to onboard a tenant</code></span>
-</div>
-
-
-
-<h3 class="relative group">Enable maintenance window on vManage 
-    <div id="enable-maintenance-window-on-vmanage" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#enable-maintenance-window-on-vmanage" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
+<p>从 17.7 起运行 IOS-XE SDWAN 的 c8000v 虚拟路由器，首次启动时需要在控制器管理模式下进行有效的 Day0/Bootstrap 配置.需要此文件来向路由器提供有效的 SD-WAN 通用设备标识符 (UID)</p>
+<p>在 vMange -&gt; Configuration -&gt; Devices, 选定一个还未上线的 C8000v，选择<code>Generate Bootstrap Configuration</code></p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/migrate-multitenant/mw-setup.png"
-        alt="mw setup on vManage"
+        src="/sdwan/onboarding-c8000v/image-1.png"
+        alt="alt text"
       />
       
     </figure>
 </p>
-
-  
-
-
-
-<div
-  
-    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
-  >
-
-  <span
-    
-      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
-    >
-
-    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
-
-  </span>
-
-
-  </span>
-
-  <span
-    
-      class="dark:text-neutral-300"
-    >这个地方的时间是 GUI 页面登录 PC 的时间，不是 vMange host 所在地方的时间。</span>
-</div>
-
-<p>这个步骤也无法省略，否则在 API 下发步骤会遇到报错<code>vManage is not in maintenance node, Cannot migrate tenants to MT vSmarts at the time</code>.</p>
-
-
-<h3 class="relative group">Use API to Migrate 
-    <div id="use-api-to-migrate" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#use-api-to-migrate" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>使用 API 需要先解决认证问题， 这个请参考之前的一篇文章<a href="https://imxing.info/sdwan/cisco-sdwan-api/" target="_blank">Cisco SDWAN API</a></p>
-<p>新建一个 API 如下:</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/migrate-multitenant/migrate-api.png"
-        alt="migrate API"
+        src="/sdwan/onboarding-c8000v/image-2.png"
+        alt="alt text"
       />
       
     </figure>
 </p>
-<p>API 执行成功后回回复一个 task-id：</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/migrate-multitenant/migrate-task.png"
-        alt="migrate task"
+        src="/sdwan/onboarding-c8000v/image-4.png"
+        alt="alt text"
       />
       
     </figure>
 </p>
+<p>Download 此文件后， 并在本地修改为<code>ciscosdwan_cloud_init.cfg</code>, 上传到本地 ftp 服务器上。</p>
 
 
-<h3 class="relative group">Check Task from vManage GUI 
-    <div id="check-task-from-vmanage-gui" class="anchor"></div>
+<h2 class="relative group">上传文件并重新加载设备 
+    <div id="%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%B9%B6%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E8%AE%BE%E5%A4%87" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#check-task-from-vmanage-gui" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>这个时候登录到 vManage 将会看到一些 task run 在后台，等待它自动完成。</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/migrate-multitenant/monitor-task.png"
-        alt="monitor Task"
-      />
-      
-    </figure>
-</p>
-<p>当所有的 task 都完成后， 旧的 20.3.7.1 vSmart 将会被移除，新加入的 20.6.x vSmart 将和所有的 vEdge/cEdge 建立控制连接。</p>
-
-
-<h2 class="relative group">Reference 
-    <div id="reference" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#reference" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%B9%B6%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E8%AE%BE%E5%A4%87" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/configuration/system-interface/vedge-20-x/systems-interfaces-book/sdwan-multitenancy.html#mt-mt-migration" target="_blank">Offical MT Migration Guide</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Router#copy ftp://calo:calo@10.122.153.158:/ciscosdwan_cloud_init.cfg bootflash:
+</span></span><span class="line"><span class="cl">Destination filename <span class="o">[</span>ciscosdwan_cloud_init.cfg<span class="o">]</span>?
+</span></span><span class="line"><span class="cl">Accessing ftp://*:*@10.122.153.158/ciscosdwan_cloud_init.cfg...
+</span></span><span class="line"><span class="cl"><span class="o">[</span>OK - 167/4096 bytes<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">167</span> bytes copied in 3.340 secs <span class="o">(</span><span class="m">50</span> bytes/sec<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Router#
+</span></span><span class="line"><span class="cl">Router#
+</span></span><span class="line"><span class="cl">Router#
+</span></span><span class="line"><span class="cl">Router#dir bo
+</span></span><span class="line"><span class="cl">Router#dir bootflash:
+</span></span><span class="line"><span class="cl">Directory of bootflash:/
+</span></span><span class="line"><span class="cl"><span class="m">32</span>      -rw-              <span class="m">167</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:42:35 +00:00  ciscosdwan_cloud_init.cfg
+</span></span><span class="line"><span class="cl"><span class="m">393217</span>  drwx            <span class="m">12288</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:35:17 +00:00  tracelogs
+</span></span><span class="line"><span class="cl"><span class="m">131074</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:47 +00:00  .cdb_backup
+</span></span><span class="line"><span class="cl"><span class="m">12</span>      -rwx              <span class="m">905</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:46 +00:00  mode_event_log
+</span></span><span class="line"><span class="cl"><span class="m">2097155</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:45 +00:00  sdwan
+</span></span><span class="line"><span class="cl"><span class="m">33</span>      -rw-              <span class="m">107</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:40 +00:00  pki_certificates
+</span></span><span class="line"><span class="cl"><span class="m">26</span>      -rw-              <span class="m">106</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:19 +00:00  cvac.log
+</span></span><span class="line"><span class="cl"><span class="m">2097153</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:18 +00:00  license_evlog
+</span></span><span class="line"><span class="cl"><span class="m">28</span>      -rw-              <span class="m">157</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:18 +00:00  csrlxc-cfg.log
+</span></span><span class="line"><span class="cl"><span class="m">262146</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:30:43 +00:00  .geo
+</span></span><span class="line"><span class="cl"><span class="m">25</span>      -rw-               <span class="m">30</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:30:40 +00:00  throughput_monitor_params
+</span></span><span class="line"><span class="cl"><span class="m">2752514</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:30:18 +00:00  vmanage-admin
+</span></span><span class="line"><span class="cl"><span class="m">2359297</span>  drwx             <span class="m">1024</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:30:18 +00:00  .sdwaninstaller
+</span></span><span class="line"><span class="cl"><span class="m">1048578</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:30:17 +00:00  .sdwaninternal
+</span></span><span class="line"><span class="cl"><span class="m">1179649</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:29:01 +00:00  .dbpersist
+</span></span><span class="line"><span class="cl"><span class="m">30</span>      -rw-             <span class="m">5626</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:29:01 +00:00  original-xe-config
+</span></span><span class="line"><span class="cl"><span class="m">2490370</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:28:48 +00:00  pnp-tech
+</span></span><span class="line"><span class="cl"><span class="m">917505</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:28:28 +00:00  pnp-info
+</span></span><span class="line"><span class="cl"><span class="m">27</span>      -rw-              <span class="m">301</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:57 +00:00  .iox_dir_list
+</span></span><span class="line"><span class="cl"><span class="m">2228226</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:55 +00:00  iox_host_data_share
+</span></span><span class="line"><span class="cl"><span class="m">1048577</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:55 +00:00  guest-share
+</span></span><span class="line"><span class="cl"><span class="m">1835009</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:53 +00:00  onep
+</span></span><span class="line"><span class="cl"><span class="m">786433</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:24 +00:00  virtual-instance
+</span></span><span class="line"><span class="cl"><span class="m">23</span>      -rw-            <span class="m">20109</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:22 +00:00  ios_core.p7b
+</span></span><span class="line"><span class="cl"><span class="m">24</span>      -rw-             <span class="m">1923</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:22 +00:00  trustidrootx3_ca_092024.ca
+</span></span><span class="line"><span class="cl"><span class="m">1703937</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:18 +00:00  core
+</span></span><span class="line"><span class="cl"><span class="m">1966081</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:14 +00:00  bootlog_history
+</span></span><span class="line"><span class="cl"><span class="m">2490369</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:26:13 +00:00  .prst_sync
+</span></span><span class="line"><span class="cl"><span class="m">20</span>      -rw-        <span class="m">797361240</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:33 +00:00  c8000v-mono-universalk9.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">22</span>      -rw-             <span class="m">5794</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:33 +00:00  packages.conf
+</span></span><span class="line"><span class="cl"><span class="m">21</span>      -rw-         <span class="m">51970675</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:33 +00:00  c8000v-rpboot.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">15</span>      -rw-         <span class="m">13038668</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_nim_async.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">17</span>      -rw-          <span class="m">4346952</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_nim_ge.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">18</span>      -rw-         <span class="m">11568204</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_nim_shdsl.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">14</span>      -rw-         <span class="m">11760716</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_ngwic_t1e1.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">16</span>      -rw-         <span class="m">17724492</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_nim_cwan.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">19</span>      -rw-          <span class="m">5575756</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_nim_xdsl.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">13</span>      -rw-            <span class="m">66636</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:31 +00:00  c8000v-firmware_dreamliner.17.09.03a.SPA.pkg
+</span></span><span class="line"><span class="cl"><span class="m">262145</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:30 +00:00  appqoe-service
+</span></span><span class="line"><span class="cl"><span class="m">131073</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:29 +00:00  .rollback_timer
+</span></span><span class="line"><span class="cl"><span class="m">2228225</span>  drwx             <span class="m">4096</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:19 +00:00  SHARED-IOX
+</span></span><span class="line"><span class="cl"><span class="m">11</span>      drwx            <span class="m">16384</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:25:10 +00:00  lost+found
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">47795126272</span> bytes total <span class="o">(</span><span class="m">43961167872</span> bytes free<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Router#dir bootflash: <span class="p">|</span> in cfg
+</span></span><span class="line"><span class="cl"><span class="m">32</span>      -rw-              <span class="m">167</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:42:35 +00:00  ciscosdwan_cloud_init.cfg
+</span></span><span class="line"><span class="cl"><span class="m">28</span>      -rw-              <span class="m">157</span>  Jul <span class="m">27</span> <span class="m">2024</span> 15:31:18 +00:00  csrlxc-cfg.log
+</span></span><span class="line"><span class="cl">Router#reload
+</span></span><span class="line"><span class="cl">Proceed with reload? <span class="o">[</span>confirm<span class="o">]</span>Connection to 10.70.79.161 closed by remote host.
+</span></span><span class="line"><span class="cl">Connection to 10.70.79.161 closed.
+</span></span></code></pre></div><p>重启设备后我们再登陆设备就可以看到 UDI 可以正常显示:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Router#show license udi
+</span></span><span class="line"><span class="cl">UDI: PID:C8000V,SN:C8K-011ACCA8-BDEB-1957-E4A0-3C4D89C95344
+</span></span></code></pre></div>
 
+<h2 class="relative group">上线 C8000v 
+    <div id="%E4%B8%8A%E7%BA%BF-c8000v" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%B8%8A%E7%BA%BF-c8000v" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>为设备配置一些基本配置:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Router#config-transaction
+</span></span><span class="line"><span class="cl">admin connected from 127.0.0.1 using console on Router
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config<span class="o">)</span><span class="c1"># interface Tunnel 1</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># ip unnumbered GigabitEthernet1</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># tunnel source GigabitEthernet1</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># tunnel mode sdwan</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># no shut</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-if<span class="o">)</span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># sdwan</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-sdwan<span class="o">)</span><span class="c1"># interface GigabitEthernet1</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-interface-GigabitEthernet1<span class="o">)</span><span class="c1"># tunnel-interface</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-tunnel-interface<span class="o">)</span><span class="c1"># encapsulation ipsec</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-tunnel-interface<span class="o">)</span><span class="c1"># allow-service all</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-tunnel-interface<span class="o">)</span><span class="c1"># allow-service sshd</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-tunnel-interface<span class="o">)</span><span class="c1"># allow-service netconf</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-tunnel-interface<span class="o">)</span><span class="c1"># exit</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-interface-GigabitEthernet1<span class="o">)</span><span class="c1"># exit</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-sdwan<span class="o">)</span><span class="c1"># exit</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config<span class="o">)</span><span class="c1"># exit</span>
+</span></span><span class="line"><span class="cl">Uncommitted changes found, commit them? <span class="o">[</span>yes/no/CANCEL<span class="o">]</span> yes
+</span></span><span class="line"><span class="cl">Commit complete.
+</span></span><span class="line"><span class="cl">Router#config-t
+</span></span><span class="line"><span class="cl">admin connected from 127.0.0.1 using console on Router
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config<span class="o">)</span><span class="c1"># system</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-system<span class="o">)</span><span class="c1"># system-ip 10.1.12.12</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-system<span class="o">)</span><span class="c1"># site-id 1012</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-system<span class="o">)</span><span class="c1"># organization-name xuxing.eve.lab</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-system<span class="o">)</span><span class="c1"># vbond 10.70.79.151</span>
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-system<span class="o">)</span><span class="c1"># commit</span>
+</span></span><span class="line"><span class="cl">Commit complete.
+</span></span><span class="line"><span class="cl">Router<span class="o">(</span>config-system<span class="o">)</span><span class="c1"># end</span>
+</span></span></code></pre></div><p>从 vMange 上找到对应的 token，激活设备。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Router#request platform software sdwan vedge_cloud activate chassis-number C8K-011ACCA8-BDEB-1957-E4A0-3C4D89C95344 token 37f634788f5b48f68b467c24b719c92a
+</span></span><span class="line"><span class="cl">Router#
+</span></span><span class="line"><span class="cl">Router#
+</span></span></code></pre></div><p>完成后，您应该在日志中看到 vManage 使用 NETCONF over SSH 登录到 cEdge，生成 CSR，然后对其进行签名并安装设备证书。然后，cEdge 路由器应与 vSmart 建立 OMP 对等互连，并开始接收 TLOC 和 OMP 路由。
+并且控制层面可以顺利建立:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:53:01.145: %DMI-5-AUTH_PASSED: R0/0: dmiauthd: User <span class="s1">&#39;vmanage-admin&#39;</span> authenticated successfully from 10.1.1.12:50318  <span class="k">for</span> netconf over ssh. External groups:
+</span></span><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:54:05.230: %DMI-5-AUTH_PASSED: R0/0: dmiauthd: User <span class="s1">&#39;vmanage-admin&#39;</span> authenticated successfully from 10.1.1.12:50526  <span class="k">for</span> netconf over ssh. External groups:
+</span></span><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:54:05.984: %Cisco-SDWAN-Router-OMPD-3-ERRO-400002: vSmart peer 10.1.3.3 state changed to Init
+</span></span><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:54:08.114: %Cisco-SDWAN-Router-OMPD-6-INFO-400002: vSmart peer 10.1.3.3 state changed to Handshake
+</span></span><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:54:08.116: %Cisco-SDWAN-Router-OMPD-5-NTCE-400002: vSmart peer 10.1.3.3 state changed to Up
+</span></span><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:54:08.116: %Cisco-SDWAN-Router-OMPD-6-INFO-400005: Number of vSmarts connected : <span class="m">1</span>
+</span></span><span class="line"><span class="cl">*Jul <span class="m">27</span> 15:54:09.381: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is ON
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Router#show sdwan control connections
+</span></span><span class="line"><span class="cl">                                                                                       PEER                                          PEER                                          CONTROLLER
+</span></span><span class="line"><span class="cl">PEER    PEER PEER            SITE       DOMAIN PEER                                    PRIV  PEER                                    PUB                                           GROUP
+</span></span><span class="line"><span class="cl">TYPE    PROT SYSTEM IP       ID         ID     PRIVATE IP                              PORT  PUBLIC IP                               PORT  ORGANIZATION            LOCAL COLOR     PROXY STATE UPTIME      ID
+</span></span><span class="line"><span class="cl">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">vsmart  dtls 10.1.3.3        <span class="m">100</span>        <span class="m">1</span>      10.70.79.152                            <span class="m">12346</span> 10.70.79.152                            <span class="m">12346</span> xuxing.eve.lab          default         No    up     0:00:09:12 <span class="m">0</span>
+</span></span><span class="line"><span class="cl">vbond   dtls 0.0.0.0         <span class="m">0</span>          <span class="m">0</span>      10.70.79.151                            <span class="m">12346</span> 10.70.79.151                            <span class="m">12346</span> xuxing.eve.lab          default         -     up     0:00:09:15 <span class="m">0</span>
+</span></span><span class="line"><span class="cl">vmanage dtls 10.1.1.12       <span class="m">100</span>        <span class="m">0</span>      10.70.79.242                            <span class="m">12346</span> 10.70.79.242                            <span class="m">12346</span> xuxing.eve.lab          default         No    up     0:00:09:15 <span class="m">0</span>
+</span></span></code></pre></div>
         </div>
         
         
@@ -1033,7 +1060,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/sdwan/migrate-multitenant/&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/sdwan/onboarding-c8000v/&amp;title=Onboarding%20C8000v"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1052,7 +1079,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://imxing.info/sdwan/migrate-multitenant/&amp;text=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://twitter.com/intent/tweet/?url=https://imxing.info/sdwan/onboarding-c8000v/&amp;text=Onboarding%20C8000v"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1070,7 +1097,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://imxing.info/sdwan/migrate-multitenant/&amp;resubmit=true&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://reddit.com/submit/?url=https://imxing.info/sdwan/onboarding-c8000v/&amp;resubmit=true&amp;title=Onboarding%20C8000v"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1089,7 +1116,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/sdwan/migrate-multitenant/&amp;description=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/sdwan/onboarding-c8000v/&amp;description=Onboarding%20C8000v"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1108,7 +1135,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/sdwan/migrate-multitenant/&amp;quote=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/sdwan/onboarding-c8000v/&amp;quote=Onboarding%20C8000v"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1127,7 +1154,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://imxing.info/sdwan/migrate-multitenant/&amp;subject=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="mailto:?body=https://imxing.info/sdwan/onboarding-c8000v/&amp;subject=Onboarding%20C8000v"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1146,7 +1173,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://imxing.info/sdwan/migrate-multitenant/&amp;resubmit=true&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://api.whatsapp.com/send?text=https://imxing.info/sdwan/onboarding-c8000v/&amp;resubmit=true&amp;title=Onboarding%20C8000v"
       title=""
       aria-label=""
       >
@@ -1165,7 +1192,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://imxing.info/sdwan/migrate-multitenant/&amp;resubmit=true&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
+      href="https://t.me/share/url?url=https://imxing.info/sdwan/onboarding-c8000v/&amp;resubmit=true&amp;title=Onboarding%20C8000v"
       title=""
       aria-label=""
       >
@@ -1194,8 +1221,8 @@
           
         
       <script>
-        var oid = "views_sdwan\/migrate-multitenant\/index.md"
-        var oid_likes = "likes_sdwan\/migrate-multitenant\/index.md"
+        var oid = "views_sdwan\/onboarding-c8000v\/index.md"
+        var oid_likes = "likes_sdwan\/onboarding-c8000v\/index.md"
       </script>
       
       
@@ -1215,7 +1242,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/sdwan/cisco-sdwan-api/">
+            <a class="flex group mr-3" href="/sdwan/migrate-multitenant/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1227,11 +1254,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Cisco SDWAN API</span
+                  >Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-01-11 11:47:21 &#43;0800 &#43;0800">11 January 2024</time>
+                    <time datetime="2024-01-16 14:42:00 &#43;0800 &#43;0800">16 January 2024</time>
                   
                 </span>
               </span>
@@ -1239,28 +1266,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/sdwan/onboarding-c8000v/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Onboarding C8000v</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-07-28 01:11:58 &#43;0800 &#43;0800">28 July 2024</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
@@ -1290,9 +1295,9 @@
   id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="eaff9d82-5bae-47cd-b41a-34854e106067"
-  data-page-id="/sdwan/migrate-multitenant/"
-  data-page-url="/sdwan/migrate-multitenant/"
-  data-page-title="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)"
+  data-page-id="/sdwan/onboarding-c8000v/"
+  data-page-url="/sdwan/onboarding-c8000v/"
+  data-page-title="Onboarding C8000v"
 ></div><script type="text/javascript">
   (()=>{var e={powered_by:"Comments powered by Cusdis",post_comment:"Comment",loading:"Loading",email:"Email (optional)",nickname:"Nickname",reply_placeholder:"Reply...",reply_btn:"Reply",sending:"sending...",mod_badge:"MOD",content_is_required:"Content is required",nickname_is_required:"Nickname is required",comment_has_been_sent:"Your comment has been sent. Please wait for approval."};})();
 
