@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Rory Xing</copyright>
-    <lastBuildDate>Mon, 24 Jun 2024 12:32:34 +0800</lastBuildDate><atom:link href="https://imxing.info/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jul 2024 01:11:58 +0800</lastBuildDate><atom:link href="https://imxing.info/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Onboarding C8000v</title>
+      <link>https://imxing.info/blog/onboarding-c8000v/</link>
+      <pubDate>Sun, 28 Jul 2024 01:11:58 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/onboarding-c8000v/</guid>
+      <description>C8000v 初始虚机创建 # 本文章基于 vManage-20.</description>
+      
+    </item>
+    
     <item>
       <title>Provision New Branch - VMware SDWAN</title>
       <link>https://imxing.info/blog/ztp-provision-new-branch/</link>
@@ -99,12 +109,32 @@
     </item>
     
     <item>
+      <title>Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)</title>
+      <link>https://imxing.info/blog/migrate-multitenant/</link>
+      <pubDate>Tue, 16 Jan 2024 14:42:00 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/migrate-multitenant/</guid>
+      <description>Background # 在 20.</description>
+      
+    </item>
+    
+    <item>
       <title>Mongodb Query</title>
       <link>https://imxing.info/blog/mongodb-query/</link>
       <pubDate>Sat, 13 Jan 2024 11:40:49 +0800</pubDate>
       
       <guid>https://imxing.info/blog/mongodb-query/</guid>
       <description>Record some Mongodb query example.</description>
+      
+    </item>
+    
+    <item>
+      <title>Cisco SDWAN API</title>
+      <link>https://imxing.info/blog/cisco-sdwan-api/</link>
+      <pubDate>Thu, 11 Jan 2024 11:47:21 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/cisco-sdwan-api/</guid>
+      <description>Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。</description>
       
     </item>
     
@@ -125,6 +155,26 @@
       
       <guid>https://imxing.info/blog/eibgp-maximum-paths-label-mode-per-vrf-loop/</guid>
       <description>环境介绍 # 一个简单的 CE 双上连的 VPN 环境，客户路由 8.</description>
+      
+    </item>
+    
+    <item>
+      <title>SDWAN环境下cEdge的抓包</title>
+      <link>https://imxing.info/blog/capture/</link>
+      <pubDate>Sat, 21 Oct 2023 04:25:12 +0000</pubDate>
+      
+      <guid>https://imxing.info/blog/capture/</guid>
+      <description>Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:</description>
+      
+    </item>
+    
+    <item>
+      <title>CONE NAT 和 Symmetric NAT</title>
+      <link>https://imxing.info/blog/nat/</link>
+      <pubDate>Mon, 16 Oct 2023 04:25:12 +0000</pubDate>
+      
+      <guid>https://imxing.info/blog/nat/</guid>
+      <description>NAT 的划分 # 以下是 RFC3489 的分类方式， 当然还有其他的分类标准，比如我们熟知的 PAT 就是另一种分类方式中的一种。</description>
       
     </item>
     

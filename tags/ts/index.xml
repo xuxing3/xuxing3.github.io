@@ -20,10 +20,10 @@
     
     <item>
       <title>SDWAN环境下cEdge的抓包</title>
-      <link>https://imxing.info/sdwan/capture/</link>
+      <link>https://imxing.info/blog/capture/</link>
       <pubDate>Sat, 21 Oct 2023 04:25:12 +0000</pubDate>
       
-      <guid>https://imxing.info/sdwan/capture/</guid>
+      <guid>https://imxing.info/blog/capture/</guid>
       <description>Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:</description>
       
     </item>

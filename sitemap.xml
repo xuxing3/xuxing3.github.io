@@ -9,25 +9,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/sdwan/onboarding-c8000v/</loc>
+    <loc>https://imxing.info/blog/onboarding-c8000v/</loc>
     <lastmod>2024-07-28T01:11:58+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/sdwan/</loc>
+    <loc>https://imxing.info/blog/</loc>
     <lastmod>2024-07-28T01:11:58+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://imxing.info/blog/ztp-provision-new-branch/</loc>
-    <lastmod>2024-06-24T12:32:34+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://imxing.info/blog/</loc>
     <lastmod>2024-06-24T12:32:34+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -81,7 +75,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/sdwan/migrate-multitenant/</loc>
+    <loc>https://imxing.info/blog/migrate-multitenant/</loc>
     <lastmod>2024-01-16T14:42:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -93,7 +87,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/sdwan/cisco-sdwan-api/</loc>
+    <loc>https://imxing.info/blog/cisco-sdwan-api/</loc>
     <lastmod>2024-01-11T11:47:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -111,13 +105,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/sdwan/capture/</loc>
+    <loc>https://imxing.info/blog/capture/</loc>
     <lastmod>2023-10-21T04:25:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/sdwan/nat/</loc>
+    <loc>https://imxing.info/blog/nat/</loc>
     <lastmod>2023-10-16T04:25:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

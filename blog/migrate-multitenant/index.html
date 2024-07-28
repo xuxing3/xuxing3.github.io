@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Cisco SDWAN API &middot; Rory&#39;s Blog</title>
-  <meta name="title" content="Cisco SDWAN API &middot; Rory&#39;s Blog" />
+  <title>Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x) &middot; Rory&#39;s Blog</title>
+  <meta name="title" content="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x) &middot; Rory&#39;s Blog" />
   
   
   <meta name="keywords" content="SDWAN, " />
   
   
-  <link rel="canonical" href="https://imxing.info/sdwan/cisco-sdwan-api/" />
+  <link rel="canonical" href="https://imxing.info/blog/migrate-multitenant/" />
   
   
   
@@ -65,48 +65,48 @@
   
   
   
-  <meta property="og:url" content="https://imxing.info/sdwan/cisco-sdwan-api/">
+  <meta property="og:url" content="https://imxing.info/blog/migrate-multitenant/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
-  <meta property="og:title" content="Cisco SDWAN API">
-  <meta property="og:description" content="Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。">
+  <meta property="og:title" content="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)">
+  <meta property="og:description" content="Background # 在 20.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="sdwan">
-    <meta property="article:published_time" content="2024-01-11T11:47:21+08:00">
-    <meta property="article:modified_time" content="2024-01-11T11:47:21+08:00">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-01-16T14:42:00+08:00">
+    <meta property="article:modified_time" content="2024-01-16T14:42:00+08:00">
     <meta property="article:tag" content="SDWAN">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Cisco SDWAN API">
-  <meta name="twitter:description" content="Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。">
+  <meta name="twitter:title" content="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)">
+  <meta name="twitter:description" content="Background # 在 20.">
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "SDWAN",
-    "name": "Cisco SDWAN API",
-    "headline": "Cisco SDWAN API",
+    "articleSection": "我的博客",
+    "name": "Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)",
+    "headline": "Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)",
     
-    "abstract": "Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。",
+    "abstract": "Background # 在 20.",
     "inLanguage": "en",
-    "url" : "https:\/\/imxing.info\/sdwan\/cisco-sdwan-api\/",
+    "url" : "https:\/\/imxing.info\/blog\/migrate-multitenant\/",
     "author" : {
       "@type": "Person",
       "name": "Rory Xing"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-01-11T11:47:21\u002b08:00",
-    "datePublished": "2024-01-11T11:47:21\u002b08:00",
+    "dateCreated": "2024-01-16T14:42:00\u002b08:00",
+    "datePublished": "2024-01-16T14:42:00\u002b08:00",
     
-    "dateModified": "2024-01-11T11:47:21\u002b08:00",
+    "dateModified": "2024-01-16T14:42:00\u002b08:00",
     
     "keywords": ["SDWAN"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "125"
+    "wordCount": "199"
   }]
   </script>
 
@@ -190,18 +190,7 @@
   <a href="/blog/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
-        Blog
-    </p>
-</a>
-
-
-
-            
-            
-  <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        SDWAN
+        Home
     </p>
 </a>
 
@@ -379,22 +368,7 @@
     <a href="/blog/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
-            Blog
-        </p>
-    </a>
-</li>
-
-
-
-
-                    
-
-                    
-  <li class="mt-1">
-    <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            SDWAN
+            Home
         </p>
     </a>
 </li>
@@ -484,7 +458,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Cisco SDWAN API
+      Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -527,7 +501,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-11 11:47:21 &#43;0800 &#43;0800">11 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2024-01-16 14:42:00 &#43;0800 &#43;0800">16 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -678,8 +652,18 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#postman-configuration">Postman configuration</a></li>
-    <li><a href="#api-authentication">API Authentication</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#upgrade-steps">Upgrade Steps</a>
+      <ul>
+        <li><a href="#vmanage-upgrade-to-206x">vManage upgrade to 20.6.x</a></li>
+        <li><a href="#vbond-upgrade-to-206x">vBond upgrade to 20.6.x</a></li>
+        <li><a href="#add-new-two-206x-vsmart">Add New two 20.6.x vSmart</a></li>
+        <li><a href="#enable-maintenance-window-on-vmanage">Enable maintenance window on vManage</a></li>
+        <li><a href="#use-api-to-migrate">Use API to Migrate</a></li>
+        <li><a href="#check-task-from-vmanage-gui">Check Task from vManage GUI</a></li>
+      </ul>
+    </li>
+    <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
   </div>
@@ -693,8 +677,18 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#postman-configuration">Postman configuration</a></li>
-    <li><a href="#api-authentication">API Authentication</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#upgrade-steps">Upgrade Steps</a>
+      <ul>
+        <li><a href="#vmanage-upgrade-to-206x">vManage upgrade to 20.6.x</a></li>
+        <li><a href="#vbond-upgrade-to-206x">vBond upgrade to 20.6.x</a></li>
+        <li><a href="#add-new-two-206x-vsmart">Add New two 20.6.x vSmart</a></li>
+        <li><a href="#enable-maintenance-window-on-vmanage">Enable maintenance window on vManage</a></li>
+        <li><a href="#use-api-to-migrate">Use API to Migrate</a></li>
+        <li><a href="#check-task-from-vmanage-gui">Check Task from vManage GUI</a></li>
+      </ul>
+    </li>
+    <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
   </div>
@@ -738,112 +732,267 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。</p>
-<p>API 相关的文档 <a href="https://developer.cisco.com/docs/sdwan/" target="_blank">Cisco SD-WAN vManage API</a></p>
-<p>使用浏览器我们可以进行简单的 Get API 的操作， 但是如果涉及一些复杂的操作，例如 filer 一段时间，或者需要执行一些 Post API， 浏览器就不太方便实现。</p>
-<p>这里我们可以使用 API 专业的调试软件<code>Postman</code>.</p>
+          
 
-
-<h2 class="relative group">Postman configuration 
-    <div id="postman-configuration" class="anchor"></div>
+<h2 class="relative group">Background 
+    <div id="background" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#postman-configuration" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>在 Postman 中先关闭 SSL certificate verification。</p>
+<p>在 20.4.x 之前的多租户的架构如下,每个租户拥有独立的 vSmart，所以在 20.4.x 之前 vSmart 只在各个租户的 GUI 界面上去显示</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/cisco-sdwan-api/postman-setup.png"
-        alt="Postman Setup"
+        src="/blog/migrate-multitenant/mt-arc-before-20_4.png"
+        alt="Architecture of Multi-Tenancy pre 20.3.X versions"
       />
       
     </figure>
 </p>
-<p>Github 上有个 Getting-started-with-Cisco-SD-WAN-REST-APIs 仓库, 里面包含了一些帮我们设定好的 API，我们可以之间 clone 下来导入到 Postman 中去使用:</p>
-<pre tabindex="0"><code>git clone https://github.com/CiscoDevNet/Getting-started-with-Cisco-SD-WAN-REST-APIs.git
-
-├── Postman
-│   ├── Cisco-Reservable-SD-WAN-Env.postman_environment.json
-│   └── Cisco-Reservable-SD-WAN.postman_collection.json
-</code></pre><p>在 Postman 文件夹下会有两个文件，一个包含你的 vManage 的 username 和 password 的相关设定，另一个包含一些常见的 API。我们都将他导入到 Postman 中，如下：</p>
+<p>在 20.4.x 之后，架构发生了变化，vSmart 变成在多个租户之间共享的存在。</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/cisco-sdwan-api/import-file-to-postman.png"
-        alt="import file to postman"
+        src="/blog/migrate-multitenant/mt-arc-after-20_4.png"
+        alt="Architecture of Mult-Tenancy 20.4/17.4 version and later"
       />
       
     </figure>
 </p>
-<p>在 Environments 菜单中修改 vMange 相关参数，其中<code>X-XSPF-TOKEN</code>为后续自动生成的，可以不需要填写。</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/cisco-sdwan-api/postman-environment.png"
-        alt="postman- environment"
-      />
-      
-    </figure>
-</p>
+<p>由于架构发生了变化，MT 环境从 20.4.x 之前往高版本去升级的时候步骤会有略微的变化。</p>
 
 
-<h2 class="relative group">API Authentication 
-    <div id="api-authentication" class="anchor"></div>
+<h2 class="relative group">Upgrade Steps 
+    <div id="upgrade-steps" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#api-authentication" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#upgrade-steps" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>使用 API 进行交互的第一步是认证， 在刚刚导入 postman 的 API collection 中有一项为 Authentication 的 Post 调用， 执行该 Post 调用后，vManage 会生成一个 JSESSIONID 并返回给我们.</p>
+<p>我的测试环境为 Single vManage + vBond + 2 Tenancy（every Tenancy has 1 vSmart）20.3.7.1</p>
+<p>由于是 Single vMange 所以升级会略微简单。</p>
+
+
+<h3 class="relative group">vManage upgrade to 20.6.x 
+    <div id="vmanage-upgrade-to-206x" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vmanage-upgrade-to-206x" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>先进行 vManage 的升级，参考以下文章；</p>
+<ul>
+<li>上传升级 Image</li>
+<li>Upgrade/Install，进行一个 pre-insall</li>
+<li>Activate New Version，激活新版本，此时 vMange 会重启</li>
+<li>Set Default Version</li>
+</ul>
+<blockquote>
+<p><a href="https://www.cisco.com/c/zh_cn/support/docs/wan/dpt/220424-upgrade-sd-wan-controllers-with-the-use.html#toc-hId--1724275443" target="_blank">vManage Upgrade</a></p>
+</blockquote>
+
+
+<h3 class="relative group">vBond upgrade to 20.6.x 
+    <div id="vbond-upgrade-to-206x" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vbond-upgrade-to-206x" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>vbond 升级和 vMange 升级类似。</p>
+
+
+<h3 class="relative group">Add New two 20.6.x vSmart 
+    <div id="add-new-two-206x-vsmart" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#add-new-two-206x-vsmart" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>添加 2 个 20.6.x 的 vSmart，如果 Tenancy 比较多，那按照 Tenancy 的数量去选择在这一步添加多少个 vSmart。</p>
+<p>添加至 vManage 后进行证书的安装， 并下发 vSmart 模版.</p>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >注意这个地方一定需要下发 vSmart 模版，无论是 CLI 模版 or 标准的模版，否则你将会在下一步 API 操作中遇到报错<code>Found 0 vSmarts in vManage node, Need atleast 2 vSmarts in vManaged mode and In Sync to onboard a tenant</code></span>
+</div>
+
+
+
+<h3 class="relative group">Enable maintenance window on vManage 
+    <div id="enable-maintenance-window-on-vmanage" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#enable-maintenance-window-on-vmanage" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/cisco-sdwan-api/postman-authentication.png"
-        alt="postman-authentication"
+        src="/blog/migrate-multitenant/mw-setup.png"
+        alt="mw setup on vManage"
       />
       
     </figure>
 </p>
-<p>第二步我们可以使用 get token 的方法， 将 <code>JSESSONID</code> 传递给 vManage， vManage 则会返回一串 token，这个 token 会自动填充在 Environment 设定的参数 <code>X-XSRF-TOKEN</code>。（如果无法自动填充，请自行复制修改 environment）</p>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >这个地方的时间是 GUI 页面登录 PC 的时间，不是 vMange host 所在地方的时间。</span>
+</div>
+
+<p>这个步骤也无法省略，否则在 API 下发步骤会遇到报错<code>vManage is not in maintenance node, Cannot migrate tenants to MT vSmarts at the time</code>.</p>
+
+
+<h3 class="relative group">Use API to Migrate 
+    <div id="use-api-to-migrate" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#use-api-to-migrate" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>使用 API 需要先解决认证问题， 这个请参考之前的一篇文章<a href="https://imxing.info/sdwan/cisco-sdwan-api/" target="_blank">Cisco SDWAN API</a></p>
+<p>新建一个 API 如下:</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/cisco-sdwan-api/token.png"
-        alt="token"
+        src="/blog/migrate-multitenant/migrate-api.png"
+        alt="migrate API"
       />
       
     </figure>
 </p>
-<p>后续我们执行所有的 API 操作，都需要使用该 token 进行验证,如果自己要自定义一些 API 操作， 请自行在 Header 中添加这个<code>X-XSRF-TOKEN</code>变量。</p>
+<p>API 执行成功后回回复一个 task-id：</p>
 <p>
     <figure>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/sdwan/cisco-sdwan-api/token-1.png"
-        alt="token-1"
+        src="/blog/migrate-multitenant/migrate-task.png"
+        alt="migrate task"
       />
       
     </figure>
 </p>
+
+
+<h3 class="relative group">Check Task from vManage GUI 
+    <div id="check-task-from-vmanage-gui" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#check-task-from-vmanage-gui" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>这个时候登录到 vManage 将会看到一些 task run 在后台，等待它自动完成。</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/migrate-multitenant/monitor-task.png"
+        alt="monitor Task"
+      />
+      
+    </figure>
+</p>
+<p>当所有的 task 都完成后， 旧的 20.3.7.1 vSmart 将会被移除，新加入的 20.6.x vSmart 将和所有的 vEdge/cEdge 建立控制连接。</p>
+
+
+<h2 class="relative group">Reference 
+    <div id="reference" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reference" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p><a href="https://www.cisco.com/c/en/us/td/docs/routers/sdwan/configuration/system-interface/vedge-20-x/systems-interfaces-book/sdwan-multitenancy.html#mt-mt-migration" target="_blank">Offical MT Migration Guide</a></p>
 
         </div>
         
@@ -858,7 +1007,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/sdwan/cisco-sdwan-api/&amp;title=Cisco%20SDWAN%20API"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/blog/migrate-multitenant/&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -877,7 +1026,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://imxing.info/sdwan/cisco-sdwan-api/&amp;text=Cisco%20SDWAN%20API"
+      href="https://twitter.com/intent/tweet/?url=https://imxing.info/blog/migrate-multitenant/&amp;text=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -895,7 +1044,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://imxing.info/sdwan/cisco-sdwan-api/&amp;resubmit=true&amp;title=Cisco%20SDWAN%20API"
+      href="https://reddit.com/submit/?url=https://imxing.info/blog/migrate-multitenant/&amp;resubmit=true&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -914,7 +1063,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/sdwan/cisco-sdwan-api/&amp;description=Cisco%20SDWAN%20API"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/blog/migrate-multitenant/&amp;description=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -933,7 +1082,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/sdwan/cisco-sdwan-api/&amp;quote=Cisco%20SDWAN%20API"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/blog/migrate-multitenant/&amp;quote=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -952,7 +1101,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://imxing.info/sdwan/cisco-sdwan-api/&amp;subject=Cisco%20SDWAN%20API"
+      href="mailto:?body=https://imxing.info/blog/migrate-multitenant/&amp;subject=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -971,7 +1120,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://imxing.info/sdwan/cisco-sdwan-api/&amp;resubmit=true&amp;title=Cisco%20SDWAN%20API"
+      href="https://api.whatsapp.com/send?text=https://imxing.info/blog/migrate-multitenant/&amp;resubmit=true&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title=""
       aria-label=""
       >
@@ -990,7 +1139,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://imxing.info/sdwan/cisco-sdwan-api/&amp;resubmit=true&amp;title=Cisco%20SDWAN%20API"
+      href="https://t.me/share/url?url=https://imxing.info/blog/migrate-multitenant/&amp;resubmit=true&amp;title=Migrate%20Multitenant%20Cisco%20SD-WAN%20%2820.3.x%20to%2020.6.x%29"
       title=""
       aria-label=""
       >
@@ -1019,8 +1168,8 @@
           
         
       <script>
-        var oid = "views_sdwan\/cisco-sdwan-api\/index.md"
-        var oid_likes = "likes_sdwan\/cisco-sdwan-api\/index.md"
+        var oid = "views_blog\/migrate-multitenant\/index.md"
+        var oid_likes = "likes_blog\/migrate-multitenant\/index.md"
       </script>
       
       
@@ -1040,7 +1189,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/sdwan/capture/">
+            <a class="flex group mr-3" href="/blog/mongodb-query/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1052,11 +1201,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >SDWAN环境下cEdge的抓包</span
+                  >Mongodb Query</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-10-21 04:25:12 &#43;0000 UTC">21 October 2023</time>
+                    <time datetime="2024-01-13 11:40:49 &#43;0800 &#43;0800">13 January 2024</time>
                   
                 </span>
               </span>
@@ -1065,15 +1214,15 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/sdwan/migrate-multitenant/">
+            <a class="flex text-right group ml-3" href="/blog/error-est-db/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)</span
+                  >Error Establishing A Database Connection</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-01-16 14:42:00 &#43;0800 &#43;0800">16 January 2024</time>
+                    <time datetime="2024-01-17 12:00:03 &#43;0800 &#43;0800">17 January 2024</time>
                   
                 </span>
               </span>
@@ -1115,9 +1264,9 @@
   id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="eaff9d82-5bae-47cd-b41a-34854e106067"
-  data-page-id="/sdwan/cisco-sdwan-api/"
-  data-page-url="/sdwan/cisco-sdwan-api/"
-  data-page-title="Cisco SDWAN API"
+  data-page-id="/blog/migrate-multitenant/"
+  data-page-url="/blog/migrate-multitenant/"
+  data-page-title="Migrate Multitenant Cisco SD-WAN (20.3.x to 20.6.x)"
 ></div><script type="text/javascript">
   (()=>{var e={powered_by:"Comments powered by Cusdis",post_comment:"Comment",loading:"Loading",email:"Email (optional)",nickname:"Nickname",reply_placeholder:"Reply...",reply_btn:"Reply",sending:"sending...",mod_badge:"MOD",content_is_required:"Content is required",nickname_is_required:"Nickname is required",comment_has_been_sent:"Your comment has been sent. Please wait for approval."};})();
 

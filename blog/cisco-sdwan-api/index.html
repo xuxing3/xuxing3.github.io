@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>SDWAN环境下cEdge的抓包 &middot; Rory&#39;s Blog</title>
-  <meta name="title" content="SDWAN环境下cEdge的抓包 &middot; Rory&#39;s Blog" />
+  <title>Cisco SDWAN API &middot; Rory&#39;s Blog</title>
+  <meta name="title" content="Cisco SDWAN API &middot; Rory&#39;s Blog" />
   
   
-  <meta name="keywords" content="SDWAN, TS, " />
+  <meta name="keywords" content="SDWAN, " />
   
   
-  <link rel="canonical" href="https://imxing.info/sdwan/capture/" />
+  <link rel="canonical" href="https://imxing.info/blog/cisco-sdwan-api/" />
   
   
   
@@ -65,49 +65,48 @@
   
   
   
-  <meta property="og:url" content="https://imxing.info/sdwan/capture/">
+  <meta property="og:url" content="https://imxing.info/blog/cisco-sdwan-api/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
-  <meta property="og:title" content="SDWAN环境下cEdge的抓包">
-  <meta property="og:description" content="Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:">
+  <meta property="og:title" content="Cisco SDWAN API">
+  <meta property="og:description" content="Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="sdwan">
-    <meta property="article:published_time" content="2023-10-21T04:25:12+00:00">
-    <meta property="article:modified_time" content="2023-10-21T04:25:12+00:00">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-01-11T11:47:21+08:00">
+    <meta property="article:modified_time" content="2024-01-11T11:47:21+08:00">
     <meta property="article:tag" content="SDWAN">
-    <meta property="article:tag" content="TS">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="SDWAN环境下cEdge的抓包">
-  <meta name="twitter:description" content="Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:">
+  <meta name="twitter:title" content="Cisco SDWAN API">
+  <meta name="twitter:description" content="Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。">
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "SDWAN",
-    "name": "SDWAN环境下cEdge的抓包",
-    "headline": "SDWAN环境下cEdge的抓包",
+    "articleSection": "我的博客",
+    "name": "Cisco SDWAN API",
+    "headline": "Cisco SDWAN API",
     
-    "abstract": "Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:",
+    "abstract": "Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。",
     "inLanguage": "en",
-    "url" : "https:\/\/imxing.info\/sdwan\/capture\/",
+    "url" : "https:\/\/imxing.info\/blog\/cisco-sdwan-api\/",
     "author" : {
       "@type": "Person",
       "name": "Rory Xing"
     },
-    "copyrightYear": "2023",
-    "dateCreated": "2023-10-21T04:25:12\u002b00:00",
-    "datePublished": "2023-10-21T04:25:12\u002b00:00",
+    "copyrightYear": "2024",
+    "dateCreated": "2024-01-11T11:47:21\u002b08:00",
+    "datePublished": "2024-01-11T11:47:21\u002b08:00",
     
-    "dateModified": "2023-10-21T04:25:12\u002b00:00",
+    "dateModified": "2024-01-11T11:47:21\u002b08:00",
     
-    "keywords": ["SDWAN","TS"],
+    "keywords": ["SDWAN"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "426"
+    "wordCount": "125"
   }]
   </script>
 
@@ -191,18 +190,7 @@
   <a href="/blog/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
-        Blog
-    </p>
-</a>
-
-
-
-            
-            
-  <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        SDWAN
+        Home
     </p>
 </a>
 
@@ -380,22 +368,7 @@
     <a href="/blog/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
-            Blog
-        </p>
-    </a>
-</li>
-
-
-
-
-                    
-
-                    
-  <li class="mt-1">
-    <a href="/sdwan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            SDWAN
+            Home
         </p>
     </a>
 </li>
@@ -485,7 +458,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      SDWAN环境下cEdge的抓包
+      Cisco SDWAN API
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -528,7 +501,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-10-21 04:25:12 &#43;0000 UTC">21 October 2023</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-01-11 11:47:21 &#43;0800 &#43;0800">11 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -556,14 +529,6 @@
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     SDWAN
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ts/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TS
   </span>
 </span>
   </span>
@@ -687,14 +652,8 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#embedded-packet-capture">Embedded Packet Capture</a>
-      <ul>
-        <li><a href="#gui-方式抓包">GUI 方式抓包</a></li>
-        <li><a href="#命令行方式抓包">命令行方式抓包</a></li>
-      </ul>
-    </li>
-    <li><a href="#datapath-packet-trace">Datapath Packet Trace</a></li>
-    <li><a href="#参考">参考</a></li>
+    <li><a href="#postman-configuration">Postman configuration</a></li>
+    <li><a href="#api-authentication">API Authentication</a></li>
   </ul>
 </nav>
   </div>
@@ -708,14 +667,8 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#embedded-packet-capture">Embedded Packet Capture</a>
-      <ul>
-        <li><a href="#gui-方式抓包">GUI 方式抓包</a></li>
-        <li><a href="#命令行方式抓包">命令行方式抓包</a></li>
-      </ul>
-    </li>
-    <li><a href="#datapath-packet-trace">Datapath Packet Trace</a></li>
-    <li><a href="#参考">参考</a></li>
+    <li><a href="#postman-configuration">Postman configuration</a></li>
+    <li><a href="#api-authentication">API Authentication</a></li>
   </ul>
 </nav>
   </div>
@@ -759,220 +712,112 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <p>Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。</p>
+<p>API 相关的文档 <a href="https://developer.cisco.com/docs/sdwan/" target="_blank">Cisco SD-WAN vManage API</a></p>
+<p>使用浏览器我们可以进行简单的 Get API 的操作， 但是如果涉及一些复杂的操作，例如 filer 一段时间，或者需要执行一些 Post API， 浏览器就不太方便实现。</p>
+<p>这里我们可以使用 API 专业的调试软件<code>Postman</code>.</p>
 
-<h2 class="relative group">Embedded Packet Capture 
-    <div id="embedded-packet-capture" class="anchor"></div>
+
+<h2 class="relative group">Postman configuration 
+    <div id="postman-configuration" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#embedded-packet-capture" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#postman-configuration" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
+<p>在 Postman 中先关闭 SSL certificate verification。</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cisco-sdwan-api/postman-setup.png"
+        alt="Postman Setup"
+      />
+      
+    </figure>
+</p>
+<p>Github 上有个 Getting-started-with-Cisco-SD-WAN-REST-APIs 仓库, 里面包含了一些帮我们设定好的 API，我们可以之间 clone 下来导入到 Postman 中去使用:</p>
+<pre tabindex="0"><code>git clone https://github.com/CiscoDevNet/Getting-started-with-Cisco-SD-WAN-REST-APIs.git
+
+├── Postman
+│   ├── Cisco-Reservable-SD-WAN-Env.postman_environment.json
+│   └── Cisco-Reservable-SD-WAN.postman_collection.json
+</code></pre><p>在 Postman 文件夹下会有两个文件，一个包含你的 vManage 的 username 和 password 的相关设定，另一个包含一些常见的 API。我们都将他导入到 Postman 中，如下：</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cisco-sdwan-api/import-file-to-postman.png"
+        alt="import file to postman"
+      />
+      
+    </figure>
+</p>
+<p>在 Environments 菜单中修改 vMange 相关参数，其中<code>X-XSPF-TOKEN</code>为后续自动生成的，可以不需要填写。</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cisco-sdwan-api/postman-environment.png"
+        alt="postman- environment"
+      />
+      
+    </figure>
+</p>
 
 
-<h3 class="relative group">GUI 方式抓包 
-    <div id="gui-%E6%96%B9%E5%BC%8F%E6%8A%93%E5%8C%85" class="anchor"></div>
+<h2 class="relative group">API Authentication 
+    <div id="api-authentication" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#gui-%E6%96%B9%E5%BC%8F%E6%8A%93%E5%8C%85" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:</p>
-<p><strong>开启 Data Stream 功能</strong></p>
-<p>路径为 vManage -&gt; Administration -&gt; Settings -&gt; Data Stream</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/capture/image.png"
-        alt="Alt text"
-      />
-      
-    </figure>
-</p>
-<p><strong>抓包路径</strong></p>
-<p>开启后打开 Monitor —&gt; Network -&gt; cEdge -&gt; Troubleshooting, 就可以看到 Packet Capture 的选项。</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/capture/image-1.png"
-        alt="Alt text"
-      />
-      
-    </figure>
-</p>
-<p>你还可以设置简单的 Traffic filter 的参数，点击 start 即可开始抓包, 测试结束后点击 Stop 按钮结束抓包， 并可以将数据包下载下来。</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/capture/image-2.png"
-        alt="Alt text"
-      />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/capture/image-3.png"
-        alt="Alt text"
-      />
-      
-    </figure>
-</p>
-
-
-<h3 class="relative group">命令行方式抓包 
-    <div id="%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%96%B9%E5%BC%8F%E6%8A%93%E5%8C%85" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%96%B9%E5%BC%8F%E6%8A%93%E5%8C%85" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p><strong>配置 ACL</strong></p>
-<p>如果是 Cli 模式的 cEdge， 我们可以直接登陆设备进行配置对应的 ACL；如果是模版形式的 cEdge， 则需要提前使用模版将对应的 ACL 下发下去。如下, 在 Device Template 下增加一个 Cli add-on Template， 配置上你想抓取的感兴趣流。</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/capture/image-4.png"
-        alt="Alt text"
-      />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        src="/sdwan/capture/image-5.png"
-        alt="Alt text"
-      />
-      
-    </figure>
-</p>
-<p><strong>配置 EPC</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cEdge3#monitor  capture cap interface  gigabitEthernet <span class="m">1</span> both access-list pkt
-</span></span><span class="line"><span class="cl">cEdge3#monitor capture cap buffer size  <span class="m">100</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">!!! 开启抓包
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3#monitor capture cap start
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">!!! 执行测试
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3#ping 1.100.100.1
-</span></span><span class="line"><span class="cl">Type escape sequence to abort.
-</span></span><span class="line"><span class="cl">Sending 5, 100-byte ICMP Echos to 1.100.100.1, timeout is <span class="m">2</span> seconds:
-</span></span><span class="line"><span class="cl">!!!!!
-</span></span><span class="line"><span class="cl">Success rate is <span class="m">100</span> percent <span class="o">(</span>5/5<span class="o">)</span>, round-trip min/avg/max <span class="o">=</span> 6/37/149 ms
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">!!! 停止抓包
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3#monitor capture cap stop
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">!!! 检查抓包summary或者detial 数据
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3#show monitor capture cap buffer brief
-</span></span><span class="line"><span class="cl"> ----------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl"> <span class="c1">#   size   timestamp     source             destination      dscp    protocol</span>
-</span></span><span class="line"><span class="cl"> ----------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">   <span class="m">0</span>  <span class="m">114</span>    0.000000   1.100.100.3      -&gt;  1.100.100.1      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">1</span>  <span class="m">114</span>    0.005996   1.100.100.1      -&gt;  1.100.100.3      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">2</span>  <span class="m">114</span>    0.007004   1.100.100.3      -&gt;  1.100.100.1      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">3</span>  <span class="m">114</span>    0.011993   1.100.100.1      -&gt;  1.100.100.3      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">4</span>  <span class="m">114</span>    0.013000   1.100.100.3      -&gt;  1.100.100.1      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">5</span>  <span class="m">114</span>    0.017989   1.100.100.1      -&gt;  1.100.100.3      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">6</span>  <span class="m">114</span>    0.140984   1.100.100.3      -&gt;  1.100.100.1      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">7</span>  <span class="m">114</span>    0.166984   1.100.100.1      -&gt;  1.100.100.3      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">8</span>  <span class="m">114</span>    0.170981   1.100.100.3      -&gt;  1.100.100.1      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">   <span class="m">9</span>  <span class="m">114</span>    0.175986   1.100.100.1      -&gt;  1.100.100.3      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3#show monitor capture cap buffer detailed
-</span></span><span class="line"><span class="cl"> ----------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl"> <span class="c1">#   size   timestamp     source             destination      dscp    protocol</span>
-</span></span><span class="line"><span class="cl"> ----------------------------------------------------------------------------
-</span></span><span class="line"><span class="cl">   <span class="m">0</span>  <span class="m">114</span>    0.000000   1.100.100.3      -&gt;  1.100.100.1      <span class="m">0</span>  BE   ICMP
-</span></span><span class="line"><span class="cl">  0000:  <span class="m">52540017</span> 59D25254 0018BE46 <span class="m">08004500</span>   RT..Y.RT...F..E.
-</span></span><span class="line"><span class="cl">  0010:  <span class="m">00640037</span> 0000FF01 F0950164 <span class="m">64030164</span>   .d.7.......dd..d
-</span></span><span class="line"><span class="cl">  0020:  <span class="m">64010800</span> 2038000B <span class="m">00000000</span> 00019EA2   d... 8..........
-</span></span><span class="line"><span class="cl">  0030:  BF63ABCD ABCDABCD ABCDABCD ABCDABCD   .c..............
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">!!! 或者导出pcap数据
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3#monitor capture cap <span class="nb">export</span> bootflash:cap.pcap
-</span></span><span class="line"><span class="cl">Exported Successfully
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">!!! 测试完毕删除设置
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cEdge3# no monitor capture CAP
-</span></span></code></pre></div>
-
-<h2 class="relative group">Datapath Packet Trace 
-    <div id="datapath-packet-trace" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#datapath-packet-trace" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#api-authentication" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Packet trace 并不是抓包， 它可以详细看到数据包经过哪些 feature，最后被丢弃还是被处理了。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">debug platform condition interface GigabitEthernet xxx both <span class="s">&lt;&lt; 匹配接口
-</span></span></span><span class="line"><span class="cl"><span class="s">Or
-</span></span></span><span class="line"><span class="cl"><span class="s">debug platform condition interface gigabitEthernet xxx ipv4 1.1.1.1/32 both  &lt;&lt; 匹配接口</span>和条目
-</span></span><span class="line"><span class="cl">Or
-</span></span><span class="line"><span class="cl">debug platform condition interface GigabitEthernet xxx ipv4 access-list pkt both  &lt;&lt; 匹配ACL+接口
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">debug platform packet-trace packet <span class="m">2048</span> fia-trace data-size <span class="m">2048</span>
-</span></span><span class="line"><span class="cl">debug platform packet-trace copy packet both l2 size <span class="m">2048</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">debug platform condition start
-</span></span><span class="line"><span class="cl">&lt;test&gt;
-</span></span><span class="line"><span class="cl">debug platform condition stop
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">show platform packet-trace statistics
-</span></span><span class="line"><span class="cl">show platform packet-trace summary
-</span></span><span class="line"><span class="cl">show platform packet-trace packet all
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">show platform conditions
-</span></span><span class="line"><span class="cl">show platform packet-trace configuration
-</span></span><span class="line"><span class="cl">clear platform packet-trace statistics  --&gt; clear the packet trace buffer
-</span></span><span class="line"><span class="cl">clear platform condition all  --&gt; clears both platform conditions and the packet trace configuration
-</span></span></code></pre></div>
-
-<h2 class="relative group">参考 
-    <div id="%E5%8F%82%E8%80%83" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<blockquote>
-<p><a href="https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/epc/configuration/xe-3s/epc-xe-3s-book.html" target="_blank">Embedded Packet Capture</a></p>
-</blockquote>
+<p>使用 API 进行交互的第一步是认证， 在刚刚导入 postman 的 API collection 中有一项为 Authentication 的 Post 调用， 执行该 Post 调用后，vManage 会生成一个 JSESSIONID 并返回给我们.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cisco-sdwan-api/postman-authentication.png"
+        alt="postman-authentication"
+      />
+      
+    </figure>
+</p>
+<p>第二步我们可以使用 get token 的方法， 将 <code>JSESSONID</code> 传递给 vManage， vManage 则会返回一串 token，这个 token 会自动填充在 Environment 设定的参数 <code>X-XSRF-TOKEN</code>。（如果无法自动填充，请自行复制修改 environment）</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cisco-sdwan-api/token.png"
+        alt="token"
+      />
+      
+    </figure>
+</p>
+<p>后续我们执行所有的 API 操作，都需要使用该 token 进行验证,如果自己要自定义一些 API 操作， 请自行在 Header 中添加这个<code>X-XSRF-TOKEN</code>变量。</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cisco-sdwan-api/token-1.png"
+        alt="token-1"
+      />
+      
+    </figure>
+</p>
 
         </div>
         
@@ -987,7 +832,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/sdwan/capture/&amp;title=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/blog/cisco-sdwan-api/&amp;title=Cisco%20SDWAN%20API"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1006,7 +851,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://imxing.info/sdwan/capture/&amp;text=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://twitter.com/intent/tweet/?url=https://imxing.info/blog/cisco-sdwan-api/&amp;text=Cisco%20SDWAN%20API"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1024,7 +869,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://imxing.info/sdwan/capture/&amp;resubmit=true&amp;title=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://reddit.com/submit/?url=https://imxing.info/blog/cisco-sdwan-api/&amp;resubmit=true&amp;title=Cisco%20SDWAN%20API"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -1043,7 +888,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/sdwan/capture/&amp;description=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/blog/cisco-sdwan-api/&amp;description=Cisco%20SDWAN%20API"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -1062,7 +907,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/sdwan/capture/&amp;quote=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/blog/cisco-sdwan-api/&amp;quote=Cisco%20SDWAN%20API"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -1081,7 +926,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://imxing.info/sdwan/capture/&amp;subject=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="mailto:?body=https://imxing.info/blog/cisco-sdwan-api/&amp;subject=Cisco%20SDWAN%20API"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1100,7 +945,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://imxing.info/sdwan/capture/&amp;resubmit=true&amp;title=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://api.whatsapp.com/send?text=https://imxing.info/blog/cisco-sdwan-api/&amp;resubmit=true&amp;title=Cisco%20SDWAN%20API"
       title=""
       aria-label=""
       >
@@ -1119,7 +964,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://imxing.info/sdwan/capture/&amp;resubmit=true&amp;title=SDWAN%e7%8e%af%e5%a2%83%e4%b8%8bcEdge%e7%9a%84%e6%8a%93%e5%8c%85"
+      href="https://t.me/share/url?url=https://imxing.info/blog/cisco-sdwan-api/&amp;resubmit=true&amp;title=Cisco%20SDWAN%20API"
       title=""
       aria-label=""
       >
@@ -1148,8 +993,8 @@
           
         
       <script>
-        var oid = "views_sdwan\/capture\/index.md"
-        var oid_likes = "likes_sdwan\/capture\/index.md"
+        var oid = "views_blog\/cisco-sdwan-api\/index.md"
+        var oid_likes = "likes_blog\/cisco-sdwan-api\/index.md"
       </script>
       
       
@@ -1169,7 +1014,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/sdwan/nat/">
+            <a class="flex group mr-3" href="/blog/a-simple-test-for-ios-xr-abf/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1181,11 +1026,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >CONE NAT 和 Symmetric NAT</span
+                  >A Simple Test for IOS XR ABF</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-10-16 04:25:12 &#43;0000 UTC">16 October 2023</time>
+                    <time datetime="2024-01-11 00:00:00 &#43;0000 UTC">11 January 2024</time>
                   
                 </span>
               </span>
@@ -1194,15 +1039,15 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/sdwan/cisco-sdwan-api/">
+            <a class="flex text-right group ml-3" href="/blog/mongodb-query/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Cisco SDWAN API</span
+                  >Mongodb Query</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-01-11 11:47:21 &#43;0800 &#43;0800">11 January 2024</time>
+                    <time datetime="2024-01-13 11:40:49 &#43;0800 &#43;0800">13 January 2024</time>
                   
                 </span>
               </span>
@@ -1244,9 +1089,9 @@
   id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="eaff9d82-5bae-47cd-b41a-34854e106067"
-  data-page-id="/sdwan/capture/"
-  data-page-url="/sdwan/capture/"
-  data-page-title="SDWAN环境下cEdge的抓包"
+  data-page-id="/blog/cisco-sdwan-api/"
+  data-page-url="/blog/cisco-sdwan-api/"
+  data-page-title="Cisco SDWAN API"
 ></div><script type="text/javascript">
   (()=>{var e={powered_by:"Comments powered by Cusdis",post_comment:"Comment",loading:"Loading",email:"Email (optional)",nickname:"Nickname",reply_placeholder:"Reply...",reply_btn:"Reply",sending:"sending...",mod_badge:"MOD",content_is_required:"Content is required",nickname_is_required:"Nickname is required",comment_has_been_sent:"Your comment has been sent. Please wait for approval."};})();
 
