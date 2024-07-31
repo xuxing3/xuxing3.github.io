@@ -68,7 +68,7 @@
   <meta property="og:url" content="https://imxing.info/blog/how-to-add-license-at-exr-platform/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
   <meta property="og:title" content="How to add License at eXR platform">
-  <meta property="og:description" content="Currently we have two ways to install the license.">
+  <meta property="og:description" content="Currently we have two license type.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -79,7 +79,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How to add License at eXR platform">
-  <meta name="twitter:description" content="Currently we have two ways to install the license.">
+  <meta name="twitter:description" content="Currently we have two license type.">
 
   
   <script type="application/ld+json">
@@ -90,7 +90,7 @@
     "name": "How to add License at eXR platform",
     "headline": "How to add License at eXR platform",
     
-    "abstract": "Currently we have two ways to install the license.",
+    "abstract": "Currently we have two license type.",
     "inLanguage": "en",
     "url" : "https:\/\/imxing.info\/blog\/how-to-add-license-at-exr-platform\/",
     "author" : {
@@ -106,7 +106,7 @@
     "keywords": ["license"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "344"
+    "wordCount": "494"
   }]
   </script>
 
@@ -501,7 +501,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2019-10-23 00:00:00 &#43;0000 UTC">23 October 2019</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2019-10-23 00:00:00 &#43;0000 UTC">23 October 2019</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -663,6 +663,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#smart-license">Smart License</a></li>
+    <li><a href="#slr---specific-license-reservation">SLR - Specific License Reservation</a></li>
     <li><a href="#commonly-used-commands">Commonly used commands</a></li>
   </ul>
 </nav>
@@ -678,6 +679,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#smart-license">Smart License</a></li>
+    <li><a href="#slr---specific-license-reservation">SLR - Specific License Reservation</a></li>
     <li><a href="#commonly-used-commands">Commonly used commands</a></li>
   </ul>
 </nav>
@@ -722,7 +724,20 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>Currently we have two ways to install the license.One is &ldquo;Traditional Licensing&rdquo; and the other is &ldquo;Smart Software Licensing&rdquo;.But at Cisco eXR platform(64-bit IOS XR), we can only use &ldquo;Smart Software Licensing&rdquo;.</p>
+          <p>Currently we have two license type. One is &ldquo;Traditional Licensing&rdquo; and the other is &ldquo;Smart Software Licensing&rdquo;. But at Cisco eXR platform(64-bit IOS XR), we can only use &ldquo;Smart Software Licensing&rdquo;.</p>
+<p>If you use &ldquo;Traditional Licenses&rdquo; before, you can access below URL and convert license to a smart licensing.</p>
+<p><a href="https://software.cisco.com/software/swift/lrp/#/devices" target="_blank">Traditional Licenses</a></p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/how-to-add-license-at-exr-platform/image-2.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
 
 
 <h2 class="relative group">Smart License 
@@ -793,6 +808,67 @@ A9K-24P10G-AIP-TR, if we configuration more than 8 different VRFs we will consum
 <p>For example, if you purchase an A9K-24P10G-AIP-TR，how to quickly check whether the router can consume this license, hear is a suggestion, Please software loopback one PHY port and configuration &gt; 8 sub-interface which belong to different VRF (need configuration IP Address). Then you need to wait at least 24 hours （reason was，router will report the license required information for Cisco website every 24h.）</p>
 
 
+<h2 class="relative group">SLR - Specific License Reservation 
+    <div id="slr---specific-license-reservation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#slr---specific-license-reservation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>SLR is one type of Smart license , in case if your device can&rsquo;t connect to interface and communicate with Cisco , we can use SLR &ndash; Offline method.</p>
+<p>Enable SLR on device and get a request code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># conf</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>config<span class="o">)</span><span class="c1"># license smart flexible-consumption enable</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>config<span class="o">)</span><span class="c1"># license smart reservation</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>config<span class="o">)</span><span class="c1"># commit</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#license smart reservation request local</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Enter this request code in the Cisco Smart Software Manager portal:
+</span></span><span class="line"><span class="cl">xx-xx-5516:xxxxxxxxxxxxx-xxxx-xxx
+</span></span></code></pre></div><p>Copy the complate request code and enter the code at CSSM.</p>
+<p><a href="https://software.cisco.com/software/smart-licensing/inventory" target="_blank">Smart Software Licensing</a> , Please make sure the &ldquo;Virtual Account&rdquo; have the license you want to reservate.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/how-to-add-license-at-exr-platform/image-3.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/how-to-add-license-at-exr-platform/image-4.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+<p>Download the Authorization Code , and copy the file to your router.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/how-to-add-license-at-exr-platform/image-5.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+<p>Install license at your router:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># license smart reservation install harddisk:xxxx</span>
+</span></span></code></pre></div>
+
 <h2 class="relative group">Commonly used commands 
     <div id="commonly-used-commands" class="anchor"></div>
     
@@ -809,6 +885,9 @@ A9K-24P10G-AIP-TR, if we configuration more than 8 different VRFs we will consum
 </span></span><span class="line"><span class="cl"><span class="c1">#show license status</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#show license summary</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#show license platform detail</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#show license reservation</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#show tech smartlic</span>
 </span></span></code></pre></div>
         </div>
         
