@@ -6,7 +6,7 @@
     <description>Recent content in Telemetry on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Thu, 16 May 2024 18:26:53 +0800</lastBuildDate><atom:link href="https://imxing.info/series/telemetry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Telemetry-tig</title>
@@ -14,7 +14,7 @@
       <pubDate>Thu, 16 May 2024 18:26:53 +0800</pubDate>
       
       <guid>https://imxing.info/blog/tig/</guid>
-      <description>TIG # xuxing3/tig Python 0 0 This project is based on the following version.</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/telemetry-demo/</guid>
-      <description>记录一下一个 Telemetry 的 demo，使用 pipeline+influxDB+Grafana，构建一个可视化监控。</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/anx-a-tools-to-help-test-telemetry/</guid>
-      <description>ANX(Advanced NETCONF Explorer) 是一个 cisco 开源软件， 发布如下 github 上，能帮助我们快速的查找一些 sensor path， 做一些 telemetry 的实验， 具体的安装步骤可参考 github 主页。</description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/</guid>
-      <description>Telemetry 是一种类似 SNMP 技术的 feature，用于远程采集网络设备上相关信息。与 SNMP 不同的是，SNMP 是 Pull Mode，需要 server 端主动的要求 Get 某些信息，而 Telemetry 则是一种 Push Mode，可以周期性、主动的 push 相关信息到 server 上。SNMP 是秒级的数据采集， 而 Telemetry 可以实现毫秒级的数据采集.</description>
+      <description></description>
       
     </item>
     

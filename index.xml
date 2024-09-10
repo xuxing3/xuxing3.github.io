@@ -6,7 +6,7 @@
     <description>Recent content on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Sun, 28 Jul 2024 01:11:58 +0800</lastBuildDate><atom:link href="https://imxing.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Onboarding C8000v</title>
@@ -14,7 +14,7 @@
       <pubDate>Sun, 28 Jul 2024 01:11:58 +0800</pubDate>
       
       <guid>https://imxing.info/blog/onboarding-c8000v/</guid>
-      <description>C8000v 初始虚机创建 # 本文章基于 vManage-20.</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Mon, 24 Jun 2024 12:32:34 +0800</pubDate>
       
       <guid>https://imxing.info/blog/ztp-provision-new-branch/</guid>
-      <description>Provision a new branch with VMware SD-WAN Orchestrator.</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Mon, 20 May 2024 17:29:06 +0800</pubDate>
       
       <guid>https://imxing.info/blog/qos-rate-profiles/</guid>
-      <description>Background # 在配置 NCS55 Egress Qos 的时候出现如下的报错:</description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Thu, 16 May 2024 18:26:53 +0800</pubDate>
       
       <guid>https://imxing.info/blog/tig/</guid>
-      <description>TIG # xuxing3/tig Python 0 0 This project is based on the following version.</description>
+      <description></description>
       
     </item>
     
@@ -54,7 +54,7 @@
       <pubDate>Thu, 02 May 2024 12:22:37 +0800</pubDate>
       
       <guid>https://imxing.info/blog/eem-to-collect-info/</guid>
-      <description>Background # In 64-bit XR system, we have a easy way to monitor syslog and trigger a collection action.</description>
+      <description></description>
       
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Sat, 13 Apr 2024 23:18:37 +0800</pubDate>
       
       <guid>https://imxing.info/blog/mpls-ping/</guid>
-      <description>MPLS Ping # 虽然是 Ping 的一种， 但是采用的不是 ICMP 探针检测中间路径，使用的是 IPv4 或者 IPv6 UDP 数据包。 有两种报文，MPLS Echo Request/MPLS Echo Reply。</description>
+      <description></description>
       
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Sun, 07 Apr 2024 21:43:42 +0800</pubDate>
       
       <guid>https://imxing.info/blog/sbfd/</guid>
-      <description>SBFD (Seamless Bidirectional Forwarding Detection) 无缝双向转发检测。</description>
+      <description></description>
       
     </item>
     
@@ -84,7 +84,7 @@
       <pubDate>Fri, 22 Mar 2024 15:02:18 +0800</pubDate>
       
       <guid>https://imxing.info/blog/vscode-notes/</guid>
-      <description>插件 # Prettier # 设置 Default Formatter 为 Prettier，打开 Format On Save.</description>
+      <description></description>
       
     </item>
     
@@ -94,7 +94,7 @@
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-how-to-install-smu-under-xr7/</guid>
-      <description>Prerequisites # I have several posts regarding CISCO 8000 software installation shown below:</description>
+      <description></description>
       
     </item>
     
@@ -104,7 +104,7 @@
       <pubDate>Wed, 17 Jan 2024 12:00:03 +0800</pubDate>
       
       <guid>https://imxing.info/blog/error-est-db/</guid>
-      <description>背景 # 我的 wordpress 站点使用的是比较老的主题， 很久没人维护了，前段时间看到有些插件需要升级， 然后就头脑发热全升级了；</description>
+      <description></description>
       
     </item>
     
@@ -114,7 +114,7 @@
       <pubDate>Tue, 16 Jan 2024 14:42:00 +0800</pubDate>
       
       <guid>https://imxing.info/blog/migrate-multitenant/</guid>
-      <description>Background # 在 20.</description>
+      <description></description>
       
     </item>
     
@@ -124,7 +124,7 @@
       <pubDate>Sat, 13 Jan 2024 11:40:49 +0800</pubDate>
       
       <guid>https://imxing.info/blog/mongodb-query/</guid>
-      <description>Record some Mongodb query example.</description>
+      <description></description>
       
     </item>
     
@@ -134,7 +134,7 @@
       <pubDate>Thu, 11 Jan 2024 11:47:21 +0800</pubDate>
       
       <guid>https://imxing.info/blog/cisco-sdwan-api/</guid>
-      <description>Cisco SDWAN vManage 提供了一个 REST API 接口， 通过这个接口我们可以之间 get 很多设备信息，或者执行一些配置的下发。</description>
+      <description></description>
       
     </item>
     
@@ -144,7 +144,7 @@
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/a-simple-test-for-ios-xr-abf/</guid>
-      <description>Prerequisites # The topology shows as above , the DUT ASR9000B has 3 sub-interface to ASR9000C</description>
+      <description></description>
       
     </item>
     
@@ -154,7 +154,7 @@
       <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/eibgp-maximum-paths-label-mode-per-vrf-loop/</guid>
-      <description>环境介绍 # 一个简单的 CE 双上连的 VPN 环境，客户路由 8.</description>
+      <description></description>
       
     </item>
     
@@ -164,7 +164,7 @@
       <pubDate>Sat, 21 Oct 2023 04:25:12 +0000</pubDate>
       
       <guid>https://imxing.info/blog/capture/</guid>
-      <description>Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:</description>
+      <description></description>
       
     </item>
     
@@ -174,7 +174,7 @@
       <pubDate>Mon, 16 Oct 2023 04:25:12 +0000</pubDate>
       
       <guid>https://imxing.info/blog/nat/</guid>
-      <description>NAT 的划分 # 以下是 RFC3489 的分类方式， 当然还有其他的分类标准，比如我们熟知的 PAT 就是另一种分类方式中的一种。</description>
+      <description></description>
       
     </item>
     
@@ -184,7 +184,7 @@
       <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/automating-update-aws-security-group/</guid>
-      <description>最近在AWS上弄了一个EC2主机用来放一些比较杂的东西，开放了某个端口，由于我并不想放开所有的IP的访问权限， 就写了一个脚本用来获取我本机的公网地址然后用AWS CLI获取，撤销、更新 AWS 安全组规则中的 IP 地址。</description>
+      <description></description>
       
     </item>
     
@@ -194,7 +194,7 @@
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/exr-filesystem/</guid>
-      <description>研究了下 eXR 的 file system, 记录下权当了解下系统的内部情况。</description>
+      <description></description>
       
     </item>
     
@@ -204,7 +204,7 @@
       <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/show-interface-show-policy-map/</guid>
-      <description>comments by &amp;lsquo;zhihua&amp;rsquo;</description>
+      <description></description>
       
     </item>
     
@@ -214,7 +214,7 @@
       <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/mac-software/</guid>
-      <description>2017.</description>
+      <description></description>
       
     </item>
     
@@ -224,7 +224,7 @@
       <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/simple-ztp-test-on-xr-router/</guid>
-      <description>什么是 ZTP # Zero Touch Provisioning (ZTP) 是一项能够在几分钟内无需任何人工干预部署数千个网络设备的功能。</description>
+      <description></description>
       
     </item>
     
@@ -234,7 +234,7 @@
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ubuntu-22-04-pppoe-get-ipv6-address/</guid>
-      <description>Update/Upgrade Packet # !</description>
+      <description></description>
       
     </item>
     
@@ -244,7 +244,7 @@
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/bng-pppoe-stateful-autoconfigurationdhcpv6/</guid>
-      <description>IPv6 地址获得方式 # 手动配置: 手动配置 IPv6 地址/前缀即其他网络配置参数（DNS、NIS、SNTP 服务器地址等参数）。 无状态地址地址分配： 由接口 ID (MAC) 生成链路本地地址， 再根据路由通告报文 RA(Router Advertisement) 包含的前缀信息自动配置本机地址.</description>
+      <description></description>
       
     </item>
     
@@ -254,7 +254,7 @@
       <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/mvpn-profile-14-ncs55xx/</guid>
-      <description>最近测试了下 NCS55 上面的 MVPN，整理一下防止自己忘记了.</description>
+      <description></description>
       
     </item>
     
@@ -264,7 +264,7 @@
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/dhcp-server-setup-steps-in-centos7/</guid>
-      <description>Step1: Yum install # [root@server1 ~]# yum -y install dhcp Step2: modify config # [root@server1 ~]#cp /usr/share/doc/dhcp-4.</description>
+      <description></description>
       
     </item>
     
@@ -274,7 +274,7 @@
       <pubDate>Thu, 21 Jul 2022 17:08:47 +0800</pubDate>
       
       <guid>https://imxing.info/blog/giso/</guid>
-      <description>最近尝试了下使用 Golden ISO 升级了下设备，发现其比使用官方提供的 mini 的 ISO 镜像更方便，时间更短，属实是太方便了。</description>
+      <description></description>
       
     </item>
     
@@ -284,7 +284,7 @@
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/lc-console/</guid>
-      <description>思科 SP 系列高端路由器都是由引擎 RP/线卡（业务卡/LC）/矩阵卡 FC（fabric card）等组成，但是只有引擎 RP 上存在 console 口，其他的板卡都是没有物理的 console 线路，所以在排查业务板卡等系列没有物理 console 线路的板卡启动失败的问题时，往往都只能 login 设备采集业务板卡的启动 log，而往往这些 log 都很简单，并不能告诉我们这个板卡出了什么问题，那其实我们有内置的 console 线路，可以让我们能够跳转到其他板卡的 console 口，查看启动的详细 log。方法如下:</description>
+      <description></description>
       
     </item>
     
@@ -294,7 +294,7 @@
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/hdmi/</guid>
-      <description>image-20220602024556354 image-20220602024457745 参考HDMI 的 wiki 百科</description>
+      <description></description>
       
     </item>
     
@@ -304,7 +304,7 @@
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/vbng-on-xrv-9000/</guid>
-      <description>最近抽空在 EVE 上配置测试了下 Cisco BNG，把 IPoE 和 PPPoE 的功能验证下，记录下来，后续如果遇到排查 BNG 故障的问题可以借助模拟器验证一些命令和配置之类的。</description>
+      <description></description>
       
     </item>
     
@@ -314,7 +314,7 @@
       <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/devnet/</guid>
-      <description>最近有在考 DevNet 的认证，所以 Mark 一下如何去查认证考试代码。</description>
+      <description></description>
       
     </item>
     
@@ -324,7 +324,7 @@
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-ios-xr-snmp-ping/</guid>
-      <description>使用的MIB 库为CISCO-PING-MIB, 具体步骤如下:</description>
+      <description></description>
       
     </item>
     
@@ -334,7 +334,7 @@
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xr-syslog-messages-sent-to-syslog-servers-format/</guid>
-      <description>In general, the structure of the syslog messages generated by IOS-XR has the following format:</description>
+      <description></description>
       
     </item>
     
@@ -344,7 +344,7 @@
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/twamp-and-twamp-light/</guid>
-      <description>TWAMP（Two-Way Active Measurement Protocol，双向主动测量协议）是一种用于 IP 链路的网络质量测量技术，它使用 UDP 报文测量网络双向路径时延、抖动及丢包率。TWAMP-light 是 TWAMP 协议的轻量级架构，简化了建立性能测量会话的控制协议，提高了测试性能。</description>
+      <description></description>
       
     </item>
     
@@ -354,7 +354,7 @@
       <pubDate>Mon, 28 Mar 2022 22:24:44 +0800</pubDate>
       
       <guid>https://imxing.info/about/</guid>
-      <description>Will Update soon &amp;hellip;&amp;hellip;</description>
+      <description></description>
       
     </item>
     
@@ -364,7 +364,7 @@
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/configure-asr9k-aaa-with-freeradius/</guid>
-      <description>在上篇文章中使用了 ISE 作为 AAA server，ISE 功能上虽然较多，但是对于新手操作起来还是有些繁琐。所以我在想是否能找到 AAA server 替代品，只需要简单的配置就可以满足我认证测试的需求，然后我就找到 freeradius。所以本文就介绍下我在测试 freeradius 时遇到的一些坑以及排错。</description>
+      <description></description>
       
     </item>
     
@@ -374,7 +374,7 @@
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/configure-asr9k-tacacs-with-ise/</guid>
-      <description>Reference # 基于 ISE 对 Cisco 网络设备部署 AAA Configure ASR9K TACACS with Cisco Identity Services Engine 2.</description>
+      <description></description>
       
     </item>
     
@@ -384,7 +384,7 @@
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/tacacs-aaa-configuration-in-cisco-ios-xr/</guid>
-      <description>Notes.</description>
+      <description></description>
       
     </item>
     
@@ -394,7 +394,7 @@
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-ncs55-8000-chips/</guid>
-      <description>ASR9K # CPU # 这张图涵盖了 ASR9000 全系列板卡的架构以及使用的芯片， 其中最右边一列为 CPU 的类型； 可以看到最初一代和二代板卡使用的都是 PowerPC 的处理器， PowerPC 采用的都是 32 位的指令集， 这也是为什么这两代板卡没法跑在最新的 64 位 XR 系统上的原因。最新的三代采用的都是 Intel 的处理器， 使用以下命令我们可以查看板卡处理器（CPU）的类型:</description>
+      <description></description>
       
     </item>
     
@@ -404,7 +404,7 @@
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/how-to-upgrade-java-version-on-centos/</guid>
-      <description>背景: # log4j漏洞，公司IT对个人虚机进行了扫描，报告出我的部分虚机存在log4j version 为1.</description>
+      <description></description>
       
     </item>
     
@@ -414,7 +414,7 @@
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/run-windows-11-in-vmware-workstation/</guid>
-      <description>Record the installation process of the windows11 virtual machine.</description>
+      <description></description>
       
     </item>
     
@@ -424,7 +424,7 @@
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/securecrt-import-session/</guid>
-      <description>Step 1： 准备工作 # VB 脚本及 Py 脚本下载连接, 建议直接使用 VB 脚本，不用配置 Python 环境.</description>
+      <description></description>
       
     </item>
     
@@ -434,7 +434,7 @@
       <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/increase-the-size-of-a-linux-lvm/</guid>
-      <description>背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。</description>
+      <description></description>
       
     </item>
     
@@ -444,7 +444,7 @@
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-xr-to-sonic/</guid>
-      <description>Step 1: Reload Cisco 8000 and Config PXE # Reload chassis</description>
+      <description></description>
       
     </item>
     
@@ -454,7 +454,7 @@
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/bgp-flowspec-in-iox/</guid>
-      <description>BGP Flow Specification 功能是一种用于防止 DoS（Denial of Service）/DDoS（Distributed Denial of Service）攻击的方法，可以提高网络安全性和可用性。其实现方式为 BGP FS controller 通过 BGP 下发特定的规则给 BGP FS client, BGP FS client 收到后按照该规则对特定流进行 redirect/remark/drop/rate limit。</description>
+      <description></description>
       
     </item>
     
@@ -464,7 +464,7 @@
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ipsec-vpn/</guid>
-      <description>IKE（网络密钥交换协议） # IKE 属于一种混合型协议，由 Internet 安全关联和密钥管理协议（ISAKMP）和两种密钥交换协议 OAKLEY 与 SKEME 组成。IKE 创建在由 ISAKMP 定义的框架上，沿用了 OAKLEY 的密钥交换模式以及 SKEME 的共享和密钥更新技术，还定义了它自己的两种密钥交换方式：主模式和野蛮模式。</description>
+      <description></description>
       
     </item>
     
@@ -474,7 +474,7 @@
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/gre/</guid>
-      <description>GRE 简介 # 通用路由封装协议 GRE（Generic Routing Encapsulation）可以对某些网络层协议（如 IPX、ATM、IPv6、AppleTalk 等）的数据报文进行封装（区别于 IPsec， IPsec 只能封装 IP 数据包），使这些被封装的数据报文能够在另一个网络层协议（如 IPv4）中传输。</description>
+      <description></description>
       
     </item>
     
@@ -484,7 +484,7 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/dmvpn/</guid>
-      <description>DMVPN Phase 1: # R1 配置:</description>
+      <description></description>
       
     </item>
     
@@ -494,7 +494,7 @@
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/bgp-bmp/</guid>
-      <description>BGP 监控协议 BGP Monitoring Protocol（BMP）能够对网络中的设备的 BGP 运行状态进行实时监控，BGP 运行状态包括对等体关系的建立与解除、路由信息刷新等。</description>
+      <description></description>
       
     </item>
     
@@ -504,7 +504,7 @@
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/qppb-qos-policy-propagation-for-bgp/</guid>
-      <description>传统的 qos 更容易对某一类流量在接口上进行处理， 而 QPPB 可以基于路由来做，相对传统的 qos 更灵活。即在某入接口进行分类，去往某条路由或者匹配某些源；在出接口做一些 Qos 的 action。</description>
+      <description></description>
       
     </item>
     
@@ -514,7 +514,7 @@
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-portainer/</guid>
-      <description>安装参考</description>
+      <description></description>
       
     </item>
     
@@ -524,7 +524,7 @@
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/securecrt-script/</guid>
-      <description>SecureCRT 本身提供一种录制脚本的功能，可以通过录制脚本得到一个示例， 然后在此基础进行更改， 得到自己想要的脚本。</description>
+      <description></description>
       
     </item>
     
@@ -534,7 +534,7 @@
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ncs55-span-to-file/</guid>
-      <description>一直以来 SPAN 都是作为排查丢包问题很好用的 feature， 但是在 XR 低版本上存在很多的限制，比如只支持 local SPAN， 只能要求现场有人协助连个 PC，将流量 SPAN 到 PC 上进行抓包，现在从 XR 7.</description>
+      <description></description>
       
     </item>
     
@@ -544,7 +544,7 @@
       <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/telemetry-demo/</guid>
-      <description>记录一下一个 Telemetry 的 demo，使用 pipeline+influxDB+Grafana，构建一个可视化监控。</description>
+      <description></description>
       
     </item>
     
@@ -554,7 +554,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/centos7-tftp-ftp-server/</guid>
-      <description>TFTP # 开始前先关闭 firwalld 和 selinux ， 以防止无法访问或者无法上传文件报错。</description>
+      <description></description>
       
     </item>
     
@@ -564,7 +564,7 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/automatically-mirror-files-between-rps/</guid>
-      <description>7.1.2开始支持这个feature， 默认功能是关闭的， 开启后自动将主引擎harddisk:/mirror/ 下的文件同步到备引擎。</description>
+      <description></description>
       
     </item>
     
@@ -574,7 +574,7 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/exr-architecture/</guid>
-      <description> </description>
+      <description></description>
       
     </item>
     
@@ -584,7 +584,7 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/new-feature-for-pam/</guid>
-      <description>PAM（Platform Automated Monitoring），从 6.</description>
+      <description></description>
       
     </item>
     
@@ -594,7 +594,7 @@
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/srv6/</guid>
-      <description>最近测试了 SRv6,顺便记录下， SRv6 具体是什么？对比我们平常的 MPLS VPN 的网络，数据转发采用的 MPLS 标签， 那 MPLS 标签常见的可以是 LDP 或者 SR 分配的； SRv6 使用的 IPv6 的报头进行转发，在 IPv6 Header 中新增 SRH(Segment Routing Header)用来记录 128bit IPv6 地址格式的 SRv6 SID（segment ID）如下图所示：</description>
+      <description></description>
       
     </item>
     
@@ -604,7 +604,7 @@
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/vmdk-to-qcow2/</guid>
-      <description># VMDK–&amp;gt;qcow2: qemu-img convert -f vmdk -O qcow2 source-name.</description>
+      <description></description>
       
     </item>
     
@@ -614,7 +614,7 @@
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/anx-a-tools-to-help-test-telemetry/</guid>
-      <description>ANX(Advanced NETCONF Explorer) 是一个 cisco 开源软件， 发布如下 github 上，能帮助我们快速的查找一些 sensor path， 做一些 telemetry 的实验， 具体的安装步骤可参考 github 主页。</description>
+      <description></description>
       
     </item>
     
@@ -624,7 +624,7 @@
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xr-leaking-the-routes-between-vrf-and-global-rib/</guid>
-      <description>一个简单的从 global rib 往 vrf 内 leak 路由的配置案例.</description>
+      <description></description>
       
     </item>
     
@@ -634,7 +634,7 @@
       <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ncs55-monitor-session/</guid>
-      <description>Normal monitor session # RP/0/RP0/CPU0:NCS55A2-A#show run int tenGigE 0/0/0/0 Mon Mar 15 10:15:55.</description>
+      <description></description>
       
     </item>
     
@@ -644,7 +644,7 @@
       <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-native-evpn/</guid>
-      <description>ESI # ESI 主要用来标识 CE， 相同 CE 使用一样的 ESI.</description>
+      <description></description>
       
     </item>
     
@@ -654,7 +654,7 @@
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-software-upgrade-pxe/</guid>
-      <description>在之前的文章里， 介绍 install command 升级 Cisco 8000 的方法， 这篇文章记录下使用 PXE bring up 一台新的 Cisco 8000 的过程</description>
+      <description></description>
       
     </item>
     
@@ -664,7 +664,7 @@
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/lpts-epft-feature/</guid>
-      <description>记录一下 LPTS EPFT 这个 feature， LPTS 是用来保护 Cisco XR 设备 CPU 的，防止一些 ARP/DHCP/DNS/ICMP 等攻击流量 punt 到板卡的 CPU，那 LPTS EPFT 这个 feature 使能后会对这些流量进行一些监控， 超过一定速率就会进行一些惩罚。</description>
+      <description></description>
       
     </item>
     
@@ -674,7 +674,7 @@
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/interface-error-description-giant-jabbers/</guid>
-      <description>Input error giant A giant frame is any frame whose size exceeds the maximum transmission unit (MTU) Input error runt A runt is a frame that is smaller than the minimum frame size for IEEE-802.</description>
+      <description></description>
       
     </item>
     
@@ -684,7 +684,7 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-software-upgrade-install-command/</guid>
-      <description>Upgrade Method # Cisco 8000 升级方式和其他 XR 产品类似可大致分为三类：</description>
+      <description></description>
       
     </item>
     
@@ -694,7 +694,7 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/tcpdump/</guid>
-      <description>#yum -y install tcpdump #tcpdump -i ens32 host 10.</description>
+      <description></description>
       
     </item>
     
@@ -704,7 +704,7 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/windows-software/</guid>
-      <description>目前还是用WINDOWS作为办公系统， 所以想着记录下目前我在WINDOWS常用有软件，换机的时候可以快速恢复。</description>
+      <description></description>
       
     </item>
     
@@ -714,7 +714,7 @@
       <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/shell-ssh-auto/</guid>
-      <description>[root@xuxing ~]#yum -y install expect [root@xuxing ~]# cat 123 #!</description>
+      <description></description>
       
     </item>
     
@@ -724,7 +724,7 @@
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/setup-syslog-server-on-centos-7/</guid>
-      <description>由于测试，需要安装一个 syslog server， Windows 上的免费软件搜到了 KIWI Syslog Server，但是需要注册，然后还得去等两天的审核，想想还是算了不折腾了，打算在 Linux 上装一个，还好过滤看 log。</description>
+      <description></description>
       
     </item>
     
@@ -734,7 +734,7 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notes-about-reoptimize-timer/</guid>
-      <description>reoptimize timers delay cleanup 60 reoptimize timers delay installation 60 reoptimize timers delay path-protection 50 Install delay: How much time the head end waits before it &amp;#34;activates&amp;#34; the reoptimized LSP after receiving the RESV.</description>
+      <description></description>
       
     </item>
     
@@ -744,7 +744,7 @@
       <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ssh-without-password/</guid>
-      <description>免密登录设置：</description>
+      <description></description>
       
     </item>
     
@@ -754,7 +754,7 @@
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/xrv-9000-install/</guid>
-      <description>Cisco IOS XRv 9000路由器是一款虚拟路由器，部署在运行64位IOS XR软件的x86服务器硬件上的虚拟机（VM）实例上。Cisco IOS XRv 9000路由器以虚拟化的形式提供传统的提供商边缘（PE）服务以及虚拟路由反射器（vRR）功能 。</description>
+      <description></description>
       
     </item>
     
@@ -764,7 +764,7 @@
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/coa-bng/</guid>
-      <description>Using COA, Change of Authorization for Access and BNG platforms</description>
+      <description></description>
       
     </item>
     
@@ -774,7 +774,7 @@
       <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/xr-embedded-packet-tracer/</guid>
-      <description>喜大普奔，XR 终于出了内置的 Packet Tracer 工具了（类似的 XE 中也提供类似的 feature，不过应该是很早就支持了）。该工具作用是用于跟踪数据包进入路由器后经过的组件,监视数据包信息，查找数据包丢失或最后一次见到的位置 .</description>
+      <description></description>
       
     </item>
     
@@ -784,7 +784,7 @@
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ipv6-over-mpls-6pe-6vpe/</guid>
-      <description>6PE # 什么是 6PE # 摘录一段华为文档的解释：</description>
+      <description></description>
       
     </item>
     
@@ -794,7 +794,7 @@
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-vpws/</guid>
-      <description>首先放两张图，了解下 EVPN VPWS。EVPN VPWS 会使用到 Type1 和 Type 4 两类路由，也分为 Single-Home 和 Multi-home 两种架构，这里记录下 single-home 的简单配置。</description>
+      <description></description>
       
     </item>
     
@@ -804,7 +804,7 @@
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ptp-configure/</guid>
-      <description>最为我们熟悉的时间同步协议是 NTP，配置起来相对简单，并不复杂；但是 NTP 实现的毫秒级的时间同步，在普通的网络中只是用来实现网络时间的同步管理。在 5G 网络中需要一种更为精确的时间同步协议，所以这个文章记录下微妙级的时间同步协议-PTP 配置案例。</description>
+      <description></description>
       
     </item>
     
@@ -814,7 +814,7 @@
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/wireshark-how-to-filter-packet-when-captured/</guid>
-      <description>Capture - &amp;gt; Options - &amp;gt; Select interface and type filer</description>
+      <description></description>
       
     </item>
     
@@ -824,7 +824,7 @@
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-3/</guid>
-      <description>Docker 容器相关操作 # #docker container run -d nginx #docker container run -ti ubuntu &amp;lt;&amp;lt;&amp;lt; 安全退出 Ctrl+P &amp;amp;&amp;amp; Ctrl+Q #docker container attach &amp;lt;CONTAINER ID&amp;gt; #docker container exec -it &amp;lt;CONTAINER ID&amp;gt; #docker ps -l //查看最新创建的容器 #docker ps -q //查看容器ID #docker ps -a //查看所有容器， 包括已经停止的 #docker logs &amp;lt;CONTAINER ID&amp;gt; //查看log #docker container stop //发送TERN信号等待10s后， 如果容器没停止发送KILL信号 #docker container kill //发送KILL信号，容器立刻停止 #docker container rm //删除已停止的容器， --force 强制删除 #docker container rm $(docker ps -aq) --force #docker container inspect &amp;lt;CONTAINER ID&amp;gt; //会打印出容器的详细信息 #docker container diff &amp;lt;CONTAINER ID&amp;gt; //查看容器 #docker run -it busybox //容器之间共享namespace #docker container run –d --name infra --ipc=shareable google/pause #docker container run –tid --name busybox01 \ --pid=container:infra \ --ipc=container:infra \ --net=container:infra busybox #docker container run –tid --name busybox02 \ --pid=container:infra \ --ipc=container:infra \ --net=container:infra busybox 查看 namespace</description>
+      <description></description>
       
     </item>
     
@@ -834,7 +834,7 @@
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ise/</guid>
-      <description>Reference:</description>
+      <description></description>
       
     </item>
     
@@ -844,7 +844,7 @@
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-2/</guid>
-      <description>Reference: Linux网络 - 数据包的接收过程 Linux网络 - 数据包的发送过程 Linux虚拟网络设备之tun/tap Linux虚拟网络设备之veth </description>
+      <description></description>
       
     </item>
     
@@ -854,7 +854,7 @@
       <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-1/</guid>
-      <description>Reference:https://docs.docker.com/engine/install/centos/ https://docs.</description>
+      <description></description>
       
     </item>
     
@@ -864,7 +864,7 @@
       <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/screen/</guid>
-      <description>How to install # //Yum [root@nso ~]# yum -y install screen //rpm [root@nso ~]#wget http://mirror-hk.</description>
+      <description></description>
       
     </item>
     
@@ -874,7 +874,7 @@
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ssh-login-iox-without-password/</guid>
-      <description>证所周知，如果你需要 ssh 免密登陆到 ssh server，只需要将 ssh client 端的公钥复制到 ssh server 即可；那么如果需要实现 SSH 免密登陆 CISCO IOX 设备，只需要将你 ssh client 端的公钥复制到 CICCO IOX 设备即可，以下是复制的过程。</description>
+      <description></description>
       
     </item>
     
@@ -884,7 +884,7 @@
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/centos-static-route/</guid>
-      <description>查看路由表 # [root@xuxing ~]# ip route show default via 10.</description>
+      <description></description>
       
     </item>
     
@@ -894,7 +894,7 @@
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ldp-summary/</guid>
-      <description>标签发布方式（Label Advertisement Mode） # 下游自主方式 DU（Downstream Unsolicited）：对于一个特定的 FEC，LSR 无需从上游获得标签请求消息即进行标签分配与分发。</description>
+      <description></description>
       
     </item>
     
@@ -904,7 +904,7 @@
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-policy-configuration-example/</guid>
-      <description>ISIS 配置 # distribute link-state，将 IGP 的数据库导入 SR-TE 的数据库中。</description>
+      <description></description>
       
     </item>
     
@@ -914,7 +914,7 @@
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/qos/</guid>
-      <description>Bucket and Token Algorithm</description>
+      <description></description>
       
     </item>
     
@@ -924,7 +924,7 @@
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/wae-7-2-1-install-steps/</guid>
-      <description>参考文章:</description>
+      <description></description>
       
     </item>
     
@@ -934,7 +934,7 @@
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/centos-ntp-server/</guid>
-      <description>安装 NTP 服务 # [root@xuxing ~]# yum -y install ntp 修改配置文件 # [root@xuxing ~]# cat /etc/ntp.</description>
+      <description></description>
       
     </item>
     
@@ -944,7 +944,7 @@
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-linecard-type/</guid>
-      <description>Trident - 1st Generation # A9K-4T-L</description>
+      <description></description>
       
     </item>
     
@@ -954,7 +954,7 @@
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/install-smu-by-using-csm/</guid>
-      <description>登陆CCO账号 # 需要在Tools-&amp;gt;User Preferences 中将自己的CCO账号登陆，并validate成功。</description>
+      <description></description>
       
     </item>
     
@@ -964,7 +964,7 @@
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/creating-an-nso-service/</guid>
-      <description>记录一下如何创建一个NSO service，只是用来测试使用，无参考意义。</description>
+      <description></description>
       
     </item>
     
@@ -974,7 +974,7 @@
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/linux-daily-learning-nl/</guid>
-      <description>nl命令是用来为文本文件生成行号的，但最实用的用法还是在每行之前添加0。</description>
+      <description></description>
       
     </item>
     
@@ -984,7 +984,7 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ansible-module-iosxr_config/</guid>
-      <description>学习的时候搜到管理CISCO IOX 设备的ansible模块，“iosxr_config – Manage Cisco IOS XR configuration sections“，记录下有空玩玩。</description>
+      <description></description>
       
     </item>
     
@@ -994,7 +994,7 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/</guid>
-      <description>Telemetry 是一种类似 SNMP 技术的 feature，用于远程采集网络设备上相关信息。与 SNMP 不同的是，SNMP 是 Pull Mode，需要 server 端主动的要求 Get 某些信息，而 Telemetry 则是一种 Push Mode，可以周期性、主动的 push 相关信息到 server 上。SNMP 是秒级的数据采集， 而 Telemetry 可以实现毫秒级的数据采集.</description>
+      <description></description>
       
     </item>
     
@@ -1004,7 +1004,7 @@
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-nv-satellitedual-home/</guid>
-      <description>ASR9K 有两种虚拟化的技术，一种为 nV edge，也叫 nV cluster，属于将两个 ASR9K 的机箱虚拟化成一个路由器，使用统一的控制层面，类似于 CRS 中的多机(5.</description>
+      <description></description>
       
     </item>
     
@@ -1014,7 +1014,7 @@
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/monitor-session/</guid>
-      <description>CRS-ACL-Based Traffic Mirroring # RP/0/RSP0/CPU0:CRS #show access-lists span Thu Oct 11 09:08:44.</description>
+      <description></description>
       
     </item>
     
@@ -1024,7 +1024,7 @@
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-config-example/</guid>
-      <description>SR ISIS # router isis 1 is-type level-2-only net 49.</description>
+      <description></description>
       
     </item>
     
@@ -1034,7 +1034,7 @@
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/nso-initial-install/</guid>
-      <description>Download NSO from Cisco Website Make sure java and python have been install in your server.</description>
+      <description></description>
       
     </item>
     
@@ -1044,7 +1044,7 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-l3vpn/</guid>
-      <description>EVPN means next-generation all-in-one VPN technology that provides a wide of range of services such as E-LAN, E-Line, E-TREE, L3VPN, DCI, DC-Overlay, IRB, … The following is the mapping between EVPN and traditional VPN technologies.</description>
+      <description></description>
       
     </item>
     
@@ -1054,7 +1054,7 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-pbb-evpn/</guid>
-      <description>There are two types of traditional l2vpn, one is point-to-point (VPWS) and the other is point-to-multipoint(VPLS).</description>
+      <description></description>
       
     </item>
     
@@ -1064,7 +1064,7 @@
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/how-to-add-license-at-exr-platform/</guid>
-      <description>Currently we have two license type.</description>
+      <description></description>
       
     </item>
     
@@ -1074,7 +1074,7 @@
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/routing-protocol-pri/</guid>
-      <description> Cisco router routing protocol priority # Routing ProtocolPriorityDIRECT0STATIC1EIGRP Summary5EBGP20内部EIGRP90IGRP100OSPF110IS-IS115RIP120EGP140外部EIGRP170IBGP200未知255 Huawei router routing priority # Routing ProtocolPriorityDIRECT0OSPF10STATIC60IGRP80RIP110OSPFASE150BGP170 </description>
+      <description></description>
       
     </item>
     
@@ -1084,7 +1084,7 @@
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/iox-neflow-configuration-example/</guid>
-      <description>sampler-map # sampler-map FNF_SAMPLER_MAP random 1 out-of 4999 exporter-map # flow exporter-map FNF_EXPORT_MAP version v9 options sampler-table timeout 60 template timeout 60 !</description>
+      <description></description>
       
     </item>
     
@@ -1094,7 +1094,7 @@
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ciscobgp-13/</guid>
-      <description>本文介绍一下思科 BGP 的 13 条选路原则。</description>
+      <description></description>
       
     </item>
     
@@ -1104,7 +1104,7 @@
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/securecrt-setup/</guid>
-      <description>记录一下我的 CRT 的设置。</description>
+      <description></description>
       
     </item>
     
@@ -1114,7 +1114,7 @@
       <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/huaweibgp-13/</guid>
-      <description>本文介绍一下华为 BGP 的 13 条选路原则，附上示例。</description>
+      <description></description>
       
     </item>
     
@@ -1124,7 +1124,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/implement-sham-link-under-the-xr-platform/</guid>
-      <description>这篇文章介绍一下 sham-link，并提供一个 sham-link 在 XR 平台下的配置案例（ASR9000）</description>
+      <description></description>
       
     </item>
     
@@ -1134,7 +1134,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-a/</guid>
-      <description>跨域 VPN 的解决方案主要是为了解决客户不同 AS 之间的站点的互通问题，即客户的 VPN 路由可以在两个 AS 之间进行传递。RFC4364 介绍了三种解决方案，我会在接下来的文章中一一介绍。本文先说第一种解决方案：Option A,这种解决方案需要在两个 AS 之间的 ASBR 上使用专门的接口去传递路由信息，所以我们也称这种为 VRF-to-VRF。</description>
+      <description></description>
       
     </item>
     
@@ -1144,7 +1144,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-b/</guid>
-      <description>上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.</description>
+      <description></description>
       
     </item>
     
@@ -1154,7 +1154,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-c/</guid>
-      <description>这篇文章介绍一下跨域 VPN Option C 在 IOX 设备上的配置案例</description>
+      <description></description>
       
     </item>
     
@@ -1164,7 +1164,7 @@
       <pubDate>Fri, 04 Oct 2019 13:03:41 +0800</pubDate>
       
       <guid>https://imxing.info/blog/cxr-exr-install-guide/</guid>
-      <description>ASR9000 Software install guide # cXR upgrade # Reload router then Ctrl+C enter into rommon, or modify resister:</description>
+      <description></description>
       
     </item>
     
@@ -1174,7 +1174,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-bng-simple-configuration/</guid>
-      <description>BNG Broadband Network Gateway 意思为用户的接入点，通过它们连接到宽带网络，“它们”指的是网络设备，例如思科的 ASR9K 。</description>
+      <description></description>
       
     </item>
     
@@ -1184,7 +1184,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/use-aux-ts/</guid>
-      <description>可能在平常登陆 asr9000 的时候遇到这样的问题，telnet/ssh 等都无法登陆到设备，或者说主引擎的 console 没任何输出，无法查看设备的信息，这个时候除了重启引擎外，还有一个方法就是通过 AUX 接口登陆到设备，然后收集信息，本问介绍一下有哪些常见的 aux 模式下的命令。</description>
+      <description></description>
       
     </item>
     
@@ -1194,7 +1194,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-cfg-through-snmp/</guid>
-      <description>遇到一个这样的需求，想使用 SNMP 的方式去 copy 设备的配置到 TFTP server。查了点资料发现真存在这种方式，虽然感觉这种功能很鸡肋，但还是记录以下以备查询。</description>
+      <description></description>
       
     </item>
     
@@ -1204,7 +1204,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-file-between-win-and-linux/</guid>
-      <description>This article will introduction how copy file between windows and linux , and how copy file from linux to linux.</description>
+      <description></description>
       
     </item>
     
@@ -1214,7 +1214,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/exr-password-recover/</guid>
-      <description>This artical will introduction how to recover password in eXR system, Like ASR9000,NCS6008.</description>
+      <description></description>
       
     </item>
     
@@ -1224,7 +1224,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-file-between-host-xr/</guid>
-      <description>This article will introduction how to copy file beteew sysadmin-vm/xr-vm/host at IOS XR 64bit system.</description>
+      <description></description>
       
     </item>
     
@@ -1234,7 +1234,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xe-software-upgrade/</guid>
-      <description>思科的 IOS XE 系统搞的比较少，就遇到两次升级的案例，做个小抄记录下升级步骤。</description>
+      <description></description>
       
     </item>
     
@@ -1244,7 +1244,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/linux-setup-ip-dns/</guid>
-      <description>在虚拟机中安装 Linux 无法 DHCP 获取地址，搜了点资料设置成功了，记下来好找资料。</description>
+      <description></description>
       
     </item>
     
@@ -1254,7 +1254,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/some-commonly-used-oids/</guid>
-      <description>This artical will recording some commonly used OIDs, like memory usege,interface counters.</description>
+      <description></description>
       
     </item>
     
@@ -1264,7 +1264,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-te-example/</guid>
-      <description>最近接触了一个案例，其中包含很多的 SR 方面的知识，所以想趁着熟悉记录下来。具体包括了以下的内容：Policy SR-TE、Interface SR-TE、BGP EPE、TE BSID 等。</description>
+      <description></description>
       
     </item>
     
@@ -1274,7 +1274,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/wireshark-tools-text2pcap/</guid>
-      <description>这篇文章主要是为了介绍一下 wireshark 自带的小工具 text2pcap，这个小工具可以帮助我们将 16 进制的文件转换为 pcap 文件，让我们可以直接在 wireshark 中打开。</description>
+      <description></description>
       
     </item>
     
@@ -1284,7 +1284,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/windows-capture-packet-with-vlan/</guid>
-      <description>最近遇到一个 case，需要使用 windows 抓交换机 span 过来的流量，但是无论交换机怎么配置，windows 上 wireshark 抓到的报文总是没有 VLAN tag，让我一度怀疑交换机的配置是否出了问题，查了一些资料，发现需要修改下注册表，才能改变网卡的模式，让其捕获报文后不主动去掉 VLAN tag。</description>
+      <description></description>
       
     </item>
     
@@ -1294,7 +1294,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/centos7-sftp/</guid>
-      <description>记录一下在centos搭建SFTP server.</description>
+      <description></description>
       
     </item>
     
@@ -1304,7 +1304,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/turboboot-upgrade-asr9000/</guid>
-      <description>详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.</description>
+      <description></description>
       
     </item>
     
@@ -1314,7 +1314,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notepad-setup/</guid>
-      <description>NotePad++是平常最主要的看 log 软件，最近在安装的时候采用的不是系统按照，直接下载的 zib packet 然后解压缩，导致我在打开一些 log 文件时找不到 notepad++这个软件，通过将其添加到注册表中解决了这个问题。</description>
+      <description></description>
       
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content in Mpls-Te on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/mpls-te/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes about reoptimize timer</title>
@@ -14,7 +14,7 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notes-about-reoptimize-timer/</guid>
-      <description>reoptimize timers delay cleanup 60 reoptimize timers delay installation 60 reoptimize timers delay path-protection 50 Install delay: How much time the head end waits before it &amp;#34;activates&amp;#34; the reoptimized LSP after receiving the RESV.</description>
+      <description></description>
       
     </item>
     

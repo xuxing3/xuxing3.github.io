@@ -6,7 +6,7 @@
     <description>Recent content in Docker on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker图形化管理工具Portainer</title>
@@ -14,7 +14,7 @@
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-portainer/</guid>
-      <description>安装参考</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-3/</guid>
-      <description>Docker 容器相关操作 # #docker container run -d nginx #docker container run -ti ubuntu &amp;lt;&amp;lt;&amp;lt; 安全退出 Ctrl+P &amp;amp;&amp;amp; Ctrl+Q #docker container attach &amp;lt;CONTAINER ID&amp;gt; #docker container exec -it &amp;lt;CONTAINER ID&amp;gt; #docker ps -l //查看最新创建的容器 #docker ps -q //查看容器ID #docker ps -a //查看所有容器， 包括已经停止的 #docker logs &amp;lt;CONTAINER ID&amp;gt; //查看log #docker container stop //发送TERN信号等待10s后， 如果容器没停止发送KILL信号 #docker container kill //发送KILL信号，容器立刻停止 #docker container rm //删除已停止的容器， --force 强制删除 #docker container rm $(docker ps -aq) --force #docker container inspect &amp;lt;CONTAINER ID&amp;gt; //会打印出容器的详细信息 #docker container diff &amp;lt;CONTAINER ID&amp;gt; //查看容器 #docker run -it busybox //容器之间共享namespace #docker container run –d --name infra --ipc=shareable google/pause #docker container run –tid --name busybox01 \ --pid=container:infra \ --ipc=container:infra \ --net=container:infra busybox #docker container run –tid --name busybox02 \ --pid=container:infra \ --ipc=container:infra \ --net=container:infra busybox 查看 namespace</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-2/</guid>
-      <description>Reference: Linux网络 - 数据包的接收过程 Linux网络 - 数据包的发送过程 Linux虚拟网络设备之tun/tap Linux虚拟网络设备之veth </description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-1/</guid>
-      <description>Reference:https://docs.docker.com/engine/install/centos/ https://docs.</description>
+      <description></description>
       
     </item>
     

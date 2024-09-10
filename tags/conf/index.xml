@@ -6,7 +6,7 @@
     <description>Recent content in Conf on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/conf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitor session 配置案例</title>
@@ -14,7 +14,7 @@
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/monitor-session/</guid>
-      <description>CRS-ACL-Based Traffic Mirroring # RP/0/RSP0/CPU0:CRS #show access-lists span Thu Oct 11 09:08:44.</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-config-example/</guid>
-      <description>SR ISIS # router isis 1 is-type level-2-only net 49.</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/iox-neflow-configuration-example/</guid>
-      <description>sampler-map # sampler-map FNF_SAMPLER_MAP random 1 out-of 4999 exporter-map # flow exporter-map FNF_EXPORT_MAP version v9 options sampler-table timeout 60 template timeout 60 !</description>
+      <description></description>
       
     </item>
     

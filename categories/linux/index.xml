@@ -6,7 +6,7 @@
     <description>Recent content in Linux on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Fri, 03 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Increase the size of a Linux LVM</title>
@@ -14,7 +14,7 @@
       <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/increase-the-size-of-a-linux-lvm/</guid>
-      <description>背景 # 工作用的Linux 虚机使用的是默认安装， 根只分了50G的空间, 用着用着就不够了，所以想着给扩个空间。</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/shell-ssh-auto/</guid>
-      <description>[root@xuxing ~]#yum -y install expect [root@xuxing ~]# cat 123 #!</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/setup-syslog-server-on-centos-7/</guid>
-      <description>由于测试，需要安装一个 syslog server， Windows 上的免费软件搜到了 KIWI Syslog Server，但是需要注册，然后还得去等两天的审核，想想还是算了不折腾了，打算在 Linux 上装一个，还好过滤看 log。</description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ssh-without-password/</guid>
-      <description>免密登录设置：</description>
+      <description></description>
       
     </item>
     
@@ -54,7 +54,7 @@
       <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/screen/</guid>
-      <description>How to install # //Yum [root@nso ~]# yum -y install screen //rpm [root@nso ~]#wget http://mirror-hk.</description>
+      <description></description>
       
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/centos-ntp-server/</guid>
-      <description>安装 NTP 服务 # [root@xuxing ~]# yum -y install ntp 修改配置文件 # [root@xuxing ~]# cat /etc/ntp.</description>
+      <description></description>
       
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/linux-daily-learning-nl/</guid>
-      <description>nl命令是用来为文本文件生成行号的，但最实用的用法还是在每行之前添加0。</description>
+      <description></description>
       
     </item>
     
@@ -84,7 +84,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/linux-setup-ip-dns/</guid>
-      <description>在虚拟机中安装 Linux 无法 DHCP 获取地址，搜了点资料设置成功了，记下来好找资料。</description>
+      <description></description>
       
     </item>
     
@@ -94,7 +94,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/centos7-sftp/</guid>
-      <description>记录一下在centos搭建SFTP server.</description>
+      <description></description>
       
     </item>
     

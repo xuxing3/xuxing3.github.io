@@ -6,7 +6,7 @@
     <description>Recent content in IOS-XR-Upgrade on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/series/ios-xr-upgrade/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CISCO 8000 - How to install SMU under XR7</title>
@@ -14,7 +14,7 @@
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-how-to-install-smu-under-xr7/</guid>
-      <description>Prerequisites # I have several posts regarding CISCO 8000 software installation shown below:</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Thu, 21 Jul 2022 17:08:47 +0800</pubDate>
       
       <guid>https://imxing.info/blog/giso/</guid>
-      <description>最近尝试了下使用 Golden ISO 升级了下设备，发现其比使用官方提供的 mini 的 ISO 镜像更方便，时间更短，属实是太方便了。</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-xr-to-sonic/</guid>
-      <description>Step 1: Reload Cisco 8000 and Config PXE # Reload chassis</description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-software-upgrade-pxe/</guid>
-      <description>在之前的文章里， 介绍 install command 升级 Cisco 8000 的方法， 这篇文章记录下使用 PXE bring up 一台新的 Cisco 8000 的过程</description>
+      <description></description>
       
     </item>
     
@@ -54,7 +54,7 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/cisco-8000-software-upgrade-install-command/</guid>
-      <description>Upgrade Method # Cisco 8000 升级方式和其他 XR 产品类似可大致分为三类：</description>
+      <description></description>
       
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Fri, 04 Oct 2019 13:03:41 +0800</pubDate>
       
       <guid>https://imxing.info/blog/cxr-exr-install-guide/</guid>
-      <description>ASR9000 Software install guide # cXR upgrade # Reload router then Ctrl+C enter into rommon, or modify resister:</description>
+      <description></description>
       
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/turboboot-upgrade-asr9000/</guid>
-      <description>详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.</description>
+      <description></description>
       
     </item>
     

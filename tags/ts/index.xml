@@ -6,7 +6,7 @@
     <description>Recent content in TS on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Thu, 02 May 2024 12:22:37 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/ts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Simple EEM to Collect log Trigger by Syslog in IOX</title>
@@ -14,7 +14,7 @@
       <pubDate>Thu, 02 May 2024 12:22:37 +0800</pubDate>
       
       <guid>https://imxing.info/blog/eem-to-collect-info/</guid>
-      <description>Background # In 64-bit XR system, we have a easy way to monitor syslog and trigger a collection action.</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Sat, 21 Oct 2023 04:25:12 +0000</pubDate>
       
       <guid>https://imxing.info/blog/capture/</guid>
-      <description>Embedded Packet Capture # GUI 方式抓包 # vManage 上有个很方便的抓包工具，只需要点击 Start， 就可以帮我们很方便的开启某个接口下的抓包，其本质上就是 vManage 登陆到 cEdge，下发一些 EPC 的参数。开启方法如下:</description>
+      <description></description>
       
     </item>
     

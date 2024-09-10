@@ -6,7 +6,7 @@
     <description>Recent content in Rs on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/categories/rs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IPSEC VPN</title>
@@ -14,7 +14,7 @@
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ipsec-vpn/</guid>
-      <description>IKE（网络密钥交换协议） # IKE 属于一种混合型协议，由 Internet 安全关联和密钥管理协议（ISAKMP）和两种密钥交换协议 OAKLEY 与 SKEME 组成。IKE 创建在由 ISAKMP 定义的框架上，沿用了 OAKLEY 的密钥交换模式以及 SKEME 的共享和密钥更新技术，还定义了它自己的两种密钥交换方式：主模式和野蛮模式。</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/gre/</guid>
-      <description>GRE 简介 # 通用路由封装协议 GRE（Generic Routing Encapsulation）可以对某些网络层协议（如 IPX、ATM、IPv6、AppleTalk 等）的数据报文进行封装（区别于 IPsec， IPsec 只能封装 IP 数据包），使这些被封装的数据报文能够在另一个网络层协议（如 IPv4）中传输。</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/dmvpn/</guid>
-      <description>DMVPN Phase 1: # R1 配置:</description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xr-leaking-the-routes-between-vrf-and-global-rib/</guid>
-      <description>一个简单的从 global rib 往 vrf 内 leak 路由的配置案例.</description>
+      <description></description>
       
     </item>
     
@@ -54,7 +54,7 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notes-about-reoptimize-timer/</guid>
-      <description>reoptimize timers delay cleanup 60 reoptimize timers delay installation 60 reoptimize timers delay path-protection 50 Install delay: How much time the head end waits before it &amp;#34;activates&amp;#34; the reoptimized LSP after receiving the RESV.</description>
+      <description></description>
       
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/xrv-9000-install/</guid>
-      <description>Cisco IOS XRv 9000路由器是一款虚拟路由器，部署在运行64位IOS XR软件的x86服务器硬件上的虚拟机（VM）实例上。Cisco IOS XRv 9000路由器以虚拟化的形式提供传统的提供商边缘（PE）服务以及虚拟路由反射器（vRR）功能 。</description>
+      <description></description>
       
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-linecard-type/</guid>
-      <description>Trident - 1st Generation # A9K-4T-L</description>
+      <description></description>
       
     </item>
     
@@ -84,7 +84,7 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/telemetry-simple-configuration-in-cisco-xr-devices/</guid>
-      <description>Telemetry 是一种类似 SNMP 技术的 feature，用于远程采集网络设备上相关信息。与 SNMP 不同的是，SNMP 是 Pull Mode，需要 server 端主动的要求 Get 某些信息，而 Telemetry 则是一种 Push Mode，可以周期性、主动的 push 相关信息到 server 上。SNMP 是秒级的数据采集， 而 Telemetry 可以实现毫秒级的数据采集.</description>
+      <description></description>
       
     </item>
     
@@ -94,7 +94,7 @@
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-nv-satellitedual-home/</guid>
-      <description>ASR9K 有两种虚拟化的技术，一种为 nV edge，也叫 nV cluster，属于将两个 ASR9K 的机箱虚拟化成一个路由器，使用统一的控制层面，类似于 CRS 中的多机(5.</description>
+      <description></description>
       
     </item>
     
@@ -104,7 +104,7 @@
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/monitor-session/</guid>
-      <description>CRS-ACL-Based Traffic Mirroring # RP/0/RSP0/CPU0:CRS #show access-lists span Thu Oct 11 09:08:44.</description>
+      <description></description>
       
     </item>
     
@@ -114,7 +114,7 @@
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-config-example/</guid>
-      <description>SR ISIS # router isis 1 is-type level-2-only net 49.</description>
+      <description></description>
       
     </item>
     
@@ -124,7 +124,7 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-l3vpn/</guid>
-      <description>EVPN means next-generation all-in-one VPN technology that provides a wide of range of services such as E-LAN, E-Line, E-TREE, L3VPN, DCI, DC-Overlay, IRB, … The following is the mapping between EVPN and traditional VPN technologies.</description>
+      <description></description>
       
     </item>
     
@@ -134,7 +134,7 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/evpn-pbb-evpn/</guid>
-      <description>There are two types of traditional l2vpn, one is point-to-point (VPWS) and the other is point-to-multipoint(VPLS).</description>
+      <description></description>
       
     </item>
     
@@ -144,7 +144,7 @@
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/how-to-add-license-at-exr-platform/</guid>
-      <description>Currently we have two license type.</description>
+      <description></description>
       
     </item>
     
@@ -154,7 +154,7 @@
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/routing-protocol-pri/</guid>
-      <description> Cisco router routing protocol priority # Routing ProtocolPriorityDIRECT0STATIC1EIGRP Summary5EBGP20内部EIGRP90IGRP100OSPF110IS-IS115RIP120EGP140外部EIGRP170IBGP200未知255 Huawei router routing priority # Routing ProtocolPriorityDIRECT0OSPF10STATIC60IGRP80RIP110OSPFASE150BGP170 </description>
+      <description></description>
       
     </item>
     
@@ -164,7 +164,7 @@
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/iox-neflow-configuration-example/</guid>
-      <description>sampler-map # sampler-map FNF_SAMPLER_MAP random 1 out-of 4999 exporter-map # flow exporter-map FNF_EXPORT_MAP version v9 options sampler-table timeout 60 template timeout 60 !</description>
+      <description></description>
       
     </item>
     
@@ -174,7 +174,7 @@
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ciscobgp-13/</guid>
-      <description>本文介绍一下思科 BGP 的 13 条选路原则。</description>
+      <description></description>
       
     </item>
     
@@ -184,7 +184,7 @@
       <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/huaweibgp-13/</guid>
-      <description>本文介绍一下华为 BGP 的 13 条选路原则，附上示例。</description>
+      <description></description>
       
     </item>
     
@@ -194,7 +194,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/implement-sham-link-under-the-xr-platform/</guid>
-      <description>这篇文章介绍一下 sham-link，并提供一个 sham-link 在 XR 平台下的配置案例（ASR9000）</description>
+      <description></description>
       
     </item>
     
@@ -204,7 +204,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-a/</guid>
-      <description>跨域 VPN 的解决方案主要是为了解决客户不同 AS 之间的站点的互通问题，即客户的 VPN 路由可以在两个 AS 之间进行传递。RFC4364 介绍了三种解决方案，我会在接下来的文章中一一介绍。本文先说第一种解决方案：Option A,这种解决方案需要在两个 AS 之间的 ASBR 上使用专门的接口去传递路由信息，所以我们也称这种为 VRF-to-VRF。</description>
+      <description></description>
       
     </item>
     
@@ -214,7 +214,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-b/</guid>
-      <description>上一篇文章介绍了第一种跨域 VPN 的解决方案-Option A,从配置上看最重要的一点是 ASBR 与 ASBR 之间的“特殊接口”的配置，将两个 ASBR 之间的关系模拟成 CE 与 PE.</description>
+      <description></description>
       
     </item>
     
@@ -224,7 +224,7 @@
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/option-c/</guid>
-      <description>这篇文章介绍一下跨域 VPN Option C 在 IOX 设备上的配置案例</description>
+      <description></description>
       
     </item>
     
@@ -234,7 +234,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/asr9000-bng-simple-configuration/</guid>
-      <description>BNG Broadband Network Gateway 意思为用户的接入点，通过它们连接到宽带网络，“它们”指的是网络设备，例如思科的 ASR9K 。</description>
+      <description></description>
       
     </item>
     
@@ -244,7 +244,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/use-aux-ts/</guid>
-      <description>可能在平常登陆 asr9000 的时候遇到这样的问题，telnet/ssh 等都无法登陆到设备，或者说主引擎的 console 没任何输出，无法查看设备的信息，这个时候除了重启引擎外，还有一个方法就是通过 AUX 接口登陆到设备，然后收集信息，本问介绍一下有哪些常见的 aux 模式下的命令。</description>
+      <description></description>
       
     </item>
     
@@ -254,7 +254,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-cfg-through-snmp/</guid>
-      <description>遇到一个这样的需求，想使用 SNMP 的方式去 copy 设备的配置到 TFTP server。查了点资料发现真存在这种方式，虽然感觉这种功能很鸡肋，但还是记录以下以备查询。</description>
+      <description></description>
       
     </item>
     
@@ -264,7 +264,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/exr-password-recover/</guid>
-      <description>This artical will introduction how to recover password in eXR system, Like ASR9000,NCS6008.</description>
+      <description></description>
       
     </item>
     
@@ -274,7 +274,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-file-between-host-xr/</guid>
-      <description>This article will introduction how to copy file beteew sysadmin-vm/xr-vm/host at IOS XR 64bit system.</description>
+      <description></description>
       
     </item>
     
@@ -284,7 +284,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/ios-xe-software-upgrade/</guid>
-      <description>思科的 IOS XE 系统搞的比较少，就遇到两次升级的案例，做个小抄记录下升级步骤。</description>
+      <description></description>
       
     </item>
     
@@ -294,7 +294,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/some-commonly-used-oids/</guid>
-      <description>This artical will recording some commonly used OIDs, like memory usege,interface counters.</description>
+      <description></description>
       
     </item>
     
@@ -304,7 +304,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/sr-te-example/</guid>
-      <description>最近接触了一个案例，其中包含很多的 SR 方面的知识，所以想趁着熟悉记录下来。具体包括了以下的内容：Policy SR-TE、Interface SR-TE、BGP EPE、TE BSID 等。</description>
+      <description></description>
       
     </item>
     
@@ -314,7 +314,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/turboboot-upgrade-asr9000/</guid>
-      <description>详细记录一下如何使用 Turboboot 的方式升级一台 ASR9000.</description>
+      <description></description>
       
     </item>
     

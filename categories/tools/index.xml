@@ -6,7 +6,7 @@
     <description>Recent content in Tools on Rory&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 Rory Xing</copyright>
+    <copyright>© 2024 </copyright>
     <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SecureCRT批量创建及导入session</title>
@@ -14,7 +14,7 @@
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/securecrt-import-session/</guid>
-      <description>Step 1： 准备工作 # VB 脚本及 Py 脚本下载连接, 建议直接使用 VB 脚本，不用配置 Python 环境.</description>
+      <description></description>
       
     </item>
     
@@ -24,7 +24,7 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/windows-software/</guid>
-      <description>目前还是用WINDOWS作为办公系统， 所以想着记录下目前我在WINDOWS常用有软件，换机的时候可以快速恢复。</description>
+      <description></description>
       
     </item>
     
@@ -34,7 +34,7 @@
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/securecrt-setup/</guid>
-      <description>记录一下我的 CRT 的设置。</description>
+      <description></description>
       
     </item>
     
@@ -44,7 +44,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/copy-file-between-win-and-linux/</guid>
-      <description>This article will introduction how copy file between windows and linux , and how copy file from linux to linux.</description>
+      <description></description>
       
     </item>
     
@@ -54,7 +54,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/wireshark-tools-text2pcap/</guid>
-      <description>这篇文章主要是为了介绍一下 wireshark 自带的小工具 text2pcap，这个小工具可以帮助我们将 16 进制的文件转换为 pcap 文件，让我们可以直接在 wireshark 中打开。</description>
+      <description></description>
       
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/windows-capture-packet-with-vlan/</guid>
-      <description>最近遇到一个 case，需要使用 windows 抓交换机 span 过来的流量，但是无论交换机怎么配置，windows 上 wireshark 抓到的报文总是没有 VLAN tag，让我一度怀疑交换机的配置是否出了问题，查了一些资料，发现需要修改下注册表，才能改变网卡的模式，让其捕获报文后不主动去掉 VLAN tag。</description>
+      <description></description>
       
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/notepad-setup/</guid>
-      <description>NotePad++是平常最主要的看 log 软件，最近在安装的时候采用的不是系统按照，直接下载的 zib packet 然后解压缩，导致我在打开一些 log 文件时找不到 notepad++这个软件，通过将其添加到注册表中解决了这个问题。</description>
+      <description></description>
       
     </item>
     
