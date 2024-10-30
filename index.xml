@@ -9,6 +9,16 @@
     <copyright>© 2024 </copyright>
     <lastBuildDate>Sun, 20 Oct 2024 22:57:45 +0800</lastBuildDate><atom:link href="https://imxing.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Screen And Tmux</title>
+      <link>https://imxing.info/blog/screen-tmux/</link>
+      <pubDate>Sun, 20 Oct 2024 22:57:45 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/screen-tmux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Onboarding C8000v</title>
       <link>https://imxing.info/blog/onboarding-c8000v/</link>
       <pubDate>Sun, 28 Jul 2024 01:11:58 +0800</pubDate>
@@ -854,16 +864,6 @@
       <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/docker-study-1/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Linux Tips：use screen to manage your session</title>
-      <link>https://imxing.info/blog/screen/</link>
-      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://imxing.info/blog/screen/</guid>
       <description></description>
       
     </item>

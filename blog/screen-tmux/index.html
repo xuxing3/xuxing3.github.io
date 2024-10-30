@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Linux Tips：use screen to manage your session &middot; Rory&#39;s Blog</title>
-  <meta name="title" content="Linux Tips：use screen to manage your session &middot; Rory&#39;s Blog" />
+  <title>Screen And Tmux &middot; Rory&#39;s Blog</title>
+  <meta name="title" content="Screen And Tmux &middot; Rory&#39;s Blog" />
   
   
-  <meta name="keywords" content="linux, " />
+  <meta name="keywords" content="Linux, " />
   
   
-  <link rel="canonical" href="https://imxing.info/blog/screen/" />
+  <link rel="canonical" href="https://imxing.info/blog/screen-tmux/" />
   
   
   
@@ -68,19 +68,19 @@
   
   
   
-  <meta property="og:url" content="https://imxing.info/blog/screen/">
+  <meta property="og:url" content="https://imxing.info/blog/screen-tmux/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
-  <meta property="og:title" content="Linux Tips：use screen to manage your session">
+  <meta property="og:title" content="Screen And Tmux">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2020-07-25T00:00:00+00:00">
-    <meta property="article:modified_time" content="2020-07-25T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-10-20T22:57:45+08:00">
+    <meta property="article:modified_time" content="2024-10-20T22:57:45+08:00">
     <meta property="article:tag" content="Linux">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Linux Tips：use screen to manage your session">
+  <meta name="twitter:title" content="Screen And Tmux">
 
   
   <script type="application/ld+json">
@@ -88,26 +88,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "我的博客",
-    "name": "Linux Tips：use screen to manage your session",
-    "headline": "Linux Tips：use screen to manage your session",
+    "name": "Screen And Tmux",
+    "headline": "Screen And Tmux",
     
     
     "inLanguage": "en",
-    "url" : "https:\/\/imxing.info\/blog\/screen\/",
+    "url" : "https:\/\/imxing.info\/blog\/screen-tmux\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
-    "copyrightYear": "2020",
-    "dateCreated": "2020-07-25T00:00:00\u002b00:00",
-    "datePublished": "2020-07-25T00:00:00\u002b00:00",
+    "copyrightYear": "2024",
+    "dateCreated": "2024-10-20T22:57:45\u002b08:00",
+    "datePublished": "2024-10-20T22:57:45\u002b08:00",
     
-    "dateModified": "2020-07-25T00:00:00\u002b00:00",
+    "dateModified": "2024-10-20T22:57:45\u002b08:00",
     
-    "keywords": ["linux"],
+    "keywords": ["Linux"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "293"
+    "wordCount": "256"
   }]
   </script>
 
@@ -451,7 +451,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Linux Tips：use screen to manage your session
+      Screen And Tmux
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -494,7 +494,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2020-07-25T00:00:00&#43;00:00">25 July 2020</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-10-20T22:57:45&#43;08:00">20 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -509,16 +509,6 @@
   
   
   
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/linux/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
-  </span>
-</span>
-  </span>
   
   
   
@@ -597,8 +587,8 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#how-to-install">How to install</a></li>
-    <li><a href="#some-tips">Some Tips</a></li>
+    <li><a href="#screen">screen</a></li>
+    <li><a href="#tmux">tmux</a></li>
   </ul>
 </nav>
   </div>
@@ -612,8 +602,8 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#how-to-install">How to install</a></li>
-    <li><a href="#some-tips">Some Tips</a></li>
+    <li><a href="#screen">screen</a></li>
+    <li><a href="#tmux">tmux</a></li>
   </ul>
 </nav>
   </div>
@@ -657,91 +647,29 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <p>记录一下经常使用的一个工具， screen 和 tmux。 两者实现的功能是一致的，创建多少命令行 session， 可以将未完成的任务挂起（任务在后台运行）连接串口设备等,，我目前经常使用的就是会话挂起和会话恢复。</p>
 
-<h2 class="relative group">How to install 
-    <div id="how-to-install" class="anchor"></div>
+
+<h2 class="relative group">screen 
+    <div id="screen" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#how-to-install" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#screen" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">//Yum
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@nso ~<span class="o">]</span><span class="c1"># yum -y install screen</span>
-</span></span><span class="line"><span class="cl">//rpm
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@nso ~<span class="o">]</span><span class="c1">#wget http://mirror-hk.koddos.net/centos/7.8.2003/os/x86_64/</span>
-</span></span><span class="line"><span class="cl">Packages/screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@nso ~<span class="o">]</span><span class="c1">#rpm -ivh  screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm</span>
-</span></span></code></pre></div>
-
-<h2 class="relative group">Some Tips 
-    <div id="some-tips" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#some-tips" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Created a session, -S means special a name for that session.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -S test</span>
-</span></span></code></pre></div><p>Recover your session.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -ls</span>
-</span></span><span class="line"><span class="cl">There are screens on:
-</span></span><span class="line"><span class="cl">	15741.test	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	5971.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4485.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4409.pts-0.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	25997.9922a	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="m">5</span> Sockets in /var/run/screen/S-root.
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -r test    // recover test session</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span>detached from 15741.test<span class="o">]</span>
-</span></span></code></pre></div><p>Detached session/Kill session</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">//使用组合键 C-a D  detach session, 即将session 放在后台
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -ls</span>
-</span></span><span class="line"><span class="cl">There are screens on:
-</span></span><span class="line"><span class="cl">	15741.test	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	5971.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4485.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4409.pts-0.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	25997.9922a	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="m">5</span> Sockets in /var/run/screen/S-root.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># kill -9 15741</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -ls</span>
-</span></span><span class="line"><span class="cl">There are screens on:
-</span></span><span class="line"><span class="cl">	15741.test	<span class="o">(</span>Dead ???<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	5971.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4485.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4409.pts-0.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	25997.9922a	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Remove dead screens with <span class="s1">&#39;screen -wipe&#39;</span>.
-</span></span><span class="line"><span class="cl"><span class="m">5</span> Sockets in /var/run/screen/S-root.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -wipe</span>
-</span></span><span class="line"><span class="cl">There are screens on:
-</span></span><span class="line"><span class="cl">	15741.test	<span class="o">(</span>Removed<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	5971.pts-2.xuxing	<span class="o">(</span>Removed<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4485.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4409.pts-0.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	25997.9922a	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="m">2</span> sockets wiped out.
-</span></span><span class="line"><span class="cl"><span class="m">3</span> Sockets in /var/run/screen/S-root.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1"># screen -ls</span>
-</span></span><span class="line"><span class="cl">There are screens on:
-</span></span><span class="line"><span class="cl">	4485.pts-2.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	4409.pts-0.xuxing	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl">	25997.9922a	<span class="o">(</span>Detached<span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="m">3</span> Sockets in /var/run/screen/S-root.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>root@xuxing ~<span class="o">]</span><span class="c1">#</span>
-</span></span></code></pre></div><p>About screen session log, we have 3 way to enable it:</p>
+<p>最早我是在 CenOS 上使用这个命令， 使用<code>yum -y install screen</code>直接进行安装。</p>
+<p>没 yum 源的可以搜一下安装包使用 rpm 安装：</p>
+<pre tabindex="0"><code>//Yum
+[root@nso ~]# yum -y install screen
+//rpm
+[root@nso ~]#wget http://mirror-hk.koddos.net/centos/7.8.2003/os/x86_64/
+Packages/screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
+[root@nso ~]#rpm -ivh  screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
+</code></pre><p>配置文件为<code>/etc/screenrc</code>, 或者<code>～/.screenrc</code></p>
+<p>有三种方式可以记录会话 log:</p>
 <pre tabindex="0"><code>// Way 1: add -L to enable session log
 // it will auto generate a log file at user home folder $HOME with name session title name
 [root@xuxing ~]# screen -S -L test
@@ -754,6 +682,72 @@
 [root@server1 ~]# grep logfile /etc/screenrc
 logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
 [root@xuxing ~]# screen -S -L test
+</code></pre><p>一些常用的命令:</p>
+<pre tabindex="0"><code>// 新建一个自定义会话名的session
+screen -S &lt;会话名&gt;
+
+// 显示所有的screen 会话
+screen -ls
+
+//恢复会话
+screen -r &lt;会话名或id&gt;
+
+# 挂起会话
+
+Ctrl - a + d
+
+// 删除会话
+
+[root@xuxing ~]# screen -ls
+There are screens on:
+	15741.test	(Detached)
+	5971.pts-2.xuxing	(Detached)
+	4485.pts-2.xuxing	(Detached)
+	4409.pts-0.xuxing	(Detached)
+	25997.9922a	(Detached)
+5 Sockets in /var/run/screen/S-root.
+
+[root@xuxing ~]# kill -9 15741
+[root@xuxing ~]# screen -ls
+There are screens on:
+	15741.test	(Dead ???)
+	5971.pts-2.xuxing	(Detached)
+	4485.pts-2.xuxing	(Detached)
+	4409.pts-0.xuxing	(Detached)
+	25997.9922a	(Detached)
+Remove dead screens with &#39;screen -wipe&#39;.
+5 Sockets in /var/run/screen/S-root.
+
+[root@xuxing ~]# screen -wipe     &lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre>
+
+<h2 class="relative group">tmux 
+    <div id="tmux" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#tmux" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Mac 上没有 screen 这个工具， 找到了一个类似的工具 tmux, <code>brew install tmux</code></p>
+<pre tabindex="0"><code>// 新建一个自定义会话名的session
+tmux new -s &lt;会话名&gt;
+
+// 显示所有的screen 会话
+tmux ls
+
+//恢复会话
+screen a -t &lt;会话名&gt;
+
+# 挂起会话
+
+Ctrl + b d
+
+# 结束会话
+
+tmux kill-session -t &lt;会话名&gt;
 </code></pre>
           
           
@@ -771,7 +765,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/blog/screen/&amp;title=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/blog/screen-tmux/&amp;title=Screen%20And%20Tmux"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -790,7 +784,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://imxing.info/blog/screen/&amp;text=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://twitter.com/intent/tweet/?url=https://imxing.info/blog/screen-tmux/&amp;text=Screen%20And%20Tmux"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -808,7 +802,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://imxing.info/blog/screen/&amp;resubmit=true&amp;title=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://reddit.com/submit/?url=https://imxing.info/blog/screen-tmux/&amp;resubmit=true&amp;title=Screen%20And%20Tmux"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -827,7 +821,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/blog/screen/&amp;description=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/blog/screen-tmux/&amp;description=Screen%20And%20Tmux"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -846,7 +840,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/blog/screen/&amp;quote=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/blog/screen-tmux/&amp;quote=Screen%20And%20Tmux"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -865,7 +859,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://imxing.info/blog/screen/&amp;subject=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="mailto:?body=https://imxing.info/blog/screen-tmux/&amp;subject=Screen%20And%20Tmux"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -884,7 +878,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://imxing.info/blog/screen/&amp;resubmit=true&amp;title=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://api.whatsapp.com/send?text=https://imxing.info/blog/screen-tmux/&amp;resubmit=true&amp;title=Screen%20And%20Tmux"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -903,7 +897,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://imxing.info/blog/screen/&amp;resubmit=true&amp;title=Linux%20Tips%ef%bc%9ause%20screen%20to%20manage%20your%20session"
+      href="https://t.me/share/url?url=https://imxing.info/blog/screen-tmux/&amp;resubmit=true&amp;title=Screen%20And%20Tmux"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -932,8 +926,8 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
           
         
       <script>
-        var oid = "views_blog\/screen\/index.md"
-        var oid_likes = "likes_blog\/screen\/index.md"
+        var oid = "views_blog\/screen-tmux\/index.md"
+        var oid_likes = "likes_blog\/screen-tmux\/index.md"
       </script>
       
       
@@ -953,7 +947,7 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/blog/ssh-login-iox-without-password/">
+            <a class="flex group mr-3" href="/blog/onboarding-c8000v/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -965,11 +959,11 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >SSH 免密登陆CISCO IOX设备</span
+                  >Onboarding C8000v</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2020-05-16T00:00:00&#43;00:00">16 May 2020</time>
+                    <time datetime="2024-07-28T01:11:58&#43;08:00">28 July 2024</time>
                   
                 </span>
               </span>
@@ -977,28 +971,6 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/blog/docker-study-1/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Docker study（1）- Initial install</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2020-07-25T00:00:00&#43;00:00">25 July 2020</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
@@ -1028,9 +1000,9 @@ logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
   id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="eaff9d82-5bae-47cd-b41a-34854e106067"
-  data-page-id="/blog/screen/"
-  data-page-url="/blog/screen/"
-  data-page-title="Linux Tips：use screen to manage your session"
+  data-page-id="/blog/screen-tmux/"
+  data-page-url="/blog/screen-tmux/"
+  data-page-title="Screen And Tmux"
 ></div><script type="text/javascript">
   (()=>{var e={powered_by:"Comments powered by Cusdis",post_comment:"Comment",loading:"Loading",email:"Email (optional)",nickname:"Nickname",reply_placeholder:"Reply...",reply_btn:"Reply",sending:"sending...",mod_badge:"MOD",content_is_required:"Content is required",nickname_is_required:"Nickname is required",comment_has_been_sent:"Your comment has been sent. Please wait for approval."};})();
 

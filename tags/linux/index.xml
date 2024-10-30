@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Fri, 03 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imxing.info/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Oct 2024 22:57:45 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Screen And Tmux</title>
+      <link>https://imxing.info/blog/screen-tmux/</link>
+      <pubDate>Sun, 20 Oct 2024 22:57:45 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/screen-tmux/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Increase the size of a Linux LVM</title>
       <link>https://imxing.info/blog/increase-the-size-of-a-linux-lvm/</link>
@@ -34,16 +44,6 @@
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/blog/setup-syslog-server-on-centos-7/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Linux Tips：use screen to manage your session</title>
-      <link>https://imxing.info/blog/screen/</link>
-      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://imxing.info/blog/screen/</guid>
       <description></description>
       
     </item>

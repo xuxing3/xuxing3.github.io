@@ -9,6 +9,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://imxing.info/blog/screen-tmux/</loc>
+    <lastmod>2024-10-20T22:57:45+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://imxing.info/blog/</loc>
     <lastmod>2024-10-20T22:57:45+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -520,12 +526,6 @@
   </url>
   <url>
     <loc>https://imxing.info/blog/docker-study-1/</loc>
-    <lastmod>2020-07-25T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://imxing.info/blog/screen/</loc>
     <lastmod>2020-07-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

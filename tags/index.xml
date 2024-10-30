@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 28 Jul 2024 01:11:58 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Oct 2024 22:57:45 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://imxing.info/tags/linux/</link>
+      <pubDate>Sun, 20 Oct 2024 22:57:45 +0800</pubDate>
+      
+      <guid>https://imxing.info/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>8000v</title>
       <link>https://imxing.info/tags/8000v/</link>
@@ -174,16 +184,6 @@
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://imxing.info/tags/securecrt/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://imxing.info/tags/linux/</link>
-      <pubDate>Fri, 03 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://imxing.info/tags/linux/</guid>
       <description></description>
       
     </item>
