@@ -695,16 +695,16 @@
     
 </h2>
 <p><a href="https://github.com/cisco-open/sdwan-lab-deployment-tool" target="_blank">Catalyst SD-WAN Lab Deployment Tool for Cisco Modeling Labs</a>, github 页面提供了详细的安装和命令行使用方法。</p>
-<pre tabindex="0"><code>rory@jumpserver:~$ mkdir csdwan
-rory@jumpserver:~$ cd csdwan/
-rory@jumpserver:~/csdwan$ sudo apt install python3.10-venv
-rory@jumpserver:~/csdwan$  python3 -m venv venv
-rory@jumpserver:~/csdwan$  source venv/bin/activate
-(venv) rory@jumpserver:~/csdwan$ pip3  install --upgrade pip setuptools
-(venv) rory@jumpserver:~/csdwan$ pip3 install --upgrade catalyst-sdwan-lab
-(venv) rory@jumpserver:~/csdwan$ csdwan --version
-SD-WAN Lab Version 2.0.14
-</code></pre><p>准备 SDWAN LAB 相关环境变量，在这里 MANAGER_IP 我设定的是做 NAT，即将 CML 的地址 2002 端口映射到 vManage 的管理地址 443 端口， 如果需要这样操作则还得在 CML 管理页面将 virl2-patty 进程开启， 默认是 stop 的状态， 这个进程会帮我们做一个端口的映射；当然你也可以指定 vMange 的 IP 和 CML 在同一个地址段。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rory@jumpserver:~$ mkdir csdwan
+</span></span><span class="line"><span class="cl">rory@jumpserver:~$ <span class="nb">cd</span> csdwan/
+</span></span><span class="line"><span class="cl">rory@jumpserver:~/csdwan$ sudo apt install python3.10-venv
+</span></span><span class="line"><span class="cl">rory@jumpserver:~/csdwan$  python3 -m venv venv
+</span></span><span class="line"><span class="cl">rory@jumpserver:~/csdwan$  <span class="nb">source</span> venv/bin/activate
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ pip3  install --upgrade pip setuptools
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ pip3 install --upgrade catalyst-sdwan-lab
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ csdwan --version
+</span></span><span class="line"><span class="cl">SD-WAN Lab Version 2.0.14
+</span></span></code></pre></div><p>准备 SDWAN LAB 相关环境变量，在这里 MANAGER_IP 我设定的是做 NAT，即将 CML 的地址 2002 端口映射到 vManage 的管理地址 443 端口， 如果需要这样操作则还得在 CML 管理页面将 virl2-patty 进程开启， 默认是 stop 的状态， 这个进程会帮我们做一个端口的映射；当然你也可以指定 vMange 的 IP 和 CML 在同一个地址段。</p>
 <p>
     <figure>
       <img
@@ -716,21 +716,21 @@ SD-WAN Lab Version 2.0.14
       
     </figure>
 </p>
-<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ cat SDWAN-TEST.sh
-export CML_IP=&#39;172.x.x.x&#39;
-export CML_USER=&#39;admin&#39;
-export CML_PASSWORD=&#39;admin&#39;
-export MANAGER_IP=&#39;pat:2002&#39;
-export MANAGER_USER=&#39;sdwan&#39;
-export MANAGER_PASSWORD=&#39;sdwan&#39;
-export LAB_NAME=&#39;SDWAN-TEST&#39;
-(venv) rory@jumpserver:~/csdwan$
-(venv) rory@jumpserver:~/csdwan$
-(venv) rory@jumpserver:~/csdwan$
-(venv) rory@jumpserver:~/csdwan$
-(venv) rory@jumpserver:~/csdwan$ source SDWAN-TEST.sh
-(venv) rory@jumpserver:~/csdwan$
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ cat SDWAN-TEST.sh
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CML_IP</span><span class="o">=</span><span class="s1">&#39;172.x.x.x&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CML_USER</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CML_PASSWORD</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MANAGER_IP</span><span class="o">=</span><span class="s1">&#39;pat:2002&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MANAGER_USER</span><span class="o">=</span><span class="s1">&#39;sdwan&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MANAGER_PASSWORD</span><span class="o">=</span><span class="s1">&#39;sdwan&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LAB_NAME</span><span class="o">=</span><span class="s1">&#39;SDWAN-TEST&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ <span class="nb">source</span> SDWAN-TEST.sh
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span></code></pre></div>
 
 <h2 class="relative group">镜像上传 
     <div id="%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0" class="anchor"></div>
@@ -743,44 +743,44 @@ export LAB_NAME=&#39;SDWAN-TEST&#39;
     
 </h2>
 <p>在 csdwan 文件夹下准备好相关的镜像文件使用<code>csdwan setup</code> 进行镜像的上传， 该步骤会在 CML 中创建相关版本的镜像模版。</p>
-<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ ls -al
-total 7547744
-drwxrwxr-x  3 rory rory       4096 Dec 26 05:24 .
-drwxr-x--- 18 rory rory       4096 Dec 26 04:30 ..
--rwxr-xr-x  1 rory rory 2033582080 Dec 26 05:18 c8000v-universalk9_8G_serial.17.13.01a.qcow2
--rw-rw-r--  1 rory rory        204 Dec 26 05:24 SDWAN-TEST.sh
-drwxrwxr-x  5 rory rory       4096 Dec 26 04:30 venv
--rwxr-xr-x  1 rory rory  406192128 Dec 26 05:20 viptela-edge-20.13.1-genericx86-64.qcow2
--rwxr-xr-x  1 rory rory  406192128 Dec 26 05:23 viptela-smart-20.13.1-genericx86-64.qcow2
--rwxr-xr-x  1 rory rory 4882890752 Dec 26 05:52 viptela-vmanage-20.13.1-genericx86-64.qcow2
-(venv) rory@jumpserver:~/csdwan$
-(venv) rory@jumpserver:~/csdwan$ csdwan -v setup
-INFO - Logging in to CML...
-INFO - Verifying Node Definitions...
-INFO - [CREATE] Creating node cat-sdwan-manager...
-INFO - [CREATE] Creating node cat-sdwan-validator...
-INFO - [CREATE] Creating node cat-sdwan-controller...
-INFO - [CREATE] Creating node cat-sdwan-edge...
-INFO - Verifying software images...
-INFO - Looking for new software images in /home/rory/csdwan...
-INFO - Creating image definition cat-sdwan-manager-20.13.1...
-Uploading viptela-vmanage-20.13.1-genericx86-64.qcow2
- |##################################################| 4882890752/4882890752 100.0% [00:00:09]
-Upload completed
-INFO - Creating image definition cat-sdwan-edge-17.13.01a...
-Uploading c8000v-universalk9_8G_serial.17.13.01a.qcow2
- |##################################################| 2033582080/2033582080 100.0% [00:00:04]
-Upload completed
-INFO - Creating image definition cat-sdwan-controller-20.13.1...
-Uploading viptela-smart-20.13.1-genericx86-64.qcow2
- |##################################################| 406192128/406192128 100.0% [00:00:00]
-Upload completed
-INFO - Creating image definition cat-sdwan-validator-20.13.1...
-Uploading viptela-edge-20.13.1-genericx86-64.qcow2
- |##################################################| 406192128/406192128 100.0% [00:00:00]
-Upload completed
-INFO - Setup task done
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ ls -al
+</span></span><span class="line"><span class="cl">total <span class="m">7547744</span>
+</span></span><span class="line"><span class="cl">drwxrwxr-x  <span class="m">3</span> rory rory       <span class="m">4096</span> Dec <span class="m">26</span> 05:24 .
+</span></span><span class="line"><span class="cl">drwxr-x--- <span class="m">18</span> rory rory       <span class="m">4096</span> Dec <span class="m">26</span> 04:30 ..
+</span></span><span class="line"><span class="cl">-rwxr-xr-x  <span class="m">1</span> rory rory <span class="m">2033582080</span> Dec <span class="m">26</span> 05:18 c8000v-universalk9_8G_serial.17.13.01a.qcow2
+</span></span><span class="line"><span class="cl">-rw-rw-r--  <span class="m">1</span> rory rory        <span class="m">204</span> Dec <span class="m">26</span> 05:24 SDWAN-TEST.sh
+</span></span><span class="line"><span class="cl">drwxrwxr-x  <span class="m">5</span> rory rory       <span class="m">4096</span> Dec <span class="m">26</span> 04:30 venv
+</span></span><span class="line"><span class="cl">-rwxr-xr-x  <span class="m">1</span> rory rory  <span class="m">406192128</span> Dec <span class="m">26</span> 05:20 viptela-edge-20.13.1-genericx86-64.qcow2
+</span></span><span class="line"><span class="cl">-rwxr-xr-x  <span class="m">1</span> rory rory  <span class="m">406192128</span> Dec <span class="m">26</span> 05:23 viptela-smart-20.13.1-genericx86-64.qcow2
+</span></span><span class="line"><span class="cl">-rwxr-xr-x  <span class="m">1</span> rory rory <span class="m">4882890752</span> Dec <span class="m">26</span> 05:52 viptela-vmanage-20.13.1-genericx86-64.qcow2
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ csdwan -v setup
+</span></span><span class="line"><span class="cl">INFO - Logging in to CML...
+</span></span><span class="line"><span class="cl">INFO - Verifying Node Definitions...
+</span></span><span class="line"><span class="cl">INFO - <span class="o">[</span>CREATE<span class="o">]</span> Creating node cat-sdwan-manager...
+</span></span><span class="line"><span class="cl">INFO - <span class="o">[</span>CREATE<span class="o">]</span> Creating node cat-sdwan-validator...
+</span></span><span class="line"><span class="cl">INFO - <span class="o">[</span>CREATE<span class="o">]</span> Creating node cat-sdwan-controller...
+</span></span><span class="line"><span class="cl">INFO - <span class="o">[</span>CREATE<span class="o">]</span> Creating node cat-sdwan-edge...
+</span></span><span class="line"><span class="cl">INFO - Verifying software images...
+</span></span><span class="line"><span class="cl">INFO - Looking <span class="k">for</span> new software images in /home/rory/csdwan...
+</span></span><span class="line"><span class="cl">INFO - Creating image definition cat-sdwan-manager-20.13.1...
+</span></span><span class="line"><span class="cl">Uploading viptela-vmanage-20.13.1-genericx86-64.qcow2
+</span></span><span class="line"><span class="cl"> <span class="p">|</span><span class="c1">##################################################| 4882890752/4882890752 100.0% [00:00:09]</span>
+</span></span><span class="line"><span class="cl">Upload completed
+</span></span><span class="line"><span class="cl">INFO - Creating image definition cat-sdwan-edge-17.13.01a...
+</span></span><span class="line"><span class="cl">Uploading c8000v-universalk9_8G_serial.17.13.01a.qcow2
+</span></span><span class="line"><span class="cl"> <span class="p">|</span><span class="c1">##################################################| 2033582080/2033582080 100.0% [00:00:04]</span>
+</span></span><span class="line"><span class="cl">Upload completed
+</span></span><span class="line"><span class="cl">INFO - Creating image definition cat-sdwan-controller-20.13.1...
+</span></span><span class="line"><span class="cl">Uploading viptela-smart-20.13.1-genericx86-64.qcow2
+</span></span><span class="line"><span class="cl"> <span class="p">|</span><span class="c1">##################################################| 406192128/406192128 100.0% [00:00:00]</span>
+</span></span><span class="line"><span class="cl">Upload completed
+</span></span><span class="line"><span class="cl">INFO - Creating image definition cat-sdwan-validator-20.13.1...
+</span></span><span class="line"><span class="cl">Uploading viptela-edge-20.13.1-genericx86-64.qcow2
+</span></span><span class="line"><span class="cl"> <span class="p">|</span><span class="c1">##################################################| 406192128/406192128 100.0% [00:00:00]</span>
+</span></span><span class="line"><span class="cl">Upload completed
+</span></span><span class="line"><span class="cl">INFO - Setup task <span class="k">done</span>
+</span></span></code></pre></div>
 
 <h2 class="relative group">Deploy 测试拓扑 
     <div id="deploy-%E6%B5%8B%E8%AF%95%E6%8B%93%E6%89%91" class="anchor"></div>
@@ -804,23 +804,23 @@ INFO - Setup task done
       
     </figure>
 </p>
-<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ csdwan deploy 20.13.1
-SD-WAN Manager subnet mask (e.g. /24): /24
-SD-WAN Manager gateway IP: 172.16.10.100
-Deploy task done
-#############################################
-Lab is deployed.
-CML URL: https://172.x.x.x
-SD-WAN Manager URL: https://172.x.x.x:2002
-Use the username/password set with the script for CML and SD-WAN Manager login.
-All other nodes use default username/password.
-#############################################
-(venv) rory@jumpserver:~/csdwan$
-</code></pre><p>添加 2 台 edge，并完成自动上线；这两台 edge 会完成相关预配置， 并且 G3 端口已经开启了 DHCP，后续我们可以手动的在 topo 中添加两个 alpine client， 两台 client 可自行获取 IP 地址。</p>
-<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ csdwan add 2 edges 17.13.01a
-Add task done
-(venv) rory@jumpserver:~/csdwan$
-</code></pre><p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ csdwan deploy 20.13.1
+</span></span><span class="line"><span class="cl">SD-WAN Manager subnet mask <span class="o">(</span>e.g. /24<span class="o">)</span>: /24
+</span></span><span class="line"><span class="cl">SD-WAN Manager gateway IP: 172.16.10.100
+</span></span><span class="line"><span class="cl">Deploy task <span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#############################################</span>
+</span></span><span class="line"><span class="cl">Lab is deployed.
+</span></span><span class="line"><span class="cl">CML URL: https://172.x.x.x
+</span></span><span class="line"><span class="cl">SD-WAN Manager URL: https://172.x.x.x:2002
+</span></span><span class="line"><span class="cl">Use the username/password <span class="nb">set</span> with the script <span class="k">for</span> CML and SD-WAN Manager login.
+</span></span><span class="line"><span class="cl">All other nodes use default username/password.
+</span></span><span class="line"><span class="cl"><span class="c1">#############################################</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span></code></pre></div><p>添加 2 台 edge，并完成自动上线；这两台 edge 会完成相关预配置， 并且 G3 端口已经开启了 DHCP，后续我们可以手动的在 topo 中添加两个 alpine client， 两台 client 可自行获取 IP 地址。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$ csdwan add <span class="m">2</span> edges 17.13.01a
+</span></span><span class="line"><span class="cl">Add task <span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span> rory@jumpserver:~/csdwan$
+</span></span></code></pre></div><p>
     <figure>
       <img
         class="my-0 rounded-md"
