@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CML on Rory&#39;s Blog</title>
+    <link>https://imxing.info/tags/cml/</link>
+    <description>Recent content in CML on Rory&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Fri, 27 Dec 2024 01:58:23 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/cml/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CML With SDWAN Deployment Tool</title>
+      <link>https://imxing.info/blog/cml-with-sdwan-deployment-tool/</link>
+      <pubDate>Fri, 27 Dec 2024 01:58:23 +0800</pubDate>
+      
+      <guid>https://imxing.info/blog/cml-with-sdwan-deployment-tool/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

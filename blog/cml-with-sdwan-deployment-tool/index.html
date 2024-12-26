@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Screen And Tmux &middot; Rory&#39;s Blog</title>
-  <meta name="title" content="Screen And Tmux &middot; Rory&#39;s Blog" />
+  <title>CML With SDWAN Deployment Tool &middot; Rory&#39;s Blog</title>
+  <meta name="title" content="CML With SDWAN Deployment Tool &middot; Rory&#39;s Blog" />
   
   
-  <meta name="keywords" content="Linux, " />
+  <meta name="keywords" content="SDWAN, CML, " />
   
   
-  <link rel="canonical" href="https://imxing.info/blog/screen-tmux/" />
+  <link rel="canonical" href="https://imxing.info/blog/cml-with-sdwan-deployment-tool/" />
   
   
   
@@ -69,19 +69,20 @@
   
   
   
-  <meta property="og:url" content="https://imxing.info/blog/screen-tmux/">
+  <meta property="og:url" content="https://imxing.info/blog/cml-with-sdwan-deployment-tool/">
   <meta property="og:site_name" content="Rory&#39;s Blog">
-  <meta property="og:title" content="Screen And Tmux">
+  <meta property="og:title" content="CML With SDWAN Deployment Tool">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2024-10-20T22:57:45+08:00">
-    <meta property="article:modified_time" content="2024-10-20T22:57:45+08:00">
-    <meta property="article:tag" content="Linux">
+    <meta property="article:published_time" content="2024-12-27T01:58:23+08:00">
+    <meta property="article:modified_time" content="2024-12-27T01:58:23+08:00">
+    <meta property="article:tag" content="SDWAN">
+    <meta property="article:tag" content="CML">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Screen And Tmux">
+  <meta name="twitter:title" content="CML With SDWAN Deployment Tool">
 
   
   <script type="application/ld+json">
@@ -89,26 +90,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "我的博客",
-    "name": "Screen And Tmux",
-    "headline": "Screen And Tmux",
+    "name": "CML With SDWAN Deployment Tool",
+    "headline": "CML With SDWAN Deployment Tool",
     
     
     "inLanguage": "en",
-    "url" : "https:\/\/imxing.info\/blog\/screen-tmux\/",
+    "url" : "https:\/\/imxing.info\/blog\/cml-with-sdwan-deployment-tool\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-20T22:57:45\u002b08:00",
-    "datePublished": "2024-10-20T22:57:45\u002b08:00",
+    "dateCreated": "2024-12-27T01:58:23\u002b08:00",
+    "datePublished": "2024-12-27T01:58:23\u002b08:00",
     
-    "dateModified": "2024-10-20T22:57:45\u002b08:00",
+    "dateModified": "2024-12-27T01:58:23\u002b08:00",
     
-    "keywords": ["Linux"],
+    "keywords": ["SDWAN","CML"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "256"
+    "wordCount": "482"
   }]
   </script>
 
@@ -452,7 +453,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Screen And Tmux
+      CML With SDWAN Deployment Tool
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -495,7 +496,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-20T22:57:45&#43;08:00">20 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-12-27T01:58:23&#43;08:00">27 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -519,10 +520,18 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sdwan/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
+    SDWAN
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cml/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CML
   </span>
 </span>
   </span>
@@ -588,8 +597,11 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#screen">screen</a></li>
-    <li><a href="#tmux">tmux</a></li>
+    <li><a href="#测试环境介绍">测试环境介绍</a></li>
+    <li><a href="#sdwan-deployment-tool-安装">SDWAN Deployment Tool 安装</a></li>
+    <li><a href="#镜像上传">镜像上传</a></li>
+    <li><a href="#deploy-测试拓扑">Deploy 测试拓扑</a></li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
   </div>
@@ -603,8 +615,11 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#screen">screen</a></li>
-    <li><a href="#tmux">tmux</a></li>
+    <li><a href="#测试环境介绍">测试环境介绍</a></li>
+    <li><a href="#sdwan-deployment-tool-安装">SDWAN Deployment Tool 安装</a></li>
+    <li><a href="#镜像上传">镜像上传</a></li>
+    <li><a href="#deploy-测试拓扑">Deploy 测试拓扑</a></li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
   </div>
@@ -648,108 +663,192 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>记录一下经常使用的一个工具， screen 和 tmux。 两者实现的功能是一致的，创建多个命令行 session， 可以将未完成的任务挂起（任务在后台运行）连接串口设备等，我目前经常使用的就是创建多个会话，挂起和会话恢复。</p>
+          <p>一直以来 depoly 一个 SDWAN 测试环境是一个比较费时间的事，最近在看 CML 2.8 （思科模拟器）release note 的时候看到关于自动化部署的内容，简化 SDWAN 实验的部署流程和时间， 所以抽空测试了一把。</p>
+<p>自动化部署工具可以帮助你快速的部署 vManage/vBond/vSmart 以及多个 edge,并帮助你完成控制器上证书的安装以及 edge 的自动化上线。</p>
 
 
-<h2 class="relative group">screen 
-    <div id="screen" class="anchor"></div>
+<h2 class="relative group">测试环境介绍 
+    <div id="%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#screen" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>最早我是在 CenOS 上使用这个命令， 使用<code>yum -y install screen</code>直接进行安装。</p>
-<p>没 yum 源的可以搜一下安装包使用 rpm 安装：</p>
-<pre tabindex="0"><code>//Yum
-[root@nso ~]# yum -y install screen
-//rpm
-[root@nso ~]#wget http://mirror-hk.koddos.net/centos/7.8.2003/os/x86_64/
-Packages/screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
-[root@nso ~]#rpm -ivh  screen-4.1.0-0.25.20120314git3c2946.el7.x86_64.rpm
-</code></pre><p>配置文件为<code>/etc/screenrc</code>, 或者<code>～/.screenrc</code></p>
-<p>有三种方式可以记录会话 log:</p>
-<pre tabindex="0"><code>// Way 1: add -L to enable session log
-// it will auto generate a log file at user home folder $HOME with name session title name
-[root@xuxing ~]# screen -S -L test
-// Way 2: create a normal session ， type Ctrl+a, H to enable session log
-// it will be stored at user home folder too
-[root@xuxing ~]# screen -S test
-&gt; Ctrl+a, H
+<ul>
+<li>Python 3.10</li>
+<li>CML 2.7.x</li>
+<li>sdwan-lab-deployment-tool 2.0.14</li>
+</ul>
 
-// Way 3: customize session log save folder by modify config file
-[root@server1 ~]# grep logfile /etc/screenrc
-logfile /var/log/screen/screenlog_%S_%t_%Y_%m_%d_%c.%n.log
-[root@xuxing ~]# screen -S -L test
-</code></pre><p>一些常用的命令:</p>
-<pre tabindex="0"><code>// 新建一个自定义会话名的session
-screen -S &lt;会话名&gt;
 
-// 显示所有的screen 会话
-screen -ls
-
-//恢复会话
-screen -r &lt;会话名或id&gt;
-
-# 挂起会话
-
-Ctrl - a + d
-
-// 删除会话
-
-[root@xuxing ~]# screen -ls
-There are screens on:
-	15741.test	(Detached)
-	5971.pts-2.xuxing	(Detached)
-	4485.pts-2.xuxing	(Detached)
-	4409.pts-0.xuxing	(Detached)
-	25997.9922a	(Detached)
-5 Sockets in /var/run/screen/S-root.
-
-[root@xuxing ~]# kill -9 15741
-[root@xuxing ~]# screen -ls
-There are screens on:
-	15741.test	(Dead ???)
-	5971.pts-2.xuxing	(Detached)
-	4485.pts-2.xuxing	(Detached)
-	4409.pts-0.xuxing	(Detached)
-	25997.9922a	(Detached)
-Remove dead screens with &#39;screen -wipe&#39;.
-5 Sockets in /var/run/screen/S-root.
-
-[root@xuxing ~]# screen -wipe     &lt;&lt;&lt;&lt;&lt;&lt;
-</code></pre>
-
-<h2 class="relative group">tmux 
-    <div id="tmux" class="anchor"></div>
+<h2 class="relative group">SDWAN Deployment Tool 安装 
+    <div id="sdwan-deployment-tool-%E5%AE%89%E8%A3%85" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#tmux" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#sdwan-deployment-tool-%E5%AE%89%E8%A3%85" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Mac 上没有 screen 这个工具， 找到了一个类似的工具 tmux, <code>brew install tmux</code></p>
-<pre tabindex="0"><code>// 新建一个自定义会话名的session
-tmux new -s &lt;会话名&gt;
-
-// 显示所有的screen 会话
-tmux ls
-
-//恢复会话
-screen a -t &lt;会话名&gt;
-
-# 挂起会话
-
-Ctrl + b d
-
-# 结束会话
-
-tmux kill-session -t &lt;会话名&gt;
+<p><a href="https://github.com/cisco-open/sdwan-lab-deployment-tool" target="_blank">Catalyst SD-WAN Lab Deployment Tool for Cisco Modeling Labs</a>, github 页面提供了详细的安装和命令行使用方法。</p>
+<pre tabindex="0"><code>rory@jumpserver:~$ mkdir csdwan
+rory@jumpserver:~$ cd csdwan/
+rory@jumpserver:~/csdwan$ sudo apt install python3.10-venv
+rory@jumpserver:~/csdwan$  python3 -m venv venv
+rory@jumpserver:~/csdwan$  source venv/bin/activate
+(venv) rory@jumpserver:~/csdwan$ pip3  install --upgrade pip setuptools
+(venv) rory@jumpserver:~/csdwan$ pip3 install --upgrade catalyst-sdwan-lab
+(venv) rory@jumpserver:~/csdwan$ csdwan --version
+SD-WAN Lab Version 2.0.14
+</code></pre><p>准备 SDWAN LAB 相关环境变量，在这里 MANAGER_IP 我设定的是做 NAT，即将 CML 的地址 2002 端口映射到 vManage 的管理地址 443 端口， 如果需要这样操作则还得在 CML 管理页面将 virl2-patty 进程开启， 默认是 stop 的状态， 这个进程会帮我们做一个端口的映射；当然你也可以指定 vMange 的 IP 和 CML 在同一个地址段。</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cml-with-sdwan-deployment-tool/image-1.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ cat SDWAN-TEST.sh
+export CML_IP=&#39;172.x.x.x&#39;
+export CML_USER=&#39;admin&#39;
+export CML_PASSWORD=&#39;admin&#39;
+export MANAGER_IP=&#39;pat:2002&#39;
+export MANAGER_USER=&#39;sdwan&#39;
+export MANAGER_PASSWORD=&#39;sdwan&#39;
+export LAB_NAME=&#39;SDWAN-TEST&#39;
+(venv) rory@jumpserver:~/csdwan$
+(venv) rory@jumpserver:~/csdwan$
+(venv) rory@jumpserver:~/csdwan$
+(venv) rory@jumpserver:~/csdwan$
+(venv) rory@jumpserver:~/csdwan$ source SDWAN-TEST.sh
+(venv) rory@jumpserver:~/csdwan$
 </code></pre>
+
+<h2 class="relative group">镜像上传 
+    <div id="%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>在 csdwan 文件夹下准备好相关的镜像文件使用<code>csdwan setup</code> 进行镜像的上传， 该步骤会在 CML 中创建相关版本的镜像模版。</p>
+<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ ls -al
+total 7547744
+drwxrwxr-x  3 rory rory       4096 Dec 26 05:24 .
+drwxr-x--- 18 rory rory       4096 Dec 26 04:30 ..
+-rwxr-xr-x  1 rory rory 2033582080 Dec 26 05:18 c8000v-universalk9_8G_serial.17.13.01a.qcow2
+-rw-rw-r--  1 rory rory        204 Dec 26 05:24 SDWAN-TEST.sh
+drwxrwxr-x  5 rory rory       4096 Dec 26 04:30 venv
+-rwxr-xr-x  1 rory rory  406192128 Dec 26 05:20 viptela-edge-20.13.1-genericx86-64.qcow2
+-rwxr-xr-x  1 rory rory  406192128 Dec 26 05:23 viptela-smart-20.13.1-genericx86-64.qcow2
+-rwxr-xr-x  1 rory rory 4882890752 Dec 26 05:52 viptela-vmanage-20.13.1-genericx86-64.qcow2
+(venv) rory@jumpserver:~/csdwan$
+(venv) rory@jumpserver:~/csdwan$ csdwan -v setup
+INFO - Logging in to CML...
+INFO - Verifying Node Definitions...
+INFO - [CREATE] Creating node cat-sdwan-manager...
+INFO - [CREATE] Creating node cat-sdwan-validator...
+INFO - [CREATE] Creating node cat-sdwan-controller...
+INFO - [CREATE] Creating node cat-sdwan-edge...
+INFO - Verifying software images...
+INFO - Looking for new software images in /home/rory/csdwan...
+INFO - Creating image definition cat-sdwan-manager-20.13.1...
+Uploading viptela-vmanage-20.13.1-genericx86-64.qcow2
+ |##################################################| 4882890752/4882890752 100.0% [00:00:09]
+Upload completed
+INFO - Creating image definition cat-sdwan-edge-17.13.01a...
+Uploading c8000v-universalk9_8G_serial.17.13.01a.qcow2
+ |##################################################| 2033582080/2033582080 100.0% [00:00:04]
+Upload completed
+INFO - Creating image definition cat-sdwan-controller-20.13.1...
+Uploading viptela-smart-20.13.1-genericx86-64.qcow2
+ |##################################################| 406192128/406192128 100.0% [00:00:00]
+Upload completed
+INFO - Creating image definition cat-sdwan-validator-20.13.1...
+Uploading viptela-edge-20.13.1-genericx86-64.qcow2
+ |##################################################| 406192128/406192128 100.0% [00:00:00]
+Upload completed
+INFO - Setup task done
+</code></pre>
+
+<h2 class="relative group">Deploy 测试拓扑 
+    <div id="deploy-%E6%B5%8B%E8%AF%95%E6%8B%93%E6%89%91" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#deploy-%E6%B5%8B%E8%AF%95%E6%8B%93%E6%89%91" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>在这一步中，如下 topo 会自动在 CML 中创建,这里需要注意的是 vManage 需要很长的时间进行启动，在此期间 csdwan 执行的服务器会不断的使用 API 检测 vManage 的状态是否 ready， 所以一定要确保服务器于 vMange 之间连通性正常。在这里我需要确保我的服务器可以正常的访问 “SD-WAN Manager URL: <a href="https://172.x.x.x:2002" target="_blank">https://172.x.x.x:2002</a>”</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cml-with-sdwan-deployment-tool/image.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ csdwan deploy 20.13.1
+SD-WAN Manager subnet mask (e.g. /24): /24
+SD-WAN Manager gateway IP: 172.16.10.100
+Deploy task done
+#############################################
+Lab is deployed.
+CML URL: https://172.x.x.x
+SD-WAN Manager URL: https://172.x.x.x:2002
+Use the username/password set with the script for CML and SD-WAN Manager login.
+All other nodes use default username/password.
+#############################################
+(venv) rory@jumpserver:~/csdwan$
+</code></pre><p>添加 2 台 edge，并完成自动上线；这两台 edge 会完成相关预配置， 并且 G3 端口已经开启了 DHCP，后续我们可以手动的在 topo 中添加两个 alpine client， 两台 client 可自行获取 IP 地址。</p>
+<pre tabindex="0"><code>(venv) rory@jumpserver:~/csdwan$ csdwan add 2 edges 17.13.01a
+Add task done
+(venv) rory@jumpserver:~/csdwan$
+</code></pre><p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/blog/cml-with-sdwan-deployment-tool/image-2.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+
+
+<h2 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><a href="https://github.com/cisco-open/sdwan-lab-deployment-tool" target="_blank">sdwan-lab-deployment-tool</a></li>
+<li><a href="https://www.youtube.com/watch?v=WxiZ5bxlDk8&amp;t=96s" target="_blank">Build your own Cisco Catalyst SD-WAN Virtual Lab with free Lab Deployment Tool in CML</a></li>
+<li><a href="https://www.youtube.com/watch?v=JpZCs171Ae8&amp;t=1028s" target="_blank">Easy SD-WAN in CML with catalyst-sdwan-lab</a></li>
+</ul>
+
           
           
           
@@ -766,7 +865,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/blog/screen-tmux/&amp;title=Screen%20And%20Tmux"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;title=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -785,7 +884,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://imxing.info/blog/screen-tmux/&amp;text=Screen%20And%20Tmux"
+      href="https://twitter.com/intent/tweet/?url=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;text=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -803,7 +902,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://imxing.info/blog/screen-tmux/&amp;resubmit=true&amp;title=Screen%20And%20Tmux"
+      href="https://reddit.com/submit/?url=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;resubmit=true&amp;title=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -822,7 +921,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/blog/screen-tmux/&amp;description=Screen%20And%20Tmux"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;description=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -841,7 +940,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/blog/screen-tmux/&amp;quote=Screen%20And%20Tmux"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;quote=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -860,7 +959,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://imxing.info/blog/screen-tmux/&amp;subject=Screen%20And%20Tmux"
+      href="mailto:?body=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;subject=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -879,7 +978,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://imxing.info/blog/screen-tmux/&amp;resubmit=true&amp;title=Screen%20And%20Tmux"
+      href="https://api.whatsapp.com/send?text=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;resubmit=true&amp;title=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -898,7 +997,7 @@ tmux kill-session -t &lt;会话名&gt;
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://imxing.info/blog/screen-tmux/&amp;resubmit=true&amp;title=Screen%20And%20Tmux"
+      href="https://t.me/share/url?url=https://imxing.info/blog/cml-with-sdwan-deployment-tool/&amp;resubmit=true&amp;title=CML%20With%20SDWAN%20Deployment%20Tool"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -927,8 +1026,8 @@ tmux kill-session -t &lt;会话名&gt;
           
         
       <script>
-        var oid = "views_blog\/screen-tmux\/index.md"
-        var oid_likes = "likes_blog\/screen-tmux\/index.md"
+        var oid = "views_blog\/cml-with-sdwan-deployment-tool\/index.md"
+        var oid_likes = "likes_blog\/cml-with-sdwan-deployment-tool\/index.md"
       </script>
       
       
@@ -948,7 +1047,7 @@ tmux kill-session -t &lt;会话名&gt;
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/blog/onboarding-c8000v/">
+            <a class="flex group mr-3" href="/blog/screen-tmux/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -960,11 +1059,11 @@ tmux kill-session -t &lt;会话名&gt;
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Onboarding C8000v</span
+                  >Screen And Tmux</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-07-28T01:11:58&#43;08:00">28 July 2024</time>
+                    <time datetime="2024-10-20T22:57:45&#43;08:00">20 October 2024</time>
                   
                 </span>
               </span>
@@ -972,28 +1071,6 @@ tmux kill-session -t &lt;会话名&gt;
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/blog/cml-with-sdwan-deployment-tool/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >CML With SDWAN Deployment Tool</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-12-27T01:58:23&#43;08:00">27 December 2024</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
@@ -1023,9 +1100,9 @@ tmux kill-session -t &lt;会话名&gt;
   id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="eaff9d82-5bae-47cd-b41a-34854e106067"
-  data-page-id="/blog/screen-tmux/"
-  data-page-url="/blog/screen-tmux/"
-  data-page-title="Screen And Tmux"
+  data-page-id="/blog/cml-with-sdwan-deployment-tool/"
+  data-page-url="/blog/cml-with-sdwan-deployment-tool/"
+  data-page-title="CML With SDWAN Deployment Tool"
 ></div><script type="text/javascript">
   (()=>{var e={powered_by:"Comments powered by Cusdis",post_comment:"Comment",loading:"Loading",email:"Email (optional)",nickname:"Nickname",reply_placeholder:"Reply...",reply_btn:"Reply",sending:"sending...",mod_badge:"MOD",content_is_required:"Content is required",nickname_is_required:"Nickname is required",comment_has_been_sent:"Your comment has been sent. Please wait for approval."};})();
 

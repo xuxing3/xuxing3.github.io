@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 20 Oct 2024 22:57:45 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2024 01:58:23 +0800</lastBuildDate><atom:link href="https://imxing.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CML</title>
+      <link>https://imxing.info/tags/cml/</link>
+      <pubDate>Fri, 27 Dec 2024 01:58:23 +0800</pubDate>
+      
+      <guid>https://imxing.info/tags/cml/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SDWAN</title>
+      <link>https://imxing.info/tags/sdwan/</link>
+      <pubDate>Fri, 27 Dec 2024 01:58:23 +0800</pubDate>
+      
+      <guid>https://imxing.info/tags/sdwan/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Linux</title>
@@ -25,16 +45,6 @@
       <pubDate>Sun, 28 Jul 2024 01:11:58 +0800</pubDate>
       
       <guid>https://imxing.info/tags/8000v/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>SDWAN</title>
-      <link>https://imxing.info/tags/sdwan/</link>
-      <pubDate>Sun, 28 Jul 2024 01:11:58 +0800</pubDate>
-      
-      <guid>https://imxing.info/tags/sdwan/</guid>
       <description></description>
       
     </item>

@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://imxing.info/</loc>
-    <lastmod>2024-10-20T22:57:45+08:00</lastmod>
+    <lastmod>2024-12-27T01:58:23+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://imxing.info/blog/screen-tmux/</loc>
-    <lastmod>2024-10-20T22:57:45+08:00</lastmod>
+    <loc>https://imxing.info/blog/cml-with-sdwan-deployment-tool/</loc>
+    <lastmod>2024-12-27T01:58:23+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://imxing.info/blog/</loc>
+    <lastmod>2024-12-27T01:58:23+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://imxing.info/blog/screen-tmux/</loc>
     <lastmod>2024-10-20T22:57:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
